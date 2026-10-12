@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ictc-o2-hp"
+version = "0.1.5"
+description = "Private standalone high-performance Cartesian O(2) tensor products"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["torch>=2.7"]
+
+[project.optional-dependencies]
+hp = ["triton>=3.3; platform_system=='Linux'"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["ictc_o2_hp", "ictc_o2_hp.*"]
