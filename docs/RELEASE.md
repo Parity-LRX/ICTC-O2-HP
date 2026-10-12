@@ -6,8 +6,10 @@ Distribution `ictc-o2-hp` and Python package `ictc_o2_hp` both report 0.1.5.
 
 This repository starts with a single current-release snapshot. The eight
 Python modules are identical to the qualified 0.1.5 implementation. Original
-development commits, earlier source versions, tests, benchmark/plotting scripts
-and generated artifacts are retained in the separate private archive.
+development commits, earlier source versions, general API tests and superseded
+experiments are retained in the separate private archive. The current v0.1.5
+eqx benchmark scripts, recorded results and final figures are now included in
+[benchmarks/eqx](../benchmarks/eqx/README.md) on main. The release tag remains fixed.
 
 ## Source layout
 
@@ -19,6 +21,7 @@ and generated artifacts are retained in the separate private archive.
 | `examples/operators.py` | Minimal forward and gradient usage example |
 | `docs/` | Current API, execution, validation, performance and figure interpretation |
 | `docs/runtime_constraints.txt` | Exact qualified runtime/build dependencies |
+| `benchmarks/eqx/` | Current comparison scripts, raw/report data and final figures |
 | `pyproject.toml`, `MANIFEST.in`, `NOTICE` | Packaging and private-use notice |
 
 The installed wheel contains the library and its distribution metadata.
@@ -52,9 +55,11 @@ and allocated/reserved/sampled-process peak memory.
 
 Installable packages, full Git backup, environment records, validation results,
 raw measurements and final figures are preserved together in the private
-release archive. They are separate from this source repository. See
+release archive. The current eqx evidence is also available in this repository;
+compiler caches, job logs, historical controls and installable build products
+remain separate. Benchmark files are excluded from the wheel/source package. See
 [validation](VALIDATION.md) and [measured performance](PERFORMANCE.md).
 
 Keep `v0.1.5` fixed. Later numerical or public-API changes receive a new
-package version, custom-op namespace and qualification. Only the current
-source and documentation should be committed to this repository.
+package version, custom-op namespace and qualification. Commit current source,
+documentation and the explicitly included eqx comparison evidence.

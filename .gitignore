@@ -8,6 +8,10 @@ dist/
 /reports/
 /results/
 /benchmarks/
+!/benchmarks/
+/benchmarks/*
+!/benchmarks/eqx/
+/benchmarks/eqx/_runs/
 /releases/
 /cache/
 /logs/

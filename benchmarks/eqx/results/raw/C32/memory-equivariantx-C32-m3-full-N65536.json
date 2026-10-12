@@ -1,0 +1,195 @@
+{
+  "status": "ok",
+  "mode": "memory",
+  "channels": 32,
+  "order": 3,
+  "parity": "full",
+  "edges": 65536,
+  "torch": "2.7.1+cu128",
+  "gpu": "NVIDIA A100-SXM4-40GB",
+  "job_id": "90867",
+  "script": "/public/home/sps-xia/rxlin/ictc_o2_hp_20261011/harness_snapshots/high_N_v015_m1_6_20261012/scripts/bench_fixed_strategy.py",
+  "dtype": "FP32",
+  "tf32": false,
+  "amp": false,
+  "package_path": "/public/home/sps-xia/rxlin/ictc_o2_hp_20261011/high_N_20261012/installed_v0_1_5/ictc_o2_hp/__init__.py",
+  "package_version": "0.1.5",
+  "candidate_library": "ICTC-O2 HP",
+  "reference_library": "EquivariantX",
+  "strategy": "representation-dependent only; no positive-N dispatch",
+  "weight_reduction": "fixed 1024x32 chunk stage and fixed 32x32 final stage",
+  "low_order_fused": "auto",
+  "backward_input_fused": "auto",
+  "weight_channel_tile": 64,
+  "weight_edge_tile": "auto",
+  "compact_weight_edge_tile": 16,
+  "weight_schedule": "grouped",
+  "weight_warps": 4,
+  "forward_deferred_setting": "auto",
+  "qualification": "independent wheel gates plus streamed large-N reference checks",
+  "layout_conversion": "preparation only; each operator consumes its public native packed layout",
+  "cotangent": "same sample; J maps the second copy to EquivariantX canonical basis, then component/channel transpose",
+  "gpu_uuid": "5dce2724-2ce2-55ed-a1e1-c1783fbee235",
+  "implementations": {
+    "equivariantx": {
+      "width": 448,
+      "parameters": 1664,
+      "paths": 31,
+      "instructions": 52,
+      "representation": [
+        {
+          "label": "0e",
+          "irrep": "0ee",
+          "multiplicity": 32
+        },
+        {
+          "label": "0o",
+          "irrep": "0oe",
+          "multiplicity": 32
+        },
+        {
+          "label": "1m/copy0",
+          "irrep": "1me",
+          "multiplicity": 32
+        },
+        {
+          "label": "1m/copy1",
+          "irrep": "1me",
+          "multiplicity": 32
+        },
+        {
+          "label": "2m/copy0",
+          "irrep": "2me",
+          "multiplicity": 32
+        },
+        {
+          "label": "2m/copy1",
+          "irrep": "2me",
+          "multiplicity": 32
+        },
+        {
+          "label": "3m/copy0",
+          "irrep": "3me",
+          "multiplicity": 32
+        },
+        {
+          "label": "3m/copy1",
+          "irrep": "3me",
+          "multiplicity": 32
+        }
+      ],
+      "connection_mode": "uuu",
+      "path_normalization": "none",
+      "compile_adapter": true,
+      "reference_paper": "Through the Looking-Glass",
+      "reference_library": "EquivariantX",
+      "upstream_revision": "ac3aed47f5b35d49f1f237912150f0d9dd759ae7",
+      "operator_source": "/public/home/sps-xia/rxlin/ictc_o2_optimization_20261011/baseline/latest_upstream/eqx/o2/tensor_product.py"
+    }
+  },
+  "timing": {
+    "forward": {
+      "equivariantx": {
+        "median_ms": 0.8883199989795685,
+        "q25_ms": 0.8857600092887878,
+        "q75_ms": 0.9031680077314377,
+        "min_ms": 0.8847360014915466,
+        "max_ms": 2.052095890045166,
+        "samples_ms": [
+          2.052095890045166,
+          1.0199040174484253,
+          0.9062399864196777,
+          0.9154559969902039,
+          0.9021440148353577,
+          0.8960000276565552,
+          0.8939520120620728,
+          0.8888319730758667,
+          0.8888319730758667,
+          0.8878080248832703,
+          0.886784017086029,
+          0.8857600092887878,
+          0.886784017086029,
+          0.8857600092887878,
+          0.8857600092887878,
+          0.8857600092887878,
+          0.886784017086029,
+          0.8847360014915466
+        ],
+        "rows_per_second": 73775216.22307564,
+        "peak_allocated_MiB": 592.00830078125,
+        "peak_reserved_MiB": 598.0,
+        "sampled_process_peak_MiB": 1088.0,
+        "process_memory_samples": 2,
+        "process_memory_requested_interval_s": 0.05,
+        "process_memory_observed_max_interval_s": 0.09280754486098886,
+        "process_memory_sampling_errors": [],
+        "process_memory_definition": "sampled NVML process memory; includes context/cache, not an exact transient peak"
+      },
+      "order_schedule": [
+        [
+          "equivariantx"
+        ],
+        [
+          "equivariantx"
+        ],
+        [
+          "equivariantx"
+        ]
+      ]
+    },
+    "forward_vjp": {
+      "equivariantx": {
+        "median_ms": 4.046847820281982,
+        "q25_ms": 4.03711998462677,
+        "q75_ms": 4.078080058097839,
+        "min_ms": 4.025343894958496,
+        "max_ms": 8.870911598205566,
+        "samples_ms": [
+          8.870911598205566,
+          4.150271892547607,
+          4.077568054199219,
+          4.079616069793701,
+          4.196352005004883,
+          4.048895835876465,
+          4.046847820281982,
+          4.039680004119873,
+          4.047872066497803,
+          4.042751789093018,
+          4.04582405090332,
+          4.046847820281982,
+          4.047872066497803,
+          4.039680004119873,
+          4.028416156768799,
+          4.0273919105529785,
+          4.029439926147461,
+          4.025343894958496
+        ],
+        "rows_per_second": 16194332.70298597,
+        "peak_allocated_MiB": 1072.00830078125,
+        "peak_reserved_MiB": 1314.0,
+        "sampled_process_peak_MiB": 1804.0,
+        "process_memory_samples": 3,
+        "process_memory_requested_interval_s": 0.05,
+        "process_memory_observed_max_interval_s": 0.1252552466467023,
+        "process_memory_sampling_errors": [],
+        "process_memory_definition": "sampled NVML process memory; includes context/cache, not an exact transient peak"
+      },
+      "order_schedule": [
+        [
+          "equivariantx"
+        ],
+        [
+          "equivariantx"
+        ],
+        [
+          "equivariantx"
+        ]
+      ]
+    }
+  },
+  "first_calls_s": {
+    "equivariantx/forward": 7.772419126238674,
+    "equivariantx/forward_vjp": 16.940428930334747
+  },
+  "phase": "forward_vjp/measurement"
+}

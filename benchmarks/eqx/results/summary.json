@@ -1,0 +1,165 @@
+{
+  "status": "ok",
+  "version": "0.1.5",
+  "comparator": "EquivariantX (eqx)",
+  "shapes": 240,
+  "metric_rows": 480,
+  "qualifications": 60,
+  "candidate_completed": 480,
+  "EQX_completed": 479,
+  "versus_EQX_comparable": 479,
+  "versus_EQX_faster": 455,
+  "versus_EQX_slower": 22,
+  "versus_EQX_equal": 2,
+  "fixed_positive_N_strategy": true,
+  "dtype": "FP32",
+  "tf32": false,
+  "amp": false,
+  "numerical_gate": 1e-05,
+  "numerical_maxima": {
+    "output": 1.9071936208092666e-07,
+    "dx": 2.0447610893370438e-07,
+    "dy": 3.100263086253108e-07,
+    "dw": 8.108459939563962e-07
+  },
+  "per_order": [
+    {
+      "m_max": 1,
+      "comparable": 80,
+      "faster": 68,
+      "slower": 10,
+      "equal": 2
+    },
+    {
+      "m_max": 2,
+      "comparable": 80,
+      "faster": 80,
+      "slower": 0,
+      "equal": 0
+    },
+    {
+      "m_max": 3,
+      "comparable": 80,
+      "faster": 80,
+      "slower": 0,
+      "equal": 0
+    },
+    {
+      "m_max": 4,
+      "comparable": 80,
+      "faster": 75,
+      "slower": 5,
+      "equal": 0
+    },
+    {
+      "m_max": 5,
+      "comparable": 80,
+      "faster": 75,
+      "slower": 5,
+      "equal": 0
+    },
+    {
+      "m_max": 6,
+      "comparable": 79,
+      "faster": 77,
+      "slower": 2,
+      "equal": 0
+    }
+  ],
+  "memory_accounting": [
+    {
+      "control": "equivariantx",
+      "mode": "forward",
+      "metric": "peak_allocated_MiB",
+      "comparable": 240,
+      "lower": 160,
+      "equal": 0,
+      "higher": 80,
+      "maximum_increase_MiB": 0.62841796875
+    },
+    {
+      "control": "equivariantx",
+      "mode": "forward",
+      "metric": "peak_reserved_MiB",
+      "comparable": 240,
+      "lower": 160,
+      "equal": 80,
+      "higher": 0,
+      "maximum_increase_MiB": 0
+    },
+    {
+      "control": "equivariantx",
+      "mode": "forward",
+      "metric": "sampled_process_peak_MiB",
+      "comparable": 240,
+      "lower": 160,
+      "equal": 80,
+      "higher": 0,
+      "maximum_increase_MiB": 0
+    },
+    {
+      "control": "equivariantx",
+      "mode": "forward_vjp",
+      "metric": "peak_allocated_MiB",
+      "comparable": 239,
+      "lower": 239,
+      "equal": 0,
+      "higher": 0,
+      "maximum_increase_MiB": 0
+    },
+    {
+      "control": "equivariantx",
+      "mode": "forward_vjp",
+      "metric": "peak_reserved_MiB",
+      "comparable": 239,
+      "lower": 239,
+      "equal": 0,
+      "higher": 0,
+      "maximum_increase_MiB": 0
+    },
+    {
+      "control": "equivariantx",
+      "mode": "forward_vjp",
+      "metric": "sampled_process_peak_MiB",
+      "comparable": 239,
+      "lower": 239,
+      "equal": 0,
+      "higher": 0,
+      "maximum_increase_MiB": 0
+    }
+  ],
+  "oom_records": [
+    {
+      "N": 131072,
+      "C": 256,
+      "m_max": 5,
+      "parity": "full",
+      "process": "paired",
+      "phase": "forward_vjp/compile_warmup",
+      "source": "raw/C256/paired-candidate-equivariantx-C256-m5-full-N131072.json",
+      "error": "OutOfMemoryError('CUDA out of memory. Tried to allocate 2.75 GiB. GPU 0 has a total capacity of 39.38 GiB of which 2.24 GiB is free. Including non-PyTorch memory, this process has 37.12 GiB memory in use. Of the allocated memory 36.50 GiB is allocated by PyTorch, and 145.27 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)')"
+    },
+    {
+      "N": 131072,
+      "C": 256,
+      "m_max": 6,
+      "parity": "full",
+      "process": "paired",
+      "phase": "forward_vjp/compile_warmup",
+      "source": "raw/C256/paired-candidate-equivariantx-C256-m6-full-N131072.json",
+      "error": "OutOfMemoryError('CUDA out of memory. Tried to allocate 256.00 MiB. GPU 0 has a total capacity of 39.38 GiB of which 51.88 MiB is free. Including non-PyTorch memory, this process has 39.31 GiB memory in use. Of the allocated memory 38.75 GiB is allocated by PyTorch, and 81.02 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)')"
+    },
+    {
+      "N": 131072,
+      "C": 256,
+      "m_max": 6,
+      "parity": "full",
+      "process": "equivariantx",
+      "phase": "forward_vjp/compile_warmup",
+      "source": "raw/C256/memory-equivariantx-C256-m6-full-N131072.json",
+      "error": "OutOfMemoryError('CUDA out of memory. Tried to allocate 256.00 MiB. GPU 0 has a total capacity of 39.38 GiB of which 131.88 MiB is free. Including non-PyTorch memory, this process has 39.23 GiB memory in use. Of the allocated memory 38.75 GiB is allocated by PyTorch, and 1.82 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)')"
+    }
+  ],
+  "missing": [],
+  "report_job_id": "90920"
+}

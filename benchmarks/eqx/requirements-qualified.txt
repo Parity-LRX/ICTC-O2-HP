@@ -1,0 +1,8 @@
+torch==2.7.1+cu128
+triton==3.3.1
+numpy==2.4.4
+matplotlib==3.10.9
+pillow==12.2.0
+scipy==1.17.1
+sympy==1.14.0
+opt_einsum==3.4.0

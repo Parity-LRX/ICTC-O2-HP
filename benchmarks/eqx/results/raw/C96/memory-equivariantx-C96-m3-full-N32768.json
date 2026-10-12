@@ -1,0 +1,195 @@
+{
+  "status": "ok",
+  "mode": "memory",
+  "channels": 96,
+  "order": 3,
+  "parity": "full",
+  "edges": 32768,
+  "torch": "2.7.1+cu128",
+  "gpu": "NVIDIA A100-SXM4-40GB",
+  "job_id": "90888",
+  "script": "/public/home/sps-xia/rxlin/ictc_o2_hp_20261011/harness_snapshots/high_N_v015_m1_6_20261012/scripts/bench_fixed_strategy.py",
+  "dtype": "FP32",
+  "tf32": false,
+  "amp": false,
+  "package_path": "/public/home/sps-xia/rxlin/ictc_o2_hp_20261011/high_N_20261012/installed_v0_1_5/ictc_o2_hp/__init__.py",
+  "package_version": "0.1.5",
+  "candidate_library": "ICTC-O2 HP",
+  "reference_library": "EquivariantX",
+  "strategy": "representation-dependent only; no positive-N dispatch",
+  "weight_reduction": "fixed 1024x32 chunk stage and fixed 32x32 final stage",
+  "low_order_fused": "auto",
+  "backward_input_fused": "auto",
+  "weight_channel_tile": 64,
+  "weight_edge_tile": "auto",
+  "compact_weight_edge_tile": 16,
+  "weight_schedule": "grouped",
+  "weight_warps": 4,
+  "forward_deferred_setting": "auto",
+  "qualification": "independent wheel gates plus streamed large-N reference checks",
+  "layout_conversion": "preparation only; each operator consumes its public native packed layout",
+  "cotangent": "same sample; J maps the second copy to EquivariantX canonical basis, then component/channel transpose",
+  "gpu_uuid": "5dce2724-2ce2-55ed-a1e1-c1783fbee235",
+  "implementations": {
+    "equivariantx": {
+      "width": 1344,
+      "parameters": 4992,
+      "paths": 31,
+      "instructions": 52,
+      "representation": [
+        {
+          "label": "0e",
+          "irrep": "0ee",
+          "multiplicity": 96
+        },
+        {
+          "label": "0o",
+          "irrep": "0oe",
+          "multiplicity": 96
+        },
+        {
+          "label": "1m/copy0",
+          "irrep": "1me",
+          "multiplicity": 96
+        },
+        {
+          "label": "1m/copy1",
+          "irrep": "1me",
+          "multiplicity": 96
+        },
+        {
+          "label": "2m/copy0",
+          "irrep": "2me",
+          "multiplicity": 96
+        },
+        {
+          "label": "2m/copy1",
+          "irrep": "2me",
+          "multiplicity": 96
+        },
+        {
+          "label": "3m/copy0",
+          "irrep": "3me",
+          "multiplicity": 96
+        },
+        {
+          "label": "3m/copy1",
+          "irrep": "3me",
+          "multiplicity": 96
+        }
+      ],
+      "connection_mode": "uuu",
+      "path_normalization": "none",
+      "compile_adapter": true,
+      "reference_paper": "Through the Looking-Glass",
+      "reference_library": "EquivariantX",
+      "upstream_revision": "ac3aed47f5b35d49f1f237912150f0d9dd759ae7",
+      "operator_source": "/public/home/sps-xia/rxlin/ictc_o2_optimization_20261011/baseline/latest_upstream/eqx/o2/tensor_product.py"
+    }
+  },
+  "timing": {
+    "forward": {
+      "equivariantx": {
+        "median_ms": 1.4387199878692627,
+        "q25_ms": 1.3329920172691345,
+        "q75_ms": 1.4481920301914215,
+        "min_ms": 1.3301759958267212,
+        "max_ms": 2.712575912475586,
+        "samples_ms": [
+          2.712575912475586,
+          1.5615999698638916,
+          1.4581760168075562,
+          1.4714879989624023,
+          1.44486403465271,
+          1.439743995666504,
+          1.44486403465271,
+          1.4438400268554688,
+          1.4376959800720215,
+          1.439743995666504,
+          1.4366719722747803,
+          1.341439962387085,
+          1.3301759958267212,
+          1.3312000036239624,
+          1.334272027015686,
+          1.3332480192184448,
+          1.3322240114212036,
+          1.3322240114212036
+        ],
+        "rows_per_second": 22775800.903780624,
+        "peak_allocated_MiB": 888.0244140625,
+        "peak_reserved_MiB": 890.0,
+        "sampled_process_peak_MiB": 1380.0,
+        "process_memory_samples": 2,
+        "process_memory_requested_interval_s": 0.05,
+        "process_memory_observed_max_interval_s": 0.09798955777660012,
+        "process_memory_sampling_errors": [],
+        "process_memory_definition": "sampled NVML process memory; includes context/cache, not an exact transient peak"
+      },
+      "order_schedule": [
+        [
+          "equivariantx"
+        ],
+        [
+          "equivariantx"
+        ],
+        [
+          "equivariantx"
+        ]
+      ]
+    },
+    "forward_vjp": {
+      "equivariantx": {
+        "median_ms": 5.844480037689209,
+        "q25_ms": 5.833471894264221,
+        "q75_ms": 5.876223921775818,
+        "min_ms": 5.815296173095703,
+        "max_ms": 9.695232391357422,
+        "samples_ms": [
+          9.695232391357422,
+          5.970943927764893,
+          5.882880210876465,
+          5.875711917877197,
+          5.874688148498535,
+          5.87775993347168,
+          5.848063945770264,
+          5.846015930175781,
+          5.848063945770264,
+          5.833727836608887,
+          5.841919898986816,
+          5.832704067230225,
+          5.842944145202637,
+          5.831679821014404,
+          5.815296173095703,
+          5.829631805419922,
+          5.839871883392334,
+          5.838848114013672
+        ],
+        "rows_per_second": 5606657.870108119,
+        "peak_allocated_MiB": 1608.0244140625,
+        "peak_reserved_MiB": 1954.0,
+        "sampled_process_peak_MiB": 2444.0,
+        "process_memory_samples": 3,
+        "process_memory_requested_interval_s": 0.05,
+        "process_memory_observed_max_interval_s": 0.1223225318826735,
+        "process_memory_sampling_errors": [],
+        "process_memory_definition": "sampled NVML process memory; includes context/cache, not an exact transient peak"
+      },
+      "order_schedule": [
+        [
+          "equivariantx"
+        ],
+        [
+          "equivariantx"
+        ],
+        [
+          "equivariantx"
+        ]
+      ]
+    }
+  },
+  "first_calls_s": {
+    "equivariantx/forward": 7.8758390112780035,
+    "equivariantx/forward_vjp": 17.07288809120655
+  },
+  "phase": "forward_vjp/measurement"
+}

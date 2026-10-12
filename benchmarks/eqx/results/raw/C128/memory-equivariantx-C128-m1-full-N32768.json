@@ -1,0 +1,175 @@
+{
+  "status": "ok",
+  "mode": "memory",
+  "channels": 128,
+  "order": 1,
+  "parity": "full",
+  "edges": 32768,
+  "torch": "2.7.1+cu128",
+  "gpu": "NVIDIA A100-SXM4-40GB",
+  "job_id": "90880",
+  "script": "/public/home/sps-xia/rxlin/ictc_o2_hp_20261011/harness_snapshots/high_N_v015_m1_6_20261012/scripts/bench_fixed_strategy.py",
+  "dtype": "FP32",
+  "tf32": false,
+  "amp": false,
+  "package_path": "/public/home/sps-xia/rxlin/ictc_o2_hp_20261011/high_N_20261012/installed_v0_1_5/ictc_o2_hp/__init__.py",
+  "package_version": "0.1.5",
+  "candidate_library": "ICTC-O2 HP",
+  "reference_library": "EquivariantX",
+  "strategy": "representation-dependent only; no positive-N dispatch",
+  "weight_reduction": "fixed 1024x32 chunk stage and fixed 32x32 final stage",
+  "low_order_fused": "auto",
+  "backward_input_fused": "auto",
+  "weight_channel_tile": 64,
+  "weight_edge_tile": "auto",
+  "compact_weight_edge_tile": 16,
+  "weight_schedule": "grouped",
+  "weight_warps": 4,
+  "forward_deferred_setting": "auto",
+  "qualification": "independent wheel gates plus streamed large-N reference checks",
+  "layout_conversion": "preparation only; each operator consumes its public native packed layout",
+  "cotangent": "same sample; J maps the second copy to EquivariantX canonical basis, then component/channel transpose",
+  "gpu_uuid": "5dce2724-2ce2-55ed-a1e1-c1783fbee235",
+  "implementations": {
+    "equivariantx": {
+      "width": 768,
+      "parameters": 1792,
+      "paths": 10,
+      "instructions": 14,
+      "representation": [
+        {
+          "label": "0e",
+          "irrep": "0ee",
+          "multiplicity": 128
+        },
+        {
+          "label": "0o",
+          "irrep": "0oe",
+          "multiplicity": 128
+        },
+        {
+          "label": "1m/copy0",
+          "irrep": "1me",
+          "multiplicity": 128
+        },
+        {
+          "label": "1m/copy1",
+          "irrep": "1me",
+          "multiplicity": 128
+        }
+      ],
+      "connection_mode": "uuu",
+      "path_normalization": "none",
+      "compile_adapter": true,
+      "reference_paper": "Through the Looking-Glass",
+      "reference_library": "EquivariantX",
+      "upstream_revision": "ac3aed47f5b35d49f1f237912150f0d9dd759ae7",
+      "operator_source": "/public/home/sps-xia/rxlin/ictc_o2_optimization_20261011/baseline/latest_upstream/eqx/o2/tensor_product.py"
+    }
+  },
+  "timing": {
+    "forward": {
+      "equivariantx": {
+        "median_ms": 0.5928959846496582,
+        "q25_ms": 0.591871976852417,
+        "q75_ms": 0.6625279784202576,
+        "min_ms": 0.5908480286598206,
+        "max_ms": 1.2042239904403687,
+        "samples_ms": [
+          1.2042239904403687,
+          0.7004160284996033,
+          0.6656000018119812,
+          0.681984007358551,
+          0.6615039706230164,
+          0.6574079990386963,
+          0.6277120113372803,
+          0.5928959846496582,
+          0.591871976852417,
+          0.591871976852417,
+          0.591871976852417,
+          0.5928959846496582,
+          0.5908480286598206,
+          0.591871976852417,
+          0.591871976852417,
+          0.5908480286598206,
+          0.5928959846496582,
+          0.591871976852417
+        ],
+        "rows_per_second": 55267704.36700223,
+        "peak_allocated_MiB": 480.009765625,
+        "peak_reserved_MiB": 482.0,
+        "sampled_process_peak_MiB": 972.0,
+        "process_memory_samples": 2,
+        "process_memory_requested_interval_s": 0.05,
+        "process_memory_observed_max_interval_s": 0.08173092687502503,
+        "process_memory_sampling_errors": [],
+        "process_memory_definition": "sampled NVML process memory; includes context/cache, not an exact transient peak"
+      },
+      "order_schedule": [
+        [
+          "equivariantx"
+        ],
+        [
+          "equivariantx"
+        ],
+        [
+          "equivariantx"
+        ]
+      ]
+    },
+    "forward_vjp": {
+      "equivariantx": {
+        "median_ms": 2.1632000207901,
+        "q25_ms": 2.1593599915504456,
+        "q75_ms": 2.177535891532898,
+        "min_ms": 2.15449595451355,
+        "max_ms": 3.1047680377960205,
+        "samples_ms": [
+          3.1047680377960205,
+          2.219007968902588,
+          2.1790719032287598,
+          2.1821439266204834,
+          2.1770238876342773,
+          2.165760040283203,
+          2.1688320636749268,
+          2.1616640090942383,
+          2.1637120246887207,
+          2.159615993499756,
+          2.15449595451355,
+          2.1667840480804443,
+          2.1626880168914795,
+          2.1616640090942383,
+          2.1575679779052734,
+          2.1585919857025146,
+          2.1575679779052734,
+          2.1616640090942383
+        ],
+        "rows_per_second": 15147928.848499002,
+        "peak_allocated_MiB": 704.0166015625,
+        "peak_reserved_MiB": 836.0,
+        "sampled_process_peak_MiB": 1326.0,
+        "process_memory_samples": 2,
+        "process_memory_requested_interval_s": 0.05,
+        "process_memory_observed_max_interval_s": 0.11558939889073372,
+        "process_memory_sampling_errors": [],
+        "process_memory_definition": "sampled NVML process memory; includes context/cache, not an exact transient peak"
+      },
+      "order_schedule": [
+        [
+          "equivariantx"
+        ],
+        [
+          "equivariantx"
+        ],
+        [
+          "equivariantx"
+        ]
+      ]
+    }
+  },
+  "first_calls_s": {
+    "equivariantx/forward": 3.6375980461016297,
+    "equivariantx/forward_vjp": 3.707269598264247
+  },
+  "phase": "forward_vjp/measurement"
+}

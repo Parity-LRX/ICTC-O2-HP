@@ -48,7 +48,7 @@ the independent measurements determine that boundary.
 ## Publication and exploration views
 
 The current publication style uses the completed 0.1.5 cohort only. Final
-figures remain in the separate artifact archive:
+figures are included in [benchmarks/eqx/figures](../benchmarks/eqx/figures/INDEX.md):
 240 shapes/480 metrics and60 reference families, with no pending measurements.
 They show all four N values, m_max=1–6 and separate parity panels.
 Five C values receive separate all-N 2D landscapes; joint 3D figures use
@@ -98,6 +98,6 @@ at450dpi in PDF/SVG to avoid polygon stitching seams. Labels, axes, measured poi
 and the OOM hatches remain vector; SVG text remains editable.
 
 The completed 0.1.5 study uses m_max=1–6 and displays every measured N.
-Figure data, renderers and exported PNG/SVG/PDF files remain in the release
-archive. This source repository describes their interpretation without
-including plotting scripts or earlier figure versions.
+Current figure data, renderer and exported PNG/SVG/PDF files are included in
+[benchmarks/eqx](../benchmarks/eqx/README.md). Earlier figure versions remain
+in the separate release archive.

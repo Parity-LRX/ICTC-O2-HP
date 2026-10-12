@@ -1,0 +1,7 @@
+control,mode,metric,comparable,lower,equal,higher,maximum_increase_MiB
+equivariantx,forward,peak_allocated_MiB,240,160,0,80,0.62841796875
+equivariantx,forward,peak_reserved_MiB,240,160,80,0,0
+equivariantx,forward,sampled_process_peak_MiB,240,160,80,0,0
+equivariantx,forward_vjp,peak_allocated_MiB,239,239,0,0,0
+equivariantx,forward_vjp,peak_reserved_MiB,239,239,0,0,0
+equivariantx,forward_vjp,sampled_process_peak_MiB,239,239,0,0,0

@@ -68,13 +68,17 @@ Benchmark comparator: **EquivariantX (EQX)**, `eqx.o2.TensorProduct`.
 “Through the Looking-Glass” is the associated paper title. The library is named
 EquivariantX in its [upstream README](https://github.com/xvzemin/tace/blob/ac3aed47f5b35d49f1f237912150f0d9dd759ae7/eqx/README.md).
 
-Raw measurements, qualification scripts, generated heatmaps, logs and package
-builds remain in a separate artifact archive. Timings
-include the complete VJP for both inputs and the full weight vector. Peak
-allocated and reserved memory are both reported. This source repository is
-private. [Exact qualified dependency versions](docs/runtime_constraints.txt)
-are included for reproduction.
+## eqx comparison scripts, results and figures
 
-This repository contains only the current 0.1.5 source, documentation and
-usage example. Development history, older versions and test/benchmark scripts
-remain in the separate archive.
+[benchmarks/eqx](benchmarks/eqx/README.md) contains the current v0.1.5
+comparison scripts, all 240 shapes / 480 operator metrics, raw measurements,
+numerical-reference records and the final 2D/3D figures in PNG/SVG/PDF.
+Throughput and allocated/reserved/sampled-NVML peak memory are retained
+together, including slower cases and the isolated eqx OOM.
+
+The directory includes batch templates for scanning, reporting and rendering.
+These benchmark files are kept outside the installed library package.
+[Exact qualified library dependencies](docs/runtime_constraints.txt) and
+[benchmark dependencies](benchmarks/eqx/requirements-qualified.txt) record the
+reproduction environment. General API tests, older versions, superseded
+experiments, build products and compiler caches remain in the separate archive.

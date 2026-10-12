@@ -1,0 +1,37 @@
+{
+  "status": "ok",
+  "source_version": "0.1.5",
+  "export_and_render": {
+    "job_id": "90920",
+    "partition": "GPU-A100",
+    "node": "XHPC-A100",
+    "exit_code": "0:0",
+    "original_records_selected": 780,
+    "compared_metric_rows": 480,
+    "numeric_measurements_unchanged": true,
+    "rendered_metric_rows": 480,
+    "audited_displayed_cells": 6592,
+    "pending_shapes": 0
+  },
+  "gpu_script_portability": {
+    "job_id": "90921",
+    "partition": "GPU-A100",
+    "node": "XHPC-A100",
+    "exit_code": "0:0",
+    "N": 37,
+    "cases": [
+      {"C": 32, "m_max": 1, "parity": "canonical"},
+      {"C": 17, "m_max": 3, "parity": "full"},
+      {"C": 32, "m_max": 6, "parity": "full"}
+    ],
+    "successful_records": 12,
+    "checked": [
+      "candidate output, both input gradients and every path weight against the mathematical reference",
+      "eqx native, metadata-adapted and compiled output/VJP",
+      "paired AB/BA timing",
+      "isolated allocated and reserved peak memory",
+      "sampled NVML process memory"
+    ]
+  },
+  "scope": "The small-N checks validate relocated scripts. Published performance figures and the complete matrix retain the original full all-N measurements."
+}

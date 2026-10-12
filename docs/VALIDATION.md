@@ -24,5 +24,7 @@ Python modules matched the previously qualified 0.1.5 wheel. Seven fresh
 installed public API checks passed against the mathematical reference, with
 zero reported output, input-gradient and path-weight-gradient differences.
 The original 73 API contracts, 60 maximum-N reference families and complete
-480-metric scan remain the numerical evidence in the separate release archive.
+480-metric scan remain the numerical evidence. Current eqx measurement and
+reference records are included in [benchmarks/eqx](../benchmarks/eqx/README.md);
+general API-contract scripts and original release builds remain in the archive.
 See [release layout and reproduction](RELEASE.md).

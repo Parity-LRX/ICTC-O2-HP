@@ -1,0 +1,4 @@
+# Preserve the original generated SVG and CSV bytes. Their exporter formatting
+# is valid; source code and authored documentation retain normal whitespace checks.
+benchmarks/eqx/figures/*.svg -whitespace
+benchmarks/eqx/**/*.csv whitespace=cr-at-eol

@@ -4,5 +4,7 @@ third-party license grant is implied by this repository.
 The Cartesian O(2) mathematics and tensor-product implementation were extracted
 from the separately qualified O(2) engineering task dated 2026-10-11.
 EquivariantX is an external benchmark comparator and is not included in this
-package. Benchmark data, job scripts and generated artifacts are archived
-separately from this source repository.
+package. Current comparison scripts, recorded results and final figures are
+included under benchmarks/eqx but excluded from the installed library package.
+Historical experiments, general tests, job logs and compiler caches remain
+in a separate private archive.

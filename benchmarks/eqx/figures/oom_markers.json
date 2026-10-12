@@ -1,0 +1,304 @@
+[
+  {
+    "view": "sheets",
+    "mode": "forward_vjp",
+    "parity": "full",
+    "quantity": "throughput",
+    "source_failures": [
+      {
+        "N": 131072,
+        "C": 256,
+        "m_max": 6
+      }
+    ],
+    "vertices": [
+      [
+        5.0,
+        3.0,
+        7.0
+      ],
+      [
+        6.0,
+        3.0,
+        7.0
+      ],
+      [
+        6.0,
+        3.0,
+        8.0
+      ],
+      [
+        5.0,
+        3.0,
+        8.0
+      ]
+    ],
+    "ratio": null,
+    "style": "white diagonal hatch"
+  },
+  {
+    "view": "sheets",
+    "mode": "forward_vjp",
+    "parity": "full",
+    "quantity": "allocated",
+    "source_failures": [
+      {
+        "N": 131072,
+        "C": 256,
+        "m_max": 6
+      }
+    ],
+    "vertices": [
+      [
+        5.0,
+        3.0,
+        7.0
+      ],
+      [
+        6.0,
+        3.0,
+        7.0
+      ],
+      [
+        6.0,
+        3.0,
+        8.0
+      ],
+      [
+        5.0,
+        3.0,
+        8.0
+      ]
+    ],
+    "ratio": null,
+    "style": "white diagonal hatch"
+  },
+  {
+    "view": "connected",
+    "plane": "xy",
+    "mode": "forward_vjp",
+    "parity": "full",
+    "quantity": "throughput",
+    "source_failures": [
+      {
+        "C": 256,
+        "N": 131072,
+        "m_max": 6
+      }
+    ],
+    "vertices": [
+      [
+        5.0,
+        2.0,
+        8.0
+      ],
+      [
+        6.0,
+        2.0,
+        8.0
+      ],
+      [
+        6.0,
+        3.0,
+        8.0
+      ],
+      [
+        5.0,
+        3.0,
+        8.0
+      ]
+    ],
+    "ratio": null,
+    "style": "white diagonal hatch"
+  },
+  {
+    "view": "connected",
+    "plane": "xz",
+    "mode": "forward_vjp",
+    "parity": "full",
+    "quantity": "throughput",
+    "source_failures": [
+      {
+        "N": 131072,
+        "C": 256,
+        "m_max": 6
+      }
+    ],
+    "vertices": [
+      [
+        5.0,
+        3.0,
+        7.0
+      ],
+      [
+        6.0,
+        3.0,
+        7.0
+      ],
+      [
+        6.0,
+        3.0,
+        8.0
+      ],
+      [
+        5.0,
+        3.0,
+        8.0
+      ]
+    ],
+    "ratio": null,
+    "style": "white diagonal hatch"
+  },
+  {
+    "view": "connected",
+    "plane": "yz",
+    "mode": "forward_vjp",
+    "parity": "full",
+    "quantity": "throughput",
+    "source_failures": [
+      {
+        "m_max": 6,
+        "C": 256,
+        "N": 131072
+      }
+    ],
+    "vertices": [
+      [
+        6.0,
+        2.0,
+        7.0
+      ],
+      [
+        6.0,
+        3.0,
+        7.0
+      ],
+      [
+        6.0,
+        3.0,
+        8.0
+      ],
+      [
+        6.0,
+        2.0,
+        8.0
+      ]
+    ],
+    "ratio": null,
+    "style": "white diagonal hatch"
+  },
+  {
+    "view": "connected",
+    "plane": "xy",
+    "mode": "forward_vjp",
+    "parity": "full",
+    "quantity": "allocated",
+    "source_failures": [
+      {
+        "C": 256,
+        "N": 131072,
+        "m_max": 6
+      }
+    ],
+    "vertices": [
+      [
+        5.0,
+        2.0,
+        8.0
+      ],
+      [
+        6.0,
+        2.0,
+        8.0
+      ],
+      [
+        6.0,
+        3.0,
+        8.0
+      ],
+      [
+        5.0,
+        3.0,
+        8.0
+      ]
+    ],
+    "ratio": null,
+    "style": "white diagonal hatch"
+  },
+  {
+    "view": "connected",
+    "plane": "xz",
+    "mode": "forward_vjp",
+    "parity": "full",
+    "quantity": "allocated",
+    "source_failures": [
+      {
+        "N": 131072,
+        "C": 256,
+        "m_max": 6
+      }
+    ],
+    "vertices": [
+      [
+        5.0,
+        3.0,
+        7.0
+      ],
+      [
+        6.0,
+        3.0,
+        7.0
+      ],
+      [
+        6.0,
+        3.0,
+        8.0
+      ],
+      [
+        5.0,
+        3.0,
+        8.0
+      ]
+    ],
+    "ratio": null,
+    "style": "white diagonal hatch"
+  },
+  {
+    "view": "connected",
+    "plane": "yz",
+    "mode": "forward_vjp",
+    "parity": "full",
+    "quantity": "allocated",
+    "source_failures": [
+      {
+        "m_max": 6,
+        "C": 256,
+        "N": 131072
+      }
+    ],
+    "vertices": [
+      [
+        6.0,
+        2.0,
+        7.0
+      ],
+      [
+        6.0,
+        3.0,
+        7.0
+      ],
+      [
+        6.0,
+        3.0,
+        8.0
+      ],
+      [
+        6.0,
+        2.0,
+        8.0
+      ]
+    ],
+    "ratio": null,
+    "style": "white diagonal hatch"
+  }
+]

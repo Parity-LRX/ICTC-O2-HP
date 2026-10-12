@@ -1,0 +1,148 @@
+{
+  "status": "ok",
+  "mode": "memory",
+  "channels": 128,
+  "order": 2,
+  "parity": "full",
+  "edges": 65536,
+  "torch": "2.7.1+cu128",
+  "gpu": "NVIDIA A100-SXM4-40GB",
+  "job_id": "90880",
+  "script": "/public/home/sps-xia/rxlin/ictc_o2_hp_20261011/harness_snapshots/high_N_v015_m1_6_20261012/scripts/bench_fixed_strategy.py",
+  "dtype": "FP32",
+  "tf32": false,
+  "amp": false,
+  "package_path": "/public/home/sps-xia/rxlin/ictc_o2_hp_20261011/high_N_20261012/installed_v0_1_5/ictc_o2_hp/__init__.py",
+  "package_version": "0.1.5",
+  "candidate_library": "ICTC-O2 HP",
+  "reference_library": "EquivariantX",
+  "strategy": "representation-dependent only; no positive-N dispatch",
+  "weight_reduction": "fixed 1024x32 chunk stage and fixed 32x32 final stage",
+  "low_order_fused": "auto",
+  "backward_input_fused": "auto",
+  "weight_channel_tile": 64,
+  "weight_edge_tile": "auto",
+  "compact_weight_edge_tile": 16,
+  "weight_schedule": "grouped",
+  "weight_warps": 4,
+  "forward_deferred_setting": "auto",
+  "qualification": "independent wheel gates plus streamed large-N reference checks",
+  "layout_conversion": "preparation only; each operator consumes its public native packed layout",
+  "cotangent": "same sample; J maps the second copy to EquivariantX canonical basis, then component/channel transpose",
+  "gpu_uuid": "5dce2724-2ce2-55ed-a1e1-c1783fbee235",
+  "implementations": {
+    "candidate": {
+      "paths": 19,
+      "width": 1280,
+      "parameters": 3840,
+      "effective_weight_schedule": "grouped",
+      "package_version": "0.1.5",
+      "package_path": "/public/home/sps-xia/rxlin/ictc_o2_hp_20261011/high_N_20261012/installed_v0_1_5/ictc_o2_hp/__init__.py"
+    }
+  },
+  "timing": {
+    "forward": {
+      "candidate": {
+        "median_ms": 1.1223039627075195,
+        "q25_ms": 1.1161600351333618,
+        "q75_ms": 1.1307520270347595,
+        "min_ms": 1.1028480529785156,
+        "max_ms": 1.6076799631118774,
+        "samples_ms": [
+          1.6076799631118774,
+          1.154047966003418,
+          1.1304960250854492,
+          1.146880030632019,
+          1.1253759860992432,
+          1.1110399961471558,
+          1.1315200328826904,
+          1.1253759860992432,
+          1.117184042930603,
+          1.1212799549102783,
+          1.124351978302002,
+          1.1028480529785156,
+          1.120255947113037,
+          1.1110399961471558,
+          1.1233279705047607,
+          1.1130880117416382,
+          1.1182080507278442,
+          1.1192320585250854
+        ],
+        "rows_per_second": 58394162.52429214,
+        "peak_allocated_MiB": 1280.0859375,
+        "peak_reserved_MiB": 1282.0,
+        "sampled_process_peak_MiB": 1772.0,
+        "process_memory_samples": 2,
+        "process_memory_requested_interval_s": 0.05,
+        "process_memory_observed_max_interval_s": 0.09210025705397129,
+        "process_memory_sampling_errors": [],
+        "process_memory_definition": "sampled NVML process memory; includes context/cache, not an exact transient peak"
+      },
+      "order_schedule": [
+        [
+          "candidate"
+        ],
+        [
+          "candidate"
+        ],
+        [
+          "candidate"
+        ]
+      ]
+    },
+    "forward_vjp": {
+      "candidate": {
+        "median_ms": 7.986176013946533,
+        "q25_ms": 7.900416135787964,
+        "q75_ms": 7.998463988304138,
+        "min_ms": 7.418879985809326,
+        "max_ms": 8.554495811462402,
+        "samples_ms": [
+          8.554495811462402,
+          8.028160095214844,
+          7.99129581451416,
+          8.00153636932373,
+          8.00870418548584,
+          7.986176013946533,
+          7.993343830108643,
+          7.997439861297607,
+          7.986176013946533,
+          7.983104228973389,
+          7.981056213378906,
+          7.99129581451416,
+          7.976960182189941,
+          7.986176013946533,
+          7.670783996582031,
+          7.4403839111328125,
+          7.423999786376953,
+          7.418879985809326
+        ],
+        "rows_per_second": 8206180.265192281,
+        "peak_allocated_MiB": 1920.1005859375,
+        "peak_reserved_MiB": 1982.0,
+        "sampled_process_peak_MiB": 2472.0,
+        "process_memory_samples": 3,
+        "process_memory_requested_interval_s": 0.05,
+        "process_memory_observed_max_interval_s": 0.12023861892521381,
+        "process_memory_sampling_errors": [],
+        "process_memory_definition": "sampled NVML process memory; includes context/cache, not an exact transient peak"
+      },
+      "order_schedule": [
+        [
+          "candidate"
+        ],
+        [
+          "candidate"
+        ],
+        [
+          "candidate"
+        ]
+      ]
+    }
+  },
+  "first_calls_s": {
+    "candidate/forward": 1.5351847428828478,
+    "candidate/forward_vjp": 0.13399972580373287
+  },
+  "phase": "forward_vjp/measurement"
+}

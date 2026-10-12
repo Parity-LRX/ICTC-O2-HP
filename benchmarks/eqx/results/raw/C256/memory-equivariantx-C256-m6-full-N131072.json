@@ -1,0 +1,180 @@
+{
+  "status": "oom",
+  "mode": "memory",
+  "channels": 256,
+  "order": 6,
+  "parity": "full",
+  "edges": 131072,
+  "torch": "2.7.1+cu128",
+  "gpu": "NVIDIA A100-SXM4-40GB",
+  "job_id": "90865",
+  "script": "/public/home/sps-xia/rxlin/ictc_o2_hp_20261011/harness_snapshots/high_N_v015_m1_6_20261012/scripts/bench_fixed_strategy.py",
+  "dtype": "FP32",
+  "tf32": false,
+  "amp": false,
+  "package_path": "/public/home/sps-xia/rxlin/ictc_o2_hp_20261011/high_N_20261012/installed_v0_1_5/ictc_o2_hp/__init__.py",
+  "package_version": "0.1.5",
+  "candidate_library": "ICTC-O2 HP",
+  "reference_library": "EquivariantX",
+  "strategy": "representation-dependent only; no positive-N dispatch",
+  "weight_reduction": "fixed 1024x32 chunk stage and fixed 32x32 final stage",
+  "low_order_fused": "auto",
+  "backward_input_fused": "auto",
+  "weight_channel_tile": 64,
+  "weight_edge_tile": "auto",
+  "compact_weight_edge_tile": 16,
+  "weight_schedule": "grouped",
+  "weight_warps": 4,
+  "forward_deferred_setting": "auto",
+  "qualification": "independent wheel gates plus streamed large-N reference checks",
+  "layout_conversion": "preparation only; each operator consumes its public native packed layout",
+  "cotangent": "same sample; J maps the second copy to EquivariantX canonical basis, then component/channel transpose",
+  "gpu_uuid": "5dce2724-2ce2-55ed-a1e1-c1783fbee235",
+  "implementations": {
+    "equivariantx": {
+      "width": 6656,
+      "parameters": 39424,
+      "paths": 85,
+      "instructions": 154,
+      "representation": [
+        {
+          "label": "0e",
+          "irrep": "0ee",
+          "multiplicity": 256
+        },
+        {
+          "label": "0o",
+          "irrep": "0oe",
+          "multiplicity": 256
+        },
+        {
+          "label": "1m/copy0",
+          "irrep": "1me",
+          "multiplicity": 256
+        },
+        {
+          "label": "1m/copy1",
+          "irrep": "1me",
+          "multiplicity": 256
+        },
+        {
+          "label": "2m/copy0",
+          "irrep": "2me",
+          "multiplicity": 256
+        },
+        {
+          "label": "2m/copy1",
+          "irrep": "2me",
+          "multiplicity": 256
+        },
+        {
+          "label": "3m/copy0",
+          "irrep": "3me",
+          "multiplicity": 256
+        },
+        {
+          "label": "3m/copy1",
+          "irrep": "3me",
+          "multiplicity": 256
+        },
+        {
+          "label": "4m/copy0",
+          "irrep": "4me",
+          "multiplicity": 256
+        },
+        {
+          "label": "4m/copy1",
+          "irrep": "4me",
+          "multiplicity": 256
+        },
+        {
+          "label": "5m/copy0",
+          "irrep": "5me",
+          "multiplicity": 256
+        },
+        {
+          "label": "5m/copy1",
+          "irrep": "5me",
+          "multiplicity": 256
+        },
+        {
+          "label": "6m/copy0",
+          "irrep": "6me",
+          "multiplicity": 256
+        },
+        {
+          "label": "6m/copy1",
+          "irrep": "6me",
+          "multiplicity": 256
+        }
+      ],
+      "connection_mode": "uuu",
+      "path_normalization": "none",
+      "compile_adapter": true,
+      "reference_paper": "Through the Looking-Glass",
+      "reference_library": "EquivariantX",
+      "upstream_revision": "ac3aed47f5b35d49f1f237912150f0d9dd759ae7",
+      "operator_source": "/public/home/sps-xia/rxlin/ictc_o2_optimization_20261011/baseline/latest_upstream/eqx/o2/tensor_product.py"
+    }
+  },
+  "timing": {
+    "forward": {
+      "equivariantx": {
+        "median_ms": 13.282815933227539,
+        "q25_ms": 13.213951826095581,
+        "q75_ms": 13.34988784790039,
+        "min_ms": 13.17683219909668,
+        "max_ms": 14.178303718566895,
+        "samples_ms": [
+          14.178303718566895,
+          13.214719772338867,
+          13.18502426147461,
+          13.17683219909668,
+          13.198335647583008,
+          13.211647987365723,
+          13.282303810119629,
+          13.282303810119629,
+          13.28332805633545,
+          13.27513599395752,
+          13.28435230255127,
+          13.272064208984375,
+          13.34988784790039,
+          13.34988784790039,
+          13.360128402709961,
+          13.346816062927246,
+          13.352959632873535,
+          13.34886360168457
+        ],
+        "rows_per_second": 9867787.121262271,
+        "peak_allocated_MiB": 13312.17578125,
+        "peak_reserved_MiB": 13314.0,
+        "sampled_process_peak_MiB": 13804.0,
+        "process_memory_samples": 4,
+        "process_memory_requested_interval_s": 0.05,
+        "process_memory_observed_max_interval_s": 0.15840643411502242,
+        "process_memory_sampling_errors": [],
+        "process_memory_definition": "sampled NVML process memory; includes context/cache, not an exact transient peak"
+      },
+      "order_schedule": [
+        [
+          "equivariantx"
+        ],
+        [
+          "equivariantx"
+        ],
+        [
+          "equivariantx"
+        ]
+      ]
+    }
+  },
+  "first_calls_s": {
+    "equivariantx/forward": 35.718070645816624
+  },
+  "phase": "forward_vjp/compile_warmup",
+  "error": "OutOfMemoryError('CUDA out of memory. Tried to allocate 256.00 MiB. GPU 0 has a total capacity of 39.38 GiB of which 131.88 MiB is free. Including non-PyTorch memory, this process has 39.23 GiB memory in use. Of the allocated memory 38.75 GiB is allocated by PyTorch, and 1.82 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)')",
+  "traceback": "Traceback (most recent call last):\n  File \"/public/home/sps-xia/rxlin/ictc_o2_hp_20261011/harness_snapshots/high_N_v015_m1_6_20261012/scripts/bench_fixed_strategy.py\", line 168, in main\n    run(compiled[name], inputs[name], cot[name], metric)\n  File \"/public/home/sps-xia/rxlin/ictc_o2_hp_20261011/harness_snapshots/high_N_v015_m1_6_20261012/scripts/bench_fixed_strategy.py\", line 89, in run\n    ys, grads = worker.run_vjp(module, inputs, cot)\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/public/home/sps-xia/rxlin/ictc_o2_hp_20261011/harness_snapshots/high_N_v015_m1_6_20261012/scripts/support.py\", line 39, in run_vjp\n    ys = leaves(module(*inputs))\n                ^^^^^^^^^^^^^^^\n  File \"/public/home/sps-xia/rxlin/.conda/envs/mff/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 1751, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/public/home/sps-xia/rxlin/.conda/envs/mff/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 1762, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/public/home/sps-xia/rxlin/.conda/envs/mff/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py\", line 655, in _fn\n    return fn(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/public/home/sps-xia/rxlin/.conda/envs/mff/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 1751, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/public/home/sps-xia/rxlin/.conda/envs/mff/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 1762, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/public/home/sps-xia/rxlin/ictc_o2_hp_20261011/high_N_20261012/cache/v015_90865/generated/forward.py\", line 1, in forward\n    # Derived from the latest EquivariantX TensorProduct.forward.\n  File \"/public/home/sps-xia/rxlin/.conda/envs/mff/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py\", line 838, in _fn\n    return fn(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/public/home/sps-xia/rxlin/.conda/envs/mff/lib/python3.11/site-packages/torch/_functorch/aot_autograd.py\", line 1209, in forward\n    return compiled_fn(full_args)\n           ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/public/home/sps-xia/rxlin/.conda/envs/mff/lib/python3.11/site-packages/torch/_functorch/_aot_autograd/runtime_wrappers.py\", line 315, in runtime_wrapper\n    all_outs = call_func_at_runtime_with_args(\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/public/home/sps-xia/rxlin/.conda/envs/mff/lib/python3.11/site-packages/torch/_functorch/_aot_autograd/utils.py\", line 126, in call_func_at_runtime_with_args\n    out = normalize_as_list(f(args))\n                            ^^^^^^^\n  File \"/public/home/sps-xia/rxlin/.conda/envs/mff/lib/python3.11/site-packages/torch/_functorch/_aot_autograd/utils.py\", line 100, in g\n    return f(*args)\n           ^^^^^^^^\n  File \"/public/home/sps-xia/rxlin/.conda/envs/mff/lib/python3.11/site-packages/torch/autograd/function.py\", line 575, in apply\n    return super().apply(*args, **kwargs)  # type: ignore[misc]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/public/home/sps-xia/rxlin/.conda/envs/mff/lib/python3.11/site-packages/torch/_functorch/_aot_autograd/runtime_wrappers.py\", line 1937, in forward\n    fw_outs = call_func_at_runtime_with_args(\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/public/home/sps-xia/rxlin/.conda/envs/mff/lib/python3.11/site-packages/torch/_functorch/_aot_autograd/utils.py\", line 126, in call_func_at_runtime_with_args\n    out = normalize_as_list(f(args))\n                            ^^^^^^^\n  File \"/public/home/sps-xia/rxlin/.conda/envs/mff/lib/python3.11/site-packages/torch/_functorch/_aot_autograd/runtime_wrappers.py\", line 495, in wrapper\n    return compiled_fn(runtime_args)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/public/home/sps-xia/rxlin/.conda/envs/mff/lib/python3.11/site-packages/torch/_functorch/_aot_autograd/runtime_wrappers.py\", line 689, in inner_fn\n    outs = compiled_fn(args)\n           ^^^^^^^^^^^^^^^^^\n  File \"/public/home/sps-xia/rxlin/.conda/envs/mff/lib/python3.11/site-packages/torch/_inductor/output_code.py\", line 460, in __call__\n    return self.current_callable(inputs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/public/home/sps-xia/rxlin/.conda/envs/mff/lib/python3.11/site-packages/torch/_inductor/utils.py\", line 2404, in run\n    return model(new_inputs)\n           ^^^^^^^^^^^^^^^^^\n  File \"/public/home/sps-xia/rxlin/ictc_o2_hp_20261011/high_N_20261012/cache/v015_90865/inductor/w7/cw7hfhybfa2gufwyn3dseurry7rlwhfcuw52tr3jb44rem7lv7pl.py\", line 3900, in call\n    buf84 = empty_strided_cuda((131072, 512), (512, 1), torch.float32)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntorch.OutOfMemoryError: CUDA out of memory. Tried to allocate 256.00 MiB. GPU 0 has a total capacity of 39.38 GiB of which 131.88 MiB is free. Including non-PyTorch memory, this process has 39.23 GiB memory in use. Of the allocated memory 38.75 GiB is allocated by PyTorch, and 1.82 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)\n",
+  "failure_peak_allocated_MiB": 39680.17578125,
+  "failure_peak_reserved_MiB": 39722.0,
+  "failure_is_successful_measurement": false
+}

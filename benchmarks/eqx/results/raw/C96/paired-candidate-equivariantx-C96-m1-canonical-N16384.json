@@ -1,0 +1,213 @@
+{
+  "status": "ok",
+  "mode": "paired",
+  "channels": 96,
+  "order": 1,
+  "parity": "canonical",
+  "edges": 16384,
+  "torch": "2.7.1+cu128",
+  "gpu": "NVIDIA A100-SXM4-40GB",
+  "job_id": "90888",
+  "script": "/public/home/sps-xia/rxlin/ictc_o2_hp_20261011/harness_snapshots/high_N_v015_m1_6_20261012/scripts/bench_fixed_strategy.py",
+  "dtype": "FP32",
+  "tf32": false,
+  "amp": false,
+  "package_path": "/public/home/sps-xia/rxlin/ictc_o2_hp_20261011/high_N_20261012/installed_v0_1_5/ictc_o2_hp/__init__.py",
+  "package_version": "0.1.5",
+  "candidate_library": "ICTC-O2 HP",
+  "reference_library": "EquivariantX",
+  "strategy": "representation-dependent only; no positive-N dispatch",
+  "weight_reduction": "fixed 1024x32 chunk stage and fixed 32x32 final stage",
+  "low_order_fused": "auto",
+  "backward_input_fused": "auto",
+  "weight_channel_tile": 64,
+  "weight_edge_tile": "auto",
+  "compact_weight_edge_tile": 16,
+  "weight_schedule": "grouped",
+  "weight_warps": 4,
+  "forward_deferred_setting": "auto",
+  "qualification": "independent wheel gates plus streamed large-N reference checks",
+  "layout_conversion": "preparation only; each operator consumes its public native packed layout",
+  "cotangent": "same sample; J maps the second copy to EquivariantX canonical basis, then component/channel transpose",
+  "gpu_uuid": "5dce2724-2ce2-55ed-a1e1-c1783fbee235",
+  "implementations": {
+    "candidate": {
+      "paths": 4,
+      "width": 288,
+      "parameters": 384,
+      "effective_weight_schedule": "grouped",
+      "package_version": "0.1.5",
+      "package_path": "/public/home/sps-xia/rxlin/ictc_o2_hp_20261011/high_N_20261012/installed_v0_1_5/ictc_o2_hp/__init__.py"
+    },
+    "equivariantx": {
+      "width": 288,
+      "parameters": 384,
+      "paths": 4,
+      "instructions": 4,
+      "representation": [
+        {
+          "label": "0e",
+          "irrep": "0ee",
+          "multiplicity": 96
+        },
+        {
+          "label": "1m/copy0",
+          "irrep": "1me",
+          "multiplicity": 96
+        }
+      ],
+      "connection_mode": "uuu",
+      "path_normalization": "none",
+      "compile_adapter": true,
+      "reference_paper": "Through the Looking-Glass",
+      "reference_library": "EquivariantX",
+      "upstream_revision": "ac3aed47f5b35d49f1f237912150f0d9dd759ae7",
+      "operator_source": "/public/home/sps-xia/rxlin/ictc_o2_optimization_20261011/baseline/latest_upstream/eqx/o2/tensor_product.py"
+    }
+  },
+  "timing": {
+    "forward": {
+      "candidate": {
+        "median_ms": 0.09113600105047226,
+        "q25_ms": 0.09011200070381165,
+        "q75_ms": 0.09395200200378895,
+        "min_ms": 0.08908800035715103,
+        "max_ms": 0.1454080045223236,
+        "samples_ms": [
+          0.1454080045223236,
+          0.09830400347709656,
+          0.09625600278377533,
+          0.09728000313043594,
+          0.09318400174379349,
+          0.09216000139713287,
+          0.09113600105047226,
+          0.09216000139713287,
+          0.09011200070381165,
+          0.09011200070381165,
+          0.09011200070381165,
+          0.09113600105047226,
+          0.09113600105047226,
+          0.08908800035715103,
+          0.09011200070381165,
+          0.08908800035715103,
+          0.09011200070381165,
+          0.08908800035715103
+        ],
+        "rows_per_second": 179775278.82671016
+      },
+      "equivariantx": {
+        "median_ms": 0.08806400001049042,
+        "q25_ms": 0.0870399996638298,
+        "q75_ms": 0.0908800009638071,
+        "min_ms": 0.08601599931716919,
+        "max_ms": 0.1013759970664978,
+        "samples_ms": [
+          0.1013759970664978,
+          0.0942080020904541,
+          0.0942080020904541,
+          0.09318400174379349,
+          0.09011200070381165,
+          0.08908800035715103,
+          0.08806400001049042,
+          0.08806400001049042,
+          0.0870399996638298,
+          0.0870399996638298,
+          0.08601599931716919,
+          0.08806400001049042,
+          0.08806400001049042,
+          0.0870399996638298,
+          0.08601599931716919,
+          0.08601599931716919,
+          0.08806400001049042,
+          0.0870399996638298
+        ],
+        "rows_per_second": 186046511.60574463
+      },
+      "order_schedule": [
+        [
+          "candidate",
+          "equivariantx"
+        ],
+        [
+          "equivariantx",
+          "candidate"
+        ]
+      ]
+    },
+    "forward_vjp": {
+      "candidate": {
+        "median_ms": 0.42291200160980225,
+        "q25_ms": 0.4177919924259186,
+        "q75_ms": 0.42931199073791504,
+        "min_ms": 0.4106239974498749,
+        "max_ms": 0.5478399991989136,
+        "samples_ms": [
+          0.5478399991989136,
+          0.44441598653793335,
+          0.4270080029964447,
+          0.43929600715637207,
+          0.4280320107936859,
+          0.43007999658584595,
+          0.4177919924259186,
+          0.4188160002231598,
+          0.4188160002231598,
+          0.42905598878860474,
+          0.4177919924259186,
+          0.42291200160980225,
+          0.42291200160980225,
+          0.4116480052471161,
+          0.4106239974498749,
+          0.4177919924259186,
+          0.4280320107936859,
+          0.4188160002231598
+        ],
+        "rows_per_second": 38740919.94938611
+      },
+      "equivariantx": {
+        "median_ms": 0.4684799909591675,
+        "q25_ms": 0.4618239998817444,
+        "q75_ms": 0.4764159917831421,
+        "min_ms": 0.4546560049057007,
+        "max_ms": 0.4986880123615265,
+        "samples_ms": [
+          0.4986880123615265,
+          0.4792320132255554,
+          0.4689919948577881,
+          0.4833280146121979,
+          0.4761599898338318,
+          0.47411200404167175,
+          0.45875200629234314,
+          0.45977601408958435,
+          0.47308799624443054,
+          0.46489599347114563,
+          0.4700160026550293,
+          0.46489599347114563,
+          0.477183997631073,
+          0.46592000126838684,
+          0.4618239998817444,
+          0.4546560049057007,
+          0.4679679870605469,
+          0.4618239998817444
+        ],
+        "rows_per_second": 34972678.27053904
+      },
+      "order_schedule": [
+        [
+          "candidate",
+          "equivariantx"
+        ],
+        [
+          "equivariantx",
+          "candidate"
+        ]
+      ]
+    }
+  },
+  "first_calls_s": {
+    "candidate/forward": 1.7380960411392152,
+    "equivariantx/forward": 0.13297284208238125,
+    "candidate/forward_vjp": 0.12089985981583595,
+    "equivariantx/forward_vjp": 0.173913789447397
+  },
+  "phase": "forward_vjp/measurement"
+}

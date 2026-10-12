@@ -1,0 +1,2330 @@
+{
+  "status": "ok",
+  "displayed_cells": 6592,
+  "measured_rows": 480,
+  "source_version": "0.1.5",
+  "m_max": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "N": [
+    16384,
+    32768,
+    65536,
+    131072
+  ],
+  "C": [
+    32,
+    64,
+    96,
+    128,
+    256
+  ],
+  "pending_shapes": [],
+  "qualification_families": 60,
+  "display_units": {
+    "throughput": "\u00d7",
+    "allocated": "\u00d7",
+    "reserved": "\u00d7",
+    "process": "\u00d7",
+    "absolute_memory": "GiB"
+  },
+  "ratio_definitions": {
+    "throughput": "ICTC rows/s / EQX rows/s",
+    "memory": "EQX peak / ICTC peak",
+    "neutral": 1,
+    "favours_ICTC": ">1"
+  },
+  "surface_layers": 32,
+  "surface_method": "bounded bilinear colour interpolation over m_max and log2(C), at constant N; four measured corners required",
+  "surface_axes": {
+    "x": "m_max",
+    "y": "log2(N/16384), ticks in 1024 rows",
+    "z": "log2(C), ticks show actual C",
+    "colour": "throughput ICTC/EQX; memory EQX/ICTC"
+  },
+  "connected_faces": 24,
+  "connected_slices": {
+    "C": 256,
+    "N": 131072,
+    "m_max": 6
+  },
+  "figure_comparison": "ICTC-O2 HP vs eqx",
+  "figure_headers": {
+    "overview_forward_N131072": {
+      "title": "ICTC-O2 HP vs eqx: throughput and peak memory",
+      "subtitle": "O(2) tensor products \u00b7 Forward \u00b7 N = 131,072 \u00b7 C = 32\u2013256 \u00b7 m_max = 1\u20136",
+      "horizontal_alignment": "center",
+      "x": 0.5,
+      "title_size": 9.5,
+      "subtitle_size": 7.3
+    },
+    "N_landscape_forward_C32": {
+      "title": "ICTC-O2 HP vs eqx: throughput and peak memory",
+      "subtitle": "O(2) tensor products \u00b7 Forward \u00b7 C = 32 \u00b7 N = 16,384\u2013131,072 \u00b7 m_max = 1\u20136",
+      "horizontal_alignment": "center",
+      "x": 0.5,
+      "title_size": 9.5,
+      "subtitle_size": 7.3
+    },
+    "N_landscape_forward_C64": {
+      "title": "ICTC-O2 HP vs eqx: throughput and peak memory",
+      "subtitle": "O(2) tensor products \u00b7 Forward \u00b7 C = 64 \u00b7 N = 16,384\u2013131,072 \u00b7 m_max = 1\u20136",
+      "horizontal_alignment": "center",
+      "x": 0.5,
+      "title_size": 9.5,
+      "subtitle_size": 7.3
+    },
+    "N_landscape_forward_C96": {
+      "title": "ICTC-O2 HP vs eqx: throughput and peak memory",
+      "subtitle": "O(2) tensor products \u00b7 Forward \u00b7 C = 96 \u00b7 N = 16,384\u2013131,072 \u00b7 m_max = 1\u20136",
+      "horizontal_alignment": "center",
+      "x": 0.5,
+      "title_size": 9.5,
+      "subtitle_size": 7.3
+    },
+    "N_landscape_forward_C128": {
+      "title": "ICTC-O2 HP vs eqx: throughput and peak memory",
+      "subtitle": "O(2) tensor products \u00b7 Forward \u00b7 C = 128 \u00b7 N = 16,384\u2013131,072 \u00b7 m_max = 1\u20136",
+      "horizontal_alignment": "center",
+      "x": 0.5,
+      "title_size": 9.5,
+      "subtitle_size": 7.3
+    },
+    "N_landscape_forward_C256": {
+      "title": "ICTC-O2 HP vs eqx: throughput and peak memory",
+      "subtitle": "O(2) tensor products \u00b7 Forward \u00b7 C = 256 \u00b7 N = 16,384\u2013131,072 \u00b7 m_max = 1\u20136",
+      "horizontal_alignment": "center",
+      "x": 0.5,
+      "title_size": 9.5,
+      "subtitle_size": 7.3
+    },
+    "N_channel_layers_forward": {
+      "title": "ICTC-O2 HP vs eqx: throughput and peak memory",
+      "subtitle": "O(2) tensor products \u00b7 Forward \u00b7 N = 16,384\u2013131,072 \u00b7 C = 32\u2013256 \u00b7 m_max = 1\u20136",
+      "horizontal_alignment": "center",
+      "x": 0.5,
+      "title_size": 9.5,
+      "subtitle_size": 7.3
+    },
+    "N_channel_connected_forward": {
+      "title": "ICTC-O2 HP vs eqx: throughput and peak memory",
+      "subtitle": "O(2) tensor products \u00b7 Forward \u00b7 N = 16,384\u2013131,072 \u00b7 C = 32\u2013256 \u00b7 m_max = 1\u20136",
+      "horizontal_alignment": "center",
+      "x": 0.5,
+      "title_size": 9.5,
+      "subtitle_size": 7.3
+    },
+    "all_N_throughput_forward": {
+      "title": "ICTC-O2 HP vs eqx: throughput",
+      "subtitle": "O(2) tensor products \u00b7 Forward \u00b7 N = 16,384\u2013131,072 \u00b7 C = 32\u2013256 \u00b7 m_max = 1\u20136",
+      "horizontal_alignment": "center",
+      "x": 0.5,
+      "title_size": 9.5,
+      "subtitle_size": 7.3
+    },
+    "all_N_allocated_forward": {
+      "title": "ICTC-O2 HP vs eqx: allocated memory",
+      "subtitle": "O(2) tensor products \u00b7 Forward \u00b7 N = 16,384\u2013131,072 \u00b7 C = 32\u2013256 \u00b7 m_max = 1\u20136",
+      "horizontal_alignment": "center",
+      "x": 0.5,
+      "title_size": 9.5,
+      "subtitle_size": 7.3
+    },
+    "all_N_reserved_forward": {
+      "title": "ICTC-O2 HP vs eqx: reserved memory",
+      "subtitle": "O(2) tensor products \u00b7 Forward \u00b7 N = 16,384\u2013131,072 \u00b7 C = 32\u2013256 \u00b7 m_max = 1\u20136",
+      "horizontal_alignment": "center",
+      "x": 0.5,
+      "title_size": 9.5,
+      "subtitle_size": 7.3
+    },
+    "all_N_process_forward": {
+      "title": "ICTC-O2 HP vs eqx: nvml process memory",
+      "subtitle": "O(2) tensor products \u00b7 Forward \u00b7 N = 16,384\u2013131,072 \u00b7 C = 32\u2013256 \u00b7 m_max = 1\u20136",
+      "horizontal_alignment": "center",
+      "x": 0.5,
+      "title_size": 9.5,
+      "subtitle_size": 7.3
+    },
+    "all_N_absolute_allocated_forward_candidate": {
+      "title": "ICTC-O2 HP vs eqx: peak allocated memory",
+      "subtitle": "O(2) tensor products \u00b7 Forward \u00b7 ICTC-O2 HP \u00b7 N = 16,384\u2013131,072 \u00b7 C = 32\u2013256 \u00b7 m_max = 1\u20136",
+      "horizontal_alignment": "center",
+      "x": 0.5,
+      "title_size": 9.5,
+      "subtitle_size": 7.3
+    },
+    "all_N_absolute_allocated_forward_equivariantx": {
+      "title": "ICTC-O2 HP vs eqx: peak allocated memory",
+      "subtitle": "O(2) tensor products \u00b7 Forward \u00b7 eqx \u00b7 N = 16,384\u2013131,072 \u00b7 C = 32\u2013256 \u00b7 m_max = 1\u20136",
+      "horizontal_alignment": "center",
+      "x": 0.5,
+      "title_size": 9.5,
+      "subtitle_size": 7.3
+    },
+    "all_N_absolute_reserved_forward_candidate": {
+      "title": "ICTC-O2 HP vs eqx: peak reserved memory",
+      "subtitle": "O(2) tensor products \u00b7 Forward \u00b7 ICTC-O2 HP \u00b7 N = 16,384\u2013131,072 \u00b7 C = 32\u2013256 \u00b7 m_max = 1\u20136",
+      "horizontal_alignment": "center",
+      "x": 0.5,
+      "title_size": 9.5,
+      "subtitle_size": 7.3
+    },
+    "all_N_absolute_reserved_forward_equivariantx": {
+      "title": "ICTC-O2 HP vs eqx: peak reserved memory",
+      "subtitle": "O(2) tensor products \u00b7 Forward \u00b7 eqx \u00b7 N = 16,384\u2013131,072 \u00b7 C = 32\u2013256 \u00b7 m_max = 1\u20136",
+      "horizontal_alignment": "center",
+      "x": 0.5,
+      "title_size": 9.5,
+      "subtitle_size": 7.3
+    },
+    "overview_forward_vjp_N131072": {
+      "title": "ICTC-O2 HP vs eqx: throughput and peak memory",
+      "subtitle": "O(2) tensor products \u00b7 Forward + backward \u00b7 N = 131,072 \u00b7 C = 32\u2013256 \u00b7 m_max = 1\u20136",
+      "horizontal_alignment": "center",
+      "x": 0.5,
+      "title_size": 9.5,
+      "subtitle_size": 7.3
+    },
+    "N_landscape_forward_vjp_C32": {
+      "title": "ICTC-O2 HP vs eqx: throughput and peak memory",
+      "subtitle": "O(2) tensor products \u00b7 Forward + backward \u00b7 C = 32 \u00b7 N = 16,384\u2013131,072 \u00b7 m_max = 1\u20136",
+      "horizontal_alignment": "center",
+      "x": 0.5,
+      "title_size": 9.5,
+      "subtitle_size": 7.3
+    },
+    "N_landscape_forward_vjp_C64": {
+      "title": "ICTC-O2 HP vs eqx: throughput and peak memory",
+      "subtitle": "O(2) tensor products \u00b7 Forward + backward \u00b7 C = 64 \u00b7 N = 16,384\u2013131,072 \u00b7 m_max = 1\u20136",
+      "horizontal_alignment": "center",
+      "x": 0.5,
+      "title_size": 9.5,
+      "subtitle_size": 7.3
+    },
+    "N_landscape_forward_vjp_C96": {
+      "title": "ICTC-O2 HP vs eqx: throughput and peak memory",
+      "subtitle": "O(2) tensor products \u00b7 Forward + backward \u00b7 C = 96 \u00b7 N = 16,384\u2013131,072 \u00b7 m_max = 1\u20136",
+      "horizontal_alignment": "center",
+      "x": 0.5,
+      "title_size": 9.5,
+      "subtitle_size": 7.3
+    },
+    "N_landscape_forward_vjp_C128": {
+      "title": "ICTC-O2 HP vs eqx: throughput and peak memory",
+      "subtitle": "O(2) tensor products \u00b7 Forward + backward \u00b7 C = 128 \u00b7 N = 16,384\u2013131,072 \u00b7 m_max = 1\u20136",
+      "horizontal_alignment": "center",
+      "x": 0.5,
+      "title_size": 9.5,
+      "subtitle_size": 7.3
+    },
+    "N_landscape_forward_vjp_C256": {
+      "title": "ICTC-O2 HP vs eqx: throughput and peak memory",
+      "subtitle": "O(2) tensor products \u00b7 Forward + backward \u00b7 C = 256 \u00b7 N = 16,384\u2013131,072 \u00b7 m_max = 1\u20136",
+      "horizontal_alignment": "center",
+      "x": 0.5,
+      "title_size": 9.5,
+      "subtitle_size": 7.3
+    },
+    "N_channel_layers_forward_vjp": {
+      "title": "ICTC-O2 HP vs eqx: throughput and peak memory",
+      "subtitle": "O(2) tensor products \u00b7 Forward + backward \u00b7 N = 16,384\u2013131,072 \u00b7 C = 32\u2013256 \u00b7 m_max = 1\u20136",
+      "horizontal_alignment": "center",
+      "x": 0.5,
+      "title_size": 9.5,
+      "subtitle_size": 7.3
+    },
+    "N_channel_connected_forward_vjp": {
+      "title": "ICTC-O2 HP vs eqx: throughput and peak memory",
+      "subtitle": "O(2) tensor products \u00b7 Forward + backward \u00b7 N = 16,384\u2013131,072 \u00b7 C = 32\u2013256 \u00b7 m_max = 1\u20136",
+      "horizontal_alignment": "center",
+      "x": 0.5,
+      "title_size": 9.5,
+      "subtitle_size": 7.3
+    },
+    "all_N_throughput_forward_vjp": {
+      "title": "ICTC-O2 HP vs eqx: throughput",
+      "subtitle": "O(2) tensor products \u00b7 Forward + backward \u00b7 N = 16,384\u2013131,072 \u00b7 C = 32\u2013256 \u00b7 m_max = 1\u20136",
+      "horizontal_alignment": "center",
+      "x": 0.5,
+      "title_size": 9.5,
+      "subtitle_size": 7.3
+    },
+    "all_N_allocated_forward_vjp": {
+      "title": "ICTC-O2 HP vs eqx: allocated memory",
+      "subtitle": "O(2) tensor products \u00b7 Forward + backward \u00b7 N = 16,384\u2013131,072 \u00b7 C = 32\u2013256 \u00b7 m_max = 1\u20136",
+      "horizontal_alignment": "center",
+      "x": 0.5,
+      "title_size": 9.5,
+      "subtitle_size": 7.3
+    },
+    "all_N_reserved_forward_vjp": {
+      "title": "ICTC-O2 HP vs eqx: reserved memory",
+      "subtitle": "O(2) tensor products \u00b7 Forward + backward \u00b7 N = 16,384\u2013131,072 \u00b7 C = 32\u2013256 \u00b7 m_max = 1\u20136",
+      "horizontal_alignment": "center",
+      "x": 0.5,
+      "title_size": 9.5,
+      "subtitle_size": 7.3
+    },
+    "all_N_process_forward_vjp": {
+      "title": "ICTC-O2 HP vs eqx: nvml process memory",
+      "subtitle": "O(2) tensor products \u00b7 Forward + backward \u00b7 N = 16,384\u2013131,072 \u00b7 C = 32\u2013256 \u00b7 m_max = 1\u20136",
+      "horizontal_alignment": "center",
+      "x": 0.5,
+      "title_size": 9.5,
+      "subtitle_size": 7.3
+    },
+    "all_N_absolute_allocated_forward_vjp_candidate": {
+      "title": "ICTC-O2 HP vs eqx: peak allocated memory",
+      "subtitle": "O(2) tensor products \u00b7 Forward + backward \u00b7 ICTC-O2 HP \u00b7 N = 16,384\u2013131,072 \u00b7 C = 32\u2013256 \u00b7 m_max = 1\u20136",
+      "horizontal_alignment": "center",
+      "x": 0.5,
+      "title_size": 9.5,
+      "subtitle_size": 7.3
+    },
+    "all_N_absolute_allocated_forward_vjp_equivariantx": {
+      "title": "ICTC-O2 HP vs eqx: peak allocated memory",
+      "subtitle": "O(2) tensor products \u00b7 Forward + backward \u00b7 eqx \u00b7 N = 16,384\u2013131,072 \u00b7 C = 32\u2013256 \u00b7 m_max = 1\u20136",
+      "horizontal_alignment": "center",
+      "x": 0.5,
+      "title_size": 9.5,
+      "subtitle_size": 7.3
+    },
+    "all_N_absolute_reserved_forward_vjp_candidate": {
+      "title": "ICTC-O2 HP vs eqx: peak reserved memory",
+      "subtitle": "O(2) tensor products \u00b7 Forward + backward \u00b7 ICTC-O2 HP \u00b7 N = 16,384\u2013131,072 \u00b7 C = 32\u2013256 \u00b7 m_max = 1\u20136",
+      "horizontal_alignment": "center",
+      "x": 0.5,
+      "title_size": 9.5,
+      "subtitle_size": 7.3
+    },
+    "all_N_absolute_reserved_forward_vjp_equivariantx": {
+      "title": "ICTC-O2 HP vs eqx: peak reserved memory",
+      "subtitle": "O(2) tensor products \u00b7 Forward + backward \u00b7 eqx \u00b7 N = 16,384\u2013131,072 \u00b7 C = 32\u2013256 \u00b7 m_max = 1\u20136",
+      "horizontal_alignment": "center",
+      "x": 0.5,
+      "title_size": 9.5,
+      "subtitle_size": 7.3
+    }
+  },
+  "legend_ticks": [
+    {
+      "quantity": "throughput",
+      "ticks": [
+        0.9,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "quantity": "allocated",
+      "ticks": [
+        1,
+        1.5,
+        2
+      ]
+    },
+    {
+      "quantity": "throughput",
+      "ticks": [
+        0.9,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "quantity": "allocated",
+      "ticks": [
+        1,
+        1.5,
+        2
+      ]
+    },
+    {
+      "quantity": "throughput",
+      "ticks": [
+        0.9,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "quantity": "allocated",
+      "ticks": [
+        1,
+        1.5,
+        2
+      ]
+    },
+    {
+      "quantity": "throughput",
+      "ticks": [
+        0.9,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "quantity": "allocated",
+      "ticks": [
+        1,
+        1.5,
+        2
+      ]
+    },
+    {
+      "quantity": "throughput",
+      "ticks": [
+        0.9,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "quantity": "allocated",
+      "ticks": [
+        1,
+        1.5,
+        2
+      ]
+    },
+    {
+      "quantity": "throughput",
+      "ticks": [
+        0.9,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "quantity": "allocated",
+      "ticks": [
+        1,
+        1.5,
+        2
+      ]
+    },
+    {
+      "quantity": "throughput",
+      "ticks": [
+        0.9,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "quantity": "allocated",
+      "ticks": [
+        1,
+        1.5,
+        2
+      ]
+    },
+    {
+      "quantity": "throughput",
+      "ticks": [
+        0.9,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "quantity": "allocated",
+      "ticks": [
+        1,
+        1.5,
+        2
+      ]
+    },
+    {
+      "quantity": "throughput",
+      "ticks": [
+        0.9,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "quantity": "allocated",
+      "ticks": [
+        1,
+        1.5,
+        2
+      ]
+    },
+    {
+      "quantity": "reserved",
+      "ticks": [
+        1,
+        1.5,
+        2
+      ]
+    },
+    {
+      "quantity": "process",
+      "ticks": [
+        1,
+        1.5
+      ]
+    },
+    {
+      "quantity": "absolute_allocated",
+      "ticks": [
+        0.0,
+        5.0,
+        10.0,
+        15.0
+      ]
+    },
+    {
+      "quantity": "absolute_allocated",
+      "ticks": [
+        0.0,
+        5.0,
+        10.0,
+        15.0
+      ]
+    },
+    {
+      "quantity": "absolute_reserved",
+      "ticks": [
+        0.0,
+        5.0,
+        10.0,
+        15.0
+      ]
+    },
+    {
+      "quantity": "absolute_reserved",
+      "ticks": [
+        0.0,
+        5.0,
+        10.0,
+        15.0
+      ]
+    },
+    {
+      "quantity": "throughput",
+      "ticks": [
+        0.9,
+        1,
+        1.5
+      ]
+    },
+    {
+      "quantity": "allocated",
+      "ticks": [
+        1,
+        1.5,
+        2
+      ]
+    },
+    {
+      "quantity": "throughput",
+      "ticks": [
+        0.9,
+        1,
+        1.5
+      ]
+    },
+    {
+      "quantity": "allocated",
+      "ticks": [
+        1,
+        1.5,
+        2
+      ]
+    },
+    {
+      "quantity": "throughput",
+      "ticks": [
+        0.9,
+        1,
+        1.5
+      ]
+    },
+    {
+      "quantity": "allocated",
+      "ticks": [
+        1,
+        1.5,
+        2
+      ]
+    },
+    {
+      "quantity": "throughput",
+      "ticks": [
+        0.9,
+        1,
+        1.5
+      ]
+    },
+    {
+      "quantity": "allocated",
+      "ticks": [
+        1,
+        1.5,
+        2
+      ]
+    },
+    {
+      "quantity": "throughput",
+      "ticks": [
+        0.9,
+        1,
+        1.5
+      ]
+    },
+    {
+      "quantity": "allocated",
+      "ticks": [
+        1,
+        1.5,
+        2
+      ]
+    },
+    {
+      "quantity": "throughput",
+      "ticks": [
+        0.9,
+        1,
+        1.5
+      ]
+    },
+    {
+      "quantity": "allocated",
+      "ticks": [
+        1,
+        1.5,
+        2
+      ]
+    },
+    {
+      "quantity": "throughput",
+      "ticks": [
+        0.9,
+        1,
+        1.5
+      ]
+    },
+    {
+      "quantity": "allocated",
+      "ticks": [
+        1,
+        1.5,
+        2
+      ]
+    },
+    {
+      "quantity": "throughput",
+      "ticks": [
+        0.9,
+        1,
+        1.5
+      ]
+    },
+    {
+      "quantity": "allocated",
+      "ticks": [
+        1,
+        1.5,
+        2
+      ]
+    },
+    {
+      "quantity": "throughput",
+      "ticks": [
+        0.9,
+        1,
+        1.5
+      ]
+    },
+    {
+      "quantity": "allocated",
+      "ticks": [
+        1,
+        1.5,
+        2
+      ]
+    },
+    {
+      "quantity": "reserved",
+      "ticks": [
+        1,
+        2,
+        2.5
+      ]
+    },
+    {
+      "quantity": "process",
+      "ticks": [
+        1,
+        1.5,
+        2
+      ]
+    },
+    {
+      "quantity": "absolute_allocated",
+      "ticks": [
+        0.0,
+        15.0,
+        30.0,
+        45.0
+      ]
+    },
+    {
+      "quantity": "absolute_allocated",
+      "ticks": [
+        0.0,
+        15.0,
+        30.0,
+        45.0
+      ]
+    },
+    {
+      "quantity": "absolute_reserved",
+      "ticks": [
+        0.0,
+        15.0,
+        30.0,
+        45.0
+      ]
+    },
+    {
+      "quantity": "absolute_reserved",
+      "ticks": [
+        0.0,
+        15.0,
+        30.0,
+        45.0
+      ]
+    }
+  ],
+  "parity_headers": [
+    {
+      "figure": "overview_forward_N131072",
+      "title": "canonical parity",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "overview_forward_N131072",
+      "title": "full parity",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "overview_forward_N131072",
+      "title": "canonical parity",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "overview_forward_N131072",
+      "title": "full parity",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "N_landscape_forward_C32",
+      "title": "canonical parity",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "N_landscape_forward_C32",
+      "title": "full parity",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "N_landscape_forward_C32",
+      "title": "canonical parity",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "N_landscape_forward_C32",
+      "title": "full parity",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "N_landscape_forward_C64",
+      "title": "canonical parity",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "N_landscape_forward_C64",
+      "title": "full parity",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "N_landscape_forward_C64",
+      "title": "canonical parity",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "N_landscape_forward_C64",
+      "title": "full parity",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "N_landscape_forward_C96",
+      "title": "canonical parity",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "N_landscape_forward_C96",
+      "title": "full parity",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "N_landscape_forward_C96",
+      "title": "canonical parity",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "N_landscape_forward_C96",
+      "title": "full parity",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "N_landscape_forward_C128",
+      "title": "canonical parity",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "N_landscape_forward_C128",
+      "title": "full parity",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "N_landscape_forward_C128",
+      "title": "canonical parity",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "N_landscape_forward_C128",
+      "title": "full parity",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "N_landscape_forward_C256",
+      "title": "canonical parity",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "N_landscape_forward_C256",
+      "title": "full parity",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "N_landscape_forward_C256",
+      "title": "canonical parity",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "N_landscape_forward_C256",
+      "title": "full parity",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_throughput_forward",
+      "title": "canonical parity  \u00b7  N = 16,384",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_throughput_forward",
+      "title": "full parity  \u00b7  N = 16,384",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_throughput_forward",
+      "title": "canonical parity  \u00b7  N = 32,768",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_throughput_forward",
+      "title": "full parity  \u00b7  N = 32,768",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_throughput_forward",
+      "title": "canonical parity  \u00b7  N = 65,536",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_throughput_forward",
+      "title": "full parity  \u00b7  N = 65,536",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_throughput_forward",
+      "title": "canonical parity  \u00b7  N = 131,072",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_throughput_forward",
+      "title": "full parity  \u00b7  N = 131,072",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_allocated_forward",
+      "title": "canonical parity  \u00b7  N = 16,384",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_allocated_forward",
+      "title": "full parity  \u00b7  N = 16,384",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_allocated_forward",
+      "title": "canonical parity  \u00b7  N = 32,768",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_allocated_forward",
+      "title": "full parity  \u00b7  N = 32,768",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_allocated_forward",
+      "title": "canonical parity  \u00b7  N = 65,536",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_allocated_forward",
+      "title": "full parity  \u00b7  N = 65,536",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_allocated_forward",
+      "title": "canonical parity  \u00b7  N = 131,072",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_allocated_forward",
+      "title": "full parity  \u00b7  N = 131,072",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_reserved_forward",
+      "title": "canonical parity  \u00b7  N = 16,384",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_reserved_forward",
+      "title": "full parity  \u00b7  N = 16,384",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_reserved_forward",
+      "title": "canonical parity  \u00b7  N = 32,768",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_reserved_forward",
+      "title": "full parity  \u00b7  N = 32,768",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_reserved_forward",
+      "title": "canonical parity  \u00b7  N = 65,536",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_reserved_forward",
+      "title": "full parity  \u00b7  N = 65,536",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_reserved_forward",
+      "title": "canonical parity  \u00b7  N = 131,072",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_reserved_forward",
+      "title": "full parity  \u00b7  N = 131,072",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_process_forward",
+      "title": "canonical parity  \u00b7  N = 16,384",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_process_forward",
+      "title": "full parity  \u00b7  N = 16,384",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_process_forward",
+      "title": "canonical parity  \u00b7  N = 32,768",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_process_forward",
+      "title": "full parity  \u00b7  N = 32,768",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_process_forward",
+      "title": "canonical parity  \u00b7  N = 65,536",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_process_forward",
+      "title": "full parity  \u00b7  N = 65,536",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_process_forward",
+      "title": "canonical parity  \u00b7  N = 131,072",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_process_forward",
+      "title": "full parity  \u00b7  N = 131,072",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_allocated_forward_candidate",
+      "title": "canonical parity  \u00b7  N = 16,384",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_allocated_forward_candidate",
+      "title": "full parity  \u00b7  N = 16,384",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_allocated_forward_candidate",
+      "title": "canonical parity  \u00b7  N = 32,768",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_allocated_forward_candidate",
+      "title": "full parity  \u00b7  N = 32,768",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_allocated_forward_candidate",
+      "title": "canonical parity  \u00b7  N = 65,536",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_allocated_forward_candidate",
+      "title": "full parity  \u00b7  N = 65,536",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_allocated_forward_candidate",
+      "title": "canonical parity  \u00b7  N = 131,072",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_allocated_forward_candidate",
+      "title": "full parity  \u00b7  N = 131,072",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_allocated_forward_equivariantx",
+      "title": "canonical parity  \u00b7  N = 16,384",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_allocated_forward_equivariantx",
+      "title": "full parity  \u00b7  N = 16,384",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_allocated_forward_equivariantx",
+      "title": "canonical parity  \u00b7  N = 32,768",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_allocated_forward_equivariantx",
+      "title": "full parity  \u00b7  N = 32,768",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_allocated_forward_equivariantx",
+      "title": "canonical parity  \u00b7  N = 65,536",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_allocated_forward_equivariantx",
+      "title": "full parity  \u00b7  N = 65,536",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_allocated_forward_equivariantx",
+      "title": "canonical parity  \u00b7  N = 131,072",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_allocated_forward_equivariantx",
+      "title": "full parity  \u00b7  N = 131,072",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_reserved_forward_candidate",
+      "title": "canonical parity  \u00b7  N = 16,384",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_reserved_forward_candidate",
+      "title": "full parity  \u00b7  N = 16,384",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_reserved_forward_candidate",
+      "title": "canonical parity  \u00b7  N = 32,768",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_reserved_forward_candidate",
+      "title": "full parity  \u00b7  N = 32,768",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_reserved_forward_candidate",
+      "title": "canonical parity  \u00b7  N = 65,536",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_reserved_forward_candidate",
+      "title": "full parity  \u00b7  N = 65,536",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_reserved_forward_candidate",
+      "title": "canonical parity  \u00b7  N = 131,072",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_reserved_forward_candidate",
+      "title": "full parity  \u00b7  N = 131,072",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_reserved_forward_equivariantx",
+      "title": "canonical parity  \u00b7  N = 16,384",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_reserved_forward_equivariantx",
+      "title": "full parity  \u00b7  N = 16,384",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_reserved_forward_equivariantx",
+      "title": "canonical parity  \u00b7  N = 32,768",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_reserved_forward_equivariantx",
+      "title": "full parity  \u00b7  N = 32,768",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_reserved_forward_equivariantx",
+      "title": "canonical parity  \u00b7  N = 65,536",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_reserved_forward_equivariantx",
+      "title": "full parity  \u00b7  N = 65,536",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_reserved_forward_equivariantx",
+      "title": "canonical parity  \u00b7  N = 131,072",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_reserved_forward_equivariantx",
+      "title": "full parity  \u00b7  N = 131,072",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "overview_forward_vjp_N131072",
+      "title": "canonical parity",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "overview_forward_vjp_N131072",
+      "title": "full parity",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "overview_forward_vjp_N131072",
+      "title": "canonical parity",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "overview_forward_vjp_N131072",
+      "title": "full parity",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "N_landscape_forward_vjp_C32",
+      "title": "canonical parity",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "N_landscape_forward_vjp_C32",
+      "title": "full parity",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "N_landscape_forward_vjp_C32",
+      "title": "canonical parity",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "N_landscape_forward_vjp_C32",
+      "title": "full parity",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "N_landscape_forward_vjp_C64",
+      "title": "canonical parity",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "N_landscape_forward_vjp_C64",
+      "title": "full parity",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "N_landscape_forward_vjp_C64",
+      "title": "canonical parity",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "N_landscape_forward_vjp_C64",
+      "title": "full parity",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "N_landscape_forward_vjp_C96",
+      "title": "canonical parity",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "N_landscape_forward_vjp_C96",
+      "title": "full parity",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "N_landscape_forward_vjp_C96",
+      "title": "canonical parity",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "N_landscape_forward_vjp_C96",
+      "title": "full parity",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "N_landscape_forward_vjp_C128",
+      "title": "canonical parity",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "N_landscape_forward_vjp_C128",
+      "title": "full parity",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "N_landscape_forward_vjp_C128",
+      "title": "canonical parity",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "N_landscape_forward_vjp_C128",
+      "title": "full parity",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "N_landscape_forward_vjp_C256",
+      "title": "canonical parity",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "N_landscape_forward_vjp_C256",
+      "title": "full parity",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "N_landscape_forward_vjp_C256",
+      "title": "canonical parity",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "N_landscape_forward_vjp_C256",
+      "title": "full parity",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_throughput_forward_vjp",
+      "title": "canonical parity  \u00b7  N = 16,384",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_throughput_forward_vjp",
+      "title": "full parity  \u00b7  N = 16,384",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_throughput_forward_vjp",
+      "title": "canonical parity  \u00b7  N = 32,768",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_throughput_forward_vjp",
+      "title": "full parity  \u00b7  N = 32,768",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_throughput_forward_vjp",
+      "title": "canonical parity  \u00b7  N = 65,536",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_throughput_forward_vjp",
+      "title": "full parity  \u00b7  N = 65,536",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_throughput_forward_vjp",
+      "title": "canonical parity  \u00b7  N = 131,072",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_throughput_forward_vjp",
+      "title": "full parity  \u00b7  N = 131,072",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_allocated_forward_vjp",
+      "title": "canonical parity  \u00b7  N = 16,384",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_allocated_forward_vjp",
+      "title": "full parity  \u00b7  N = 16,384",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_allocated_forward_vjp",
+      "title": "canonical parity  \u00b7  N = 32,768",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_allocated_forward_vjp",
+      "title": "full parity  \u00b7  N = 32,768",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_allocated_forward_vjp",
+      "title": "canonical parity  \u00b7  N = 65,536",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_allocated_forward_vjp",
+      "title": "full parity  \u00b7  N = 65,536",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_allocated_forward_vjp",
+      "title": "canonical parity  \u00b7  N = 131,072",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_allocated_forward_vjp",
+      "title": "full parity  \u00b7  N = 131,072",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_reserved_forward_vjp",
+      "title": "canonical parity  \u00b7  N = 16,384",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_reserved_forward_vjp",
+      "title": "full parity  \u00b7  N = 16,384",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_reserved_forward_vjp",
+      "title": "canonical parity  \u00b7  N = 32,768",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_reserved_forward_vjp",
+      "title": "full parity  \u00b7  N = 32,768",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_reserved_forward_vjp",
+      "title": "canonical parity  \u00b7  N = 65,536",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_reserved_forward_vjp",
+      "title": "full parity  \u00b7  N = 65,536",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_reserved_forward_vjp",
+      "title": "canonical parity  \u00b7  N = 131,072",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_reserved_forward_vjp",
+      "title": "full parity  \u00b7  N = 131,072",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_process_forward_vjp",
+      "title": "canonical parity  \u00b7  N = 16,384",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_process_forward_vjp",
+      "title": "full parity  \u00b7  N = 16,384",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_process_forward_vjp",
+      "title": "canonical parity  \u00b7  N = 32,768",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_process_forward_vjp",
+      "title": "full parity  \u00b7  N = 32,768",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_process_forward_vjp",
+      "title": "canonical parity  \u00b7  N = 65,536",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_process_forward_vjp",
+      "title": "full parity  \u00b7  N = 65,536",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_process_forward_vjp",
+      "title": "canonical parity  \u00b7  N = 131,072",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_process_forward_vjp",
+      "title": "full parity  \u00b7  N = 131,072",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_allocated_forward_vjp_candidate",
+      "title": "canonical parity  \u00b7  N = 16,384",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_allocated_forward_vjp_candidate",
+      "title": "full parity  \u00b7  N = 16,384",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_allocated_forward_vjp_candidate",
+      "title": "canonical parity  \u00b7  N = 32,768",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_allocated_forward_vjp_candidate",
+      "title": "full parity  \u00b7  N = 32,768",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_allocated_forward_vjp_candidate",
+      "title": "canonical parity  \u00b7  N = 65,536",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_allocated_forward_vjp_candidate",
+      "title": "full parity  \u00b7  N = 65,536",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_allocated_forward_vjp_candidate",
+      "title": "canonical parity  \u00b7  N = 131,072",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_allocated_forward_vjp_candidate",
+      "title": "full parity  \u00b7  N = 131,072",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_allocated_forward_vjp_equivariantx",
+      "title": "canonical parity  \u00b7  N = 16,384",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_allocated_forward_vjp_equivariantx",
+      "title": "full parity  \u00b7  N = 16,384",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_allocated_forward_vjp_equivariantx",
+      "title": "canonical parity  \u00b7  N = 32,768",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_allocated_forward_vjp_equivariantx",
+      "title": "full parity  \u00b7  N = 32,768",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_allocated_forward_vjp_equivariantx",
+      "title": "canonical parity  \u00b7  N = 65,536",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_allocated_forward_vjp_equivariantx",
+      "title": "full parity  \u00b7  N = 65,536",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_allocated_forward_vjp_equivariantx",
+      "title": "canonical parity  \u00b7  N = 131,072",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_allocated_forward_vjp_equivariantx",
+      "title": "full parity  \u00b7  N = 131,072",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_reserved_forward_vjp_candidate",
+      "title": "canonical parity  \u00b7  N = 16,384",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_reserved_forward_vjp_candidate",
+      "title": "full parity  \u00b7  N = 16,384",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_reserved_forward_vjp_candidate",
+      "title": "canonical parity  \u00b7  N = 32,768",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_reserved_forward_vjp_candidate",
+      "title": "full parity  \u00b7  N = 32,768",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_reserved_forward_vjp_candidate",
+      "title": "canonical parity  \u00b7  N = 65,536",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_reserved_forward_vjp_candidate",
+      "title": "full parity  \u00b7  N = 65,536",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_reserved_forward_vjp_candidate",
+      "title": "canonical parity  \u00b7  N = 131,072",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_reserved_forward_vjp_candidate",
+      "title": "full parity  \u00b7  N = 131,072",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_reserved_forward_vjp_equivariantx",
+      "title": "canonical parity  \u00b7  N = 16,384",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_reserved_forward_vjp_equivariantx",
+      "title": "full parity  \u00b7  N = 16,384",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_reserved_forward_vjp_equivariantx",
+      "title": "canonical parity  \u00b7  N = 32,768",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_reserved_forward_vjp_equivariantx",
+      "title": "full parity  \u00b7  N = 32,768",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_reserved_forward_vjp_equivariantx",
+      "title": "canonical parity  \u00b7  N = 65,536",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_reserved_forward_vjp_equivariantx",
+      "title": "full parity  \u00b7  N = 65,536",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_reserved_forward_vjp_equivariantx",
+      "title": "canonical parity  \u00b7  N = 131,072",
+      "alignment": "center",
+      "x": 0.5
+    },
+    {
+      "figure": "all_N_absolute_reserved_forward_vjp_equivariantx",
+      "title": "full parity  \u00b7  N = 131,072",
+      "alignment": "center",
+      "x": 0.5
+    }
+  ],
+  "oom_markers": 8,
+  "oom_marker_style": "white diagonal hatch, label inside missing region",
+  "smooth_surface_method": "continuous Gouraud colour between dense bilinear source vertices; 450-dpi raster fill in PDF/SVG, vector labels/axes/markers",
+  "smooth_surface_seams": [
+    {
+      "view": "sheets",
+      "N": 16384,
+      "mode": "forward",
+      "parity": "canonical",
+      "quantity": "throughput",
+      "shared_vertices": 5261,
+      "maximum_seam_ratio_difference": 0.0
+    },
+    {
+      "view": "sheets",
+      "N": 32768,
+      "mode": "forward",
+      "parity": "canonical",
+      "quantity": "throughput",
+      "shared_vertices": 5261,
+      "maximum_seam_ratio_difference": 0.0
+    },
+    {
+      "view": "sheets",
+      "N": 65536,
+      "mode": "forward",
+      "parity": "canonical",
+      "quantity": "throughput",
+      "shared_vertices": 5261,
+      "maximum_seam_ratio_difference": 0.0
+    },
+    {
+      "view": "sheets",
+      "N": 131072,
+      "mode": "forward",
+      "parity": "canonical",
+      "quantity": "throughput",
+      "shared_vertices": 5261,
+      "maximum_seam_ratio_difference": 0.0
+    },
+    {
+      "view": "sheets",
+      "N": 16384,
+      "mode": "forward",
+      "parity": "full",
+      "quantity": "throughput",
+      "shared_vertices": 5261,
+      "maximum_seam_ratio_difference": 0.0
+    },
+    {
+      "view": "sheets",
+      "N": 32768,
+      "mode": "forward",
+      "parity": "full",
+      "quantity": "throughput",
+      "shared_vertices": 5261,
+      "maximum_seam_ratio_difference": 0.0
+    },
+    {
+      "view": "sheets",
+      "N": 65536,
+      "mode": "forward",
+      "parity": "full",
+      "quantity": "throughput",
+      "shared_vertices": 5261,
+      "maximum_seam_ratio_difference": 0.0
+    },
+    {
+      "view": "sheets",
+      "N": 131072,
+      "mode": "forward",
+      "parity": "full",
+      "quantity": "throughput",
+      "shared_vertices": 5261,
+      "maximum_seam_ratio_difference": 0.0
+    },
+    {
+      "view": "sheets",
+      "N": 16384,
+      "mode": "forward",
+      "parity": "canonical",
+      "quantity": "allocated",
+      "shared_vertices": 5261,
+      "maximum_seam_ratio_difference": 0.0
+    },
+    {
+      "view": "sheets",
+      "N": 32768,
+      "mode": "forward",
+      "parity": "canonical",
+      "quantity": "allocated",
+      "shared_vertices": 5261,
+      "maximum_seam_ratio_difference": 0.0
+    },
+    {
+      "view": "sheets",
+      "N": 65536,
+      "mode": "forward",
+      "parity": "canonical",
+      "quantity": "allocated",
+      "shared_vertices": 5261,
+      "maximum_seam_ratio_difference": 0.0
+    },
+    {
+      "view": "sheets",
+      "N": 131072,
+      "mode": "forward",
+      "parity": "canonical",
+      "quantity": "allocated",
+      "shared_vertices": 5261,
+      "maximum_seam_ratio_difference": 0.0
+    },
+    {
+      "view": "sheets",
+      "N": 16384,
+      "mode": "forward",
+      "parity": "full",
+      "quantity": "allocated",
+      "shared_vertices": 5261,
+      "maximum_seam_ratio_difference": 0.0
+    },
+    {
+      "view": "sheets",
+      "N": 32768,
+      "mode": "forward",
+      "parity": "full",
+      "quantity": "allocated",
+      "shared_vertices": 5261,
+      "maximum_seam_ratio_difference": 0.0
+    },
+    {
+      "view": "sheets",
+      "N": 65536,
+      "mode": "forward",
+      "parity": "full",
+      "quantity": "allocated",
+      "shared_vertices": 5261,
+      "maximum_seam_ratio_difference": 0.0
+    },
+    {
+      "view": "sheets",
+      "N": 131072,
+      "mode": "forward",
+      "parity": "full",
+      "quantity": "allocated",
+      "shared_vertices": 5261,
+      "maximum_seam_ratio_difference": 0.0
+    },
+    {
+      "view": "connected",
+      "mode": "forward",
+      "parity": "canonical",
+      "quantity": "throughput",
+      "shared_vertices": 12222,
+      "maximum_seam_ratio_difference": 0.0
+    },
+    {
+      "view": "connected",
+      "mode": "forward",
+      "parity": "full",
+      "quantity": "throughput",
+      "shared_vertices": 12222,
+      "maximum_seam_ratio_difference": 0.0
+    },
+    {
+      "view": "connected",
+      "mode": "forward",
+      "parity": "canonical",
+      "quantity": "allocated",
+      "shared_vertices": 12222,
+      "maximum_seam_ratio_difference": 0.0
+    },
+    {
+      "view": "connected",
+      "mode": "forward",
+      "parity": "full",
+      "quantity": "allocated",
+      "shared_vertices": 12222,
+      "maximum_seam_ratio_difference": 0.0
+    },
+    {
+      "view": "sheets",
+      "N": 16384,
+      "mode": "forward_vjp",
+      "parity": "canonical",
+      "quantity": "throughput",
+      "shared_vertices": 5261,
+      "maximum_seam_ratio_difference": 0.0
+    },
+    {
+      "view": "sheets",
+      "N": 32768,
+      "mode": "forward_vjp",
+      "parity": "canonical",
+      "quantity": "throughput",
+      "shared_vertices": 5261,
+      "maximum_seam_ratio_difference": 0.0
+    },
+    {
+      "view": "sheets",
+      "N": 65536,
+      "mode": "forward_vjp",
+      "parity": "canonical",
+      "quantity": "throughput",
+      "shared_vertices": 5261,
+      "maximum_seam_ratio_difference": 0.0
+    },
+    {
+      "view": "sheets",
+      "N": 131072,
+      "mode": "forward_vjp",
+      "parity": "canonical",
+      "quantity": "throughput",
+      "shared_vertices": 5261,
+      "maximum_seam_ratio_difference": 0.0
+    },
+    {
+      "view": "sheets",
+      "N": 16384,
+      "mode": "forward_vjp",
+      "parity": "full",
+      "quantity": "throughput",
+      "shared_vertices": 5261,
+      "maximum_seam_ratio_difference": 0.0
+    },
+    {
+      "view": "sheets",
+      "N": 32768,
+      "mode": "forward_vjp",
+      "parity": "full",
+      "quantity": "throughput",
+      "shared_vertices": 5261,
+      "maximum_seam_ratio_difference": 0.0
+    },
+    {
+      "view": "sheets",
+      "N": 65536,
+      "mode": "forward_vjp",
+      "parity": "full",
+      "quantity": "throughput",
+      "shared_vertices": 5261,
+      "maximum_seam_ratio_difference": 0.0
+    },
+    {
+      "view": "sheets",
+      "N": 131072,
+      "mode": "forward_vjp",
+      "parity": "full",
+      "quantity": "throughput",
+      "shared_vertices": 5004,
+      "maximum_seam_ratio_difference": 0.0
+    },
+    {
+      "view": "sheets",
+      "N": 16384,
+      "mode": "forward_vjp",
+      "parity": "canonical",
+      "quantity": "allocated",
+      "shared_vertices": 5261,
+      "maximum_seam_ratio_difference": 0.0
+    },
+    {
+      "view": "sheets",
+      "N": 32768,
+      "mode": "forward_vjp",
+      "parity": "canonical",
+      "quantity": "allocated",
+      "shared_vertices": 5261,
+      "maximum_seam_ratio_difference": 0.0
+    },
+    {
+      "view": "sheets",
+      "N": 65536,
+      "mode": "forward_vjp",
+      "parity": "canonical",
+      "quantity": "allocated",
+      "shared_vertices": 5261,
+      "maximum_seam_ratio_difference": 0.0
+    },
+    {
+      "view": "sheets",
+      "N": 131072,
+      "mode": "forward_vjp",
+      "parity": "canonical",
+      "quantity": "allocated",
+      "shared_vertices": 5261,
+      "maximum_seam_ratio_difference": 0.0
+    },
+    {
+      "view": "sheets",
+      "N": 16384,
+      "mode": "forward_vjp",
+      "parity": "full",
+      "quantity": "allocated",
+      "shared_vertices": 5261,
+      "maximum_seam_ratio_difference": 0.0
+    },
+    {
+      "view": "sheets",
+      "N": 32768,
+      "mode": "forward_vjp",
+      "parity": "full",
+      "quantity": "allocated",
+      "shared_vertices": 5261,
+      "maximum_seam_ratio_difference": 0.0
+    },
+    {
+      "view": "sheets",
+      "N": 65536,
+      "mode": "forward_vjp",
+      "parity": "full",
+      "quantity": "allocated",
+      "shared_vertices": 5261,
+      "maximum_seam_ratio_difference": 0.0
+    },
+    {
+      "view": "sheets",
+      "N": 131072,
+      "mode": "forward_vjp",
+      "parity": "full",
+      "quantity": "allocated",
+      "shared_vertices": 5004,
+      "maximum_seam_ratio_difference": 0.0
+    },
+    {
+      "view": "connected",
+      "mode": "forward_vjp",
+      "parity": "canonical",
+      "quantity": "throughput",
+      "shared_vertices": 12222,
+      "maximum_seam_ratio_difference": 0.0
+    },
+    {
+      "view": "connected",
+      "mode": "forward_vjp",
+      "parity": "full",
+      "quantity": "throughput",
+      "shared_vertices": 11501,
+      "maximum_seam_ratio_difference": 0.0
+    },
+    {
+      "view": "connected",
+      "mode": "forward_vjp",
+      "parity": "canonical",
+      "quantity": "allocated",
+      "shared_vertices": 12222,
+      "maximum_seam_ratio_difference": 0.0
+    },
+    {
+      "view": "connected",
+      "mode": "forward_vjp",
+      "parity": "full",
+      "quantity": "allocated",
+      "shared_vertices": 11501,
+      "maximum_seam_ratio_difference": 0.0
+    }
+  ],
+  "png_dimensions": {
+    "overview_forward_N131072.png": [
+      3420,
+      2655
+    ],
+    "N_landscape_forward_C32.png": [
+      3420,
+      2655
+    ],
+    "N_landscape_forward_C64.png": [
+      3420,
+      2655
+    ],
+    "N_landscape_forward_C96.png": [
+      3420,
+      2655
+    ],
+    "N_landscape_forward_C128.png": [
+      3420,
+      2655
+    ],
+    "N_landscape_forward_C256.png": [
+      3420,
+      2655
+    ],
+    "N_channel_layers_forward.png": [
+      4140,
+      3645
+    ],
+    "N_channel_connected_forward.png": [
+      4140,
+      3645
+    ],
+    "all_N_throughput_forward.png": [
+      3420,
+      4860
+    ],
+    "all_N_allocated_forward.png": [
+      3420,
+      4860
+    ],
+    "all_N_reserved_forward.png": [
+      3420,
+      4860
+    ],
+    "all_N_process_forward.png": [
+      3420,
+      4860
+    ],
+    "all_N_absolute_allocated_forward_candidate.png": [
+      3420,
+      4860
+    ],
+    "all_N_absolute_allocated_forward_equivariantx.png": [
+      3420,
+      4860
+    ],
+    "all_N_absolute_reserved_forward_candidate.png": [
+      3420,
+      4860
+    ],
+    "all_N_absolute_reserved_forward_equivariantx.png": [
+      3420,
+      4860
+    ],
+    "overview_forward_vjp_N131072.png": [
+      3420,
+      2655
+    ],
+    "N_landscape_forward_vjp_C32.png": [
+      3420,
+      2655
+    ],
+    "N_landscape_forward_vjp_C64.png": [
+      3420,
+      2655
+    ],
+    "N_landscape_forward_vjp_C96.png": [
+      3420,
+      2655
+    ],
+    "N_landscape_forward_vjp_C128.png": [
+      3420,
+      2655
+    ],
+    "N_landscape_forward_vjp_C256.png": [
+      3420,
+      2655
+    ],
+    "N_channel_layers_forward_vjp.png": [
+      4140,
+      3645
+    ],
+    "N_channel_connected_forward_vjp.png": [
+      4140,
+      3645
+    ],
+    "all_N_throughput_forward_vjp.png": [
+      3420,
+      4860
+    ],
+    "all_N_allocated_forward_vjp.png": [
+      3420,
+      4860
+    ],
+    "all_N_reserved_forward_vjp.png": [
+      3420,
+      4860
+    ],
+    "all_N_process_forward_vjp.png": [
+      3420,
+      4860
+    ],
+    "all_N_absolute_allocated_forward_vjp_candidate.png": [
+      3420,
+      4860
+    ],
+    "all_N_absolute_allocated_forward_vjp_equivariantx.png": [
+      3420,
+      4860
+    ],
+    "all_N_absolute_reserved_forward_vjp_candidate.png": [
+      3420,
+      4860
+    ],
+    "all_N_absolute_reserved_forward_vjp_equivariantx.png": [
+      3420,
+      4860
+    ]
+  },
+  "svg_text_counts": {
+    "overview_forward_N131072.svg": 191,
+    "N_landscape_forward_C32.svg": 163,
+    "N_landscape_forward_C64.svg": 163,
+    "N_landscape_forward_C96.svg": 163,
+    "N_landscape_forward_C128.svg": 163,
+    "N_landscape_forward_C256.svg": 163,
+    "N_channel_layers_forward.svg": 92,
+    "N_channel_connected_forward.svg": 92,
+    "all_N_throughput_forward.svg": 363,
+    "all_N_allocated_forward.svg": 362,
+    "all_N_reserved_forward.svg": 362,
+    "all_N_process_forward.svg": 361,
+    "all_N_absolute_allocated_forward_candidate.svg": 361,
+    "all_N_absolute_allocated_forward_equivariantx.svg": 361,
+    "all_N_absolute_reserved_forward_candidate.svg": 361,
+    "all_N_absolute_reserved_forward_equivariantx.svg": 361,
+    "overview_forward_vjp_N131072.svg": 192,
+    "N_landscape_forward_vjp_C32.svg": 162,
+    "N_landscape_forward_vjp_C64.svg": 162,
+    "N_landscape_forward_vjp_C96.svg": 162,
+    "N_landscape_forward_vjp_C128.svg": 162,
+    "N_landscape_forward_vjp_C256.svg": 164,
+    "N_channel_layers_forward_vjp.svg": 95,
+    "N_channel_connected_forward_vjp.svg": 95,
+    "all_N_throughput_forward_vjp.svg": 363,
+    "all_N_allocated_forward_vjp.svg": 363,
+    "all_N_reserved_forward_vjp.svg": 363,
+    "all_N_process_forward_vjp.svg": 363,
+    "all_N_absolute_allocated_forward_vjp_candidate.svg": 361,
+    "all_N_absolute_allocated_forward_vjp_equivariantx.svg": 362,
+    "all_N_absolute_reserved_forward_vjp_candidate.svg": 361,
+    "all_N_absolute_reserved_forward_vjp_equivariantx.svg": 362
+  },
+  "pdf_fonts": {
+    "overview_forward_N131072.pdf": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nGCWXDV+DejaVuSans-Oblique            CID TrueType      Identity-H       yes yes yes     21  0\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     28  0\nBGZIHO+LiberationSans-Bold           CID TrueType      Identity-H       yes yes yes     35  0\nFRZNSF+LiberationSans                CID TrueType      Identity-H       yes yes yes     42  0\n",
+    "N_landscape_forward_C32.pdf": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nGCWXDV+DejaVuSans-Oblique            CID TrueType      Identity-H       yes yes yes     21  0\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     28  0\nBGZIHO+LiberationSans-Bold           CID TrueType      Identity-H       yes yes yes     35  0\nFRZNSF+LiberationSans                CID TrueType      Identity-H       yes yes yes     42  0\n",
+    "N_landscape_forward_C64.pdf": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nGCWXDV+DejaVuSans-Oblique            CID TrueType      Identity-H       yes yes yes     21  0\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     28  0\nBGZIHO+LiberationSans-Bold           CID TrueType      Identity-H       yes yes yes     35  0\nFRZNSF+LiberationSans                CID TrueType      Identity-H       yes yes yes     42  0\n",
+    "N_landscape_forward_C96.pdf": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nGCWXDV+DejaVuSans-Oblique            CID TrueType      Identity-H       yes yes yes     21  0\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     28  0\nBGZIHO+LiberationSans-Bold           CID TrueType      Identity-H       yes yes yes     35  0\nFRZNSF+LiberationSans                CID TrueType      Identity-H       yes yes yes     42  0\n",
+    "N_landscape_forward_C128.pdf": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nGCWXDV+DejaVuSans-Oblique            CID TrueType      Identity-H       yes yes yes     21  0\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     28  0\nBGZIHO+LiberationSans-Bold           CID TrueType      Identity-H       yes yes yes     35  0\nFRZNSF+LiberationSans                CID TrueType      Identity-H       yes yes yes     42  0\n",
+    "N_landscape_forward_C256.pdf": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nGCWXDV+DejaVuSans-Oblique            CID TrueType      Identity-H       yes yes yes     21  0\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     28  0\nBGZIHO+LiberationSans-Bold           CID TrueType      Identity-H       yes yes yes     35  0\nFRZNSF+LiberationSans                CID TrueType      Identity-H       yes yes yes     42  0\n",
+    "N_channel_layers_forward.pdf": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nGCWXDV+DejaVuSans-Oblique            CID TrueType      Identity-H       yes yes yes     49  0\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     56  0\nBGZIHO+LiberationSans-Bold           CID TrueType      Identity-H       yes yes yes     63  0\nFRZNSF+LiberationSans                CID TrueType      Identity-H       yes yes yes     70  0\n",
+    "N_channel_connected_forward.pdf": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nGCWXDV+DejaVuSans-Oblique            CID TrueType      Identity-H       yes yes yes     33  0\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     40  0\nBGZIHO+LiberationSans-Bold           CID TrueType      Identity-H       yes yes yes     47  0\nFRZNSF+LiberationSans                CID TrueType      Identity-H       yes yes yes     54  0\n",
+    "all_N_throughput_forward.pdf": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nGCWXDV+DejaVuSans-Oblique            CID TrueType      Identity-H       yes yes yes     24  0\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     31  0\nBGZIHO+LiberationSans-Bold           CID TrueType      Identity-H       yes yes yes     38  0\nFRZNSF+LiberationSans                CID TrueType      Identity-H       yes yes yes     45  0\n",
+    "all_N_allocated_forward.pdf": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nGCWXDV+DejaVuSans-Oblique            CID TrueType      Identity-H       yes yes yes     24  0\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     31  0\nBGZIHO+LiberationSans-Bold           CID TrueType      Identity-H       yes yes yes     38  0\nFRZNSF+LiberationSans                CID TrueType      Identity-H       yes yes yes     45  0\n",
+    "all_N_reserved_forward.pdf": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nGCWXDV+DejaVuSans-Oblique            CID TrueType      Identity-H       yes yes yes     24  0\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     31  0\nBGZIHO+LiberationSans-Bold           CID TrueType      Identity-H       yes yes yes     38  0\nFRZNSF+LiberationSans                CID TrueType      Identity-H       yes yes yes     45  0\n",
+    "all_N_process_forward.pdf": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nGCWXDV+DejaVuSans-Oblique            CID TrueType      Identity-H       yes yes yes     24  0\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     31  0\nBGZIHO+LiberationSans-Bold           CID TrueType      Identity-H       yes yes yes     38  0\nFRZNSF+LiberationSans                CID TrueType      Identity-H       yes yes yes     45  0\n",
+    "all_N_absolute_allocated_forward_candidate.pdf": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nGCWXDV+DejaVuSans-Oblique            CID TrueType      Identity-H       yes yes yes     24  0\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     31  0\nBGZIHO+LiberationSans-Bold           CID TrueType      Identity-H       yes yes yes     38  0\nFRZNSF+LiberationSans                CID TrueType      Identity-H       yes yes yes     45  0\n",
+    "all_N_absolute_allocated_forward_equivariantx.pdf": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nGCWXDV+DejaVuSans-Oblique            CID TrueType      Identity-H       yes yes yes     24  0\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     31  0\nBGZIHO+LiberationSans-Bold           CID TrueType      Identity-H       yes yes yes     38  0\nFRZNSF+LiberationSans                CID TrueType      Identity-H       yes yes yes     45  0\n",
+    "all_N_absolute_reserved_forward_candidate.pdf": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nGCWXDV+DejaVuSans-Oblique            CID TrueType      Identity-H       yes yes yes     24  0\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     31  0\nBGZIHO+LiberationSans-Bold           CID TrueType      Identity-H       yes yes yes     38  0\nFRZNSF+LiberationSans                CID TrueType      Identity-H       yes yes yes     45  0\n",
+    "all_N_absolute_reserved_forward_equivariantx.pdf": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nGCWXDV+DejaVuSans-Oblique            CID TrueType      Identity-H       yes yes yes     24  0\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     31  0\nBGZIHO+LiberationSans-Bold           CID TrueType      Identity-H       yes yes yes     38  0\nFRZNSF+LiberationSans                CID TrueType      Identity-H       yes yes yes     45  0\n",
+    "overview_forward_vjp_N131072.pdf": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nGCWXDV+DejaVuSans-Oblique            CID TrueType      Identity-H       yes yes yes     21  0\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     28  0\nBGZIHO+LiberationSans-Bold           CID TrueType      Identity-H       yes yes yes     35  0\nFRZNSF+LiberationSans                CID TrueType      Identity-H       yes yes yes     42  0\n",
+    "N_landscape_forward_vjp_C32.pdf": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nGCWXDV+DejaVuSans-Oblique            CID TrueType      Identity-H       yes yes yes     21  0\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     28  0\nBGZIHO+LiberationSans-Bold           CID TrueType      Identity-H       yes yes yes     35  0\nFRZNSF+LiberationSans                CID TrueType      Identity-H       yes yes yes     42  0\n",
+    "N_landscape_forward_vjp_C64.pdf": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nGCWXDV+DejaVuSans-Oblique            CID TrueType      Identity-H       yes yes yes     21  0\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     28  0\nBGZIHO+LiberationSans-Bold           CID TrueType      Identity-H       yes yes yes     35  0\nFRZNSF+LiberationSans                CID TrueType      Identity-H       yes yes yes     42  0\n",
+    "N_landscape_forward_vjp_C96.pdf": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nGCWXDV+DejaVuSans-Oblique            CID TrueType      Identity-H       yes yes yes     21  0\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     28  0\nBGZIHO+LiberationSans-Bold           CID TrueType      Identity-H       yes yes yes     35  0\nFRZNSF+LiberationSans                CID TrueType      Identity-H       yes yes yes     42  0\n",
+    "N_landscape_forward_vjp_C128.pdf": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nGCWXDV+DejaVuSans-Oblique            CID TrueType      Identity-H       yes yes yes     21  0\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     28  0\nBGZIHO+LiberationSans-Bold           CID TrueType      Identity-H       yes yes yes     35  0\nFRZNSF+LiberationSans                CID TrueType      Identity-H       yes yes yes     42  0\n",
+    "N_landscape_forward_vjp_C256.pdf": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nGCWXDV+DejaVuSans-Oblique            CID TrueType      Identity-H       yes yes yes     21  0\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     28  0\nBGZIHO+LiberationSans-Bold           CID TrueType      Identity-H       yes yes yes     35  0\nFRZNSF+LiberationSans                CID TrueType      Identity-H       yes yes yes     42  0\n",
+    "N_channel_layers_forward_vjp.pdf": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nGCWXDV+DejaVuSans-Oblique            CID TrueType      Identity-H       yes yes yes     49  0\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     56  0\nBGZIHO+LiberationSans-Bold           CID TrueType      Identity-H       yes yes yes     63  0\nFRZNSF+LiberationSans                CID TrueType      Identity-H       yes yes yes     70  0\n",
+    "N_channel_connected_forward_vjp.pdf": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nGCWXDV+DejaVuSans-Oblique            CID TrueType      Identity-H       yes yes yes     33  0\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     40  0\nBGZIHO+LiberationSans-Bold           CID TrueType      Identity-H       yes yes yes     47  0\nFRZNSF+LiberationSans                CID TrueType      Identity-H       yes yes yes     54  0\n",
+    "all_N_throughput_forward_vjp.pdf": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nGCWXDV+DejaVuSans-Oblique            CID TrueType      Identity-H       yes yes yes     24  0\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     31  0\nBGZIHO+LiberationSans-Bold           CID TrueType      Identity-H       yes yes yes     38  0\nFRZNSF+LiberationSans                CID TrueType      Identity-H       yes yes yes     45  0\n",
+    "all_N_allocated_forward_vjp.pdf": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nGCWXDV+DejaVuSans-Oblique            CID TrueType      Identity-H       yes yes yes     24  0\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     31  0\nBGZIHO+LiberationSans-Bold           CID TrueType      Identity-H       yes yes yes     38  0\nFRZNSF+LiberationSans                CID TrueType      Identity-H       yes yes yes     45  0\n",
+    "all_N_reserved_forward_vjp.pdf": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nGCWXDV+DejaVuSans-Oblique            CID TrueType      Identity-H       yes yes yes     24  0\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     31  0\nBGZIHO+LiberationSans-Bold           CID TrueType      Identity-H       yes yes yes     38  0\nFRZNSF+LiberationSans                CID TrueType      Identity-H       yes yes yes     45  0\n",
+    "all_N_process_forward_vjp.pdf": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nGCWXDV+DejaVuSans-Oblique            CID TrueType      Identity-H       yes yes yes     24  0\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     31  0\nBGZIHO+LiberationSans-Bold           CID TrueType      Identity-H       yes yes yes     38  0\nFRZNSF+LiberationSans                CID TrueType      Identity-H       yes yes yes     45  0\n",
+    "all_N_absolute_allocated_forward_vjp_candidate.pdf": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nGCWXDV+DejaVuSans-Oblique            CID TrueType      Identity-H       yes yes yes     24  0\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     31  0\nBGZIHO+LiberationSans-Bold           CID TrueType      Identity-H       yes yes yes     38  0\nFRZNSF+LiberationSans                CID TrueType      Identity-H       yes yes yes     45  0\n",
+    "all_N_absolute_allocated_forward_vjp_equivariantx.pdf": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nGCWXDV+DejaVuSans-Oblique            CID TrueType      Identity-H       yes yes yes     24  0\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     31  0\nBGZIHO+LiberationSans-Bold           CID TrueType      Identity-H       yes yes yes     38  0\nFRZNSF+LiberationSans                CID TrueType      Identity-H       yes yes yes     45  0\n",
+    "all_N_absolute_reserved_forward_vjp_candidate.pdf": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nGCWXDV+DejaVuSans-Oblique            CID TrueType      Identity-H       yes yes yes     24  0\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     31  0\nBGZIHO+LiberationSans-Bold           CID TrueType      Identity-H       yes yes yes     38  0\nFRZNSF+LiberationSans                CID TrueType      Identity-H       yes yes yes     45  0\n",
+    "all_N_absolute_reserved_forward_vjp_equivariantx.pdf": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nGCWXDV+DejaVuSans-Oblique            CID TrueType      Identity-H       yes yes yes     24  0\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     31  0\nBGZIHO+LiberationSans-Bold           CID TrueType      Identity-H       yes yes yes     38  0\nFRZNSF+LiberationSans                CID TrueType      Identity-H       yes yes yes     45  0\n"
+  }
+}

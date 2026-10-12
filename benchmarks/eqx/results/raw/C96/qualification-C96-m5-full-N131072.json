@@ -1,0 +1,36 @@
+{
+  "status": "ok",
+  "job_id": "90873",
+  "package_version": "0.1.5",
+  "package_path": "/public/home/sps-xia/rxlin/ictc_o2_hp_20261011/high_N_20261012/installed_v0_1_5/ictc_o2_hp/__init__.py",
+  "N": 131072,
+  "C": 96,
+  "m_max": 5,
+  "parity": "full",
+  "reference_chunk": 1024,
+  "dtype": "FP32",
+  "tf32": false,
+  "amp": false,
+  "phase": "equivariantx_native_adapter_compiled_N32",
+  "candidate_errors": {
+    "output": 1.462519350070579e-07,
+    "dx": 1.6112130651890766e-07,
+    "dy": 1.8087489195295348e-07,
+    "dw": 6.505772986374545e-07
+  },
+  "candidate_gate": 1e-05,
+  "every_row_checked": true,
+  "every_weight_checked": true,
+  "paths": 64,
+  "finite_check": "all reference/actual output and input-gradient rows in chunks; every weight",
+  "parameters": 10944,
+  "width": 2112,
+  "equivariantx_errors": {
+    "adapter_output": 0.0,
+    "adapter_VJP": 0.0,
+    "compiled_output": 6.987950258092955e-08,
+    "compiled_VJP": 1.6890944629456592e-07
+  },
+  "equivariantx_gate": 0.001,
+  "equivariantx_validation_N": 32
+}

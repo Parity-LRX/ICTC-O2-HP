@@ -74,6 +74,6 @@ timing and does not contribute a paired-IQR win.
 That configuration has no finite comparison ratio and is excluded from
 this range. ICTC completed it successfully.
 
-Raw samples, measurement scripts, reports and figures remain in the
-separate release archive. See [validation](VALIDATION.md),
+Current raw samples, measurement scripts, reports and final figures are in
+[benchmarks/eqx](../benchmarks/eqx/README.md). See [validation](VALIDATION.md),
 [figure interpretation](FIGURES.md) and [release notes](RELEASE.md).
