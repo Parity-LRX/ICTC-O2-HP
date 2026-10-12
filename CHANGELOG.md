@@ -1,5 +1,14 @@
 # Changelog
 
+## Licensing metadata - 2026-10-12
+
+- Align project-owned O2 code with ICTC-O3-HP's unmodified PolyForm
+  Noncommercial 1.0.0 and separate written commercial-permission procedure.
+- Add O2-specific scope and notices, preserve standard permitted-purpose
+  exceptions and third-party/previously granted rights.
+- Include licensing documents and SPDX metadata in source/wheel builds using
+  setuptools 77 or newer. Numerical implementation and version remain 0.1.5.
+
 ## 0.1.5 - 2026-10-12
 
 - Extend full-parity input-adjoint fusion to m_max=4–6, with one fixed

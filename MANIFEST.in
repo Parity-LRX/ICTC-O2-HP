@@ -1,4 +1,4 @@
-include README.md CHANGELOG.md NOTICE pyproject.toml MANIFEST.in
+include README.md CHANGELOG.md LICENSE NOTICE LICENSE_SCOPE.md COMMERCIAL_LICENSE.md pyproject.toml MANIFEST.in
 recursive-include src/ictc_o2_hp *.py
 recursive-include docs *.md *.txt
 recursive-include examples *.py

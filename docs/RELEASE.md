@@ -22,7 +22,8 @@ eqx benchmark scripts, recorded results and final figures are now included in
 | `docs/` | Current API, execution, validation, performance and figure interpretation |
 | `docs/runtime_constraints.txt` | Exact qualified runtime/build dependencies |
 | `benchmarks/eqx/` | Current comparison scripts, raw/report data and final figures |
-| `pyproject.toml`, `MANIFEST.in`, `NOTICE` | Packaging and private-use notice |
+| `pyproject.toml`, `MANIFEST.in` | Packaging and license-file inclusion |
+| `LICENSE`, `NOTICE`, `LICENSE_SCOPE.md`, `COMMERCIAL_LICENSE.md` | PolyForm Noncommercial terms, scope and separate commercial authorization |
 
 The installed wheel contains the library and its distribution metadata.
 EquivariantX is an external comparator, rather than a package dependency.
@@ -63,3 +64,9 @@ remain separate. Benchmark files are excluded from the wheel/source package. See
 Keep `v0.1.5` fixed. Later numerical or public-API changes receive a new
 package version, custom-op namespace and qualification. Commit current source,
 documentation and the explicitly included eqx comparison evidence.
+
+The current main branch offers project-owned code under the same unmodified
+PolyForm Noncommercial 1.0.0 license as ICTC-O3-HP. Both wheel and source
+distribution include all four licensing documents and the SPDX license
+expression. The original release tag and archived build artifacts remain fixed;
+the licensing metadata update is recorded separately from those frozen objects.

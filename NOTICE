@@ -1,10 +1,18 @@
-ICTC-O2 HP is a private research project. No public distribution or
-third-party license grant is implied by this repository.
+Required Notice: Copyright (c) 2026 RuixiangLin. ICTC-O2 HP project-owned implementations are offered under PolyForm Noncommercial License 1.0.0; commercial permission for uses outside its permitted purposes requires a separate written grant from the rights holder.
+Required Notice: Preserve applicable third-party copyright and permission notices. This offer does not withdraw permissive rights previously granted for any material.
+
+The PolyForm Noncommercial License 1.0.0 text in LICENSE is copied unchanged
+from the ICTC-O3-HP license and matches the official text at
+https://polyformproject.org/licenses/noncommercial/1.0.0.txt.
+Its permitted-purpose and noncommercial-organization clauses are not narrowed
+by this notice or the procedure in COMMERCIAL_LICENSE.md. LICENSE_SCOPE.md
+identifies covered project-owned material and preserved third-party rights.
 
 The Cartesian O(2) mathematics and tensor-product implementation were extracted
 from the separately qualified O(2) engineering task dated 2026-10-11.
 EquivariantX is an external benchmark comparator and is not included in this
-package. Current comparison scripts, recorded results and final figures are
+package. Dependencies and any upstream-derived generated source retain their
+own terms. Current comparison scripts, recorded results and final figures are
 included under benchmarks/eqx but excluded from the installed library package.
 Historical experiments, general tests, job logs and compiler caches remain
 in a separate private archive.

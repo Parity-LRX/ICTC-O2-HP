@@ -82,3 +82,16 @@ These benchmark files are kept outside the installed library package.
 [benchmark dependencies](benchmarks/eqx/requirements-qualified.txt) record the
 reproduction environment. General API tests, older versions, superseded
 experiments, build products and compiler caches remain in the separate archive.
+
+## License
+
+Project-owned ICTC-O2 HP implementations use the same
+[PolyForm Noncommercial 1.0.0](LICENSE) license as ICTC-O3-HP (formerly
+MACE-ICTC-HP). **Commercial uses outside that license's permitted purposes
+require separate written authorization** from the relevant rights holder;
+see [commercial permission](COMMERCIAL_LICENSE.md).
+
+The standard educational/public-research and other permitted-purpose
+provisions apply unchanged. Third-party and previously granted permissive
+rights retain their original scope; see [LICENSE_SCOPE.md](LICENSE_SCOPE.md)
+and [NOTICE](NOTICE).

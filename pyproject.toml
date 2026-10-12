@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=64", "wheel"]
+requires = ["setuptools>=77", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -8,6 +8,8 @@ version = "0.1.5"
 description = "Private standalone high-performance Cartesian O(2) tensor products"
 readme = "README.md"
 requires-python = ">=3.10"
+license = "PolyForm-Noncommercial-1.0.0"
+license-files = ["LICENSE", "NOTICE", "LICENSE_SCOPE.md", "COMMERCIAL_LICENSE.md"]
 dependencies = ["torch>=2.7"]
 
 [project.optional-dependencies]
