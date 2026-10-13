@@ -73,13 +73,21 @@ adjoints. For `V<=8`, sparse compile-time coupling coefficients fuse every
 output entry in the forward and every first-input entry in its adjoint. The
 second-input adjoint sums all paths before a single channel reduction for each
 entry, reusing the first input and output cotangent across v channels. For
-V=1, per-row weight adjoints also group paths by output entry, reusing feature
-loads and cotangents while omitting zero CG terms. For
+V=1, per-row weight adjoints group paths by output entry, reusing feature
+loads and cotangents while omitting zero CG terms. External V=1 weights with
+C128–256 use joint angular/weight adjoints when both are requested. They share
+the first-input/output-cotangent contraction; the left adjoint can be included
+in the same launches. Joint execution keeps weights and their gradients live
+together. [Radial fusion](RADIAL.md) bounds these buffers for large edge batches.
+For
 multi-channel inputs, the v projection precedes angular coupling. Larger V
 uses runtime path metadata. Input adjoints recompute the required contractions
 rather than saving row-by-path projections. Shared
 weight gradients use a fixed 16-way reduction with workspace `16*weight_numel`
 float32 values. No row-by-path-by-C-by-V outer product is stored.
+Eager autograd evaluates only gradient roles in the active target graph.
+Compilation, tracing and unsupported engine queries conservatively retain all
+declared roles; parameters and paths remain trainable.
 
 The launch policy depends on representation/channel sizes, not on the number
 of batch rows. No TF32 or reduced-precision dot product is used. CPU and other

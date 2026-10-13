@@ -20,7 +20,9 @@ the existing eqx performance cohort continue to describe the original operator.
 `RadialUvuTensorProduct` combines the final radial affine layer with the
 per-edge V=1 TP. It bounds generated weights and their adjoints for large edge
 batches while preserving gradients through the complete radial network.
-See [radial-weight fusion](docs/RADIAL.md).
+See [radial-weight fusion](docs/RADIAL.md),
+[adjoint scheduling](docs/RADIAL_GRAPH.md) and the
+[whole-chain EQX comparison](docs/RADIAL_PERFORMANCE.md).
 
 The source project and Git repository are separate from the O(3) HP project and
 the paper. It has no dependency on EquivariantX, MACE-ICTC HP, CHORUS or the paper

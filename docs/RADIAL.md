@@ -19,18 +19,21 @@ output[edge,k,u] += weight[edge,p,u] * CG(left[edge,i,u], angular[edge,j])
 
 ## Execution and derivatives
 
-CUDA float32 processes at most 16384 edges per block. The block cap depends
-only on TP path/channel sizes, bounding one FP32 weight block at 4 GiB; it
-is independent of total N. The affine projection and TP run together inside one operator.
-Inputs, affine parameters and the first bounded weight block are saved for
-backward. Backward reuses the first block and regenerates the remaining blocks,
+CUDA float32 uses a block cap determined by TP path/channel sizes. C128–256
+uses at most 8192 edges and a 2 GiB weight budget so joint TP adjoints can keep
+local weights and their gradients live together. Other channels use at most
+16384 edges and a 4 GiB budget. These policies are independent of total N.
+The affine projection and TP run together inside one operator.
+Inputs and affine parameters are saved. When TP-input adjoints may be needed,
+the first bounded weight block is also saved. Backward reuses that first block
+and regenerates remaining blocks only when input adjoints require their weights,
 computes the TP adjoints and immediately contracts the
 weight adjoint into radial-hidden and affine-parameter gradients. Generated
 weight storage is bounded by the block cap, rather than growing with total N;
 weight adjoints are not saved between blocks.
 
-The complete block is compiled so its generated weights can be released
-before their adjoints are allocated. The main temporary bound is proportional
+The complete block is compiled with bounded temporary lifetimes. Joint TP
+adjoints keep local weights and their gradients live together. The main bound is proportional
 to `block_cap * tp.weight_numel`, in addition to model inputs, outputs, gradients
 and the first block's bounded cache. The cache is disabled for inference.
 This is operator fusion with bounded temporary buffers; it still generates
@@ -41,6 +44,9 @@ affine matrix and its optional bias. Second derivatives use multilinear
 adjoint identities and the same bounded execution, rather than regenerating
 a full edge-weight tensor. Gradients through earlier radial layers and through
 angular/radial geometry are handled by PyTorch.
+
+[Adjoint scheduling](RADIAL_GRAPH.md) explains actual-target graph pruning and
+the shared coupling expressions used by the joint angular/weight adjoints.
 
 Compiled first-order VJPs are qualified on PyTorch 2.7.1. Its outer AOT
 autograd does not support double backward: an energy/force-loss test on an

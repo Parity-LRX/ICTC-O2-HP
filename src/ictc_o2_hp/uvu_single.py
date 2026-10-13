@@ -183,3 +183,64 @@ def _weights(x, y, g, out, N: tl.constexpr, WX: tl.constexpr, WY: tl.constexpr,
             angular1 = tl.load(y + row * WY + yo + 1, active, 0)
             value += value1 * angular1
         tl.store(out + row * WNUM + p * U + u, value, active)
+
+
+@triton.jit
+def _joint(x, y, w, g, gx, partial_y, gw,
+            N: tl.constexpr, WX: tl.constexpr, WY: tl.constexpr, U: tl.constexpr,
+            WNUM: tl.constexpr, FIRST: tl.constexpr, SECOND: tl.constexpr,
+            PATHS: tl.constexpr, I: tl.constexpr, SELECTED: tl.constexpr,
+            B: tl.constexpr, BU: tl.constexpr, EY: tl.constexpr, NEED_X: tl.constexpr):
+    row = tl.program_id(0) * B + tl.arange(0, B)
+    u = tl.arange(0, BU)
+    active = (row[:, None] < N) & (u[None, :] < U)
+    entry = tl.arange(0, EY)[:, None, None]
+    ax0 = tl.full((B, BU), 0, tl.float32)
+    ax1 = tl.full((B, BU), 0, tl.float32)
+    ay = tl.full((EY, B, BU), 0, tl.float32)
+    xo = FIRST.value[I][0]
+    dx = FIRST.value[I][1]
+    # The common contraction of x and g feeds both angular and weight
+    # adjoints. Source-entry grouping also gives each left adjoint one writer.
+    for index in tl.static_range(len(SELECTED.value)):
+        p = SELECTED.value[index]
+        yo = SECOND.value[PATHS.value[SELECTED.value[index]][1]][0]
+        dy = SECOND.value[PATHS.value[SELECTED.value[index]][1]][1]
+        go = FIRST.value[PATHS.value[SELECTED.value[index]][2]][0]
+        dg = FIRST.value[PATHS.value[SELECTED.value[index]][2]][1]
+        weight = tl.load(w + row[:, None] * WNUM + p * U + u[None, :], active, 0)
+        vx0 = tl.full((B, BU), 0, tl.float32)
+        vx1 = tl.full((B, BU), 0, tl.float32)
+        vy0 = tl.full((B, BU), 0, tl.float32)
+        vy1 = tl.full((B, BU), 0, tl.float32)
+        for term in tl.static_range(len(PATHS.value[SELECTED.value[index]][3])):
+            a = PATHS.value[SELECTED.value[index]][3][term][0]
+            b = PATHS.value[SELECTED.value[index]][3][term][1]
+            c = PATHS.value[SELECTED.value[index]][3][term][2]
+            coefficient = PATHS.value[SELECTED.value[index]][3][term][3]
+            left = tl.load(x + row[:, None] * WX + xo + u[None, :] * dx + a, active, 0)
+            cotangent = tl.load(g + row[:, None] * WX + go + u[None, :] * dg + c, active, 0)
+            if NEED_X:
+                angular = tl.load(y + row[:, None] * WY + yo + b + u[None, :] * 0, active, 0)
+                if a == 0: vx0 += (coefficient * cotangent) * angular
+                else: vx1 += (coefficient * cotangent) * angular
+            if b == 0: vy0 += left * (coefficient * cotangent)
+            else: vy1 += left * (coefficient * cotangent)
+        if NEED_X:
+            ax0 += weight * vx0
+            ax1 += weight * vx1
+        ay += tl.where(entry == yo, (weight * vy0)[None, :, :], 0)
+        angular0 = tl.load(y + row[:, None] * WY + yo + u[None, :] * 0, active, 0)
+        weight_grad = vy0 * angular0
+        if dy == 2:
+            ay += tl.where(entry == yo + 1, (weight * vy1)[None, :, :], 0)
+            angular1 = tl.load(y + row[:, None] * WY + yo + 1 + u[None, :] * 0, active, 0)
+            weight_grad += vy1 * angular1
+        tl.store(gw + row[:, None] * WNUM + p * U + u[None, :], weight_grad, active)
+    if NEED_X:
+        tl.store(gx + row[:, None] * WX + xo + u[None, :] * dx, ax0, active)
+        if dx == 2:
+            tl.store(gx + row[:, None] * WX + xo + u[None, :] * dx + 1, ax1, active)
+    component = tl.arange(0, EY)[:, None]
+    tl.store(partial_y + I * N * WY + row[None, :] * WY + component,
+             tl.sum(ay, 2), (row[None, :] < N) & (component < WY))

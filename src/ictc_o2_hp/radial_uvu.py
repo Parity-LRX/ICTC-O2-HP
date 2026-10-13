@@ -61,6 +61,6 @@ class RadialUvuTensorProduct(torch.nn.Module):
             self.tp._path_info, self.tp._coefficients,
             self.tp._first_order, self.tp._second_order,
             self.tp._kernel_metadata_id, bias is not None,
-            torch.is_grad_enabled() and any(value.requires_grad for value in (left, angular, radial_hidden, *operands)),
+            torch.is_grad_enabled() and (left.requires_grad or angular.requires_grad),
         )
         return result.reshape(*left.shape[:-1], self.tp.representation_dimension)

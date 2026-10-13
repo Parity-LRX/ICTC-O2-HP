@@ -2,6 +2,12 @@
 
 ## 0.1.6.dev0
 
+- Prune unused first/second derivative roles from the active target graph with
+  conservative tracing fallback; skip unused projection/GEMM/output work.
+- Share angular/weight coupling expressions in joint external V=1 adjoints
+  for C128–256, with smaller radial blocks to bound simultaneously live buffers.
+- Isolate compiled block entry points by TP plan and derivative role, avoiding
+  global specialization-limit changes.
 - Add flat `UvuTensorProduct` and `ReferenceUvuTensorProduct` operators with
   independent first/second channel counts and second-input frequency/parity.
 - Enumerate all legal representation-entry/copy paths; preserve u and sum v

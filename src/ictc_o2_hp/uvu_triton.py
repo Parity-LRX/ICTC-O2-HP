@@ -15,6 +15,27 @@ _STATIC = []
 _SPLITS = 16
 
 
+def _required_gradients(values, declared):
+    """Use the active autograd target graph; retain declared roles in tracing."""
+    if torch.compiler.is_compiling():
+        return tuple(declared)
+    from torch.fx.experimental.proxy_tensor import get_proxy_mode
+    if (get_proxy_mode() is not None or torch._C._are_functorch_transforms_active()
+            or not hasattr(torch._C, "_will_engine_execute_node")):
+        return tuple(declared)
+    needed = []
+    for value, active in zip(values, declared):
+        if not active:
+            needed.append(False)
+            continue
+        try:
+            edge = torch.autograd.graph.get_gradient_edge(value)
+            needed.append(bool(torch._C._will_engine_execute_node(edge.node)))
+        except (RuntimeError, AttributeError, AssertionError):
+            needed.append(True)
+    return tuple(needed)
+
+
 def register_metadata(metadata, coefficient_values):
     first, second, output, paths, u, v = metadata
     records = []
@@ -250,22 +271,39 @@ def uvu_forward(left: torch.Tensor, right: torch.Tensor, weight: torch.Tensor,
 def uvu_backward(left: torch.Tensor, right: torch.Tensor, weight: torch.Tensor,
                  grad_output: torch.Tensor, info: torch.Tensor, coefficients: torch.Tensor,
                  first_order: torch.Tensor, second_order: torch.Tensor,
-                 metadata_id: int, shared: bool) -> tuple[torch.Tensor, torch.Tensor, torch.Tensor]:
+                 metadata_id: int, shared: bool, needed: int = 7
+                 ) -> tuple[torch.Tensor, torch.Tensor, torch.Tensor]:
     first, second, output, paths, u, v = _METADATA[metadata_id]
     rows, wx, wy, p = left.shape[0], left.shape[1], right.shape[1], len(paths)
     wnum = p * u * v
-    gx, gy, gw = torch.empty_like(left), torch.empty_like(right), torch.empty_like(weight)
+    gx = torch.empty_like(left) if needed & 1 else left.new_empty(0)
+    gy = torch.empty_like(right) if needed & 2 else right.new_empty(0)
+    gw = (torch.empty_like(weight) if shared else left.new_empty((rows, wnum))) if needed & 4 else left.new_empty(0)
     if not rows:
-        return gx, gy, torch.zeros_like(weight)
+        return gx, gy, torch.zeros_like(gw)
+    if v == 1 and not shared and 128 <= u <= 256 and needed & 6 == 6:
+        from .uvu_single import _joint
+        first_meta, second_meta, static_paths = _STATIC[metadata_id]
+        partial_y = right.new_empty((len(first), rows, wy))
+        for i in range(len(first)):
+            selected = tuple(index for index, path in enumerate(paths) if path[0] == i)
+            torch.library.wrap_triton(_joint)[(rows,)](
+                left, right, weight, grad_output, gx, partial_y, gw, rows, wx, wy,
+                u, wnum, first_meta, second_meta, static_paths, i, selected,
+                1, triton.next_power_of_2(u), triton.next_power_of_2(wy), bool(needed & 1),
+                num_warps=4 if u <= 128 else 8, enable_fp_fusion=False,
+            )
+        return gx, partial_y.sum(0), gw
     if v == 1:
         from .uvu_single import _fused_left, _right
         first_meta, second_meta, static_paths = _STATIC[metadata_id]
-        torch.library.wrap_triton(_fused_left)[(triton.cdiv(rows * u, 128),)](
-            right, weight, grad_output, gx, rows, wx, wy, u, wnum, shared,
-            first_meta, second_meta, static_paths, 128, triton.next_power_of_2(len(first)),
-            num_warps=4, enable_fp_fusion=False,
-        )
-        for j in range(len(second)):
+        if needed & 1:
+            torch.library.wrap_triton(_fused_left)[(triton.cdiv(rows * u, 128),)](
+                right, weight, grad_output, gx, rows, wx, wy, u, wnum, shared,
+                first_meta, second_meta, static_paths, 128, triton.next_power_of_2(len(first)),
+                num_warps=4, enable_fp_fusion=False,
+            )
+        for j in range(len(second) if needed & 2 else 0):
             selected = tuple(index for index, path in enumerate(paths) if path[1] == j)
             torch.library.wrap_triton(_right)[(triton.cdiv(rows, 2),)](
                 left, weight, grad_output, gy, rows, wx, wy, u, wnum, shared,
@@ -275,12 +313,13 @@ def uvu_backward(left: torch.Tensor, right: torch.Tensor, weight: torch.Tensor,
     elif v <= 8:
         from .uvu_fused import _left as _fused_left, _right
         first_meta, second_meta, static_paths = _STATIC[metadata_id]
-        torch.library.wrap_triton(_fused_left)[(triton.cdiv(rows * u, 128),)](
-            right, weight, grad_output, gx, rows, wx, wy, u, v, wnum, shared,
-            first_meta, second_meta, static_paths, 128, triton.next_power_of_2(len(first)),
-            triton.next_power_of_2(v), num_warps=4, enable_fp_fusion=False,
-        )
-        for j in range(len(second)):
+        if needed & 1:
+            torch.library.wrap_triton(_fused_left)[(triton.cdiv(rows * u, 128),)](
+                right, weight, grad_output, gx, rows, wx, wy, u, v, wnum, shared,
+                first_meta, second_meta, static_paths, 128, triton.next_power_of_2(len(first)),
+                triton.next_power_of_2(v), num_warps=4, enable_fp_fusion=False,
+            )
+        for j in range(len(second) if needed & 2 else 0):
             selected = tuple(index for index, path in enumerate(paths) if path[1] == j)
             torch.library.wrap_triton(_right)[(triton.cdiv(rows, 2), 1)](
                 left, weight, grad_output, gy, rows, wx, wy, u, v, wnum, shared,
@@ -290,16 +329,20 @@ def uvu_backward(left: torch.Tensor, right: torch.Tensor, weight: torch.Tensor,
             )
     else:
         block = 128 if v <= 8 else 32
-        torch.library.wrap_triton(_input_grad)[(triton.cdiv(rows * u, block), len(first))](
-            left, right, weight, grad_output, info, coefficients, first_order, gx,
-            rows, wx, wy, u, v, p, len(output), len(first), wnum, shared, True,
-            block, triton.next_power_of_2(v), num_warps=4, enable_fp_fusion=False,
-        )
-        torch.library.wrap_triton(_input_grad)[(triton.cdiv(rows * v, 32), len(second))](
-            left, right, weight, grad_output, info, coefficients, second_order, gy,
-            rows, wx, wy, u, v, p, len(output), len(first), wnum, shared, False,
-            32, triton.next_power_of_2(u), num_warps=4, enable_fp_fusion=False,
-        )
+        if needed & 1:
+            torch.library.wrap_triton(_input_grad)[(triton.cdiv(rows * u, block), len(first))](
+                left, right, weight, grad_output, info, coefficients, first_order, gx,
+                rows, wx, wy, u, v, p, len(output), len(first), wnum, shared, True,
+                block, triton.next_power_of_2(v), num_warps=4, enable_fp_fusion=False,
+            )
+        if needed & 2:
+            torch.library.wrap_triton(_input_grad)[(triton.cdiv(rows * v, 32), len(second))](
+                left, right, weight, grad_output, info, coefficients, second_order, gy,
+                rows, wx, wy, u, v, p, len(output), len(first), wnum, shared, False,
+                32, triton.next_power_of_2(u), num_warps=4, enable_fp_fusion=False,
+            )
+    if not needed & 4:
+        return gx, gy, gw
     if shared:
         partial = weight.new_empty((_SPLITS, wnum))
         torch.library.wrap_triton(_weight_shared)[(triton.cdiv(u * v, 32), p, _SPLITS)](
@@ -337,16 +380,18 @@ def _forward_setup(ctx, inputs, output):
 
 def _backward(ctx, grad_output):
     left, right, weight, info, coefficients, first_order, second_order = ctx.saved_tensors
+    needed = _required_gradients((left, right, weight), ctx.needs_input_grad[:3])
+    mask = sum(int(active) << index for index, active in enumerate(needed))
     grads = uvu_backward(left, right, weight, grad_output.contiguous(), info, coefficients,
-                         first_order, second_order, ctx.metadata_id, ctx.shared)
-    return *grads, None, None, None, None, None, None
+                         first_order, second_order, ctx.metadata_id, ctx.shared, mask)
+    return *(value if active else None for value, active in zip(grads, needed)), None, None, None, None, None, None
 
 
 uvu_forward.register_autograd(_backward, setup_context=_forward_setup)
 
 
 def _backward_setup(ctx, inputs, output):
-    left, right, weight, grad_output, info, coefficients, first_order, second_order, metadata_id, shared = inputs
+    left, right, weight, grad_output, info, coefficients, first_order, second_order, metadata_id, shared, needed = inputs
     ctx.save_for_backward(left, right, weight, grad_output, coefficients)
     ctx.metadata_id, ctx.shared = metadata_id, shared
     ctx.set_materialize_grads(False)
@@ -356,7 +401,7 @@ def _double_backward(ctx, dd_left, dd_right, dd_weight):
     left, right, weight, grad_output, coefficients = ctx.saved_tensors
     selected = [(i, cot) for i, cot in enumerate((dd_left, dd_right, dd_weight)) if cot is not None]
     if not selected:
-        return (None,) * 10
+        return (None,) * 11
     with torch.enable_grad():
         operands = tuple(value.detach().requires_grad_(True)
                          for value in (left, right, weight, grad_output))
@@ -367,7 +412,7 @@ def _double_backward(ctx, dd_left, dd_right, dd_weight):
             tuple(gradients[i] for i, _ in selected), operands,
             grad_outputs=tuple(cot for _, cot in selected), allow_unused=True,
         )
-    return *result, None, None, None, None, None, None
+    return *result, None, None, None, None, None, None, None
 
 
 uvu_backward.register_autograd(_double_backward, setup_context=_backward_setup)
