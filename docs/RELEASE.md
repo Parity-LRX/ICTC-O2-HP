@@ -1,5 +1,9 @@
 # Release v0.1.5
 
+This page describes the frozen v0.1.5 release. The separate `codex/uvu-mode`
+development branch reports 0.1.6.dev0 and adds the [uvu operator](UVU.md).
+Its qualification and timings are separate from the v0.1.5 eqx cohort.
+
 The private repository is [Parity-LRX/ICTC-O2-HP](https://github.com/Parity-LRX/ICTC-O2-HP).
 Stable branch: `main`. Annotated release tag: `v0.1.5`.
 Distribution `ictc-o2-hp` and Python package `ictc_o2_hp` both report 0.1.5.

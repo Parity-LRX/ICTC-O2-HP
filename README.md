@@ -11,6 +11,17 @@ Frozen release: **0.1.5**, Git tag **v0.1.5**, stable branch `main`.
 source, qualified runtime and numerical evidence.
 [CHANGELOG.md](CHANGELOG.md) records the current release changes.
 
+Development version **0.1.6.dev0** adds `UvuTensorProduct`: it retains the first
+input channel and sums weighted second-input channels. Its flat inputs may have
+different channel counts, and weights can be shared or supplied per batch row.
+See [uvu API](docs/UVU.md) and [example](examples/uvu.py). The frozen 0.1.5 tag and
+the existing eqx performance cohort continue to describe the original operator.
+
+`RadialUvuTensorProduct` combines the final radial affine layer with the
+per-edge V=1 TP. It bounds generated weights and their adjoints for large edge
+batches while preserving gradients through the complete radial network.
+See [radial-weight fusion](docs/RADIAL.md).
+
 The source project and Git repository are separate from the O(3) HP project and
 the paper. It has no dependency on EquivariantX, MACE-ICTC HP, CHORUS or the paper
 repository. Runtime import uses package-relative paths.

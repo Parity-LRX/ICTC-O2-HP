@@ -1,5 +1,22 @@
 # Changelog
 
+## 0.1.6.dev0
+
+- Add flat `UvuTensorProduct` and `ReferenceUvuTensorProduct` operators with
+  independent first/second channel counts and second-input frequency/parity.
+- Enumerate all legal representation-entry/copy paths; preserve u and sum v
+  with trainable `(C,V)` path matrices, shared or supplied per batch row.
+- Add fused FP32 CUDA forward and full VJP, bounded shared-weight reduction
+  workspace and a differentiable second-derivative fallback.
+- Fuse sparse angular paths for V=1–8; reuse inputs across paths/channels and
+  perform the second-input channel reduction after summing paths.
+- Preserve the original operators and frozen v0.1.5 benchmark cohort.
+- Add `RadialUvuTensorProduct` for final radial affine layer / per-edge TP
+  fusion, bounded weight/adjoint blocks and differentiable force-loss training.
+- Qualify complete radial-chain gradients, rotation/reflection covariance,
+  force-loss second derivatives and all-edge/all-parameter largest-shape math;
+  document throughput, VRAM and the qualified outer-AOT limitation.
+
 ## Licensing metadata - 2026-10-12
 
 - Align project-owned O2 code with ICTC-O3-HP's unmodified PolyForm

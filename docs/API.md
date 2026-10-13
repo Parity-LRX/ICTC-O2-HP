@@ -1,5 +1,10 @@
 # Public API
 
+Development version 0.1.6.dev0 also provides `UvuTensorProduct` and its pure
+PyTorch reference. See [uvu API](UVU.md) for separate first/second channel counts,
+external row-specific weights, representation copies and gradient semantics.
+The APIs below retain their original v0.1.5 routing.
+
 `TensorProduct(channels, m_max, parity="full", normalization="component")`
 accepts two flat tensors of identical shape `(*batch, width)` and returns one
 flat tensor. `width` is available as `representation_dimension`. `parity` is

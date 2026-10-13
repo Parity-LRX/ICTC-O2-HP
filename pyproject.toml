@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ictc-o2-hp"
-version = "0.1.5"
+version = "0.1.6.dev0"
 description = "Private standalone high-performance Cartesian O(2) tensor products"
 readme = "README.md"
 requires-python = ">=3.10"
