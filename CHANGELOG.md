@@ -2,6 +2,8 @@
 
 ## 0.1.6.dev0
 
+- Use one radial-adjoint GEMM layout for all channels, with equivalent transposed
+  products and matching parameter-gradient accumulation, converting once at the end.
 - Prune unused first/second derivative roles from the active target graph with
   conservative tracing fallback; skip unused projection/GEMM/output work.
 - Share angular/weight coupling expressions in joint external V=1 adjoints

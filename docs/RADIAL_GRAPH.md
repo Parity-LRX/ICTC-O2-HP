@@ -62,6 +62,17 @@ also depend on path/channel size and use the same policy for every total N.
 Shared weights, other second-input multiplicities and other channel ranges
 retain the preceding TP adjoint kernels, with requested-role pruning.
 
+## Affine adjoint layout
+
+For every channel count, hidden and affine adjoints use the same transposed GEMMs:
+`gr = (alpha.T @ gw.T).T` and `ga = (radial.T @ gw).T`. Their output orientation
+changes the cuBLAS kernel choice while preserving FP32 arithmetic, every path
+and parameter. The affine accumulator matches the block results' physical
+layout and is converted to the original contiguous `(weight_numel,H)` layout
+once after all blocks. Hidden block results are copied into their final buffer.
+The TP kernels, block caps and first-weight cache remain unchanged. The same
+layout policy applies to every N and every C.
+
 Compiled blocks have separate cached entry points for each TP plan and
 derivative role. This avoids exhausting one function's specialization limit
 when callers use different derivative targets. It does not change an

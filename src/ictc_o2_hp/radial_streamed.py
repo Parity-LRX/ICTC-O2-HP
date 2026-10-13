@@ -37,8 +37,10 @@ def _block_backward(left, angular, radial, alpha, bias, cached_weights, grad_out
     tp_needed = (needed & 3) | (4 if needed & 28 else 0)
     gx, gy, gw = uvu_backward(left, angular, weights, grad_output, info, coefficients,
                               first_order, second_order, metadata_id, False, tp_needed)
-    gr = gw @ alpha if needed & 4 else radial.new_empty(0)
-    ga = gw.T @ radial if needed & 8 else alpha.new_empty(0)
+    # Equivalent transposed products give cuBLAS a different output layout.
+    # Leave the block adjoints as views; the caller copies/accumulates them.
+    gr = (alpha.T @ gw.T).T if needed & 4 else radial.new_empty(0)
+    ga = (radial.T @ gw).T if needed & 8 else alpha.new_empty(0)
     gb = gw.sum(0) if has_bias and needed & 16 else bias.new_empty(0)
     return gx, gy, gr, ga, gb
 
@@ -104,7 +106,8 @@ def radial_backward(left: torch.Tensor, angular: torch.Tensor, radial: torch.Ten
     gx = torch.empty_like(left) if needed & 1 else left.new_empty(0)
     gy = torch.empty_like(angular) if needed & 2 else angular.new_empty(0)
     gr = torch.empty_like(radial) if needed & 4 else radial.new_empty(0)
-    ga = torch.zeros_like(alpha) if needed & 8 else alpha.new_empty(0)
+    # Match each block's physical layout and convert only the final sum.
+    ga = torch.zeros_like(alpha.T, memory_format=torch.contiguous_format).T if needed & 8 else alpha.new_empty(0)
     gb = torch.zeros_like(bias) if needed & 16 else bias.new_empty(0)
     block_rows = _block_rows(alpha.shape[0], metadata_id)
     with torch.no_grad():
@@ -123,7 +126,7 @@ def radial_backward(left: torch.Tensor, angular: torch.Tensor, radial: torch.Ten
             if has_bias and needed & 16:
                 gb.add_(db)
             del dx, dy, dr, da, db
-    return gx, gy, gr, ga, gb
+    return gx, gy, gr, ga.contiguous(), gb
 
 
 @radial_backward.register_fake
