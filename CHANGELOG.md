@@ -2,6 +2,8 @@
 
 ## 0.1.6.dev0
 
+- Write radial TP outputs and left/angular adjoints directly into final block
+  slices, sharing raw launch helpers with the existing allocation-returning APIs.
 - Use one radial-adjoint GEMM layout for all channels, with equivalent transposed
   products and matching parameter-gradient accumulation, converting once at the end.
 - Prune unused first/second derivative roles from the active target graph with

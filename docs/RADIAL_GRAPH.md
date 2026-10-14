@@ -78,6 +78,23 @@ derivative role. This avoids exhausting one function's specialization limit
 when callers use different derivative targets. It does not change an
 execution algorithm according to atom or edge count.
 
+## Direct TP writeback
+
+The radial wrapper allocates the final output and requested input-adjoint
+buffers once. Each block passes its final output slice to the TP forward,
+and final left/angular gradient slices to the TP backward. Internal Triton
+operations declare those destinations as mutated. The joint angular reduction
+also writes into its final slice. This removes intermediate TP output and
+input-adjoint staging without changing the raw kernel arithmetic.
+
+The existing allocation-returning uvu operations share the same launch helpers
+and retain their interfaces and derivative registrations. Mutating operations
+run within the radial custom operations' no-grad implementation; their explicit
+first/second derivative formulas stay intact. Hidden/affine GEMM layouts,
+parameter accumulation, block caps and the first-weight cache are unchanged.
+Every C and N follows this writeback policy. Measured whole-chain speed and
+allocated/reserved peaks are recorded in [performance](RADIAL_PERFORMANCE.md).
+
 The qualified outer-AOT double-backward limitation and force-loss execution
 mode remain as documented in [radial usage](RADIAL.md). Numerical and
 performance evidence is maintained in the separate local benchmark archive.

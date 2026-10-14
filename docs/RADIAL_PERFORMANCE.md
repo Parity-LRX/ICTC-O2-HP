@@ -1,135 +1,130 @@
 # ICTC-O2 HP radial MLP + TP vs EquivariantX
 
-Development version 0.1.6.dev0 with one affine-adjoint layout for every channel count.
-A100-SXM4 40GB, PyTorch 2.7.1+cu128, Triton 3.3.1; strict FP32, TF32/AMP disabled.
-Job 91314: fresh process per metric/implementation, two warmups, seven CUDA-event samples.
-Both full chains use torch.compile(fullgraph=True,dynamic=False).
+Version 0.1.6.dev0: direct TP output/adjoint writeback with the same layout for every C and N.
+A100-SXM4 40GB; PyTorch 2.7.1+cu128; Triton 3.3.1; strict FP32, TF32/AMP disabled.
+Job 91331 uses a fresh process per implementation/metric, 20 warmups and 11 CUDA-event samples.
+Both complete chains use torch.compile(fullgraph=True,dynamic=False).
 
 Linear(16,64) -> SiLU -> Linear(64,64) -> SiLU -> Linear(64,P*C,bias=False) -> V=1 TP.
 First/output full parity; angular canonical parity; m_max=6; N counts edges.
-Full VJP includes forward, all three input gradients and every network parameter.
-Neighbor gathering/scattering and the rest of a message-passing model are outside this chain.
+Full VJP includes forward, all three inputs and every network parameter.
+Gathering/scattering and the rest of a message-passing model are outside the measured chain.
+EQX is its actual native u1u, with matched paths and external per-edge weights.
+Basis/layout conversion is outside timing; phase factors are absorbed into final-affine parameters.
 
-EQX uses its actual native u1u with matched paths and external per-edge weights.
-Basis/layout conversion is outside timing; phase factors are absorbed into final affine parameters.
+## Current EQX comparison
 
-## Current comparison
-
-Speed is EQX time divided by ICTC time; values above one favor ICTC.
+Speed is EQX time / ICTC time; above one favors ICTC. OOM has no ratio.
 
 | N edges | C | metric | ICTC ms | EQX ms | EQX/ICTC speed | ICTC allocated GiB | EQX allocated GiB |
 |---:|---:|---|---:|---:|---:|---:|---:|
-| 131,072 | 256 | forward | 106.285 | OOM | — | 8.96 | — |
-| 131,072 | 256 | full_vjp | 415.652 | OOM | — | 19.39 | — |
-| 32,768 | 128 | forward | 14.700 | 15.672 | 1.07× | 2.03 | 6.24 |
-| 32,768 | 128 | full_vjp | 51.383 | 57.472 | 1.12× | 4.78 | 15.40 |
-| 16,384 | 64 | forward | 3.832 | 4.030 | 1.05× | 1.31 | 1.57 |
-| 16,384 | 64 | full_vjp | 13.942 | 14.892 | 1.07× | 2.44 | 3.88 |
+| 131,072 | 256 | forward | 101.032 | OOM | — | 8.55 | — |
+| 131,072 | 256 | full_vjp | 402.970 | OOM | — | 19.18 | — |
+| 16,384 | 64 | forward | 3.639 | 4.044 | 1.11× | 1.21 | 1.57 |
+| 16,384 | 64 | full_vjp | 13.276 | 14.890 | 1.12× | 2.44 | 3.88 |
+| 32,768 | 128 | forward | 12.569 | 15.881 | 1.26× | 1.83 | 6.24 |
+| 32,768 | 128 | full_vjp | 49.548 | 57.289 | 1.16× | 4.68 | 15.40 |
 
-OOM has no speed or memory ratio. Small differences should be assessed against raw sample distributions.
-All channel counts use the same hidden-adjoint GEMM, affine-adjoint GEMM and accumulation layout.
-The measured changes in each shape are reported below, including any slower result.
+## Increment over the preceding uniform-layout ICTC
 
-## Improvement over preceding ICTC and the 10% VRAM budget
+The control is the preceding qualified uniform-layout implementation, with only its library namespace
+renamed for paired isolation. All parameters, coefficients, normalization and routes are identical.
+Every C and N keeps the same hidden/affine GEMM and accumulation layout.
+All 12 isolated and six paired allocated/reserved comparisons stay within the 110% peak-VRAM limit.
 
-The control is the preceding qualified graph/joint-adjoint implementation, with only its library
-namespace renamed for isolation. Both cohorts have identical path counts, architecture and FP32 settings.
-Allocated and reserved peaks must each be at most 110% of the preceding chain.
-All ten isolated shape/metric checks and all six paired full-VJP/force-loss checks pass.
-The additional fixed-C/different-N measurements check the same library policy across edge counts.
-
-| N edges | C | metric | previous ms | current ms | old/current speed | old GiB | current GiB | current/old memory |
+| N edges | C | metric | preceding ms | current ms | preceding/current speed | old allocated GiB | current allocated GiB | current/old memory |
 |---:|---:|---|---:|---:|---:|---:|---:|---:|
-| 131,072 | 256 | forward | 106.453 | 106.285 | 1.00× | 8.96 | 8.96 | 1.000× |
-| 131,072 | 256 | full_vjp | 440.171 | 415.652 | 1.06× | 19.39 | 19.39 | 1.000× |
-| 32,768 | 128 | forward | 14.705 | 14.700 | 1.00× | 2.03 | 2.03 | 1.000× |
-| 32,768 | 128 | full_vjp | 52.923 | 51.383 | 1.03× | 4.78 | 4.78 | 1.000× |
-| 16,384 | 64 | forward | 3.820 | 3.832 | 1.00× | 1.31 | 1.31 | 1.000× |
-| 16,384 | 64 | full_vjp | 13.567 | 13.942 | 0.97× | 2.44 | 2.44 | 1.000× |
-| 32,768 | 256 | forward | 27.109 | 26.993 | 1.00× | 4.05 | 4.05 | 1.000× |
-| 32,768 | 256 | full_vjp | 106.697 | 101.207 | 1.05× | 9.50 | 9.50 | 1.000× |
-| 131,072 | 128 | forward | 53.406 | 53.519 | 1.00× | 4.51 | 4.51 | 1.000× |
-| 131,072 | 128 | full_vjp | 216.500 | 210.365 | 1.03× | 9.79 | 9.79 | 1.000× |
-
-At N16384/C64, isolated full-VJP time increases by 2.8%.
-At N131072/C256, time decreases by 5.6%.
-The uniform layout does not establish a C64 speedup; its largest measured benefit is at C256.
+| 131,072 | 256 | forward | 106.260 | 101.032 | 1.05× | 8.96 | 8.55 | 0.955× |
+| 131,072 | 256 | full_vjp | 412.337 | 402.970 | 1.02× | 19.39 | 19.18 | 0.990× |
+| 16,384 | 64 | forward | 3.659 | 3.639 | 1.01× | 1.31 | 1.21 | 0.923× |
+| 16,384 | 64 | full_vjp | 13.407 | 13.276 | 1.01× | 2.44 | 2.44 | 1.000× |
+| 32,768 | 128 | forward | 13.229 | 12.569 | 1.05× | 2.03 | 1.83 | 0.900× |
+| 32,768 | 128 | full_vjp | 50.966 | 49.548 | 1.03× | 4.78 | 4.68 | 0.979× |
+| 32,768 | 256 | forward | 26.462 | 25.399 | 1.04× | 4.05 | 3.64 | 0.900× |
+| 32,768 | 256 | full_vjp | 100.550 | 97.451 | 1.03× | 9.50 | 9.30 | 0.979× |
+| 131,072 | 128 | forward | 52.970 | 50.371 | 1.05× | 4.51 | 4.30 | 0.955× |
+| 131,072 | 128 | full_vjp | 209.393 | 205.162 | 1.02× | 9.79 | 9.69 | 0.990× |
+| 131,072 | 64 | forward | 26.571 | 25.283 | 1.05× | 2.88 | 2.67 | 0.929× |
+| 131,072 | 64 | full_vjp | 123.856 | 121.272 | 1.02× | 5.54 | 5.44 | 0.982× |
 
 ## Paired full VJP and force-loss training
 
-Job 91313 uses identical parameters/shared resident inputs on the same GPU, seven alternating rounds.
-The outer model uses ordinary PyTorch, with compiled internal blocks. force_parameters computes an
-energy derivative with create_graph=True, then force-loss gradients for features and every network parameter.
-This metric does not request a coordinate Hessian. These improvements are relative to prior ICTC, not EQX.
-Paired memory includes both resident models/shared inputs and is separate from isolated capacity above.
+Jobs 91325 (full VJP) and 91330 (force_parameters) use identical parameters/shared inputs on one GPU.
+The outer model uses ordinary PyTorch; internal blocks compile in both versions.
+Full VJP: five warmups/model, 11 alternating rounds. Force loss: 20 warmups/model, 15 alternating rounds.
+force_parameters differentiates energy with create_graph=True, then the force loss for features and
+every network parameter. It does not request a coordinate Hessian. No EQX force-loss time was measured.
+Paired peaks include both resident models/shared inputs and are distinct from isolated capacity above.
 
-| N edges | C | metric | previous ms | current ms | old/current speed | previous peak GiB | current peak GiB |
+| N edges | C | metric | preceding ms | current ms | preceding/current speed | old peak GiB | current peak GiB |
 |---:|---:|---|---:|---:|---:|---:|---:|
-| 131,072 | 256 | force_parameters | 1553.848 | 1483.782 | 1.05× | 28.35 | 28.35 |
-| 131,072 | 256 | full_vjp | 442.359 | 419.061 | 1.06× | 21.39 | 21.39 |
-| 32,768 | 128 | force_parameters | 190.423 | 186.675 | 1.02× | 5.27 | 5.27 |
-| 32,768 | 128 | full_vjp | 53.649 | 52.902 | 1.01× | 5.79 | 5.79 |
-| 16,384 | 64 | force_parameters | 47.316 | 47.468 | 1.00× | 3.56 | 3.56 |
-| 16,384 | 64 | full_vjp | 16.186 | 16.399 | 0.99× | 3.44 | 3.44 |
+| 131,072 | 256 | force_parameters | 1496.789 | 1466.788 | 1.02× | 28.35 | 28.35 |
+| 131,072 | 256 | full_vjp | 412.855 | 403.542 | 1.02× | 21.39 | 21.19 |
+| 32,768 | 128 | force_parameters | 186.551 | 182.884 | 1.02× | 5.27 | 5.27 |
+| 32,768 | 128 | full_vjp | 51.867 | 50.512 | 1.03× | 5.79 | 5.68 |
+| 16,384 | 64 | force_parameters | 47.890 | 46.907 | 1.02× | 3.56 | 3.56 |
+| 16,384 | 64 | full_vjp | 14.794 | 14.468 | 1.02× | 3.44 | 3.44 |
 
-## Timing variability and allocator/process memory
+## Timing variability and memory definitions
 
-All allocated/reserved peaks, isolated NVML readings and timing samples are retained. NVML is process memory
-including context/cache and can miss short peaks. Reserved memory includes allocator cache.
-Allocated peaks include inputs, outputs, cotangents and workspaces.
+Allocated peaks include live inputs, outputs, cotangents and workspaces; reserved peaks include allocator
+cache. NVML is sampled process memory, includes context/cache and can miss short peaks.
+Raw records preserve every sample, sampling errors and intervals. Small differences require caution.
 
 | N | C | metric | cohort | median ms | Q1–Q3 ms | allocated GiB | reserved GiB | sampled NVML GiB |
 |---:|---:|---|---|---:|---:|---:|---:|---:|
-| 131,072 | 256 | forward | previous | 106.453 | 106.298–106.978 | 8.96 | 9.75 | 10.24 |
-| 131,072 | 256 | forward | optimized | 106.285 | 106.277–106.591 | 8.96 | 9.75 | 10.24 |
-| 131,072 | 256 | full_vjp | previous | 440.171 | 439.926–440.587 | 19.39 | 20.22 | 20.72 |
-| 131,072 | 256 | full_vjp | optimized | 415.652 | 413.654–416.350 | 19.39 | 20.22 | 20.72 |
-| 32,768 | 128 | forward | previous | 14.705 | 14.089–14.731 | 2.03 | 2.21 | 2.70 |
-| 32,768 | 128 | forward | optimized | 14.700 | 14.691–14.723 | 2.03 | 2.21 | 2.70 |
-| 32,768 | 128 | forward | eqx | 15.672 | 15.562–16.068 | 6.24 | 6.28 | 6.77 |
-| 32,768 | 128 | full_vjp | previous | 52.923 | 52.827–54.412 | 4.78 | 5.60 | 6.09 |
-| 32,768 | 128 | full_vjp | optimized | 51.383 | 51.332–51.699 | 4.78 | 5.60 | 6.09 |
-| 32,768 | 128 | full_vjp | eqx | 57.472 | 57.262–57.667 | 15.40 | 15.46 | 15.96 |
-| 16,384 | 64 | forward | previous | 3.820 | 3.801–3.909 | 1.31 | 1.40 | 1.89 |
-| 16,384 | 64 | forward | optimized | 3.832 | 3.818–3.921 | 1.31 | 1.40 | 1.89 |
-| 16,384 | 64 | forward | eqx | 4.030 | 4.014–4.053 | 1.57 | 1.65 | 2.14 |
-| 16,384 | 64 | full_vjp | previous | 13.567 | 13.395–13.670 | 2.44 | 2.50 | 2.99 |
-| 16,384 | 64 | full_vjp | optimized | 13.942 | 13.923–14.632 | 2.44 | 2.50 | 2.99 |
-| 16,384 | 64 | full_vjp | eqx | 14.892 | 14.856–15.105 | 3.88 | 3.92 | 4.42 |
-| 32,768 | 256 | forward | previous | 27.109 | 26.908–28.919 | 4.05 | 4.42 | 4.91 |
-| 32,768 | 256 | forward | optimized | 26.993 | 26.985–27.646 | 4.05 | 4.42 | 4.91 |
-| 32,768 | 256 | full_vjp | previous | 106.697 | 106.613–107.038 | 9.50 | 11.19 | 11.69 |
-| 32,768 | 256 | full_vjp | optimized | 101.207 | 101.189–101.227 | 9.50 | 11.19 | 11.69 |
-| 131,072 | 128 | forward | previous | 53.406 | 53.152–53.411 | 4.51 | 4.88 | 5.37 |
-| 131,072 | 128 | forward | optimized | 53.519 | 53.463–54.087 | 4.51 | 4.88 | 5.37 |
-| 131,072 | 128 | full_vjp | previous | 216.500 | 216.185–216.869 | 9.79 | 10.11 | 10.61 |
-| 131,072 | 128 | full_vjp | optimized | 210.365 | 210.308–210.788 | 9.79 | 10.11 | 10.61 |
+| 131,072 | 256 | forward | previous | 106.260 | 106.250–106.318 | 8.96 | 9.75 | 10.24 |
+| 131,072 | 256 | forward | optimized | 101.032 | 101.024–101.073 | 8.55 | 9.75 | 10.24 |
+| 131,072 | 256 | full_vjp | previous | 412.337 | 411.493–412.697 | 19.39 | 20.22 | 20.72 |
+| 131,072 | 256 | full_vjp | optimized | 402.970 | 402.457–403.248 | 19.18 | 20.22 | 20.72 |
+| 16,384 | 64 | forward | previous | 3.659 | 3.366–3.809 | 1.31 | 1.40 | 1.89 |
+| 16,384 | 64 | forward | optimized | 3.639 | 3.631–3.657 | 1.21 | 1.30 | 1.79 |
+| 16,384 | 64 | forward | eqx | 4.044 | 4.041–4.102 | 1.57 | 1.65 | 2.14 |
+| 16,384 | 64 | full_vjp | previous | 13.407 | 13.389–13.598 | 2.44 | 2.50 | 2.99 |
+| 16,384 | 64 | full_vjp | optimized | 13.276 | 13.206–13.331 | 2.44 | 2.50 | 2.99 |
+| 16,384 | 64 | full_vjp | eqx | 14.890 | 14.790–14.935 | 3.88 | 3.92 | 4.42 |
+| 32,768 | 128 | forward | previous | 13.229 | 13.006–13.234 | 2.03 | 2.21 | 2.70 |
+| 32,768 | 128 | forward | optimized | 12.569 | 12.339–12.659 | 1.83 | 2.21 | 2.70 |
+| 32,768 | 128 | forward | eqx | 15.881 | 15.640–15.925 | 6.24 | 6.28 | 6.77 |
+| 32,768 | 128 | full_vjp | previous | 50.966 | 50.779–50.978 | 4.78 | 5.60 | 6.09 |
+| 32,768 | 128 | full_vjp | optimized | 49.548 | 49.440–49.592 | 4.68 | 5.60 | 6.09 |
+| 32,768 | 128 | full_vjp | eqx | 57.289 | 57.033–57.449 | 15.40 | 15.46 | 15.96 |
+| 32,768 | 256 | forward | previous | 26.462 | 26.450–26.501 | 4.05 | 4.42 | 4.91 |
+| 32,768 | 256 | forward | optimized | 25.399 | 25.270–25.431 | 3.64 | 4.42 | 4.91 |
+| 32,768 | 256 | full_vjp | previous | 100.550 | 100.218–100.595 | 9.50 | 11.19 | 11.69 |
+| 32,768 | 256 | full_vjp | optimized | 97.451 | 97.104–97.791 | 9.30 | 11.19 | 11.69 |
+| 131,072 | 128 | forward | previous | 52.970 | 52.621–52.987 | 4.51 | 4.88 | 5.37 |
+| 131,072 | 128 | forward | optimized | 50.371 | 50.355–50.377 | 4.30 | 4.88 | 5.37 |
+| 131,072 | 128 | full_vjp | previous | 209.393 | 209.251–209.612 | 9.79 | 10.11 | 10.61 |
+| 131,072 | 128 | full_vjp | optimized | 205.162 | 204.390–205.255 | 9.69 | 10.11 | 10.61 |
+| 131,072 | 64 | forward | previous | 26.571 | 26.293–26.574 | 2.88 | 3.43 | 3.92 |
+| 131,072 | 64 | forward | optimized | 25.283 | 25.133–25.464 | 2.67 | 3.43 | 3.92 |
+| 131,072 | 64 | full_vjp | previous | 123.856 | 123.359–123.887 | 5.54 | 6.41 | 6.90 |
+| 131,072 | 64 | full_vjp | optimized | 121.272 | 121.139–121.318 | 5.44 | 6.41 | 6.90 |
 
 ## Implementation and qualification
 
-[Adjoint scheduling](RADIAL_GRAPH.md) describes requested-role pruning, shared coupling and affine-adjoint layout.
-Every C uses equivalent transposed GEMMs and matching parameter-gradient accumulation, converting once
-after all blocks. The same layout policy applies to every N, with no channel-based layout branch.
-TP kernels, coefficients, routes, all parameters, block caps and the first-weight cache remain unchanged.
-Joint-channel blocks cap at 8192 edges/2 GiB FP32 weights; other channels at 16384 edges/4 GiB.
+[Adjoint scheduling](RADIAL_GRAPH.md) covers role pruning, shared coupling and the uniform GEMM layout.
+TP forward and left/angular adjoints write into final block slices through internal mutation-declared
+Triton operations. Existing allocation-returning uvu APIs share the raw-kernel launch helpers.
+The joint angular reduction writes into its final slice. Hidden/affine GEMMs and final accumulation stay
+unchanged, as do TP kernel arithmetic, block caps and first-weight caching. There is no new N dispatch.
+Joint-channel blocks cap at 8192 edges/2 GiB weights; other channels at 16384 edges/4 GiB.
 
-The new layout passed 40 requested-role checks, 22 radial integration checks and 33 joint/tail/second checks.
-Independent dense CG validation checked all 131072 edges and all final-affine parameters at C256.
-Maximum normalized error in that largest-shape check was 1.67e-6. Geometry Hessians, live cotangents
-and force-loss parameters remain qualified.
-Installed-wheel checks cover original/new APIs, actual EQX chain parity across the block boundary and empty batches.
-Original three APIs remain bitwise identical to frozen v0.1.5. Outer PyTorch 2.7.1 AOT still lacks double backward;
-force-loss training uses ordinary outer PyTorch and compiled internal blocks; see [usage](RADIAL.md).
+Source job 91328 passes 40 role checks, 22 radial integration checks, 33 joint/tail/second checks and
+59 generic uvu checks. Independent dense CG checks every 131072 edge and every final-affine parameter
+at C256; maximum normalized error is 1.67e-6. Geometry Hessians/live cotangents/force parameters pass.
+Installed-wheel checks cover old/new APIs, actual EQX chain parity and empty batches. The three original
+APIs retain bitwise v0.1.5 values/VJPs. Outer PyTorch 2.7.1 AOT double backward is unsupported; force-loss
+training uses ordinary outer PyTorch with compiled internal blocks; see [usage](RADIAL.md).
 
-## Prior ordinary-composition comparison
+## Earlier ordinary-composition evidence
 
-The separate job 91260 cohort also measured ordinary ICTC composition, which materializes the complete
-edge-weight tensor. At N16384/C64 its full VJP was 14.724 ms and 1.44 GiB allocated, compared with
-15.101 ms and 2.44 GiB for the preceding bounded wrapper. At N32768/C128 ordinary composition was
-43.970 ms and 9.64 GiB, compared with 52.221 ms and 4.78 GiB for the bounded wrapper.
-Ordinary composition ran out of memory at N131072/C256. Its TP/trunk are unchanged by this layout step.
-These historical measurements show the bounded wrapper's speed/memory tradeoff; they were not rerun
-in job 91314 and must not be divided by current times from a different cohort.
+Job 91260 measured ordinary ICTC composition with the complete edge-weight tensor: C64/N16384 full
+VJP was 14.724 ms / 1.44 GiB allocated versus 15.101 ms / 2.44 GiB for that cohort's bounded wrapper.
+C128/N32768 ordinary was 43.970 ms / 9.64 GiB versus bounded 52.221 ms / 4.78 GiB.
+Ordinary composition ran out of memory at C256/N131072. This shows the speed/memory tradeoff; these
+historical times must not be divided by current times from a different cohort.
 
-Private evidence: ICTC-O2-HP-local-only/extensions/latency_20261014/. Preceding graph cohort remains in
-extensions/graph_20261013/. The existing v0.1.5 uuu benchmark/figures describe a separate operator.
+Private evidence: ICTC-O2-HP-local-only/extensions/writeback_20261014/. The preceding uniform-layout
+cohort remains in extensions/latency_20261014/. Existing v0.1.5 uuu figures describe a separate operator.

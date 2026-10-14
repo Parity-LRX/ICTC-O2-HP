@@ -8,7 +8,7 @@ from types import FunctionType
 import torch
 import torch.nn.functional as F
 
-from .uvu_triton import _NAMESPACE, _METADATA, uvu_forward, uvu_backward, _required_gradients
+from .uvu_triton import _NAMESPACE, _METADATA, uvu_forward_into, uvu_backward_into, _required_gradients
 
 _MAX_ROWS = 16384
 _WEIGHT_ELEMENTS = 2**30  # At most 4 GiB of FP32 values in one weight block.
@@ -24,25 +24,26 @@ def _block_rows(weight_numel, metadata_id):
 
 
 def _block_forward(left, angular, radial, alpha, bias, info, coefficients,
-                    first_order, second_order, metadata_id, has_bias, keep_weights):
+                    first_order, second_order, metadata_id, has_bias, keep_weights, dest):
     weights = F.linear(radial, alpha, bias if has_bias else None)
-    value = uvu_forward(left, angular, weights, info, coefficients,
-                        first_order, second_order, metadata_id, False)
-    return value, weights if keep_weights else alpha.new_empty(0)
+    uvu_forward_into(left, angular, weights, info, coefficients,
+                     first_order, second_order, metadata_id, False, dest)
+    return weights if keep_weights else alpha.new_empty(0)
 
 
 def _block_backward(left, angular, radial, alpha, bias, cached_weights, grad_output, info, coefficients,
-                     first_order, second_order, metadata_id, has_bias, needed):
+                     first_order, second_order, metadata_id, has_bias, needed, gx, gy):
     weights = (cached_weights if cached_weights.numel() else F.linear(radial, alpha, bias if has_bias else None)) if needed & 3 else alpha.new_empty(0)
     tp_needed = (needed & 3) | (4 if needed & 28 else 0)
-    gx, gy, gw = uvu_backward(left, angular, weights, grad_output, info, coefficients,
-                              first_order, second_order, metadata_id, False, tp_needed)
+    gw = left.new_empty((left.shape[0], alpha.shape[0])) if tp_needed & 4 else left.new_empty(0)
+    uvu_backward_into(left, angular, weights, grad_output, info, coefficients,
+                      first_order, second_order, metadata_id, False, tp_needed, gx, gy, gw)
     # Equivalent transposed products give cuBLAS a different output layout.
     # Leave the block adjoints as views; the caller copies/accumulates them.
     gr = (alpha.T @ gw.T).T if needed & 4 else radial.new_empty(0)
     ga = (radial.T @ gw).T if needed & 8 else alpha.new_empty(0)
     gb = gw.sum(0) if has_bias and needed & 16 else bias.new_empty(0)
-    return gx, gy, gr, ga, gb
+    return gr, ga, gb
 
 
 # Compile complete blocks with bounded temporary lifetimes. Joint TP adjoints
@@ -79,10 +80,9 @@ def radial_forward(left: torch.Tensor, angular: torch.Tensor, radial: torch.Tens
         for start in range(0, left.shape[0], block_rows):
             end = min(start + block_rows, left.shape[0])
             keep_weights = save_first and start == 0
-            value, block_weights = _compiled_forward(metadata_id, keep_weights)(left[start:end], angular[start:end], radial[start:end],
+            block_weights = _compiled_forward(metadata_id, keep_weights)(left[start:end], angular[start:end], radial[start:end],
                                        alpha, bias, info, coefficients, first_order, second_order,
-                                       metadata_id, has_bias, keep_weights)
-            result[start:end].copy_(value)
+                                       metadata_id, has_bias, keep_weights, result[start:end])
             if save_first and start == 0:
                 first_weights = block_weights
     return result, first_weights
@@ -114,18 +114,17 @@ def radial_backward(left: torch.Tensor, angular: torch.Tensor, radial: torch.Ten
         for start in range(0, left.shape[0], block_rows):
             end = min(start + block_rows, left.shape[0])
             hidden = radial[start:end]
-            dx, dy, dr, da, db = _compiled_backward(metadata_id, needed)(
+            dr, da, db = _compiled_backward(metadata_id, needed)(
                 left[start:end], angular[start:end], hidden, alpha, bias,
                 cached_weights if start == 0 else alpha.new_empty(0), grad_output[start:end],
                 info, coefficients, first_order, second_order, metadata_id, has_bias, needed,
+                gx[start:end] if needed & 1 else gx, gy[start:end] if needed & 2 else gy,
             )
-            if needed & 1: gx[start:end].copy_(dx)
-            if needed & 2: gy[start:end].copy_(dy)
             if needed & 4: gr[start:end].copy_(dr)
             if needed & 8: ga.add_(da)
             if has_bias and needed & 16:
                 gb.add_(db)
-            del dx, dy, dr, da, db
+            del dr, da, db
     return gx, gy, gr, ga.contiguous(), gb
 
 

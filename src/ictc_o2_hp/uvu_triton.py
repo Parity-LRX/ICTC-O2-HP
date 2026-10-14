@@ -232,14 +232,12 @@ def _reduce_weight(partial, dest, WNUM: tl.constexpr, SPLITS: tl.constexpr, B: t
     tl.store(dest + i, tl.sum(value, 0), i < WNUM)
 
 
-@torch.library.triton_op(_NAMESPACE + "::forward", mutates_args={})
-def uvu_forward(left: torch.Tensor, right: torch.Tensor, weight: torch.Tensor,
+def _forward_into(left: torch.Tensor, right: torch.Tensor, weight: torch.Tensor,
                 info: torch.Tensor, coefficients: torch.Tensor,
                 first_order: torch.Tensor, second_order: torch.Tensor,
-                metadata_id: int, shared: bool) -> torch.Tensor:
+                metadata_id: int, shared: bool, result: torch.Tensor) -> None:
     first, second, output, paths, u, v = _METADATA[metadata_id]
     rows, wx, wy = left.shape[0], left.shape[1], right.shape[1]
-    result = torch.empty_like(left)
     if rows:
         if v == 1:
             from .uvu_single import _fused_forward
@@ -264,23 +262,39 @@ def uvu_forward(left: torch.Tensor, right: torch.Tensor, weight: torch.Tensor,
                 len(paths), len(paths) * u * v, shared, block, triton.next_power_of_2(v),
                 num_warps=4, enable_fp_fusion=False,
             )
+
+
+@torch.library.triton_op(_NAMESPACE + "::forward", mutates_args={})
+def uvu_forward(left: torch.Tensor, right: torch.Tensor, weight: torch.Tensor,
+                info: torch.Tensor, coefficients: torch.Tensor,
+                first_order: torch.Tensor, second_order: torch.Tensor,
+                metadata_id: int, shared: bool) -> torch.Tensor:
+    result = torch.empty_like(left)
+    _forward_into(left, right, weight, info, coefficients, first_order, second_order,
+                  metadata_id, shared, result)
     return result
 
 
-@torch.library.triton_op(_NAMESPACE + "::backward", mutates_args={})
-def uvu_backward(left: torch.Tensor, right: torch.Tensor, weight: torch.Tensor,
+@torch.library.triton_op(_NAMESPACE + "::forward_into", mutates_args={"result"})
+def uvu_forward_into(left: torch.Tensor, right: torch.Tensor, weight: torch.Tensor,
+                     info: torch.Tensor, coefficients: torch.Tensor,
+                     first_order: torch.Tensor, second_order: torch.Tensor,
+                     metadata_id: int, shared: bool, result: torch.Tensor) -> None:
+    _forward_into(left, right, weight, info, coefficients, first_order, second_order,
+                  metadata_id, shared, result)
+
+
+def _backward_into(left: torch.Tensor, right: torch.Tensor, weight: torch.Tensor,
                  grad_output: torch.Tensor, info: torch.Tensor, coefficients: torch.Tensor,
                  first_order: torch.Tensor, second_order: torch.Tensor,
-                 metadata_id: int, shared: bool, needed: int = 7
-                 ) -> tuple[torch.Tensor, torch.Tensor, torch.Tensor]:
+                 metadata_id: int, shared: bool, needed: int,
+                 gx: torch.Tensor, gy: torch.Tensor, gw: torch.Tensor) -> None:
     first, second, output, paths, u, v = _METADATA[metadata_id]
     rows, wx, wy, p = left.shape[0], left.shape[1], right.shape[1], len(paths)
     wnum = p * u * v
-    gx = torch.empty_like(left) if needed & 1 else left.new_empty(0)
-    gy = torch.empty_like(right) if needed & 2 else right.new_empty(0)
-    gw = (torch.empty_like(weight) if shared else left.new_empty((rows, wnum))) if needed & 4 else left.new_empty(0)
     if not rows:
-        return gx, gy, torch.zeros_like(gw)
+        gw.zero_()
+        return
     if v == 1 and not shared and 128 <= u <= 256 and needed & 6 == 6:
         from .uvu_single import _joint
         first_meta, second_meta, static_paths = _STATIC[metadata_id]
@@ -293,7 +307,8 @@ def uvu_backward(left: torch.Tensor, right: torch.Tensor, weight: torch.Tensor,
                 1, triton.next_power_of_2(u), triton.next_power_of_2(wy), bool(needed & 1),
                 num_warps=4 if u <= 128 else 8, enable_fp_fusion=False,
             )
-        return gx, partial_y.sum(0), gw
+        torch.sum(partial_y, dim=0, out=gy)
+        return
     if v == 1:
         from .uvu_single import _fused_left, _right
         first_meta, second_meta, static_paths = _STATIC[metadata_id]
@@ -342,7 +357,7 @@ def uvu_backward(left: torch.Tensor, right: torch.Tensor, weight: torch.Tensor,
                 32, triton.next_power_of_2(u), num_warps=4, enable_fp_fusion=False,
             )
     if not needed & 4:
-        return gx, gy, gw
+        return
     if shared:
         partial = weight.new_empty((_SPLITS, wnum))
         torch.library.wrap_triton(_weight_shared)[(triton.cdiv(u * v, 32), p, _SPLITS)](
@@ -369,7 +384,32 @@ def uvu_backward(left: torch.Tensor, right: torch.Tensor, weight: torch.Tensor,
             left, right, grad_output, info, coefficients, gw,
             rows, wx, wy, u, v, wnum, 128, num_warps=4, enable_fp_fusion=False,
         )
+
+
+@torch.library.triton_op(_NAMESPACE + "::backward", mutates_args={})
+def uvu_backward(left: torch.Tensor, right: torch.Tensor, weight: torch.Tensor,
+                 grad_output: torch.Tensor, info: torch.Tensor, coefficients: torch.Tensor,
+                 first_order: torch.Tensor, second_order: torch.Tensor,
+                 metadata_id: int, shared: bool, needed: int = 7
+                 ) -> tuple[torch.Tensor, torch.Tensor, torch.Tensor]:
+    rows = left.shape[0]
+    paths, u, v = _METADATA[metadata_id][3:]
+    gx = torch.empty_like(left) if needed & 1 else left.new_empty(0)
+    gy = torch.empty_like(right) if needed & 2 else right.new_empty(0)
+    gw = (torch.empty_like(weight) if shared else left.new_empty((rows, len(paths)*u*v))) if needed & 4 else left.new_empty(0)
+    _backward_into(left, right, weight, grad_output, info, coefficients,
+                   first_order, second_order, metadata_id, shared, needed, gx, gy, gw)
     return gx, gy, gw
+
+
+@torch.library.triton_op(_NAMESPACE + "::backward_into", mutates_args={"gx", "gy", "gw"})
+def uvu_backward_into(left: torch.Tensor, right: torch.Tensor, weight: torch.Tensor,
+                      grad_output: torch.Tensor, info: torch.Tensor, coefficients: torch.Tensor,
+                      first_order: torch.Tensor, second_order: torch.Tensor,
+                      metadata_id: int, shared: bool, needed: int,
+                      gx: torch.Tensor, gy: torch.Tensor, gw: torch.Tensor) -> None:
+    _backward_into(left, right, weight, grad_output, info, coefficients,
+                   first_order, second_order, metadata_id, shared, needed, gx, gy, gw)
 
 
 def _forward_setup(ctx, inputs, output):
