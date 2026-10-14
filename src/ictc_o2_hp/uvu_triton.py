@@ -295,16 +295,18 @@ def _backward_into(left: torch.Tensor, right: torch.Tensor, weight: torch.Tensor
     if not rows:
         gw.zero_()
         return
-    if v == 1 and not shared and 128 <= u <= 256 and needed & 6 == 6:
+    if v == 1 and not shared and 1 <= u <= 256 and needed & 6 == 6:
         from .uvu_single import _joint
         first_meta, second_meta, static_paths = _STATIC[metadata_id]
         partial_y = right.new_empty((len(first), rows, wy))
+        channel_tile = triton.next_power_of_2(u)
+        row_tile = max(1, 128 // channel_tile)
         for i in range(len(first)):
             selected = tuple(index for index, path in enumerate(paths) if path[0] == i)
-            torch.library.wrap_triton(_joint)[(rows,)](
+            torch.library.wrap_triton(_joint)[(triton.cdiv(rows, row_tile),)](
                 left, right, weight, grad_output, gx, partial_y, gw, rows, wx, wy,
                 u, wnum, first_meta, second_meta, static_paths, i, selected,
-                1, triton.next_power_of_2(u), triton.next_power_of_2(wy), bool(needed & 1),
+                row_tile, channel_tile, triton.next_power_of_2(wy), bool(needed & 1),
                 num_warps=4 if u <= 128 else 8, enable_fp_fusion=False,
             )
         torch.sum(partial_y, dim=0, out=gy)

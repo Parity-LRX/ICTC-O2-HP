@@ -2,14 +2,16 @@
 
 ## 0.1.6.dev0
 
+- Extend shared external V=1 TP adjoints to C1–256; use one bounded radial
+  block policy and a fixed 9/8 first-weight cache for all channel/edge counts.
 - Write radial TP outputs and left/angular adjoints directly into final block
   slices, sharing raw launch helpers with the existing allocation-returning APIs.
 - Use one radial-adjoint GEMM layout for all channels, with equivalent transposed
   products and matching parameter-gradient accumulation, converting once at the end.
 - Prune unused first/second derivative roles from the active target graph with
   conservative tracing fallback; skip unused projection/GEMM/output work.
-- Share angular/weight coupling expressions in joint external V=1 adjoints
-  for C128–256, with smaller radial blocks to bound simultaneously live buffers.
+- Share angular/weight coupling expressions in joint external V=1 adjoints,
+  with bounded radial blocks for simultaneously live buffers.
 - Isolate compiled block entry points by TP plan and derivative role, avoiding
   global specialization-limit changes.
 - Add flat `UvuTensorProduct` and `ReferenceUvuTensorProduct` operators with

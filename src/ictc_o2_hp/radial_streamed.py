@@ -11,16 +11,27 @@ import torch.nn.functional as F
 from .uvu_triton import _NAMESPACE, _METADATA, uvu_forward_into, uvu_backward_into, _required_gradients
 
 _MAX_ROWS = 16384
-_WEIGHT_ELEMENTS = 2**30  # At most 4 GiB of FP32 values in one weight block.
+_WEIGHT_ELEMENTS = 2**30  # Half is used per ordinary FP32 weight block.
 
 
 def _block_rows(weight_numel, metadata_id):
-    # Joint adjoints keep weights and their adjoints live together. Bound their
-    # combined storage with half-size blocks for the qualified channel range.
-    channels = _METADATA[metadata_id][4]
-    joint = 128 <= channels <= 256
-    capacity = max(1, (_WEIGHT_ELEMENTS // (2 if joint else 1)) // weight_numel)
-    return min(_MAX_ROWS // (2 if joint else 1), 1 << (capacity.bit_length() - 1))
+    # All channels use the same weight/adjoint budget and row cap.
+    capacity = max(1, (_WEIGHT_ELEMENTS // 2) // weight_numel)
+    return min(_MAX_ROWS // 2, 1 << (capacity.bit_length() - 1))
+
+
+def _saved_rows(weight_numel, metadata_id):
+    # The same fixed first-block expansion saves more affine recomputation
+    # while keeping the remaining blocks bounded for every C and total N.
+    return _block_rows(weight_numel, metadata_id) * 9 // 8
+
+
+def _ranges(rows, block_rows, first_rows=0):
+    first_end = min(rows, first_rows or block_rows)
+    if first_end:
+        yield 0, first_end
+    for start in range(first_end, rows, block_rows):
+        yield start, min(start + block_rows, rows)
 
 
 def _block_forward(left, angular, radial, alpha, bias, info, coefficients,
@@ -77,8 +88,8 @@ def radial_forward(left: torch.Tensor, angular: torch.Tensor, radial: torch.Tens
     first_weights = alpha.new_empty((0, alpha.shape[0])) if save_first else alpha.new_empty(0)
     block_rows = _block_rows(alpha.shape[0], metadata_id)
     with torch.no_grad():
-        for start in range(0, left.shape[0], block_rows):
-            end = min(start + block_rows, left.shape[0])
+        first_rows = _saved_rows(alpha.shape[0], metadata_id) if save_first else 0
+        for start, end in _ranges(left.shape[0], block_rows, first_rows):
             keep_weights = save_first and start == 0
             block_weights = _compiled_forward(metadata_id, keep_weights)(left[start:end], angular[start:end], radial[start:end],
                                        alpha, bias, info, coefficients, first_order, second_order,
@@ -91,7 +102,7 @@ def radial_forward(left: torch.Tensor, angular: torch.Tensor, radial: torch.Tens
 @radial_forward.register_fake
 def _fake_forward(left, angular, radial, alpha, bias, info, coefficients,
                    first_order, second_order, metadata_id, has_bias, save_first):
-    cache = alpha.new_empty((min(_block_rows(alpha.shape[0], metadata_id), left.shape[0]), alpha.shape[0])) if save_first else alpha.new_empty(0)
+    cache = alpha.new_empty((min(_saved_rows(alpha.shape[0], metadata_id), left.shape[0]), alpha.shape[0])) if save_first else alpha.new_empty(0)
     return torch.empty_like(left), cache
 
 
@@ -111,8 +122,8 @@ def radial_backward(left: torch.Tensor, angular: torch.Tensor, radial: torch.Ten
     gb = torch.zeros_like(bias) if needed & 16 else bias.new_empty(0)
     block_rows = _block_rows(alpha.shape[0], metadata_id)
     with torch.no_grad():
-        for start in range(0, left.shape[0], block_rows):
-            end = min(start + block_rows, left.shape[0])
+        first_rows = cached_weights.shape[0] if cached_weights.numel() else 0
+        for start, end in _ranges(left.shape[0], block_rows, first_rows):
             hidden = radial[start:end]
             dr, da, db = _compiled_backward(metadata_id, needed)(
                 left[start:end], angular[start:end], hidden, alpha, bias,

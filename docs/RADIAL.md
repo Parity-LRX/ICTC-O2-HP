@@ -19,13 +19,14 @@ output[edge,k,u] += weight[edge,p,u] * CG(left[edge,i,u], angular[edge,j])
 
 ## Execution and derivatives
 
-CUDA float32 uses a block cap determined by TP path/channel sizes. C128–256
-uses at most 8192 edges and a 2 GiB weight budget so joint TP adjoints can keep
-local weights and their gradients live together. Other channels use at most
-16384 edges and a 4 GiB budget. These policies are independent of total N.
+CUDA float32 uses the same block policy for every channel count: ordinary
+blocks contain at most 8192 edges and 2 GiB of generated weights, with the
+actual row cap determined by TP path/channel sizes. The saved first block
+uses a fixed 9/8 expansion, at most 9216 edges and 2.25 GiB. These rules and
+all tensor/GEMM layouts are independent of total N.
 The affine projection and TP run together inside one operator.
 Inputs and affine parameters are saved. When TP-input adjoints may be needed,
-the first bounded weight block is also saved. Backward reuses that first block
+the expanded first weight block is also saved. Backward reuses that exact prefix
 and regenerates remaining blocks only when input adjoints require their weights,
 computes the TP adjoints and immediately contracts the
 weight adjoint into radial-hidden and affine-parameter gradients. Generated
@@ -34,7 +35,7 @@ weight adjoints are not saved between blocks.
 
 The complete block is compiled with bounded temporary lifetimes. Joint TP
 adjoints keep local weights and their gradients live together. The main bound is proportional
-to `block_cap * tp.weight_numel`, in addition to model inputs, outputs, gradients
+to `block_rows * tp.weight_numel`, in addition to model inputs, outputs, gradients
 and the first block's bounded cache. The cache is disabled for inference.
 This is operator fusion with bounded temporary buffers; it still generates
 local weight blocks and does not claim a single GPU kernel.
