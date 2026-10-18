@@ -1,6 +1,6 @@
 # ICTC-O2 HP
 
-Independent private Cartesian O(2) tensor-product library. Distribution:
+Independent Cartesian O(2) tensor-product library. Distribution:
 `ictc-o2-hp`; Python package: `ictc_o2_hp`. This project contains its own
 coefficient source, reference algebra, packed operators and Triton kernels.
 
