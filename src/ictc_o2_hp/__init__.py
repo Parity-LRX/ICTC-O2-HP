@@ -5,10 +5,14 @@ __all__ = [
     "TensorProduct", "TupleTensorProduct", "ComponentMajorTensorProduct",
     "ReferenceTensorProduct", "UvuTensorProduct", "ReferenceUvuTensorProduct", "__version__",
     "RadialUvuTensorProduct",
+    "UvwTensorProduct", "ReferenceUvwTensorProduct",
 ]
 
 
 def __getattr__(name):
+    if name in {"UvwTensorProduct", "ReferenceUvwTensorProduct"}:
+        from . import uvw_o2
+        return getattr(uvw_o2, name)
     # Importing the package/reference does not require the optional GPU runtime.
     if name == "ReferenceTensorProduct":
         from .reference import ReferenceTensorProduct

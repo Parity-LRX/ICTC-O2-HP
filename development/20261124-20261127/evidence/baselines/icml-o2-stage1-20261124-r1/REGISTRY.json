@@ -1,0 +1,74 @@
+{
+  "stage": "ICML_STAGE1_OPERATOR_OPTIMIZATION",
+  "frozen_utc": "2026-11-24T00:55:07.674698+00:00",
+  "freeze_job": "117519",
+  "node": "XHPC-9654-02",
+  "source_archive_sha256": "d236a586788266cfca2b72f4cc2455187d2396c79104a0eb1f89b08303852217",
+  "gpu_h_this_freeze": 0,
+  "operator": {
+    "name": "ictc-o2-hp",
+    "baseline_id": "ictc-o2-hp-baseline-20261124-r1",
+    "git_head": "e4763c76bf183499357e40cb39cc0934bb98779b",
+    "worktree_status": " M provenance/BUDGET-AUDIT.json\n M provenance/project-aidam-accounting-extended.tsv\n M provenance/project-gbu2-accounting-extended.tsv\n",
+    "content_sha256": "1c94a6451fef0214da6e9166588c15a9737bf00a93bdbb00bce8d1e146626867",
+    "path": "payload/operator",
+    "numerical_qualification": "PRESERVE_ORIGINAL_SCOPE_AND_FAILURES"
+  },
+  "network": {
+    "name": "equiformerv3-ictc-o2",
+    "baseline_id": "equiformerv3-ictc-o2-baseline-20261124-r1",
+    "original_snapshot_sha256": "44cc668a579c2041a21ab9f276e2ca3ab25af59abc1f85cc687d5986adbbdfc2",
+    "content_sha256": "0fa11276a8f5c03c92585bbdf415bcdee5c94a16fdf3f6d8337927956ae2928e",
+    "path": "payload/network",
+    "checkpoint_sha256": "429ccded98163122e7ba588d78e2441653f37f3e091e106c432807fe373c8f98",
+    "status": "NETWORK_FORCE_FAIL",
+    "metrics": {
+      "native_repeat/energy": {
+        "status": "pass",
+        "max_abs": 0.0,
+        "relative_l2": 0.0,
+        "component_violations": 0,
+        "elements": 1,
+        "metrics_dtype": "torch.float32"
+      },
+      "candidate/energy": {
+        "status": "pass",
+        "max_abs": 2.554484801464696e-08,
+        "relative_l2": 3.5590502989180095e-08,
+        "component_violations": 0,
+        "elements": 1,
+        "metrics_dtype": "torch.float32"
+      },
+      "native_repeat/forces": {
+        "status": "pass",
+        "max_abs": 0.0,
+        "relative_l2": 0.0,
+        "component_violations": 0,
+        "elements": 84,
+        "metrics_dtype": "torch.float32"
+      },
+      "candidate/forces": {
+        "status": "FAIL_NUMERICAL",
+        "max_abs": 2.08243727684021e-06,
+        "relative_l2": 1.0017232852987945e-05,
+        "component_violations": 0,
+        "elements": 84,
+        "metrics_dtype": "torch.float32"
+      }
+    },
+    "training": "NOT_REACHED",
+    "performance": "NOT_MEASURED",
+    "capacity": "NOT_MEASURED"
+  },
+  "scope": {
+    "task_labels": "existing public datasets",
+    "new_dft": false,
+    "stage1": "operator optimization",
+    "primary_network": "equiformerv3-ictc-o2",
+    "later_transfer": [
+      "TACE/TECE",
+      "DPA4"
+    ],
+    "floating_point": "energy output/reduction FP64; other compute/derivatives/statistics FP32"
+  }
+}

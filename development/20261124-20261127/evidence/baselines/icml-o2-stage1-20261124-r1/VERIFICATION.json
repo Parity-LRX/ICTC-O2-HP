@@ -1,0 +1,11 @@
+{
+  "status": "VERIFIED",
+  "job": "117519",
+  "archive_sha256": "d236a586788266cfca2b72f4cc2455187d2396c79104a0eb1f89b08303852217",
+  "all_members_match": true,
+  "all_hashes_match": true,
+  "files": 6497,
+  "symlinks": 11,
+  "bytes": 847346283,
+  "original_v3_seal_verified": true
+}

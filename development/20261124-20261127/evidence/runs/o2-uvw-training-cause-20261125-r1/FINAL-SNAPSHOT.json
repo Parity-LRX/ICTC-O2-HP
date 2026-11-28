@@ -1,0 +1,22 @@
+{
+  "status": "DIAGNOSTIC_EVIDENCE_REVIEW_PASS",
+  "formal_training_status": "UNCHANGED_FAIL",
+  "fork_commit": "df12a3a85ec3b66c9e4909dca0c90a86a12b1516",
+  "fork_clean": true,
+  "old_failed_roles": 54,
+  "reproduced_failed_roles": 54,
+  "force_mixed_same_cotangent_failures": 0,
+  "full_loss_same_cotangent_failures": 0,
+  "same_physical_gpu": "5ad49e16-2802-236e-933b-d315984dbf38",
+  "all_source_ast_parse_pass": true,
+  "raw_object_count": 14,
+  "raw_objects_manifest": "RAW-OBJECTS-SHA256.json",
+  "job": "119335",
+  "archive": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-uvw-training-cause-20261125-r1/snapshots/delivery-119335/SOURCE-AND-RECEIPTS.tar.gz",
+  "archive_sha256": "badae8dba4d23335759c934b793cb26d80431b0faf709e76af4f7bf6ccce9a28",
+  "archive_files": 88,
+  "independent_unpack_member_hash_pass": true,
+  "raw_objects_embedded": false,
+  "raw_object_location": "results/a100-119324 and results/total-a100-119328",
+  "source_of_model_weights_inputs": "Original sealed119167/preflight119174 and common-state receipt referenced in PREFLIGHT.json; unchanged."
+}

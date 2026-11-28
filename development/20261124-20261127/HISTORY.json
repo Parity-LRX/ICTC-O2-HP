@@ -1,0 +1,334 @@
+{
+  "as_of": "2026-11-27",
+  "fork": "LeutOrca/ICTC-O2-HP",
+  "upstream_repository": "Parity-LRX/ICTC-O2-HP",
+  "upstream_main": "96815838f470652dce3d0e9d5cf7fe2978e949ca",
+  "latest_operator_commit": "5764f666d1278634f2a555f8cf621acc1c2c0801",
+  "early_baseline_commit": "e4763c76bf183499357e40cb39cc0934bb98779b",
+  "early_baseline_ref": "refs/heads/archive/icml-o2-stage1-baseline-20261124",
+  "code_history": [
+    {
+      "commit": "df12a3a85ec3b66c9e4909dca0c90a86a12b1516",
+      "tree": "7cff43c356e6e33a1e5b8fe43560a982068fd222",
+      "parents": [
+        "96815838f470652dce3d0e9d5cf7fe2978e949ca"
+      ],
+      "subject": "Add independent UVW channels and IEEE FP32 tiled Triton derivatives"
+    },
+    {
+      "commit": "a80f0dc9c8ed71ddd513ba12a579733ed1580429",
+      "tree": "c8a0a2bf33a9ebd6c805fa1189d1886f2250d2e9",
+      "parents": [
+        "df12a3a85ec3b66c9e4909dca0c90a86a12b1516"
+      ],
+      "subject": "Preserve FP32 channel and adjoint segment reduction order"
+    },
+    {
+      "commit": "029afecb4893279ce1e78f0e99aaf122cade0699",
+      "tree": "9b8cde86d709ba484e5d560e543d1ecb2240a04f",
+      "parents": [
+        "a80f0dc9c8ed71ddd513ba12a579733ed1580429"
+      ],
+      "subject": "Generate channel weight adjoints in original weight orientation"
+    },
+    {
+      "commit": "bfb39872b3f17e7a7f80042e642ab5c8c035d0d8",
+      "tree": "1846ae1207cf8a899cac5b20af5649387a1ad4cc",
+      "parents": [
+        "029afecb4893279ce1e78f0e99aaf122cade0699"
+      ],
+      "subject": "Match native FP32 K-gradient chains with deterministic split-K GEMM"
+    },
+    {
+      "commit": "c05bc7bf6d17086445d6a81c4d29309fc3223540",
+      "tree": "8cb2432e882b00cc3c919d26c2ac94622a4b580d",
+      "parents": [
+        "bfb39872b3f17e7a7f80042e642ab5c8c035d0d8"
+      ],
+      "subject": "Preserve operand layout in recursive FP32 matrix adjoints"
+    },
+    {
+      "commit": "73e8367d265adb2ecfbbc9067190555e21d2e510",
+      "tree": "2b895b8b94e42898946ce46133664420cefe5688",
+      "parents": [
+        "c05bc7bf6d17086445d6a81c4d29309fc3223540"
+      ],
+      "subject": "Prune unused matrix adjoints by the current autograd target"
+    },
+    {
+      "commit": "d6ae976722623aa4109cf845ba7a30186c0f29b5",
+      "tree": "ea8132ee5c4c4fd17e505b01a31126ccfaa1f84a",
+      "parents": [
+        "73e8367d265adb2ecfbbc9067190555e21d2e510"
+      ],
+      "subject": "Use native eight-product FMA chains and a wide tile for K gradients"
+    },
+    {
+      "commit": "de713b08addfa3aede45975fb986306fa038a599",
+      "tree": "eeebd8b61f433300b7d122a8dcd710b5a2f86324",
+      "parents": [
+        "d6ae976722623aa4109cf845ba7a30186c0f29b5"
+      ],
+      "subject": "Use shared-memory SM80 eight-FMA tile for wide weight adjoint"
+    },
+    {
+      "commit": "8324b335244e2b382123a5e89183afa7194ed83b",
+      "tree": "b3a56cd1c8e0e90070d31fe351a40d0d28f14843",
+      "parents": [
+        "de713b08addfa3aede45975fb986306fa038a599"
+      ],
+      "subject": "Reuse a full 32-product shared tile across all four FMA chains"
+    },
+    {
+      "commit": "b6ed4e6190f5870dff9a5376abe68ce30b042e70",
+      "tree": "37133166d06089e9b825e2e516cf96a37c06456c",
+      "parents": [
+        "8324b335244e2b382123a5e89183afa7194ed83b"
+      ],
+      "subject": "Fuse bounded angular bilinear with recursive complete adjoints"
+    },
+    {
+      "commit": "0e9e3ecdf8a107c99d127fdf260f59a534a8e753",
+      "tree": "2074930dc83c1dc7eebedee89be5b868d2a3fe81",
+      "parents": [
+        "b6ed4e6190f5870dff9a5376abe68ce30b042e70"
+      ],
+      "subject": "Preserve native angular FP32 reduction plans for full and tail rows"
+    },
+    {
+      "commit": "f86d810b9a8565f352f7b4aefbbe50c3735bc18c",
+      "tree": "46b2ff632b838e02410e2f97d3c5e21df219e069",
+      "parents": [
+        "0e9e3ecdf8a107c99d127fdf260f59a534a8e753"
+      ],
+      "subject": "Use supported scalar tail dispatch for pinned Triton frontend"
+    },
+    {
+      "commit": "9b7ba779204db95cfba06a460b0c5f5716799eec",
+      "tree": "df8dec90298b6b9c67d8c91db97c912e8710fd54",
+      "parents": [
+        "f86d810b9a8565f352f7b4aefbbe50c3735bc18c"
+      ],
+      "subject": "Separate main and tail grids while retaining native bilinear sums"
+    },
+    {
+      "commit": "dd7a3db136c1d2946aa0e41b87a167d8f940b122",
+      "tree": "909c9a15ae27ff5fbd6f644f69531ef58d5a3514",
+      "parents": [
+        "9b7ba779204db95cfba06a460b0c5f5716799eec"
+      ],
+      "subject": "Preserve recursive coefficient layouts in all bilinear derivatives"
+    },
+    {
+      "commit": "beaa640dc1d7a6309ae68ce40ce020faafe03242",
+      "tree": "2488777021943a44a263701688383a0015cf074f",
+      "parents": [
+        "dd7a3db136c1d2946aa0e41b87a167d8f940b122"
+      ],
+      "subject": "Fix bounded bilinear launch grid axis capacity"
+    },
+    {
+      "commit": "da7b50213573f5d6f69006db46f7b388d8782e19",
+      "tree": "a81238b897275ba32a5371cc17325dfa06d8485f",
+      "parents": [
+        "beaa640dc1d7a6309ae68ce40ce020faafe03242"
+      ],
+      "subject": "Add explicit FP32 reduction plan execution scaffold"
+    },
+    {
+      "commit": "a8b3c7721ded7c7dc243e51a389ce021f34f9808",
+      "tree": "8baf356ade3a2ffce4d74e42304bd9595edf8639",
+      "parents": [
+        "da7b50213573f5d6f69006db46f7b388d8782e19"
+      ],
+      "subject": "Key angular plans by actual operand storage strides"
+    },
+    {
+      "commit": "5764f666d1278634f2a555f8cf621acc1c2c0801",
+      "tree": "3b9abf6f70666e97f346e77bdae8c387c7bf595e",
+      "parents": [
+        "a8b3c7721ded7c7dc243e51a389ce021f34f9808"
+      ],
+      "subject": "Register A100 angular and complete-derivative FP32 plans"
+    }
+  ],
+  "preserved_refs": [
+    {
+      "ref": "refs/heads/codex/angular-fp32-repair-v6",
+      "object": "5764f666d1278634f2a555f8cf621acc1c2c0801",
+      "commit": "5764f666d1278634f2a555f8cf621acc1c2c0801"
+    },
+    {
+      "ref": "refs/heads/codex/bounded-bilinear-v5",
+      "object": "dd7a3db136c1d2946aa0e41b87a167d8f940b122",
+      "commit": "dd7a3db136c1d2946aa0e41b87a167d8f940b122"
+    },
+    {
+      "ref": "refs/heads/codex/uvw-fp32-repair-v2",
+      "object": "a80f0dc9c8ed71ddd513ba12a579733ed1580429",
+      "commit": "a80f0dc9c8ed71ddd513ba12a579733ed1580429"
+    },
+    {
+      "ref": "refs/heads/codex/uvw-kgrad-rng-v3",
+      "object": "c05bc7bf6d17086445d6a81c4d29309fc3223540",
+      "commit": "c05bc7bf6d17086445d6a81c4d29309fc3223540"
+    },
+    {
+      "ref": "refs/heads/codex/uvw-target-gemm-v4",
+      "object": "8324b335244e2b382123a5e89183afa7194ed83b",
+      "commit": "8324b335244e2b382123a5e89183afa7194ed83b"
+    },
+    {
+      "ref": "refs/heads/codex/uvw-triton-v1",
+      "object": "df12a3a85ec3b66c9e4909dca0c90a86a12b1516",
+      "commit": "df12a3a85ec3b66c9e4909dca0c90a86a12b1516"
+    },
+    {
+      "ref": "refs/tags/snapshot/angular-grid-v6a-20261127",
+      "object": "beaa640dc1d7a6309ae68ce40ce020faafe03242",
+      "commit": "beaa640dc1d7a6309ae68ce40ce020faafe03242"
+    },
+    {
+      "ref": "refs/tags/snapshot/angular-plan-scaffold-v6b-20261127",
+      "object": "da7b50213573f5d6f69006db46f7b388d8782e19",
+      "commit": "da7b50213573f5d6f69006db46f7b388d8782e19"
+    },
+    {
+      "ref": "refs/tags/snapshot/angular-plans-v6d-20261127",
+      "object": "5764f666d1278634f2a555f8cf621acc1c2c0801",
+      "commit": "5764f666d1278634f2a555f8cf621acc1c2c0801"
+    },
+    {
+      "ref": "refs/tags/snapshot/angular-strides-v6c-20261127",
+      "object": "a8b3c7721ded7c7dc243e51a389ce021f34f9808",
+      "commit": "a8b3c7721ded7c7dc243e51a389ce021f34f9808"
+    },
+    {
+      "ref": "refs/tags/snapshot/bounded-bilinear-fourchain-v5a-20261126",
+      "object": "b6ed4e6190f5870dff9a5376abe68ce30b042e70",
+      "commit": "b6ed4e6190f5870dff9a5376abe68ce30b042e70"
+    },
+    {
+      "ref": "refs/tags/snapshot/bounded-bilinear-native-plans-v5b-20261126",
+      "object": "0e9e3ecdf8a107c99d127fdf260f59a534a8e753",
+      "commit": "0e9e3ecdf8a107c99d127fdf260f59a534a8e753"
+    },
+    {
+      "ref": "refs/tags/snapshot/bounded-bilinear-native-plans-v5c-20261126",
+      "object": "f86d810b9a8565f352f7b4aefbbe50c3735bc18c",
+      "commit": "f86d810b9a8565f352f7b4aefbbe50c3735bc18c"
+    },
+    {
+      "ref": "refs/tags/snapshot/bounded-bilinear-recursive-layout-v5e-20261126",
+      "object": "dd7a3db136c1d2946aa0e41b87a167d8f940b122",
+      "commit": "dd7a3db136c1d2946aa0e41b87a167d8f940b122"
+    },
+    {
+      "ref": "refs/tags/snapshot/bounded-bilinear-two-grids-v5d-20261126",
+      "object": "9b7ba779204db95cfba06a460b0c5f5716799eec",
+      "commit": "9b7ba779204db95cfba06a460b0c5f5716799eec"
+    },
+    {
+      "ref": "refs/tags/snapshot/kgrad-layout-v3a-20261126",
+      "object": "029afecb4893279ce1e78f0e99aaf122cade0699",
+      "commit": "029afecb4893279ce1e78f0e99aaf122cade0699"
+    },
+    {
+      "ref": "refs/tags/snapshot/kgrad-recursive-layout-v3c-20261126",
+      "object": "c05bc7bf6d17086445d6a81c4d29309fc3223540",
+      "commit": "c05bc7bf6d17086445d6a81c4d29309fc3223540"
+    },
+    {
+      "ref": "refs/tags/snapshot/kgrad-splitk-v3b-20261126",
+      "object": "bfb39872b3f17e7a7f80042e642ab5c8c035d0d8",
+      "commit": "bfb39872b3f17e7a7f80042e642ab5c8c035d0d8"
+    },
+    {
+      "ref": "refs/tags/snapshot/uvw-fma8-shared-v4c-20261126",
+      "object": "de713b08addfa3aede45975fb986306fa038a599",
+      "commit": "de713b08addfa3aede45975fb986306fa038a599"
+    },
+    {
+      "ref": "refs/tags/snapshot/uvw-fma8-shared32-v4d-20261126",
+      "object": "8324b335244e2b382123a5e89183afa7194ed83b",
+      "commit": "8324b335244e2b382123a5e89183afa7194ed83b"
+    },
+    {
+      "ref": "refs/tags/snapshot/uvw-fma8-wide-v4b-20261126",
+      "object": "d6ae976722623aa4109cf845ba7a30186c0f29b5",
+      "commit": "d6ae976722623aa4109cf845ba7a30186c0f29b5"
+    },
+    {
+      "ref": "refs/tags/snapshot/uvw-fp32-segments-v2-20261126",
+      "object": "a80f0dc9c8ed71ddd513ba12a579733ed1580429",
+      "commit": "a80f0dc9c8ed71ddd513ba12a579733ed1580429"
+    },
+    {
+      "ref": "refs/tags/snapshot/uvw-frozen-base-20261125",
+      "object": "96815838f470652dce3d0e9d5cf7fe2978e949ca",
+      "commit": "96815838f470652dce3d0e9d5cf7fe2978e949ca"
+    },
+    {
+      "ref": "refs/tags/snapshot/uvw-target-mask-v4a-20261126",
+      "object": "73e8367d265adb2ecfbbc9067190555e21d2e510",
+      "commit": "73e8367d265adb2ecfbbc9067190555e21d2e510"
+    },
+    {
+      "ref": "refs/tags/snapshot/uvw-tiled-v1-20261125",
+      "object": "df12a3a85ec3b66c9e4909dca0c90a86a12b1516",
+      "commit": "df12a3a85ec3b66c9e4909dca0c90a86a12b1516"
+    }
+  ],
+  "latest_gate_audit_job": 120792,
+  "latest_network_gates": [
+    {
+      "order": 0,
+      "infer": "PASS",
+      "train": "PASS"
+    },
+    {
+      "order": 1,
+      "infer": "PASS",
+      "train": "PASS"
+    },
+    {
+      "order": 2,
+      "infer": "PASS",
+      "train": "PASS"
+    },
+    {
+      "order": 3,
+      "infer": "PASS",
+      "train": "PASS"
+    },
+    {
+      "order": 4,
+      "infer": "PASS",
+      "train": "PASS"
+    },
+    {
+      "order": 5,
+      "infer": "PASS",
+      "train": "PASS"
+    },
+    {
+      "order": 6,
+      "infer": "PASS",
+      "train": "PASS"
+    },
+    {
+      "order": 7,
+      "infer": "PASS",
+      "train": "NUMERIC_FAIL"
+    },
+    {
+      "order": 8,
+      "infer": "NOT_CAPTURED",
+      "train": "NOT_CAPTURED"
+    }
+  ],
+  "latest_operator_configurations_passed": 144,
+  "latest_local_regressions_passed": 240,
+  "new_candidate_performance_measured": false,
+  "raw_tensor_and_profiler_archives_included": false
+}

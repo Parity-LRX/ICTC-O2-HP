@@ -1,0 +1,105 @@
+{
+  "files": [
+    {
+      "file": "CONTRACT.zh-CN.md",
+      "sha256": "f9f2b9ecd63727ce42b8ea8c7fda7e68f3b32c11da35649fd4d459c7d05aede8",
+      "bytes": 2444
+    },
+    {
+      "file": "PROGRESS.zh-CN.md",
+      "sha256": "6e85f4e666173eeeefd93740645b6a4d45717d892896081cc272bc949d172eae",
+      "bytes": 590
+    },
+    {
+      "file": "gpu.sbatch",
+      "sha256": "8a6f71614c0c890f253f0a69cfd94add00ce934d5308695e40a071074553abba",
+      "bytes": 1030
+    },
+    {
+      "file": "cpu.sbatch",
+      "sha256": "e35f178574a92262c2c1856f61d775901428994cfe92961d86b98dc49ac85b64",
+      "bytes": 522
+    },
+    {
+      "file": "SOURCE.json",
+      "sha256": "06371bd92cbb9c226c126648dfce4b50cbffd2dac32aa6b4b9493d9c542f75a6",
+      "bytes": 3007
+    },
+    {
+      "file": "snapshots/allocator-120844/control/audit_l7.py",
+      "sha256": "78ba4bf7d72a34b1544f852012c1253d51e8707228d1154d0a0023f0d540274a",
+      "bytes": 1999
+    },
+    {
+      "file": "snapshots/allocator-120844/control/common.py",
+      "sha256": "56ff868b4fb73f5e190eef4a44e2621770525065f6748854e9403957845786c1",
+      "bytes": 6910
+    },
+    {
+      "file": "snapshots/allocator-120844/control/control_freeze.py",
+      "sha256": "f45a1c1bd49eafa94761fe91512b749c832ba9b8195d1d054dd0633b3417b205",
+      "bytes": 1158
+    },
+    {
+      "file": "snapshots/allocator-120844/control/freeze.py",
+      "sha256": "bbc72f7865b099fdd29b60e981095446ab6139e1cf2a49cd2c19aa051bb24506",
+      "bytes": 1962
+    },
+    {
+      "file": "snapshots/allocator-120844/control/gate_audit.py",
+      "sha256": "b9595fa102e0aee1e6ee86e5adf88f2b1a54b2ff746f8d23b97a65428029cf9a",
+      "bytes": 5440
+    },
+    {
+      "file": "snapshots/allocator-120844/control/gate_driver.py",
+      "sha256": "849d2136abeb1c232d3f693f129937a8f6a5d4c14d9b13eea93ca3332e39c229",
+      "bytes": 2544
+    },
+    {
+      "file": "snapshots/allocator-120844/control/gate_worker.py",
+      "sha256": "5becff39c9e21b3b038646b9b68893b3a69e32d07c41956054ea44e3eaa147fd",
+      "bytes": 4439
+    },
+    {
+      "file": "snapshots/allocator-120844/control/launch.py",
+      "sha256": "2ce045b8c55716546d17edc72a1a2452ee03548b6a943de0bc14c6f70df99d45",
+      "bytes": 514
+    },
+    {
+      "file": "snapshots/allocator-120844/control/local_audit.py",
+      "sha256": "e402f88680e2128eff49f6668b54670f591b1937b08ca7651841e3ce02d46ee0",
+      "bytes": 1399
+    },
+    {
+      "file": "snapshots/allocator-120844/control/local_regress.py",
+      "sha256": "3dd151a21118172fb57c13e5d9098919000e41b150f4132913ddb4f8912b06da",
+      "bytes": 1782
+    },
+    {
+      "file": "snapshots/allocator-120844/control/metrics.py",
+      "sha256": "02c9086b77b3272d6a70e9a3f889c5afada40377d73ba4ea0f05b7183e040331",
+      "bytes": 1814
+    },
+    {
+      "file": "snapshots/allocator-120844/control/trace_l7.py",
+      "sha256": "024e79e445170ffa197c9c9950b271e7bac5c40b500e3f474b7cee49ded6c192",
+      "bytes": 3232
+    },
+    {
+      "file": "INITIAL-PREFLIGHT.json",
+      "sha256": "df35b5c186cb5f205d984342161f1d90a308c7cd4b5ff8242aeed875d6e5f223",
+      "bytes": 4447
+    },
+    {
+      "file": "ALLOCATOR-PREFLIGHT.json",
+      "sha256": "e9379b2b16abc0c28de610dccf9988751dfdf511215fbe3f6df42e2fb0463a58",
+      "bytes": 4588
+    },
+    {
+      "file": "gate-audits/120846/RESULT.json",
+      "sha256": "af752fe73d6405aea945104f1d2a124ad80be766848869c038cc59362f9b52ca",
+      "bytes": 3702
+    }
+  ],
+  "scheduler_job": "120858"
+}

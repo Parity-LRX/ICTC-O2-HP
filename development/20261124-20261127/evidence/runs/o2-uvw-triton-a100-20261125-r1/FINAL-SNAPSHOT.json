@@ -1,0 +1,280 @@
+{
+  "status": "SOURCE_AND_RESULTS_SEALED_WITH_INDEPENDENT_UNPACK_QA",
+  "job": "119292",
+  "candidate_commit": "df12a3a85ec3b66c9e4909dca0c90a86a12b1516",
+  "gpu_result": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-uvw-triton-a100-20261125-r1/results/a100-119167",
+  "analysis": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-uvw-triton-a100-20261125-r1/results/analysis-119186",
+  "snapshot": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-uvw-triton-a100-20261125-r1/snapshots/delivery-119292",
+  "source_files_verified": 1129,
+  "raw_result_files_hashed": 253,
+  "archive": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-uvw-triton-a100-20261125-r1/snapshots/delivery-119292/SOURCE-AND-RECEIPTS.tar.gz",
+  "archive_sha256": "931f4f08b4adca307ddaa42857398c106f0eed4d10f8e2c3aa93f744159bab67",
+  "raw_manifest_sha256": "79dbbad0d3884267ac40fc9c8558d5f415b2b63a26d9865274149836c9257b4b",
+  "archive_scope": "source and receipts; complete raw results and large immutable dependencies retained and hashed separately",
+  "numerical_status": {
+    "ef-native": {
+      "passed": true,
+      "failed_roles": 0,
+      "repeat_failed": 0,
+      "failed_role_groups": {},
+      "examples": {}
+    },
+    "ef-ictc": {
+      "passed": true,
+      "failed_roles": 0,
+      "repeat_failed": 0,
+      "failed_role_groups": {},
+      "examples": {}
+    },
+    "ef-tiled": {
+      "passed": true,
+      "failed_roles": 0,
+      "repeat_failed": 0,
+      "failed_role_groups": {},
+      "examples": {}
+    },
+    "train-native": {
+      "passed": true,
+      "failed_roles": 0,
+      "repeat_failed": 0,
+      "failed_role_groups": {},
+      "examples": {}
+    },
+    "train-ictc": {
+      "passed": false,
+      "failed_roles": 21,
+      "repeat_failed": 0,
+      "failed_role_groups": {
+        "gradients": 2,
+        "force_mixed": 19
+      },
+      "examples": {
+        "/gradients/blocks.3.ga.alpha_norm.weight": {
+          "passed": false,
+          "component_fail_count": 0,
+          "max_abs": 4.023313522338867e-07,
+          "relative_l2": 1.0658772225724533e-05,
+          "statistics_dtype": "float32",
+          "value_dtype": "torch.float32",
+          "reference_norm": 0.05786791816353798
+        },
+        "/gradients/blocks.3.ga.alpha_norm.bias": {
+          "passed": false,
+          "component_fail_count": 0,
+          "max_abs": 2.7194619178771973e-07,
+          "relative_l2": 1.1293302122794557e-05,
+          "statistics_dtype": "float32",
+          "value_dtype": "torch.float32",
+          "reference_norm": 0.033967919647693634
+        },
+        "/force_mixed/mixed/blocks.1.ga.rad_func.net.6.bias": {
+          "passed": false,
+          "component_fail_count": 0,
+          "max_abs": 8.344650268554688e-07,
+          "relative_l2": 1.0420657417853363e-05,
+          "statistics_dtype": "float32",
+          "value_dtype": "torch.float32",
+          "reference_norm": 0.16410906612873077
+        },
+        "/force_mixed/mixed/blocks.2.ga.alpha_norm.weight": {
+          "passed": false,
+          "component_fail_count": 0,
+          "max_abs": 8.824281394481659e-08,
+          "relative_l2": 1.4169274436426349e-05,
+          "statistics_dtype": "float32",
+          "value_dtype": "torch.float32",
+          "reference_norm": 0.01099514402449131
+        },
+        "/force_mixed/mixed/blocks.2.ga.alpha_norm.bias": {
+          "passed": false,
+          "component_fail_count": 0,
+          "max_abs": 3.573950380086899e-08,
+          "relative_l2": 1.1305889529467095e-05,
+          "statistics_dtype": "float32",
+          "value_dtype": "torch.float32",
+          "reference_norm": 0.006140168756246567
+        },
+        "/force_mixed/mixed/blocks.3.ga.alpha_dot": {
+          "passed": false,
+          "component_fail_count": 0,
+          "max_abs": 7.655471563339233e-07,
+          "relative_l2": 1.176064233732177e-05,
+          "statistics_dtype": "float32",
+          "value_dtype": "torch.float32",
+          "reference_norm": 0.15008005499839783
+        },
+        "/force_mixed/mixed/blocks.3.ga.so2_linear_1.fc_m0.weight": {
+          "passed": false,
+          "component_fail_count": 0,
+          "max_abs": 1.7117708921432495e-06,
+          "relative_l2": 1.1240005733270664e-05,
+          "statistics_dtype": "float32",
+          "value_dtype": "torch.float32",
+          "reference_norm": 0.7832037806510925
+        },
+        "/force_mixed/mixed/blocks.3.ga.alpha_norm.weight": {
+          "passed": false,
+          "component_fail_count": 0,
+          "max_abs": 1.9255094230175018e-07,
+          "relative_l2": 2.1712996385758743e-05,
+          "statistics_dtype": "float32",
+          "value_dtype": "torch.float32",
+          "reference_norm": 0.017406834289431572
+        }
+      }
+    },
+    "train-tiled": {
+      "passed": false,
+      "failed_roles": 54,
+      "repeat_failed": 0,
+      "failed_role_groups": {
+        "gradients": 4,
+        "force_mixed": 50
+      },
+      "examples": {
+        "/gradients/blocks.3.ga.alpha_norm.bias": {
+          "passed": false,
+          "component_fail_count": 0,
+          "max_abs": 2.1979212760925293e-07,
+          "relative_l2": 1.0650047443050425e-05,
+          "statistics_dtype": "float32",
+          "value_dtype": "torch.float32",
+          "reference_norm": 0.033967919647693634
+        },
+        "/gradients/blocks.4.ga.alpha_dot": {
+          "passed": false,
+          "component_fail_count": 0,
+          "max_abs": 4.3567270040512085e-06,
+          "relative_l2": 1.2497082934714854e-05,
+          "statistics_dtype": "float32",
+          "value_dtype": "torch.float32",
+          "reference_norm": 0.9698886871337891
+        },
+        "/gradients/blocks.4.ga.alpha_norm.weight": {
+          "passed": false,
+          "component_fail_count": 0,
+          "max_abs": 8.01868736743927e-07,
+          "relative_l2": 1.1209687727387063e-05,
+          "statistics_dtype": "float32",
+          "value_dtype": "torch.float32",
+          "reference_norm": 0.12945809960365295
+        },
+        "/gradients/blocks.4.ga.alpha_norm.bias": {
+          "passed": false,
+          "component_fail_count": 0,
+          "max_abs": 3.3061951398849487e-07,
+          "relative_l2": 1.0619327440508641e-05,
+          "statistics_dtype": "float32",
+          "value_dtype": "torch.float32",
+          "reference_norm": 0.06615252047777176
+        },
+        "/force_mixed/mixed/coordinates": {
+          "passed": false,
+          "component_fail_count": 3,
+          "max_abs": 8.526444435119629e-05,
+          "relative_l2": 9.182906978821848e-06,
+          "statistics_dtype": "float32",
+          "value_dtype": "torch.float32",
+          "reference_norm": 18.84636878967285
+        },
+        "/force_mixed/mixed/blocks.1.norm_1.affine_bias": {
+          "passed": false,
+          "component_fail_count": 0,
+          "max_abs": 2.4400651454925537e-07,
+          "relative_l2": 1.085760595742613e-05,
+          "statistics_dtype": "float32",
+          "value_dtype": "torch.float32",
+          "reference_norm": 0.07202570140361786
+        },
+        "/force_mixed/mixed/blocks.1.ga.source_embedding.weight": {
+          "passed": false,
+          "component_fail_count": 0,
+          "max_abs": 2.123415470123291e-07,
+          "relative_l2": 1.0393543561804108e-05,
+          "statistics_dtype": "float32",
+          "value_dtype": "torch.float32",
+          "reference_norm": 0.08535812795162201
+        },
+        "/force_mixed/mixed/blocks.1.ga.rad_func.net.3.bias": {
+          "passed": false,
+          "component_fail_count": 0,
+          "max_abs": 1.0244548320770264e-07,
+          "relative_l2": 1.0854452739295084e-05,
+          "statistics_dtype": "float32",
+          "value_dtype": "torch.float32",
+          "reference_norm": 0.03582224249839783
+        }
+      }
+    }
+  },
+  "paired": {
+    "ef": {
+      "fields": {
+        "parameter_sha256": true,
+        "common_state_sha256": true,
+        "graph": true,
+        "complete_state_identity": true,
+        "gpu_uuid": true,
+        "node": true,
+        "torch": true,
+        "deterministic": true,
+        "TF32": true,
+        "AMP": true,
+        "CUDA_Graph": true,
+        "threads": true,
+        "complete_restored_state_verified": true
+      },
+      "passed": true
+    },
+    "train": {
+      "fields": {
+        "parameter_sha256": true,
+        "common_state_sha256": true,
+        "graph": true,
+        "complete_state_identity": true,
+        "gpu_uuid": true,
+        "node": true,
+        "torch": true,
+        "deterministic": true,
+        "TF32": true,
+        "AMP": true,
+        "CUDA_Graph": true,
+        "threads": true,
+        "complete_restored_state_verified": true
+      },
+      "passed": true
+    }
+  },
+  "dependencies": {
+    "ef": {
+      "common_state": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-paired-diagnostic-a100-20261124-r1/results/a100-118576/v3-ef-native-prepare/START.pt",
+      "common_state_sha256": "2ff015b2b4c4f1e6b926c66ef80d9dc261b69f102200ce4f70d6ebd154228dd3",
+      "condition": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-paired-diagnostic-a100-20261124-r1/results/a100-118576/v3-ef-native-prepare/CONDITION.json",
+      "condition_sha256": "fe41adb22d841748770577d0f3da431b518a29ed72e85b32caa7c5331fa4da73",
+      "checkpoint": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-v3-canonical-cpu-20261124-r1/results/convert-118059/checkpoint_ema-canonical-758c8b2a036e1e91.pt",
+      "checkpoint_sha256": "758c8b2a036e1e910f84840c590db6906d978f1d1734f443eb85c12e9d8f4113"
+    },
+    "train": {
+      "common_state": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-paired-diagnostic-a100-20261124-r1/results/a100-118586/v3-train-native-prepare/START.pt",
+      "common_state_sha256": "0c92619b8c9ca9ac06279468b134a238fb6940ac3e45b6e78ef473d56c4a359a",
+      "condition": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-paired-diagnostic-a100-20261124-r1/results/a100-118586/v3-train-native-prepare/CONDITION.json",
+      "condition_sha256": "e3516b54f0063d6973c82f536d6da6dc30e154d7ef54ccab04089e5401eed77e",
+      "checkpoint": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-v3-canonical-cpu-20261124-r1/results/convert-118059/checkpoint_ema-canonical-758c8b2a036e1e91.pt",
+      "checkpoint_sha256": "758c8b2a036e1e910f84840c590db6906d978f1d1734f443eb85c12e9d8f4113"
+    }
+  },
+  "gpu_accounting": {
+    "job": "119167",
+    "state": "COMPLETED",
+    "elapsed_s": 1900,
+    "nodes": 1,
+    "gpus": 1,
+    "gpu_h": 0.5277777777777778,
+    "method": "Slurm actual ElapsedRaw; fixed --gres=gpu:1 verified by startup device_count and common GPU UUID",
+    "project_hard_cap_gpu_h": 500,
+    "project_total_not_recomputed": true,
+    "historical_ledger": "runs/o2-hp-approved-20261123-r1/provenance/BUDGET-AUDIT.json",
+    "append_to_project_ledger_once_by_job_id": true,
+    "CPU_failures_and_successes": "ACCOUNTING.tsv; no GPU allocation"
+  }
+}

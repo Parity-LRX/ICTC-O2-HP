@@ -1,0 +1,13 @@
+{
+  "status": "DIAGNOSTIC_EVIDENCE_SEALED",
+  "archive": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-cause-20261127-r1/diagnostic-controls-and-receipts.tar.gz",
+  "archive_sha256": "d15d97718c934a2844c30e6255e44098b507b81cad2ec2129b128578226db461",
+  "archive_members": 188,
+  "independent_unpack_and_hash_check": true,
+  "raw_results_manifest": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-cause-20261127-r1/RAW-RESULT-MANIFEST.json",
+  "audit": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-cause-20261127-r1/results/audit-120618",
+  "source_preserved": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-cause-20261127-r1/PRESERVED-SOURCE-CHECK.json",
+  "candidate_unchanged": "dd7a3db136c1d2946aa0e41b87a167d8f940b122",
+  "GPUh": 0.47777777777777775,
+  "no_new_backend_qualification": true
+}

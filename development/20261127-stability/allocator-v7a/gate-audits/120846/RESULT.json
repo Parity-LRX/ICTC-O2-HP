@@ -1,0 +1,157 @@
+{
+  "status": "GATES_REVIEWED",
+  "source": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/gate-captures/120845",
+  "rows": [
+    {
+      "level": "network",
+      "order": 0,
+      "infer": "NOT_CAPTURED",
+      "train": "NOT_CAPTURED",
+      "comparisons": {},
+      "execution_status": {}
+    },
+    {
+      "level": "network",
+      "order": 1,
+      "infer": "NOT_CAPTURED",
+      "train": "NOT_CAPTURED",
+      "comparisons": {},
+      "execution_status": {}
+    },
+    {
+      "level": "network",
+      "order": 2,
+      "infer": "NOT_CAPTURED",
+      "train": "NOT_CAPTURED",
+      "comparisons": {},
+      "execution_status": {}
+    },
+    {
+      "level": "network",
+      "order": 3,
+      "infer": "NOT_CAPTURED",
+      "train": "NOT_CAPTURED",
+      "comparisons": {},
+      "execution_status": {}
+    },
+    {
+      "level": "network",
+      "order": 4,
+      "infer": "NOT_CAPTURED",
+      "train": "NOT_CAPTURED",
+      "comparisons": {},
+      "execution_status": {}
+    },
+    {
+      "level": "network",
+      "order": 5,
+      "infer": "NOT_CAPTURED",
+      "train": "NOT_CAPTURED",
+      "comparisons": {},
+      "execution_status": {}
+    },
+    {
+      "level": "network",
+      "order": 6,
+      "infer": "NOT_CAPTURED",
+      "train": "NOT_CAPTURED",
+      "comparisons": {},
+      "execution_status": {}
+    },
+    {
+      "level": "network",
+      "order": 7,
+      "infer": "NOT_CAPTURED",
+      "train": "NOT_CAPTURED",
+      "comparisons": {},
+      "execution_status": {}
+    },
+    {
+      "level": "network",
+      "order": 8,
+      "infer": "PASS",
+      "train": "PASS",
+      "comparisons": {
+        "ef-native-repeat": {
+          "passed": true,
+          "failures": {},
+          "roles": 3,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "ef-candidate": {
+          "passed": true,
+          "failures": {},
+          "roles": 3,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "joint-vjp-native-repeat": {
+          "passed": true,
+          "failures": {},
+          "roles": 383,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "joint-vjp-candidate": {
+          "passed": true,
+          "failures": {},
+          "roles": 383,
+          "max_R": 2.354826449391112e-07,
+          "max_ulp": 1405091840
+        },
+        "step0-native-repeat": {
+          "passed": true,
+          "failures": {},
+          "roles": 3061,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "step0-candidate": {
+          "passed": true,
+          "failures": {},
+          "roles": 3061,
+          "max_R": 4.4093243900533707e-07,
+          "max_ulp": 754974720
+        },
+        "step1-native-repeat": {
+          "passed": true,
+          "failures": {},
+          "roles": 3061,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "step1-candidate": {
+          "passed": true,
+          "failures": {},
+          "roles": 3061,
+          "max_R": 1.611150423741492e-06,
+          "max_ulp": 1988100096
+        },
+        "step2-native-repeat": {
+          "passed": true,
+          "failures": {},
+          "roles": 3061,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "step2-candidate": {
+          "passed": true,
+          "failures": {},
+          "roles": 3061,
+          "max_R": 2.987383140862221e-06,
+          "max_ulp": 2650800128
+        }
+      },
+      "execution_status": {
+        "native": "CAPTURED",
+        "native-repeat": "CAPTURED",
+        "candidate": "CAPTURED"
+      }
+    }
+  ],
+  "job": "120846",
+  "original_thresholds": true,
+  "shared_true_loss_cotangents": false,
+  "restored_inside_three_steps": false
+}

@@ -1,0 +1,8 @@
+{
+  "snapshot": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-paired-diagnostic-a100-20261124-r1/snapshots/delivery-118699",
+  "payload_files": 2447,
+  "manifest_sha256": "6334522940e699d8afb51949ce22ccf231d98aa6830e406a1e11048cccc86705",
+  "gpu_h_this_run": 1.1608333333333332,
+  "main_workloads": 12,
+  "paired_conditions_pass": 6
+}

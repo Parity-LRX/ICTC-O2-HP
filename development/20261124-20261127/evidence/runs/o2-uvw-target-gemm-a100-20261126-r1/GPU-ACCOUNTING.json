@@ -1,0 +1,108 @@
+{
+  "allocations": [
+    {
+      "job": "120158",
+      "name": "o2-target-mask-full",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "elapsed_s": 428,
+      "start": "2026-11-26T11:43:15",
+      "end": "2026-11-26T11:50:23",
+      "nodes": 1,
+      "gpus": 1,
+      "GPUh": 0.11888888888888889
+    },
+    {
+      "job": "120168",
+      "name": "o2-target-fma8-full",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "elapsed_s": 429,
+      "start": "2026-11-26T11:58:02",
+      "end": "2026-11-26T12:05:11",
+      "nodes": 1,
+      "gpus": 1,
+      "GPUh": 0.11916666666666667
+    },
+    {
+      "job": "120188",
+      "name": "o2-target-qualified-gemm",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "elapsed_s": 6,
+      "start": "2026-11-26T12:10:47",
+      "end": "2026-11-26T12:10:53",
+      "nodes": 1,
+      "gpus": 1,
+      "GPUh": 0.0016666666666666668
+    },
+    {
+      "job": "120247",
+      "name": "o2-target-shared-qual",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "elapsed_s": 428,
+      "start": "2026-11-26T12:39:52",
+      "end": "2026-11-26T12:47:00",
+      "nodes": 1,
+      "gpus": 1,
+      "GPUh": 0.11888888888888889
+    },
+    {
+      "job": "120253",
+      "name": "o2-target-sharedmicro",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "elapsed_s": 5,
+      "start": "2026-11-26T12:52:33",
+      "end": "2026-11-26T12:52:38",
+      "nodes": 1,
+      "gpus": 1,
+      "GPUh": 0.001388888888888889
+    },
+    {
+      "job": "120263",
+      "name": "o2-target-shared32-qual",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "elapsed_s": 441,
+      "start": "2026-11-26T12:55:58",
+      "end": "2026-11-26T13:03:19",
+      "nodes": 1,
+      "gpus": 1,
+      "GPUh": 0.1225
+    },
+    {
+      "job": "120270",
+      "name": "o2-target-shared32micro",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "elapsed_s": 6,
+      "start": "2026-11-26T13:08:52",
+      "end": "2026-11-26T13:08:58",
+      "nodes": 1,
+      "gpus": 1,
+      "GPUh": 0.0016666666666666668
+    },
+    {
+      "job": "120273",
+      "name": "o2-target-paired-performance",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "elapsed_s": 2251,
+      "start": "2026-11-26T13:09:03",
+      "end": "2026-11-26T13:46:34",
+      "nodes": 1,
+      "gpus": 1,
+      "GPUh": 0.6252777777777778
+    }
+  ],
+  "total_GPUh": 1.1094444444444445,
+  "actual_scheduler_intervals_serial": true,
+  "maximum_nodes": 1,
+  "gpus_per_allocation": 1,
+  "project_budget_GPUh": 500,
+  "GPU_count_evidence": "explicit --gres=gpu:1 and runtime single-device assertions; site SlurmDB omits GPU TRES",
+  "append_by_unique_job_ID": true,
+  "project_total_not_recomputed": true
+}

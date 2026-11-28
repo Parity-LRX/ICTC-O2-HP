@@ -1,0 +1,14 @@
+{
+  "job": "119167",
+  "state": "COMPLETED",
+  "elapsed_s": 1900,
+  "nodes": 1,
+  "gpus": 1,
+  "gpu_h": 0.5277777777777778,
+  "method": "Slurm actual ElapsedRaw; fixed --gres=gpu:1 verified by startup device_count and common GPU UUID",
+  "project_hard_cap_gpu_h": 500,
+  "project_total_not_recomputed": true,
+  "historical_ledger": "runs/o2-hp-approved-20261123-r1/provenance/BUDGET-AUDIT.json",
+  "append_to_project_ledger_once_by_job_id": true,
+  "CPU_failures_and_successes": "ACCOUNTING.tsv; no GPU allocation"
+}

@@ -1,0 +1,37 @@
+{
+  "allocations": [
+    {
+      "job": "120614",
+      "state": "COMPLETED",
+      "elapsed_seconds": 1162,
+      "gpus": 1,
+      "nodes": 1,
+      "node": "XHPC-A100",
+      "GPUh": 0.3227777777777778,
+      "exit_code": "0:0"
+    },
+    {
+      "job": "120617",
+      "state": "COMPLETED",
+      "elapsed_seconds": 446,
+      "gpus": 1,
+      "nodes": 1,
+      "node": "XHPC-A100",
+      "GPUh": 0.1238888888888889,
+      "exit_code": "0:0"
+    },
+    {
+      "job": "120636",
+      "state": "COMPLETED",
+      "elapsed_seconds": 112,
+      "gpus": 1,
+      "nodes": 1,
+      "node": "XHPC-A100",
+      "GPUh": 0.03111111111111111,
+      "exit_code": "0:0"
+    }
+  ],
+  "GPUh": 0.47777777777777775,
+  "serial": true,
+  "old_120441_not_double_counted": true
+}

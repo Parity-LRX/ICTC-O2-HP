@@ -1,0 +1,14 @@
+{
+  "scope": "UVW training failure cause diagnostics only; add this increment to project ledger",
+  "partition": "GPU-A100",
+  "node": "XHPC-A100",
+  "allocations": [
+    {"job_id": "119324", "nodes": 1, "gpus": 1, "state": "COMPLETED", "exit_code": "0:0", "elapsed_seconds": 109},
+    {"job_id": "119328", "nodes": 1, "gpus": 1, "state": "COMPLETED", "exit_code": "0:0", "elapsed_seconds": 32}
+  ],
+  "serial_allocations": true,
+  "total_gpu_seconds": 141,
+  "total_gpu_hours": 0.03916666666666667,
+  "budget_gpu_seconds": 1200,
+  "scheduler_source": "SCHEDULER.txt"
+}

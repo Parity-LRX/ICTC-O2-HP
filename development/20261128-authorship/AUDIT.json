@@ -1,0 +1,16 @@
+{
+  "status": "PUSHED_AND_VERIFIED",
+  "AMD_job": "121233",
+  "corrected_commits": 105,
+  "verified_fork_refs": 32,
+  "author_and_committer": "LeutOrca <161549012+LeutOrca@users.noreply.github.com>",
+  "trees_messages_dates_preserved": true,
+  "upstream_human_authors_preserved": true,
+  "annotated_taggers_corrected": 2,
+  "backup_bundle_sha256": "c873b9edfb1524a610be04408424b0ca46a8f894b44de6f000371f1587bc79f8",
+  "numerical_commit_old": "13c9328e2c5e1a177e6b301078904be595d42e97",
+  "numerical_commit_new": "c61fd3353cd419124b8a35188f8b5b546e600ba3",
+  "published_head_old": "909c6bafcb445e36505dcfb5edc8e257015ada29",
+  "published_head_new": "bf8880c8e0ad0288d9cef474879322415833f98a",
+  "GitHub_author_association": "LeutOrca id 161549012 verified via GitHub connector on c61fd33"
+}

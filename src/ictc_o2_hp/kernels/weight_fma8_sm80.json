@@ -1,0 +1,30 @@
+{
+  "stem": "weight-fma8-sm80-n64-u8",
+  "tile": [
+    32,
+    64
+  ],
+  "warps": 4,
+  "unroll": 8,
+  "options": [
+    "--gpu-architecture=sm_80",
+    "--std=c++14",
+    "--ftz=false",
+    "--fmad=false",
+    "--ptxas-options=-v",
+    "-DTILE_N=64",
+    "-DK_UNROLL=8"
+  ],
+  "source_sha256": "9cf6f53244307d88b4308c6ebbb6e3c77e138a77d8a8ef73b589194754008ebe",
+  "ptx_sha256": "5a34493f61adf63683a13ee4ca60b7519f9da4038f2e4a99e8f1ec7cdd3de9b2",
+  "cubin_sha256": "1b32b4e227d96432269bf53295c010fa71adcd73035589b922316cb30b5bc3db",
+  "ptxas": "ptxas info    : 0 bytes gmem\nptxas info    : Compiling entry function 'weight_fma8' for 'sm_80'\nptxas info    : Function properties for weight_fma8\nptxas         .     0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads\nptxas info    : Used 127 registers, used 1 barriers, 12288 bytes smem, 376 bytes cmem[0], 8 bytes cmem[2]\nptxas info    : Compile time = 47.044 ms\n",
+  "NVRTC": [
+    12,
+    8
+  ],
+  "build_receipt": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-uvw-target-gemm-a100-20261126-r1/results/cuda-build-amd-120260/RESULT.json",
+  "precision": "FP32 RN FMA/add, FTZ off; no TF32/AMP/half/FP64/Tensor Core",
+  "layout": "A[256,10504] strides[1,256], B[10504,1024] contiguous and 16-byte aligned; output partials[4,256,1024]",
+  "domain": "SM80; unsupported domains use the existing Triton implementation; no runtime compilation"
+}

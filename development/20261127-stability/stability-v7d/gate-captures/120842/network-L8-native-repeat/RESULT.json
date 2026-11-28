@@ -1,0 +1,124 @@
+{
+  "hardware": {
+    "name": "NVIDIA A100-SXM4-40GB",
+    "total_bytes": 42285268992,
+    "uuid": "f31def7c-1b59-13f6-e074-5a31665c9a29",
+    "free_bytes": 41827565568,
+    "runtime_total_bytes": 42285268992,
+    "node": "XHPC-A100",
+    "torch": "2.7.1+cu128",
+    "single_visible_device": true,
+    "TF32": false,
+    "AMP": false,
+    "CUDA_Graph": false,
+    "threads": 4
+  },
+  "configuration": {
+    "level": "network",
+    "family": "uvw",
+    "order": 8,
+    "parity": "canonical",
+    "size": 16,
+    "backend": "native",
+    "mode": "train",
+    "output": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/gate-captures/120842/network-L8-native-repeat"
+  },
+  "files": {
+    "INITIAL.pt": "8446ab1712dfe29df76a53439729ac8af7d11a2348a6e013a36baf8b30303c38",
+    "joint-vjp.pt": "275cf939096f0700cedb171bc7e2fc1da72ccd9e33ead4c4004326a5bb955a8a",
+    "ef.pt": "f4d85a83ea40cffa8e3b5863ad01e91060b4e3ecace6aa7c192a197e5d237307",
+    "step0.pt": "2201ae0101ef3baaff0f63eba6f663f39c2504179f6f1934d75224a621ee8df5",
+    "rng0.pt": "6ade0c87ecc70deec9e01fcd71cff68fe75d01d25be7f470c423b436274a58a2"
+  },
+  "identity": {
+    "architecture": "equiformerv3-canonical-structural-L8-M8",
+    "role": "checkpoint_ema",
+    "checkpoint": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-v3-canonical-cpu-20261124-r1/results/convert-118059/checkpoint_ema-canonical-758c8b2a036e1e91.pt",
+    "checkpoint_sha256": "758c8b2a036e1e910f84840c590db6906d978f1d1734f443eb85c12e9d8f4113",
+    "training_recipe": {
+      "batch_size": 8,
+      "grad_accumulation_steps": 1,
+      "eval_batch_size": 8,
+      "load_balancing": "atoms",
+      "num_workers": 0,
+      "lr_initial": 5e-05,
+      "optimizer": "AdamW",
+      "optimizer_params": {
+        "weight_decay": 0.001,
+        "betas": [
+          0.9,
+          0.98
+        ],
+        "eps": 1e-06
+      },
+      "scheduler": "LambdaLR",
+      "scheduler_params": {
+        "lambda_type": "cosine",
+        "warmup_factor": 0.0,
+        "warmup_epochs": 9014,
+        "lr_min_factor": 0.01,
+        "epochs": 180280,
+        "lr": 5e-05
+      },
+      "max_epochs": 2,
+      "clip_grad_norm": 100,
+      "ema_decay": 0.999,
+      "eval_every": 2500,
+      "use_denoising_pos": false,
+      "denoising_pos_params": {
+        "prob": 0.5,
+        "fixed_noise_std": true,
+        "std": 0.025,
+        "corrupt_ratio": 0.5,
+        "num_steps": 50,
+        "std_low": 0.01,
+        "std_high": 0.5,
+        "min_num_atoms": null,
+        "strict_max_ratio": 0.75,
+        "max_force_norm": 2.5
+      },
+      "denoising_pos_coefficient": 1,
+      "use_compile": false,
+      "load_pretrained_weights": "/mnt/data2/projects/yilunliao/fairchem_omat24_08-04-2025/models/omat24/equiformer_v3/checkpoints/2025-12-27-12-45-52-1226-2_grad-ft_N@7_L@4_lr@0-1e-4-epochs@2-bs@512-beta2@0.98-eps@1e-6_rand-e/checkpoint_no-energy_head.pt",
+      "lr_lambda": "<fairchem.core.modules.scheduler.CosineLRLambda object at 0x729d59386b50>"
+    },
+    "loss": [
+      {
+        "energy": {
+          "fn": "per_atom_mae",
+          "coefficient": 20
+        }
+      },
+      {
+        "forces": {
+          "fn": "l2mae",
+          "coefficient": 20
+        }
+      },
+      {
+        "stress": {
+          "fn": "mae",
+          "coefficient": 5
+        }
+      }
+    ],
+    "energy_label": "uncorrected_total_energy",
+    "stress_label": "raw * -0.1 * ase.units.GPa",
+    "batch_size": 1,
+    "ef_atoms": 600,
+    "train_atoms": 100,
+    "strict_reload": true,
+    "spherical_execution": "bounded exact bilinear canonical kernel; original dense 600-atom reference OOM retained separately",
+    "memory_policy": "native nonreentrant block recomputation for all seven blocks; same both backends",
+    "source_checkpoint_accuracy": false,
+    "lmax": 8,
+    "mmax": 8,
+    "copies": 1,
+    "atoms": 100,
+    "active_parameters": 376,
+    "source_package_sha256": "36d76d79b69d6d3241736286e21fa3c3638f958b0a5d08a7d9e077ec56417edc"
+  },
+  "status": "OOM",
+  "error": "OutOfMemoryError('CUDA out of memory. Tried to allocate 416.00 MiB. GPU 0 has a total capacity of 39.38 GiB of which 409.88 MiB is free. Including non-PyTorch memory, this process has 38.96 GiB memory in use. Of the allocated memory 36.84 GiB is allocated by PyTorch, and 1.44 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)')",
+  "traceback": "Traceback (most recent call last):\n  File \"/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/snapshots/initial-120840/control/gate_worker.py\", line 39, in main\n    before=rng();mixed=model.force_mixed()\n                       ^^^^^^^^^^^^^^^^^^^\n  File \"/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-uvw-triton-a100-20261125-r1/snapshots/preflight-119174/whole.py\", line 185, in force_mixed\n    gradients=torch.autograd.grad(loss,(batch.pos,)+tuple(p for n,p in named),allow_unused=True)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/public/home/sps-xia/bjxiao/miniconda3/envs/o2/lib/python3.11/site-packages/torch/autograd/__init__.py\", line 502, in grad\n    result = _engine_run_backward(\n             ^^^^^^^^^^^^^^^^^^^^^\n  File \"/public/home/sps-xia/bjxiao/miniconda3/envs/o2/lib/python3.11/site-packages/torch/autograd/graph.py\", line 824, in _engine_run_backward\n    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntorch.OutOfMemoryError: CUDA out of memory. Tried to allocate 416.00 MiB. GPU 0 has a total capacity of 39.38 GiB of which 409.88 MiB is free. Including non-PyTorch memory, this process has 38.96 GiB memory in use. Of the allocated memory 36.84 GiB is allocated by PyTorch, and 1.44 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)\n"
+}

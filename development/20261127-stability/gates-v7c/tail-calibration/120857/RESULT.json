@@ -1,0 +1,66 @@
+{
+  "records": [
+    {
+      "source": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/l7-local-captures/120847/operands-0001.pt",
+      "key": "angular|64,64,64,32,4,1,4096,64,4096,64,1,2048,32,1",
+      "trials": 213,
+      "plan": {
+        "parts": 54,
+        "four": false,
+        "swap": false
+      },
+      "closest": {
+        "plan": {
+          "parts": 54,
+          "four": false,
+          "swap": false
+        },
+        "different_elements": 0,
+        "relative_l2": 0.0
+      },
+      "status": "EXACT"
+    },
+    {
+      "source": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/l7-local-captures/120847/operands-0004.pt",
+      "key": "angular|64,64,64,32,4,1,4096,64,4096,64,1,2048,32,1",
+      "trials": 213,
+      "plan": {
+        "parts": 54,
+        "four": false,
+        "swap": false
+      },
+      "closest": {
+        "plan": {
+          "parts": 54,
+          "four": false,
+          "swap": false
+        },
+        "different_elements": 0,
+        "relative_l2": 0.0
+      },
+      "status": "EXACT"
+    }
+  ],
+  "plans": {
+    "angular|64,64,64,32,4,1,4096,64,4096,64,1,2048,32,1": {
+      "parts": 54,
+      "four": false,
+      "swap": false
+    }
+  },
+  "hardware": {
+    "name": "NVIDIA A100-SXM4-40GB",
+    "total_bytes": 42285268992,
+    "uuid": "f31def7c-1b59-13f6-e074-5a31665c9a29",
+    "free_bytes": 41479438336,
+    "runtime_total_bytes": 42285268992,
+    "node": "XHPC-A100",
+    "torch": "2.7.1+cu128",
+    "single_visible_device": true,
+    "TF32": false,
+    "AMP": false,
+    "CUDA_Graph": false,
+    "threads": 4,
+    "allocator_configuration": "expandable_segments:True"
+  }
+}

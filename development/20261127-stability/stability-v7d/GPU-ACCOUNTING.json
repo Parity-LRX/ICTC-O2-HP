@@ -1,0 +1,84 @@
+{
+  "allocations": [
+    {
+      "job": "120842",
+      "state": "COMPLETED",
+      "seconds": 372,
+      "start": "2026-11-27T17:42:05",
+      "end": "2026-11-27T17:48:17",
+      "allocated_resources": "billing=4,cpu=4,mem=96G,node=1",
+      "node": "XHPC-A100"
+    },
+    {
+      "job": "120845",
+      "state": "COMPLETED",
+      "seconds": 455,
+      "start": "2026-11-27T17:48:17",
+      "end": "2026-11-27T17:55:52",
+      "allocated_resources": "billing=4,cpu=4,mem=96G,node=1",
+      "node": "XHPC-A100"
+    },
+    {
+      "job": "120847",
+      "state": "COMPLETED",
+      "seconds": 142,
+      "start": "2026-11-27T17:55:52",
+      "end": "2026-11-27T17:58:14",
+      "allocated_resources": "billing=4,cpu=4,mem=96G,node=1",
+      "node": "XHPC-A100"
+    },
+    {
+      "job": "120853",
+      "state": "COMPLETED",
+      "seconds": 6,
+      "start": "2026-11-27T18:00:11",
+      "end": "2026-11-27T18:00:17",
+      "allocated_resources": "billing=4,cpu=4,mem=96G,node=1",
+      "node": "XHPC-A100"
+    },
+    {
+      "job": "120857",
+      "state": "COMPLETED",
+      "seconds": 8,
+      "start": "2026-11-27T18:08:07",
+      "end": "2026-11-27T18:08:15",
+      "allocated_resources": "billing=4,cpu=4,mem=96G,node=1",
+      "node": "XHPC-A100"
+    },
+    {
+      "job": "120866",
+      "state": "COMPLETED",
+      "seconds": 276,
+      "start": "2026-11-27T18:26:12",
+      "end": "2026-11-27T18:30:48",
+      "allocated_resources": "billing=4,cpu=4,mem=96G,node=1",
+      "node": "XHPC-A100"
+    },
+    {
+      "job": "120870",
+      "state": "COMPLETED",
+      "seconds": 2157,
+      "start": "2026-11-27T18:33:47",
+      "end": "2026-11-27T19:09:44",
+      "allocated_resources": "billing=4,cpu=4,mem=96G,node=1",
+      "node": "XHPC-A100"
+    },
+    {
+      "job": "120889",
+      "state": "COMPLETED",
+      "seconds": 5998,
+      "start": "2026-11-27T19:18:18",
+      "end": "2026-11-27T20:58:16",
+      "allocated_resources": "billing=4,cpu=4,mem=96G,node=1",
+      "node": "XHPC-A100"
+    }
+  ],
+  "seconds_including_failures": 9414,
+  "GPUh_including_failures": 2.615,
+  "single_A100_serial": true,
+  "parent_budget_GPUh": 500,
+  "GPU_count_provenance": "One-GPU batch request and runtime configure/device-count assertions; this cluster omits GPUs in accounting TRES",
+  "batch_script_sha256": "8a6f71614c0c890f253f0a69cfd94add00ce934d5308695e40a071074553abba",
+  "live_controller_receipt": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/SCONTROL-120889.txt",
+  "live_controller_sha256": "790d5a489cbe186b0c422d80126f7c90fb00720748c9c247ff8a7bb47101da08"
+}

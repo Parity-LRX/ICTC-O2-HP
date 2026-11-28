@@ -1,0 +1,33 @@
+{
+  "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/snapshots/qualification-120777/src",
+  "package_sha256": "f82c1b3837e5c80e36248712e203ede2bcc1317a97507f7114f0d495edddf0e3",
+  "candidate_commit": "5764f666d1278634f2a555f8cf621acc1c2c0801",
+  "archive": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/snapshots/qualification-120777/source.tar.gz",
+  "files": {
+    "ictc_o2_hp/api.py": "d87ae0f2c5bda30286277ec1beb139ff834fa8eb7e7f8592b44582d3837da002",
+    "ictc_o2_hp/__init__.py": "746bf6fad21f2bce56686144be22699131fade36fae4b5b3a07722c9ef4cb9d6",
+    "ictc_o2_hp/fast_o2.py": "978c334379575fdd64a318c4b037dbf977b78678c667ab28d4f000cbf3f8ab31",
+    "ictc_o2_hp/native_o2.py": "127b963665494e8ef575abe0d628efc33796c29e327f6b2ab36db28f4b93535c",
+    "ictc_o2_hp/o2_math.py": "8245c7ec426280d3ddf7039014f85b2d9a686147294677b0b6174737b5431dd2",
+    "ictc_o2_hp/radial_streamed.py": "d1e98d9fb653fd35effa9241d3698b7ef62aaa0955204e915405845fab197778",
+    "ictc_o2_hp/radial_uvu.py": "fc399b66c1c2823790b502d7f4ae17ab88d7c92362d1e0d3e73b60560d23b77b",
+    "ictc_o2_hp/reference.py": "48adf9e974036fd7c0fcf19f5658bae0bfc40f55a97ad51ab267e5e6f9db99f7",
+    "ictc_o2_hp/runtime_weight.py": "27264226eedf441a61ebfed8e669d7254f6f083a12ee3e443eaa6382552a1409",
+    "ictc_o2_hp/triton_o2.py": "faf3f946005caf2354c67672835e2860bfafc0264ae1bdb70abce2fcb7266435",
+    "ictc_o2_hp/uvu_fused.py": "124d1bf5b2aa31d41e3a5cd02e4e7e2317980424fefd7419ab2513b270f16cb8",
+    "ictc_o2_hp/uvu_o2.py": "ae7d36d64a0a5c3d750889e09e9e07be7f9d78002a905c373bccf9387517a9be",
+    "ictc_o2_hp/uvu_single.py": "fb4ba729ff7dd4a67e50d4e7f482ab59b45841773ed538108da1a55ba9091165",
+    "ictc_o2_hp/uvu_triton.py": "17d35ecf415c32dfe0b031fef323771636aec22e3b95efbe200226950b2704d9",
+    "ictc_o2_hp/uvw_o2.py": "873aed80ef52c432f538a78791741dec4d285ecdad9a57a22cde90133e606a63",
+    "ictc_o2_hp/weight_fma8_cuda.py": "7917b1619dab302c895a13f2885e187d0188fe84911ad4892a9b16620dc988b1",
+    "ictc_o2_hp/uvw_triton.py": "6b5fd7d214ee25d40a2a3612a65ba7d550446de10e18f540dbd0212d49e22bac",
+    "ictc_o2_hp/bilinear_triton.py": "ef9b4096f8a27638144e221522f8c1de67d195693ba5885a44b80e38f28afe01",
+    "ictc_o2_hp/bilinear_plans.json": "6b184be4e955ab388f54aa3e5eac97ff9023d7db8a540d7aae534975af7eef15",
+    "ictc_o2_hp/fp32_plans.py": "5a11b44d9eac42070fc4732badad088d7a5dc67b4200d56d1bf9be4dfab0abfe",
+    "ictc_o2_hp/fp32_reduction_plans.json": "568b97f41cd7725b5a25aa2946f749f84eb3d9c2992ddc88b09748cd0b0b5636",
+    "ictc_o2_hp/kernels/weight_fma8.cu": "9cf6f53244307d88b4308c6ebbb6e3c77e138a77d8a8ef73b589194754008ebe",
+    "ictc_o2_hp/kernels/weight_fma8_sm80.cubin": "1b32b4e227d96432269bf53295c010fa71adcd73035589b922316cb30b5bc3db",
+    "ictc_o2_hp/kernels/weight_fma8_sm80.ptx": "5a34493f61adf63683a13ee4ca60b7519f9da4038f2e4a99e8f1ec7cdd3de9b2",
+    "ictc_o2_hp/kernels/weight_fma8_sm80.json": "0253bb8e313c1c99e686d7271927122360deda58f0d0add7ef1522ab9a833aeb"
+  }
+}

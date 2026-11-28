@@ -1,0 +1,2 @@
+# Preserve historical receipts byte-for-byte, including original CRLF and blank lines.
+evidence/** -text -whitespace

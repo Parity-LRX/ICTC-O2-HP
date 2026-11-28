@@ -1,0 +1,5 @@
+{
+  "status": "PASS",
+  "roundtrip_state_signature": "2a11eba7fefa7c2aceb9ce259888fd8c16cd14681cde8915dd45583def7029e5",
+  "detects_one_ulp_parameter_change": true
+}

@@ -1,0 +1,253 @@
+{
+  "status": "SEALED_WITH_INDEPENDENT_UNPACK_QA",
+  "candidate_commit": "dd7a3db136c1d2946aa0e41b87a167d8f940b122",
+  "operator_source_sha256": "4274d73a1aa7a98aca12fb2b2ac528da43b03d1d46699efab80143b96c74a2ea",
+  "package_sha256": "8bdd9db9203ac8cebe28e1fb8848b177dacdea2f345de5d7b1accab80c06dd67",
+  "job": "120374",
+  "snapshot": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-bounded-bilinear-a100-20261126-r1/snapshots/delivery-120374",
+  "archive": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-bounded-bilinear-a100-20261126-r1/snapshots/delivery-120374/SOURCE-AND-RECEIPTS.tar.gz",
+  "archive_sha256": "b243a34340012710658edec3baa7c4b2dd5241f8d1c8b3276b086103a98070d8",
+  "source_files": 2501,
+  "RAW_manifest": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-bounded-bilinear-a100-20261126-r1/snapshots/delivery-120374/RAW-RESULT-MANIFEST.json",
+  "RAW_manifest_sha256": "3aaabfd55c12784f8fa7d19ade8030731ee676a7accf93001e55fc7dec83c7c6",
+  "gates": {
+    "LOCAL-AUDIT": {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-bounded-bilinear-a100-20261126-r1/results/local-audit-amd-120329",
+      "status": "LOCAL_BILINEAR_PASS",
+      "sha256": "bcc05d299ae4a4360dda511a6587fad0c2dc4125a51aa0e43c05d78e90491bf0"
+    },
+    "FULL-AUDIT": {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-bounded-bilinear-a100-20261126-r1/results/full-audit-amd-120335",
+      "status": "FULL_QUALIFICATION_PASS",
+      "sha256": "840147740a233652616b1855dda14b443e0767e377368c97f1aeaaab61854681"
+    },
+    "RNG-AUDIT": {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-bounded-bilinear-a100-20261126-r1/results/rng-audit-amd-120336",
+      "status": "RNG_PHASE_AND_CONTINUITY_PASS",
+      "sha256": "6813c3db3638cc72be7d0cf628a9caff07095edbc169a5908cb9cd0688bbe03e"
+    },
+    "PTX-AUDIT": {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-bounded-bilinear-a100-20261126-r1/results/ptx-audit-amd-120336",
+      "status": "FP32_SM80_PTX_AUDIT_PASS",
+      "sha256": "890a09f872086cfd68f693d1b50234cdee4e952a96ed0ed1808ef40d42f1ffb1"
+    },
+    "PERFORMANCE-AUDIT": {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-bounded-bilinear-a100-20261126-r1/results/performance-audit-amd-120353",
+      "status": "PERFORMANCE_AUDIT_PASS",
+      "sha256": "4c85e382d1ac534b072bee279cb4ac0ac5f8b1e1fb7f5e41d36395fa637d2e40"
+    }
+  },
+  "accounting": {
+    "allocations": [
+      {
+        "job": "120284",
+        "name": "o2-bilinear-capture-local",
+        "state": "FAILED",
+        "exit_code": "1:0",
+        "elapsed_s": 16,
+        "start": "2026-11-26T15:03:28",
+        "end": "2026-11-26T15:03:44",
+        "nodes": 1,
+        "gpus": 1,
+        "requested_gpus": 1,
+        "GPUh": 0.0044444444444444444
+      },
+      {
+        "job": "120287",
+        "name": "o2-bilinear-capture2-local",
+        "state": "COMPLETED",
+        "exit_code": "0:0",
+        "elapsed_s": 129,
+        "start": "2026-11-26T15:14:46",
+        "end": "2026-11-26T15:16:55",
+        "nodes": 1,
+        "gpus": 1,
+        "requested_gpus": 1,
+        "GPUh": 0.035833333333333335
+      },
+      {
+        "job": "120290",
+        "name": "o2-bilinear-quick-three",
+        "state": "COMPLETED",
+        "exit_code": "0:0",
+        "elapsed_s": 72,
+        "start": "2026-11-26T15:18:33",
+        "end": "2026-11-26T15:19:45",
+        "nodes": 1,
+        "gpus": 1,
+        "requested_gpus": 1,
+        "GPUh": 0.02
+      },
+      {
+        "job": "120293",
+        "name": "o2-bilinear-full-qualification",
+        "state": "CANCELLED by 1035",
+        "exit_code": "0:0",
+        "elapsed_s": 0,
+        "start": "2026-11-26T15:20:57",
+        "end": "2026-11-26T15:20:57",
+        "nodes": 0,
+        "gpus": 0,
+        "requested_gpus": 1,
+        "GPUh": 0
+      },
+      {
+        "job": "120296",
+        "name": "o2-bilinear-layout",
+        "state": "COMPLETED",
+        "exit_code": "0:0",
+        "elapsed_s": 3,
+        "start": "2026-11-26T15:25:51",
+        "end": "2026-11-26T15:25:54",
+        "nodes": 1,
+        "gpus": 1,
+        "requested_gpus": 1,
+        "GPUh": 0.0008333333333333334
+      },
+      {
+        "job": "120298",
+        "name": "o2-bilinear-native-trees",
+        "state": "COMPLETED",
+        "exit_code": "0:0",
+        "elapsed_s": 5,
+        "start": "2026-11-26T15:27:12",
+        "end": "2026-11-26T15:27:17",
+        "nodes": 1,
+        "gpus": 1,
+        "requested_gpus": 1,
+        "GPUh": 0.001388888888888889
+      },
+      {
+        "job": "120302",
+        "name": "o2-bilinear-v5b-local",
+        "state": "FAILED",
+        "exit_code": "1:0",
+        "elapsed_s": 5,
+        "start": "2026-11-26T15:32:01",
+        "end": "2026-11-26T15:32:06",
+        "nodes": 1,
+        "gpus": 1,
+        "requested_gpus": 1,
+        "GPUh": 0.001388888888888889
+      },
+      {
+        "job": "120306",
+        "name": "o2-bilinear-v5d-local",
+        "state": "COMPLETED",
+        "exit_code": "0:0",
+        "elapsed_s": 138,
+        "start": "2026-11-26T15:36:42",
+        "end": "2026-11-26T15:39:00",
+        "nodes": 1,
+        "gpus": 1,
+        "requested_gpus": 1,
+        "GPUh": 0.03833333333333333
+      },
+      {
+        "job": "120309",
+        "name": "o2-bilinear-v5d-quick",
+        "state": "COMPLETED",
+        "exit_code": "0:0",
+        "elapsed_s": 71,
+        "start": "2026-11-26T15:39:54",
+        "end": "2026-11-26T15:41:05",
+        "nodes": 1,
+        "gpus": 1,
+        "requested_gpus": 1,
+        "GPUh": 0.01972222222222222
+      },
+      {
+        "job": "120312",
+        "name": "o2-bilinear-v5d-full",
+        "state": "CANCELLED by 1035",
+        "exit_code": "0:0",
+        "elapsed_s": 0,
+        "start": "2026-11-26T15:43:31",
+        "end": "2026-11-26T15:43:31",
+        "nodes": 0,
+        "gpus": 0,
+        "requested_gpus": 1,
+        "GPUh": 0
+      },
+      {
+        "job": "120322",
+        "name": "o2-bilinear-allaxes-trees",
+        "state": "COMPLETED",
+        "exit_code": "0:0",
+        "elapsed_s": 8,
+        "start": "2026-11-26T15:43:54",
+        "end": "2026-11-26T15:44:02",
+        "nodes": 1,
+        "gpus": 1,
+        "requested_gpus": 1,
+        "GPUh": 0.0022222222222222222
+      },
+      {
+        "job": "120328",
+        "name": "o2-bilinear-v5e-local",
+        "state": "COMPLETED",
+        "exit_code": "0:0",
+        "elapsed_s": 79,
+        "start": "2026-11-26T15:48:39",
+        "end": "2026-11-26T15:49:58",
+        "nodes": 1,
+        "gpus": 1,
+        "requested_gpus": 1,
+        "GPUh": 0.021944444444444444
+      },
+      {
+        "job": "120331",
+        "name": "o2-bilinear-v5e-quick",
+        "state": "COMPLETED",
+        "exit_code": "0:0",
+        "elapsed_s": 70,
+        "start": "2026-11-26T15:51:08",
+        "end": "2026-11-26T15:52:18",
+        "nodes": 1,
+        "gpus": 1,
+        "requested_gpus": 1,
+        "GPUh": 0.019444444444444445
+      },
+      {
+        "job": "120334",
+        "name": "o2-bilinear-v5e-full",
+        "state": "COMPLETED",
+        "exit_code": "0:0",
+        "elapsed_s": 311,
+        "start": "2026-11-26T15:52:46",
+        "end": "2026-11-26T15:57:57",
+        "nodes": 1,
+        "gpus": 1,
+        "requested_gpus": 1,
+        "GPUh": 0.08638888888888889
+      },
+      {
+        "job": "120352",
+        "name": "o2-bilinear-paired-performance",
+        "state": "COMPLETED",
+        "exit_code": "0:0",
+        "elapsed_s": 1413,
+        "start": "2026-11-26T16:02:20",
+        "end": "2026-11-26T16:25:53",
+        "nodes": 1,
+        "gpus": 1,
+        "requested_gpus": 1,
+        "GPUh": 0.3925
+      }
+    ],
+    "total_GPUh": 0.6444444444444445,
+    "actual_allocated_intervals_serial": true,
+    "maximum_nodes": 1,
+    "gpus_per_active_allocation": 1,
+    "includes_failed_and_unallocated_cancelled_jobs": true,
+    "GPU_count_evidence": "explicit --gres=gpu:1; code uses current CUDA device; performance asserts one visible device; SlurmDB omits GPU TRES",
+    "project_budget_GPUh": 500,
+    "append_by_unique_job_ID": true,
+    "project_total_not_recomputed": true,
+    "prior_ledger": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-uvw-target-gemm-a100-20261126-r1/GPU-ACCOUNTING.json"
+  },
+  "protected_8324_archive_sha256": "c7a86469da5a3f5cd0b133072c532b1bebd4126dc4a669a20d966dcebe63b63e",
+  "historical_and_new_FAIL_unchanged": true,
+  "shared_loss_cotangents": false,
+  "pushed": false
+}

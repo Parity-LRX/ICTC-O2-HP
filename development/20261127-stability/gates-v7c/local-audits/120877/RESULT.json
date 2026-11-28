@@ -1,0 +1,6485 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L1-H32-N16-P012-S0-A1-B1.pt",
+      "sha256": "0bae51fd138555d9398a3f2ab7a19023b8e0890e2bd7b4808df3b6e35596c3ce",
+      "order": 1,
+      "H": 32,
+      "N": 16,
+      "permutation": [
+        0,
+        1,
+        2
+      ],
+      "k_stride": [
+        4,
+        1,
+        16
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L1-H32-N16-P021-S0-A1-B1.pt",
+      "sha256": "7f7499d736d9a435e88d792c131eb52f8aa684aa68f6d654e178842314a13ff4",
+      "order": 1,
+      "H": 32,
+      "N": 16,
+      "permutation": [
+        0,
+        2,
+        1
+      ],
+      "k_stride": [
+        4,
+        16,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L1-H32-N16-P102-S0-A1-B1.pt",
+      "sha256": "29ddc2b86f30598bfeeaf569d01d0c8d749432dc68028b3f21b26b571b9980fc",
+      "order": 1,
+      "H": 32,
+      "N": 16,
+      "permutation": [
+        1,
+        0,
+        2
+      ],
+      "k_stride": [
+        1,
+        4,
+        16
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L1-H32-N16-P120-S0-A1-B1.pt",
+      "sha256": "227ff6a4cb33f814daa4451a958afc5c2b73c31c2f382228f6f217e82181f5a9",
+      "order": 1,
+      "H": 32,
+      "N": 16,
+      "permutation": [
+        1,
+        2,
+        0
+      ],
+      "k_stride": [
+        1,
+        16,
+        4
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L1-H32-N16-P201-S0-A1-B1.pt",
+      "sha256": "ee572f93fee0368e794818a342cdbc21426b54e1dc21b92ffd01e89bb424d1be",
+      "order": 1,
+      "H": 32,
+      "N": 16,
+      "permutation": [
+        2,
+        0,
+        1
+      ],
+      "k_stride": [
+        16,
+        4,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L1-H32-N16-P210-S0-A1-B1.pt",
+      "sha256": "2e549630dc4c522ff9b29fc06a8d92abcf11c30ae03c812aeed7ec91b44bece7",
+      "order": 1,
+      "H": 32,
+      "N": 16,
+      "permutation": [
+        2,
+        1,
+        0
+      ],
+      "k_stride": [
+        16,
+        1,
+        4
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L1-H32-N68-P012-S0-A1-B1.pt",
+      "sha256": "ab86f4911366cebcb4428e7f70396efdb118d67c51ab4ea03a94249973a659a8",
+      "order": 1,
+      "H": 32,
+      "N": 68,
+      "permutation": [
+        0,
+        1,
+        2
+      ],
+      "k_stride": [
+        4,
+        1,
+        16
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L1-H32-N68-P021-S0-A1-B1.pt",
+      "sha256": "61dec012a0593b4af6f4a8eb47a9be039f9bc6322a7eea91011c70e878c41af6",
+      "order": 1,
+      "H": 32,
+      "N": 68,
+      "permutation": [
+        0,
+        2,
+        1
+      ],
+      "k_stride": [
+        4,
+        16,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L1-H32-N68-P102-S0-A1-B1.pt",
+      "sha256": "ab43ea9e6b97b0cc3ec1184669accf3f2613dce99ab9c99e4faa4ae97dc3c214",
+      "order": 1,
+      "H": 32,
+      "N": 68,
+      "permutation": [
+        1,
+        0,
+        2
+      ],
+      "k_stride": [
+        1,
+        4,
+        16
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L1-H32-N68-P120-S0-A1-B1.pt",
+      "sha256": "b9bddc00ddfd47b796e8a8ec38b0794c7986dad9bfd707bb876de22e2bb1d0db",
+      "order": 1,
+      "H": 32,
+      "N": 68,
+      "permutation": [
+        1,
+        2,
+        0
+      ],
+      "k_stride": [
+        1,
+        16,
+        4
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L1-H32-N68-P201-S0-A1-B1.pt",
+      "sha256": "d7113f915abcebac5bf0c120f815a4c65384627b2a6f5e5286b81542e5425808",
+      "order": 1,
+      "H": 32,
+      "N": 68,
+      "permutation": [
+        2,
+        0,
+        1
+      ],
+      "k_stride": [
+        16,
+        4,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L1-H32-N68-P210-S0-A1-B1.pt",
+      "sha256": "98dd890ce67a9a423e41584e8283318fc1d9aabbc632132988f3fa8247898d7e",
+      "order": 1,
+      "H": 32,
+      "N": 68,
+      "permutation": [
+        2,
+        1,
+        0
+      ],
+      "k_stride": [
+        16,
+        1,
+        4
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L1-H32-N100-P012-S0-A1-B1.pt",
+      "sha256": "6c19fc9c2ded3a59c72d929a9ef0cc6079ca133c003ee24aa28cdfe13201bc2e",
+      "order": 1,
+      "H": 32,
+      "N": 100,
+      "permutation": [
+        0,
+        1,
+        2
+      ],
+      "k_stride": [
+        4,
+        1,
+        16
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L1-H32-N100-P021-S0-A1-B1.pt",
+      "sha256": "524cf397948c53ed0f2d04c613b33ea236535403b302b6bdcb5be35704a5ff3a",
+      "order": 1,
+      "H": 32,
+      "N": 100,
+      "permutation": [
+        0,
+        2,
+        1
+      ],
+      "k_stride": [
+        4,
+        16,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L1-H32-N100-P102-S0-A1-B1.pt",
+      "sha256": "51df464620b95a82a5a908b81fb4cd5a360e5efe046283b03556c60ad8bcf757",
+      "order": 1,
+      "H": 32,
+      "N": 100,
+      "permutation": [
+        1,
+        0,
+        2
+      ],
+      "k_stride": [
+        1,
+        4,
+        16
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L1-H32-N100-P120-S0-A1-B1.pt",
+      "sha256": "1df535f6ef48efcb06cab2277072c1adcf21aa8e4a3d53e39e9d308da6ee52aa",
+      "order": 1,
+      "H": 32,
+      "N": 100,
+      "permutation": [
+        1,
+        2,
+        0
+      ],
+      "k_stride": [
+        1,
+        16,
+        4
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L1-H32-N100-P201-S0-A1-B1.pt",
+      "sha256": "8435e7dc05ce0f6237e0ed74e70bd9e3093634093e20ec0e71f7ebf9f7db8244",
+      "order": 1,
+      "H": 32,
+      "N": 100,
+      "permutation": [
+        2,
+        0,
+        1
+      ],
+      "k_stride": [
+        16,
+        4,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L1-H32-N100-P210-S0-A1-B1.pt",
+      "sha256": "61dfe2ece6fb23561328b6cfd66a0d6198d0fde1dbf93d3ac82b1aecdaf030cc",
+      "order": 1,
+      "H": 32,
+      "N": 100,
+      "permutation": [
+        2,
+        1,
+        0
+      ],
+      "k_stride": [
+        16,
+        1,
+        4
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L1-H32-N137-P012-S0-A1-B1.pt",
+      "sha256": "c476a4c62fbdba85fbc731f3f2873897eb089e3d9a219694a9642c56c4f407d8",
+      "order": 1,
+      "H": 32,
+      "N": 137,
+      "permutation": [
+        0,
+        1,
+        2
+      ],
+      "k_stride": [
+        4,
+        1,
+        16
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 9.47787697214153e-08,
+      "roles": 6,
+      "maximum_ULP": 4096
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L1-H32-N137-P021-S0-A1-B1.pt",
+      "sha256": "c0cb89ac644ca73983a4d490d810cb5a79b1f0d88b35a055949d08d77a6e23f4",
+      "order": 1,
+      "H": 32,
+      "N": 137,
+      "permutation": [
+        0,
+        2,
+        1
+      ],
+      "k_stride": [
+        4,
+        16,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 9.47787697214153e-08,
+      "roles": 6,
+      "maximum_ULP": 4096
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L1-H32-N137-P102-S0-A1-B1.pt",
+      "sha256": "1a08921b1c6dc398aede6ea65af40d8e27d886524337869f4adec84a2ea8603d",
+      "order": 1,
+      "H": 32,
+      "N": 137,
+      "permutation": [
+        1,
+        0,
+        2
+      ],
+      "k_stride": [
+        1,
+        4,
+        16
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 1.0335213573853252e-07,
+      "roles": 6,
+      "maximum_ULP": 402
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L1-H32-N137-P120-S0-A1-B1.pt",
+      "sha256": "34d2e8deb1cb1b6f37d08f18639b49530e01a29bda6fda34d87db8f065c35f26",
+      "order": 1,
+      "H": 32,
+      "N": 137,
+      "permutation": [
+        1,
+        2,
+        0
+      ],
+      "k_stride": [
+        1,
+        16,
+        4
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 4.891996496780848e-08,
+      "roles": 6,
+      "maximum_ULP": 4096
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L1-H32-N137-P201-S0-A1-B1.pt",
+      "sha256": "dc1ba48c2037b99a171617729342a33063c76a87658ceb852d2196c87c5c510f",
+      "order": 1,
+      "H": 32,
+      "N": 137,
+      "permutation": [
+        2,
+        0,
+        1
+      ],
+      "k_stride": [
+        16,
+        4,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 1.0335213573853252e-07,
+      "roles": 6,
+      "maximum_ULP": 135
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L1-H32-N137-P210-S0-A1-B1.pt",
+      "sha256": "90dfae36c5400c53da0e252b236960c8c05e8d23af4a8877f6f57447e20ae03f",
+      "order": 1,
+      "H": 32,
+      "N": 137,
+      "permutation": [
+        2,
+        1,
+        0
+      ],
+      "k_stride": [
+        16,
+        1,
+        4
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 6.788612694208496e-08,
+      "roles": 6,
+      "maximum_ULP": 2048
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L1-H512-N100-P012-S0-A1-B1.pt",
+      "sha256": "9e9bca0cab6d6778b659a9cff953dfe37d9627deca359dbbe42f39df0b0d80c8",
+      "order": 1,
+      "H": 512,
+      "N": 100,
+      "permutation": [
+        0,
+        1,
+        2
+      ],
+      "k_stride": [
+        4,
+        1,
+        16
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L1-H512-N100-P021-S0-A1-B1.pt",
+      "sha256": "c6ab325504eeb149956661305708671968f6612530fbe9a502bdc865c4df0b54",
+      "order": 1,
+      "H": 512,
+      "N": 100,
+      "permutation": [
+        0,
+        2,
+        1
+      ],
+      "k_stride": [
+        4,
+        16,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L1-H512-N100-P102-S0-A1-B1.pt",
+      "sha256": "1b8bffc1a6c8a4f2f25b32aa0a445f73e7a314f4e4bbc8084f4f407bf170d87e",
+      "order": 1,
+      "H": 512,
+      "N": 100,
+      "permutation": [
+        1,
+        0,
+        2
+      ],
+      "k_stride": [
+        1,
+        4,
+        16
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L1-H512-N100-P120-S0-A1-B1.pt",
+      "sha256": "0b67bd7ef43971c3c9a4105efb5385a9dcd1deffa0d1c4a8dd77ac05d28ddcb5",
+      "order": 1,
+      "H": 512,
+      "N": 100,
+      "permutation": [
+        1,
+        2,
+        0
+      ],
+      "k_stride": [
+        1,
+        16,
+        4
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L1-H512-N100-P201-S0-A1-B1.pt",
+      "sha256": "c7cc216704e486762e443d5bae27d464bf9451e849a99a8006436932d01e2d12",
+      "order": 1,
+      "H": 512,
+      "N": 100,
+      "permutation": [
+        2,
+        0,
+        1
+      ],
+      "k_stride": [
+        16,
+        4,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L1-H512-N100-P210-S0-A1-B1.pt",
+      "sha256": "ac63fc3d89119afad84ade728bb02a6d18c27a24d76f89c2c41c384ca005a853",
+      "order": 1,
+      "H": 512,
+      "N": 100,
+      "permutation": [
+        2,
+        1,
+        0
+      ],
+      "k_stride": [
+        16,
+        1,
+        4
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L2-H32-N16-P012-S0-A1-B1.pt",
+      "sha256": "3de0ec720f2f613b43e0e8657a3c0914de1ac566f3f89cb0145ebf07f763eea8",
+      "order": 2,
+      "H": 32,
+      "N": 16,
+      "permutation": [
+        0,
+        1,
+        2
+      ],
+      "k_stride": [
+        9,
+        1,
+        81
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L2-H32-N16-P021-S0-A1-B1.pt",
+      "sha256": "7b3a429ab488496f19f7b7feac5dee7414fb835f02227c9bb12332afacdbdadb",
+      "order": 2,
+      "H": 32,
+      "N": 16,
+      "permutation": [
+        0,
+        2,
+        1
+      ],
+      "k_stride": [
+        9,
+        81,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L2-H32-N16-P102-S0-A1-B1.pt",
+      "sha256": "ead46e751f551bf28de0500c7474d9f83c181cfb66290b8a9a074c4e478f3241",
+      "order": 2,
+      "H": 32,
+      "N": 16,
+      "permutation": [
+        1,
+        0,
+        2
+      ],
+      "k_stride": [
+        1,
+        9,
+        81
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L2-H32-N16-P120-S0-A1-B1.pt",
+      "sha256": "a251dd89f604510c2efab5f5b039fe85737849f9696dfd38778169f67cbfa327",
+      "order": 2,
+      "H": 32,
+      "N": 16,
+      "permutation": [
+        1,
+        2,
+        0
+      ],
+      "k_stride": [
+        1,
+        81,
+        9
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L2-H32-N16-P201-S0-A1-B1.pt",
+      "sha256": "ef770c50b11733d93a16e37fbcf919ae9b612ba76c249154333723578c68b823",
+      "order": 2,
+      "H": 32,
+      "N": 16,
+      "permutation": [
+        2,
+        0,
+        1
+      ],
+      "k_stride": [
+        81,
+        9,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L2-H32-N16-P210-S0-A1-B1.pt",
+      "sha256": "2148b15c0794265a4bc25df8ed1464f4b7912ab7e2801529867456e1c99012b3",
+      "order": 2,
+      "H": 32,
+      "N": 16,
+      "permutation": [
+        2,
+        1,
+        0
+      ],
+      "k_stride": [
+        81,
+        1,
+        9
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L2-H32-N68-P012-S0-A1-B1.pt",
+      "sha256": "41c9c4cc49f9b3247154c950efb49a252af80eee41a6e2a1b81da49c2667900e",
+      "order": 2,
+      "H": 32,
+      "N": 68,
+      "permutation": [
+        0,
+        1,
+        2
+      ],
+      "k_stride": [
+        9,
+        1,
+        81
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L2-H32-N68-P021-S0-A1-B1.pt",
+      "sha256": "3bcf2732e021c928a07911456e034d770e618786b162aa3fa2eb0e9b1c117396",
+      "order": 2,
+      "H": 32,
+      "N": 68,
+      "permutation": [
+        0,
+        2,
+        1
+      ],
+      "k_stride": [
+        9,
+        81,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L2-H32-N68-P102-S0-A1-B1.pt",
+      "sha256": "b1e102561a97aa9757fde7c104f16b95b4c63bc168ccddc1ffd43b84a40b1fb5",
+      "order": 2,
+      "H": 32,
+      "N": 68,
+      "permutation": [
+        1,
+        0,
+        2
+      ],
+      "k_stride": [
+        1,
+        9,
+        81
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L2-H32-N68-P120-S0-A1-B1.pt",
+      "sha256": "8237179f4c48d30bb5de269cb0245cf2730e289ac93b23d3f933a277b1f3b43e",
+      "order": 2,
+      "H": 32,
+      "N": 68,
+      "permutation": [
+        1,
+        2,
+        0
+      ],
+      "k_stride": [
+        1,
+        81,
+        9
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L2-H32-N68-P201-S0-A1-B1.pt",
+      "sha256": "489634bf006fb29120e1dee65e7c0200d9e7f2ea2d6f94bc09f1efe984cba7f3",
+      "order": 2,
+      "H": 32,
+      "N": 68,
+      "permutation": [
+        2,
+        0,
+        1
+      ],
+      "k_stride": [
+        81,
+        9,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L2-H32-N68-P210-S0-A1-B1.pt",
+      "sha256": "da749319534639fcb364e9e33de049bb95d8057b811509dc34531c77e088a8a1",
+      "order": 2,
+      "H": 32,
+      "N": 68,
+      "permutation": [
+        2,
+        1,
+        0
+      ],
+      "k_stride": [
+        81,
+        1,
+        9
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L2-H32-N100-P012-S0-A1-B1.pt",
+      "sha256": "32a8bc09447dfdb308e461a47d346850601b0304a7a2e4a46f6ac21d4404d835",
+      "order": 2,
+      "H": 32,
+      "N": 100,
+      "permutation": [
+        0,
+        1,
+        2
+      ],
+      "k_stride": [
+        9,
+        1,
+        81
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L2-H32-N100-P021-S0-A1-B1.pt",
+      "sha256": "4e6bbba8b27f3ebd7f675f1f5f407a2e4f76dd115609e7f5d85d79dca0660106",
+      "order": 2,
+      "H": 32,
+      "N": 100,
+      "permutation": [
+        0,
+        2,
+        1
+      ],
+      "k_stride": [
+        9,
+        81,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L2-H32-N100-P102-S0-A1-B1.pt",
+      "sha256": "7e0a7b7198e17e21d70c7d2c9540d3b39fe96f78a087fa986a8c653c2b291852",
+      "order": 2,
+      "H": 32,
+      "N": 100,
+      "permutation": [
+        1,
+        0,
+        2
+      ],
+      "k_stride": [
+        1,
+        9,
+        81
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L2-H32-N100-P120-S0-A1-B1.pt",
+      "sha256": "97a0beb2a27d127065c6d7c15b6487ea35490c267cd67923adf61e71b4ebbed2",
+      "order": 2,
+      "H": 32,
+      "N": 100,
+      "permutation": [
+        1,
+        2,
+        0
+      ],
+      "k_stride": [
+        1,
+        81,
+        9
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L2-H32-N100-P201-S0-A1-B1.pt",
+      "sha256": "7516a6a1e51bc206995ae21af2394e57df3e78fe81a795288167f69c0444ca96",
+      "order": 2,
+      "H": 32,
+      "N": 100,
+      "permutation": [
+        2,
+        0,
+        1
+      ],
+      "k_stride": [
+        81,
+        9,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L2-H32-N100-P210-S0-A1-B1.pt",
+      "sha256": "d1864521b4ae9b6f4e1e4792e8ed8b1a5cb52c040d380212892922e622e202aa",
+      "order": 2,
+      "H": 32,
+      "N": 100,
+      "permutation": [
+        2,
+        1,
+        0
+      ],
+      "k_stride": [
+        81,
+        1,
+        9
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L2-H32-N137-P012-S0-A1-B1.pt",
+      "sha256": "fd6b17d517d8f03c2de5dffe893422e0c1ae09597eed66e5cc281d63211bc9f6",
+      "order": 2,
+      "H": 32,
+      "N": 137,
+      "permutation": [
+        0,
+        1,
+        2
+      ],
+      "k_stride": [
+        9,
+        1,
+        81
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 1.4756697908069327e-07,
+      "roles": 6,
+      "maximum_ULP": 2048
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L2-H32-N137-P021-S0-A1-B1.pt",
+      "sha256": "bb8a0d51999d9d5e591ae6dc006e90b9ce25dc8ca80f2dcf316c804014da41a9",
+      "order": 2,
+      "H": 32,
+      "N": 137,
+      "permutation": [
+        0,
+        2,
+        1
+      ],
+      "k_stride": [
+        9,
+        81,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 1.4756697908069327e-07,
+      "roles": 6,
+      "maximum_ULP": 2048
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L2-H32-N137-P102-S0-A1-B1.pt",
+      "sha256": "0af66a9b28500e50705e8c551649569d77707d2aea399f7181320933d0b4ea9f",
+      "order": 2,
+      "H": 32,
+      "N": 137,
+      "permutation": [
+        1,
+        0,
+        2
+      ],
+      "k_stride": [
+        1,
+        9,
+        81
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 1.2394714588026545e-07,
+      "roles": 6,
+      "maximum_ULP": 896
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L2-H32-N137-P120-S0-A1-B1.pt",
+      "sha256": "d5671f28ded6e73e8da081472caa425744d39cc231b9ce614120d452ac5eefdd",
+      "order": 2,
+      "H": 32,
+      "N": 137,
+      "permutation": [
+        1,
+        2,
+        0
+      ],
+      "k_stride": [
+        1,
+        81,
+        9
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 1.0315316245623762e-07,
+      "roles": 6,
+      "maximum_ULP": 4096
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L2-H32-N137-P201-S0-A1-B1.pt",
+      "sha256": "3ceb2da5f9f47aa31205d4fe1db0b78136feb5313f785a57483a64e9908ad98e",
+      "order": 2,
+      "H": 32,
+      "N": 137,
+      "permutation": [
+        2,
+        0,
+        1
+      ],
+      "k_stride": [
+        81,
+        9,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 1.2394714588026545e-07,
+      "roles": 6,
+      "maximum_ULP": 1024
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L2-H32-N137-P210-S0-A1-B1.pt",
+      "sha256": "6eefaac8edbd9b241f2ea94116000bf639ce525fc982f8b2bf30f7566ee2c1ff",
+      "order": 2,
+      "H": 32,
+      "N": 137,
+      "permutation": [
+        2,
+        1,
+        0
+      ],
+      "k_stride": [
+        81,
+        1,
+        9
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 1.0315316245623762e-07,
+      "roles": 6,
+      "maximum_ULP": 131072
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L2-H512-N100-P012-S0-A1-B1.pt",
+      "sha256": "b2b7b6a96729c1428e48c69f70dcbe8b0163f9b9406537ac4cfc57bdc7b98b23",
+      "order": 2,
+      "H": 512,
+      "N": 100,
+      "permutation": [
+        0,
+        1,
+        2
+      ],
+      "k_stride": [
+        9,
+        1,
+        81
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L2-H512-N100-P021-S0-A1-B1.pt",
+      "sha256": "8520f372b80712850ed9fe3c6e7fb6e4a7dde3f6215633967993caa2b797e4ad",
+      "order": 2,
+      "H": 512,
+      "N": 100,
+      "permutation": [
+        0,
+        2,
+        1
+      ],
+      "k_stride": [
+        9,
+        81,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L2-H512-N100-P102-S0-A1-B1.pt",
+      "sha256": "7aa783f836813838ffa93f9c260909953ef231d9b998f34c130ca5ad4db4c542",
+      "order": 2,
+      "H": 512,
+      "N": 100,
+      "permutation": [
+        1,
+        0,
+        2
+      ],
+      "k_stride": [
+        1,
+        9,
+        81
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L2-H512-N100-P120-S0-A1-B1.pt",
+      "sha256": "158eee7153d012a83e5326067f427c08dab4bdd4a413d31a580faebd1d42d37d",
+      "order": 2,
+      "H": 512,
+      "N": 100,
+      "permutation": [
+        1,
+        2,
+        0
+      ],
+      "k_stride": [
+        1,
+        81,
+        9
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L2-H512-N100-P201-S0-A1-B1.pt",
+      "sha256": "0fb36d90dc9c6d1987334b2c76e6a03d875e2cc6f8c3928e578ae15eefde062c",
+      "order": 2,
+      "H": 512,
+      "N": 100,
+      "permutation": [
+        2,
+        0,
+        1
+      ],
+      "k_stride": [
+        81,
+        9,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L2-H512-N100-P210-S0-A1-B1.pt",
+      "sha256": "c8bedc0c61379fc3fd48fb21e7a116117873ccf944808bc4124ee13794ec308f",
+      "order": 2,
+      "H": 512,
+      "N": 100,
+      "permutation": [
+        2,
+        1,
+        0
+      ],
+      "k_stride": [
+        81,
+        1,
+        9
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L3-H32-N16-P012-S0-A1-B1.pt",
+      "sha256": "81a5e1940f5360f0e2d1ea16fc5531af34f1eb234d32497145dacfd8db7876ad",
+      "order": 3,
+      "H": 32,
+      "N": 16,
+      "permutation": [
+        0,
+        1,
+        2
+      ],
+      "k_stride": [
+        16,
+        1,
+        256
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L3-H32-N16-P021-S0-A1-B1.pt",
+      "sha256": "12d837ab50f4ce9f9f366232ad765ba67b9682672a64a6fc8edb58ac917f2984",
+      "order": 3,
+      "H": 32,
+      "N": 16,
+      "permutation": [
+        0,
+        2,
+        1
+      ],
+      "k_stride": [
+        16,
+        256,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L3-H32-N16-P102-S0-A1-B1.pt",
+      "sha256": "e78184a1789f18557d40f2565d51f8aa22a446a199d9f36b270772479ee210a9",
+      "order": 3,
+      "H": 32,
+      "N": 16,
+      "permutation": [
+        1,
+        0,
+        2
+      ],
+      "k_stride": [
+        1,
+        16,
+        256
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L3-H32-N16-P120-S0-A1-B1.pt",
+      "sha256": "963401311ec34b8110735c6a3d21f5f7cb9a51ca66880725bb28c632f7e1799a",
+      "order": 3,
+      "H": 32,
+      "N": 16,
+      "permutation": [
+        1,
+        2,
+        0
+      ],
+      "k_stride": [
+        1,
+        256,
+        16
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L3-H32-N16-P201-S0-A1-B1.pt",
+      "sha256": "25444445bc21223d41515a62079b37dcd515d6359941c7cf9f6da63f4332bcbe",
+      "order": 3,
+      "H": 32,
+      "N": 16,
+      "permutation": [
+        2,
+        0,
+        1
+      ],
+      "k_stride": [
+        256,
+        16,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L3-H32-N16-P210-S0-A1-B1.pt",
+      "sha256": "1e2a00f5f834ffee5ef322df9551b13c7804939a6aebbaddd3a93c3fe2046ce5",
+      "order": 3,
+      "H": 32,
+      "N": 16,
+      "permutation": [
+        2,
+        1,
+        0
+      ],
+      "k_stride": [
+        256,
+        1,
+        16
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L3-H32-N68-P012-S0-A1-B1.pt",
+      "sha256": "538c0d69ea05644dc94275fcbf7c31f79029c7f7ed92f0ba61cd097cb378de25",
+      "order": 3,
+      "H": 32,
+      "N": 68,
+      "permutation": [
+        0,
+        1,
+        2
+      ],
+      "k_stride": [
+        16,
+        1,
+        256
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L3-H32-N68-P021-S0-A1-B1.pt",
+      "sha256": "e135ba0f929e536e058b6c71028ac09b3929dda0d5344b44055a4a634f4c778f",
+      "order": 3,
+      "H": 32,
+      "N": 68,
+      "permutation": [
+        0,
+        2,
+        1
+      ],
+      "k_stride": [
+        16,
+        256,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L3-H32-N68-P102-S0-A1-B1.pt",
+      "sha256": "0f148077c88512414e8c19ed8fd95d195e4f97ee702d0d6ee277f98b18a2e68b",
+      "order": 3,
+      "H": 32,
+      "N": 68,
+      "permutation": [
+        1,
+        0,
+        2
+      ],
+      "k_stride": [
+        1,
+        16,
+        256
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L3-H32-N68-P120-S0-A1-B1.pt",
+      "sha256": "eaa2885cba603ae9eeeaf5bce6c2530097d354bc394b61c7309e7c43b57617aa",
+      "order": 3,
+      "H": 32,
+      "N": 68,
+      "permutation": [
+        1,
+        2,
+        0
+      ],
+      "k_stride": [
+        1,
+        256,
+        16
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L3-H32-N68-P201-S0-A1-B1.pt",
+      "sha256": "e7917f481abec03cb5afeb1daad368f0edf082ea37ae63982258e58fe0ec694f",
+      "order": 3,
+      "H": 32,
+      "N": 68,
+      "permutation": [
+        2,
+        0,
+        1
+      ],
+      "k_stride": [
+        256,
+        16,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L3-H32-N68-P210-S0-A1-B1.pt",
+      "sha256": "6f67127ef79eb1ccb7778ba4e06a7ec2452bbca5c9ec9612443eecc7d19a3de4",
+      "order": 3,
+      "H": 32,
+      "N": 68,
+      "permutation": [
+        2,
+        1,
+        0
+      ],
+      "k_stride": [
+        256,
+        1,
+        16
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L3-H32-N100-P012-S0-A1-B1.pt",
+      "sha256": "65fa14a130b0e4e11a6fc9f69c56bce2b5ae11c7b872254228a3d7a6fe84ebe7",
+      "order": 3,
+      "H": 32,
+      "N": 100,
+      "permutation": [
+        0,
+        1,
+        2
+      ],
+      "k_stride": [
+        16,
+        1,
+        256
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L3-H32-N100-P021-S0-A1-B1.pt",
+      "sha256": "3dc8cac64289ac91c6f6cd13315b22ed1c9cb9080f7b57c0c9dc9fe74c5c43d0",
+      "order": 3,
+      "H": 32,
+      "N": 100,
+      "permutation": [
+        0,
+        2,
+        1
+      ],
+      "k_stride": [
+        16,
+        256,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L3-H32-N100-P102-S0-A1-B1.pt",
+      "sha256": "0c4baa6b60ce30208fd3d583b386a8e20eca4bff66067592c100a59ca41bb925",
+      "order": 3,
+      "H": 32,
+      "N": 100,
+      "permutation": [
+        1,
+        0,
+        2
+      ],
+      "k_stride": [
+        1,
+        16,
+        256
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L3-H32-N100-P120-S0-A1-B1.pt",
+      "sha256": "a125da29fbab45418be25580deb0d2d54f182edcbac31f64bbe79a99aaecd535",
+      "order": 3,
+      "H": 32,
+      "N": 100,
+      "permutation": [
+        1,
+        2,
+        0
+      ],
+      "k_stride": [
+        1,
+        256,
+        16
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L3-H32-N100-P201-S0-A1-B1.pt",
+      "sha256": "a5dccead454ad9ac3e720247b52a7f08046729b7c3149824b4bd41970dec555c",
+      "order": 3,
+      "H": 32,
+      "N": 100,
+      "permutation": [
+        2,
+        0,
+        1
+      ],
+      "k_stride": [
+        256,
+        16,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L3-H32-N100-P210-S0-A1-B1.pt",
+      "sha256": "5c88b6628d8ba362374b75945da0c808f5dde9ff735e5b83ce11f56ed9ce2caa",
+      "order": 3,
+      "H": 32,
+      "N": 100,
+      "permutation": [
+        2,
+        1,
+        0
+      ],
+      "k_stride": [
+        256,
+        1,
+        16
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L3-H32-N137-P012-S0-A1-B1.pt",
+      "sha256": "b7f6ea8466c9480e1ef83931ef8bd36c62e5964d885b557f952fec87bc996833",
+      "order": 3,
+      "H": 32,
+      "N": 137,
+      "permutation": [
+        0,
+        1,
+        2
+      ],
+      "k_stride": [
+        16,
+        1,
+        256
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 1.4028749717454048e-07,
+      "roles": 6,
+      "maximum_ULP": 2048
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L3-H32-N137-P021-S0-A1-B1.pt",
+      "sha256": "f0a50cb75b5edfc5fa1d7abf089b09944eb2412ec98e904129c827ae8154c35c",
+      "order": 3,
+      "H": 32,
+      "N": 137,
+      "permutation": [
+        0,
+        2,
+        1
+      ],
+      "k_stride": [
+        16,
+        256,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 1.4028749717454048e-07,
+      "roles": 6,
+      "maximum_ULP": 393216
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L3-H32-N137-P102-S0-A1-B1.pt",
+      "sha256": "f89dac52d4afaf199e3d4e6f1d9cb74bf8cb87610d14daf72bcdc232e888804b",
+      "order": 3,
+      "H": 32,
+      "N": 137,
+      "permutation": [
+        1,
+        0,
+        2
+      ],
+      "k_stride": [
+        1,
+        16,
+        256
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 1.1575444602840435e-07,
+      "roles": 6,
+      "maximum_ULP": 8192
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L3-H32-N137-P120-S0-A1-B1.pt",
+      "sha256": "156d02cb9a6e8d914a1557401444b58ec7e341252cdeb99f918a87e0898ea94b",
+      "order": 3,
+      "H": 32,
+      "N": 137,
+      "permutation": [
+        1,
+        2,
+        0
+      ],
+      "k_stride": [
+        1,
+        256,
+        16
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 1.291930260549634e-07,
+      "roles": 6,
+      "maximum_ULP": 12288
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L3-H32-N137-P201-S0-A1-B1.pt",
+      "sha256": "4f733da16436d762b6eb7a79a2d930f0f4599a84a2b8e851f64b116ae01cf4dd",
+      "order": 3,
+      "H": 32,
+      "N": 137,
+      "permutation": [
+        2,
+        0,
+        1
+      ],
+      "k_stride": [
+        256,
+        16,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 1.1575444602840435e-07,
+      "roles": 6,
+      "maximum_ULP": 12288
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L3-H32-N137-P210-S0-A1-B1.pt",
+      "sha256": "43a84505f8e944a904be0cc831b50fd17835b4f8915777c8c120948f8b0cef47",
+      "order": 3,
+      "H": 32,
+      "N": 137,
+      "permutation": [
+        2,
+        1,
+        0
+      ],
+      "k_stride": [
+        256,
+        1,
+        16
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 1.291930260549634e-07,
+      "roles": 6,
+      "maximum_ULP": 12288
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L3-H512-N100-P012-S0-A1-B1.pt",
+      "sha256": "2bc3bdb23c21e74814b8dc2b4a95a24248cd705e7987d39bd7bb046c22f49520",
+      "order": 3,
+      "H": 512,
+      "N": 100,
+      "permutation": [
+        0,
+        1,
+        2
+      ],
+      "k_stride": [
+        16,
+        1,
+        256
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L3-H512-N100-P021-S0-A1-B1.pt",
+      "sha256": "22114730beb5c917b83ad6595e361d7e985de68bacafc08fd9a703d5d7063fb3",
+      "order": 3,
+      "H": 512,
+      "N": 100,
+      "permutation": [
+        0,
+        2,
+        1
+      ],
+      "k_stride": [
+        16,
+        256,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L3-H512-N100-P102-S0-A1-B1.pt",
+      "sha256": "e8e4f08a8f637d47dcff7f1148d3b9829933e413e8efa10f9b6ec4f778a8eb6b",
+      "order": 3,
+      "H": 512,
+      "N": 100,
+      "permutation": [
+        1,
+        0,
+        2
+      ],
+      "k_stride": [
+        1,
+        16,
+        256
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L3-H512-N100-P120-S0-A1-B1.pt",
+      "sha256": "85d1293cf1030b279b23b685765d2ef5684b84e455342c5615b5d3dacd890ce8",
+      "order": 3,
+      "H": 512,
+      "N": 100,
+      "permutation": [
+        1,
+        2,
+        0
+      ],
+      "k_stride": [
+        1,
+        256,
+        16
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L3-H512-N100-P201-S0-A1-B1.pt",
+      "sha256": "06c312b49f176e8f238bd70ac7b61c93199e046600758f7ad5facfdb99abd18d",
+      "order": 3,
+      "H": 512,
+      "N": 100,
+      "permutation": [
+        2,
+        0,
+        1
+      ],
+      "k_stride": [
+        256,
+        16,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L3-H512-N100-P210-S0-A1-B1.pt",
+      "sha256": "41dc5999b218aaa0ede31754aa44190de3450cb2cd980b70ecf4f3fbb4150eee",
+      "order": 3,
+      "H": 512,
+      "N": 100,
+      "permutation": [
+        2,
+        1,
+        0
+      ],
+      "k_stride": [
+        256,
+        1,
+        16
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L4-H32-N16-P012-S0-A1-B1.pt",
+      "sha256": "0d995ab6542c478af01057f40b36965f1baf06c25bd60c22aad993175f3c472b",
+      "order": 4,
+      "H": 32,
+      "N": 16,
+      "permutation": [
+        0,
+        1,
+        2
+      ],
+      "k_stride": [
+        25,
+        1,
+        625
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L4-H32-N16-P021-S0-A1-B1.pt",
+      "sha256": "ca88fc30cff00e7bec35750227a9109bf7d812742140f84af7e8efa47ab4036d",
+      "order": 4,
+      "H": 32,
+      "N": 16,
+      "permutation": [
+        0,
+        2,
+        1
+      ],
+      "k_stride": [
+        25,
+        625,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L4-H32-N16-P102-S0-A1-B1.pt",
+      "sha256": "59b6f7049127569a81a79ff8e627692675865ef21f0dfb040e05795c428a308d",
+      "order": 4,
+      "H": 32,
+      "N": 16,
+      "permutation": [
+        1,
+        0,
+        2
+      ],
+      "k_stride": [
+        1,
+        25,
+        625
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L4-H32-N16-P120-S0-A1-B1.pt",
+      "sha256": "55f5eb26dea595c94f8db6398b664a00787d5dd0b2d22ada81267004da918b15",
+      "order": 4,
+      "H": 32,
+      "N": 16,
+      "permutation": [
+        1,
+        2,
+        0
+      ],
+      "k_stride": [
+        1,
+        625,
+        25
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L4-H32-N16-P201-S0-A1-B1.pt",
+      "sha256": "72e9f3e67ff3bb8bf4dde3516c1643da87a1902230745fa889130b51b78489ab",
+      "order": 4,
+      "H": 32,
+      "N": 16,
+      "permutation": [
+        2,
+        0,
+        1
+      ],
+      "k_stride": [
+        625,
+        25,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L4-H32-N16-P210-S0-A1-B1.pt",
+      "sha256": "cb5c4025378f3aa09e4cdd804439419dc6ddec91871f010a22b03c15ff4b515a",
+      "order": 4,
+      "H": 32,
+      "N": 16,
+      "permutation": [
+        2,
+        1,
+        0
+      ],
+      "k_stride": [
+        625,
+        1,
+        25
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L4-H32-N68-P012-S0-A1-B1.pt",
+      "sha256": "5c8b1b0a6fdd8c47aff09401080c5e5528e943c6aedf0bd431cd9ead846fe204",
+      "order": 4,
+      "H": 32,
+      "N": 68,
+      "permutation": [
+        0,
+        1,
+        2
+      ],
+      "k_stride": [
+        25,
+        1,
+        625
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L4-H32-N68-P021-S0-A1-B1.pt",
+      "sha256": "7cde227a1df02077aa8e9bc2d6dab40d0ac26ba69a69e44b8d2763eae0e9e226",
+      "order": 4,
+      "H": 32,
+      "N": 68,
+      "permutation": [
+        0,
+        2,
+        1
+      ],
+      "k_stride": [
+        25,
+        625,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L4-H32-N68-P102-S0-A1-B1.pt",
+      "sha256": "29fd90f7c403bc74e8c9f2c8ec707e49897ea2f35b6be3a59a3590f82200f6aa",
+      "order": 4,
+      "H": 32,
+      "N": 68,
+      "permutation": [
+        1,
+        0,
+        2
+      ],
+      "k_stride": [
+        1,
+        25,
+        625
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L4-H32-N68-P120-S0-A1-B1.pt",
+      "sha256": "853764ebad7f6a637a52be5a41c876eb9f4d906a0811cd80d69966af2f506428",
+      "order": 4,
+      "H": 32,
+      "N": 68,
+      "permutation": [
+        1,
+        2,
+        0
+      ],
+      "k_stride": [
+        1,
+        625,
+        25
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L4-H32-N68-P201-S0-A1-B1.pt",
+      "sha256": "13b38272f8271b3f39744fb762c68a4044d29a5fdf400a9e42bbbe5547f39613",
+      "order": 4,
+      "H": 32,
+      "N": 68,
+      "permutation": [
+        2,
+        0,
+        1
+      ],
+      "k_stride": [
+        625,
+        25,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L4-H32-N68-P210-S0-A1-B1.pt",
+      "sha256": "3a2a1fa75d02df4fe00d9812184366ddc91afe619cf6e6e5adb450e60daee795",
+      "order": 4,
+      "H": 32,
+      "N": 68,
+      "permutation": [
+        2,
+        1,
+        0
+      ],
+      "k_stride": [
+        625,
+        1,
+        25
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L4-H32-N100-P012-S0-A1-B1.pt",
+      "sha256": "5b88c14e2ae5e96f58b18ff3fc6de53e7b87413ef6052add4066e6430fb86c5b",
+      "order": 4,
+      "H": 32,
+      "N": 100,
+      "permutation": [
+        0,
+        1,
+        2
+      ],
+      "k_stride": [
+        25,
+        1,
+        625
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L4-H32-N100-P021-S0-A1-B1.pt",
+      "sha256": "2ef56b7bc5d789f6a2087445eba5e75fc67609bbaa9b0288afc68bdd0fddbb57",
+      "order": 4,
+      "H": 32,
+      "N": 100,
+      "permutation": [
+        0,
+        2,
+        1
+      ],
+      "k_stride": [
+        25,
+        625,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L4-H32-N100-P102-S0-A1-B1.pt",
+      "sha256": "41b0b6000e636823c69bf43eb33c83917c77041df3c5a04a351ca8cf241e0e08",
+      "order": 4,
+      "H": 32,
+      "N": 100,
+      "permutation": [
+        1,
+        0,
+        2
+      ],
+      "k_stride": [
+        1,
+        25,
+        625
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L4-H32-N100-P120-S0-A1-B1.pt",
+      "sha256": "adf1b66f2eddf7dfba0cff0bf63e4dd40fcac87e774377c2c23d57125562921a",
+      "order": 4,
+      "H": 32,
+      "N": 100,
+      "permutation": [
+        1,
+        2,
+        0
+      ],
+      "k_stride": [
+        1,
+        625,
+        25
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L4-H32-N100-P201-S0-A1-B1.pt",
+      "sha256": "c9d47ed2bbb8d81d803f5165213e507c0ccbd00496f441ea0373bc7368d6655a",
+      "order": 4,
+      "H": 32,
+      "N": 100,
+      "permutation": [
+        2,
+        0,
+        1
+      ],
+      "k_stride": [
+        625,
+        25,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L4-H32-N100-P210-S0-A1-B1.pt",
+      "sha256": "da6f3d10620956069e0e13f76969fb6ac2e350166c81fe62e247fe4099bc7476",
+      "order": 4,
+      "H": 32,
+      "N": 100,
+      "permutation": [
+        2,
+        1,
+        0
+      ],
+      "k_stride": [
+        625,
+        1,
+        25
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L4-H32-N137-P012-S0-A1-B1.pt",
+      "sha256": "dfe15b411d912d3725a569d580c431fda42d9b06dd726854ca5142148f07543d",
+      "order": 4,
+      "H": 32,
+      "N": 137,
+      "permutation": [
+        0,
+        1,
+        2
+      ],
+      "k_stride": [
+        25,
+        1,
+        625
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 1.6885489628748473e-07,
+      "roles": 6,
+      "maximum_ULP": 131072
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L4-H32-N137-P021-S0-A1-B1.pt",
+      "sha256": "9722e7817e65a9d000c16f83553cf86f9b578ddf38b4b1a33ad7f3796670eb0e",
+      "order": 4,
+      "H": 32,
+      "N": 137,
+      "permutation": [
+        0,
+        2,
+        1
+      ],
+      "k_stride": [
+        25,
+        625,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 1.2664116866289987e-07,
+      "roles": 6,
+      "maximum_ULP": 131072
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L4-H32-N137-P102-S0-A1-B1.pt",
+      "sha256": "1b29bca8c85a43e2c7219e6c213232e91fcd582ba1d6b534d55c4e27bcd4791c",
+      "order": 4,
+      "H": 32,
+      "N": 137,
+      "permutation": [
+        1,
+        0,
+        2
+      ],
+      "k_stride": [
+        1,
+        25,
+        625
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 1.1832312907245068e-07,
+      "roles": 6,
+      "maximum_ULP": 44032
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L4-H32-N137-P120-S0-A1-B1.pt",
+      "sha256": "0664f0751fc54b6d82ef29e3af0bd3823b011370ef6009ac48c4b0cfb60e90f2",
+      "order": 4,
+      "H": 32,
+      "N": 137,
+      "permutation": [
+        1,
+        2,
+        0
+      ],
+      "k_stride": [
+        1,
+        625,
+        25
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 2.1078838585708581e-07,
+      "roles": 6,
+      "maximum_ULP": 4096
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L4-H32-N137-P201-S0-A1-B1.pt",
+      "sha256": "9f94e488fcd0a6d43e1f2da58c1945e03e67244568f87c202252063aff56f2c2",
+      "order": 4,
+      "H": 32,
+      "N": 137,
+      "permutation": [
+        2,
+        0,
+        1
+      ],
+      "k_stride": [
+        625,
+        25,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 1.1832312907245068e-07,
+      "roles": 6,
+      "maximum_ULP": 24064
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L4-H32-N137-P210-S0-A1-B1.pt",
+      "sha256": "a356ab2843446c3938db2d70d039cb9e5710d5fea20bd6728046c5d06e514a3f",
+      "order": 4,
+      "H": 32,
+      "N": 137,
+      "permutation": [
+        2,
+        1,
+        0
+      ],
+      "k_stride": [
+        625,
+        1,
+        25
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 1.4052558583443897e-07,
+      "roles": 6,
+      "maximum_ULP": 4096
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L4-H512-N100-P012-S0-A1-B1.pt",
+      "sha256": "ad2790efdf29841de2c8089aad6b50fdbe54ac9edf4bb4246d3ae3569b03c1c8",
+      "order": 4,
+      "H": 512,
+      "N": 100,
+      "permutation": [
+        0,
+        1,
+        2
+      ],
+      "k_stride": [
+        25,
+        1,
+        625
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L4-H512-N100-P021-S0-A1-B1.pt",
+      "sha256": "abebb6a7eb2187fc9cf7dfc7e87613a88ecc73518a32a302068fa462d8cf2ce9",
+      "order": 4,
+      "H": 512,
+      "N": 100,
+      "permutation": [
+        0,
+        2,
+        1
+      ],
+      "k_stride": [
+        25,
+        625,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L4-H512-N100-P102-S0-A1-B1.pt",
+      "sha256": "f5b27e8000342704bcb576292972c038dbfe4bf2c064ce4446c82c1c8f1fa54b",
+      "order": 4,
+      "H": 512,
+      "N": 100,
+      "permutation": [
+        1,
+        0,
+        2
+      ],
+      "k_stride": [
+        1,
+        25,
+        625
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L4-H512-N100-P120-S0-A1-B1.pt",
+      "sha256": "5ee127daf1f97e9688bbe090a202d8acc934c7dcb286236642bf161b5369df64",
+      "order": 4,
+      "H": 512,
+      "N": 100,
+      "permutation": [
+        1,
+        2,
+        0
+      ],
+      "k_stride": [
+        1,
+        625,
+        25
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L4-H512-N100-P201-S0-A1-B1.pt",
+      "sha256": "94220441a4aa6f4225ec0ebe2d8fb32302460ba8244c872eaefe0be331bd97b3",
+      "order": 4,
+      "H": 512,
+      "N": 100,
+      "permutation": [
+        2,
+        0,
+        1
+      ],
+      "k_stride": [
+        625,
+        25,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L4-H512-N100-P210-S0-A1-B1.pt",
+      "sha256": "8af9e0c82380d1ebd27128e758c57a811ae429f3d34bae6f95504027832401ed",
+      "order": 4,
+      "H": 512,
+      "N": 100,
+      "permutation": [
+        2,
+        1,
+        0
+      ],
+      "k_stride": [
+        625,
+        1,
+        25
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L5-H32-N16-P012-S0-A1-B1.pt",
+      "sha256": "2846d62cfa3151630454ecf20e01759b263ca03996b6c71cc41e77832429c369",
+      "order": 5,
+      "H": 32,
+      "N": 16,
+      "permutation": [
+        0,
+        1,
+        2
+      ],
+      "k_stride": [
+        36,
+        1,
+        1296
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 2.1006113115618064e-07,
+      "roles": 6,
+      "maximum_ULP": 65536
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L5-H32-N16-P021-S0-A1-B1.pt",
+      "sha256": "955f247f4a282248cfa99e3137639040c45d82c9a47d88ee202e3da81e33c914",
+      "order": 5,
+      "H": 32,
+      "N": 16,
+      "permutation": [
+        0,
+        2,
+        1
+      ],
+      "k_stride": [
+        36,
+        1296,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 2.1006114536703535e-07,
+      "roles": 6,
+      "maximum_ULP": 57344
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L5-H32-N16-P102-S0-A1-B1.pt",
+      "sha256": "b6a49caae155fbb6645a32a78da1daa8a6563ad419b25bba8c966ff5b54d5e85",
+      "order": 5,
+      "H": 32,
+      "N": 16,
+      "permutation": [
+        1,
+        0,
+        2
+      ],
+      "k_stride": [
+        1,
+        36,
+        1296
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 2.038156878825248e-07,
+      "roles": 6,
+      "maximum_ULP": 10240
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L5-H32-N16-P120-S0-A1-B1.pt",
+      "sha256": "260c2592c8ee5b60cfbca0dd7dccf22751a0c3aee292afaa9e77c049d7e44f51",
+      "order": 5,
+      "H": 32,
+      "N": 16,
+      "permutation": [
+        1,
+        2,
+        0
+      ],
+      "k_stride": [
+        1,
+        1296,
+        36
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 3.0177341159287607e-07,
+      "roles": 6,
+      "maximum_ULP": 59392
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L5-H32-N16-P201-S0-A1-B1.pt",
+      "sha256": "6b95439e2a6df697c0069897256d366169c87ae2a6e60449d97a641a47c19204",
+      "order": 5,
+      "H": 32,
+      "N": 16,
+      "permutation": [
+        2,
+        0,
+        1
+      ],
+      "k_stride": [
+        1296,
+        36,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 2.216708736568762e-07,
+      "roles": 6,
+      "maximum_ULP": 32256
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L5-H32-N16-P210-S0-A1-B1.pt",
+      "sha256": "0aa30f881bd270416619400d04fe018b62238f381bb5e44b146a6e3002276d48",
+      "order": 5,
+      "H": 32,
+      "N": 16,
+      "permutation": [
+        2,
+        1,
+        0
+      ],
+      "k_stride": [
+        1296,
+        1,
+        36
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 2.2633005869465705e-07,
+      "roles": 6,
+      "maximum_ULP": 49152
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L5-H32-N68-P012-S0-A1-B1.pt",
+      "sha256": "cb40ade8e25f07e46fc811e7579ffcc5a4000e26e8d9e2d4ee67341a6b0e36d9",
+      "order": 5,
+      "H": 32,
+      "N": 68,
+      "permutation": [
+        0,
+        1,
+        2
+      ],
+      "k_stride": [
+        36,
+        1,
+        1296
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L5-H32-N68-P021-S0-A1-B1.pt",
+      "sha256": "558809c1a4365ff9bc9d6f46bbfc12b1f82f42323eb47ac3888ba7a114fc9115",
+      "order": 5,
+      "H": 32,
+      "N": 68,
+      "permutation": [
+        0,
+        2,
+        1
+      ],
+      "k_stride": [
+        36,
+        1296,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L5-H32-N68-P102-S0-A1-B1.pt",
+      "sha256": "ee9da699b0d96a9b3aa7bcff71d2433d219ee0243aa140f774c0faa5b316aec0",
+      "order": 5,
+      "H": 32,
+      "N": 68,
+      "permutation": [
+        1,
+        0,
+        2
+      ],
+      "k_stride": [
+        1,
+        36,
+        1296
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L5-H32-N68-P120-S0-A1-B1.pt",
+      "sha256": "0fd97d02f5ea5d5bb15e67287bc5ab295b050800586489ee86c5aa73a01cf1eb",
+      "order": 5,
+      "H": 32,
+      "N": 68,
+      "permutation": [
+        1,
+        2,
+        0
+      ],
+      "k_stride": [
+        1,
+        1296,
+        36
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L5-H32-N68-P201-S0-A1-B1.pt",
+      "sha256": "b857b111bd1f63664a891b2c871f7f7ddb7224ad2ed677daa9ad09c2c9f99466",
+      "order": 5,
+      "H": 32,
+      "N": 68,
+      "permutation": [
+        2,
+        0,
+        1
+      ],
+      "k_stride": [
+        1296,
+        36,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L5-H32-N68-P210-S0-A1-B1.pt",
+      "sha256": "5311e14d1f9a876448918db482dea22e3a695773a53857214af8aa3942741d7c",
+      "order": 5,
+      "H": 32,
+      "N": 68,
+      "permutation": [
+        2,
+        1,
+        0
+      ],
+      "k_stride": [
+        1296,
+        1,
+        36
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L5-H32-N100-P012-S0-A1-B1.pt",
+      "sha256": "e806c2cb8785ac56d1c443e7b12cd3bf40e9ec7bef0ee568813c7f52027c0cf6",
+      "order": 5,
+      "H": 32,
+      "N": 100,
+      "permutation": [
+        0,
+        1,
+        2
+      ],
+      "k_stride": [
+        36,
+        1,
+        1296
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L5-H32-N100-P021-S0-A1-B1.pt",
+      "sha256": "deab142f922626463d6dcbdbfd8c7b787d4e057ad88c836f1e7953b5bd985a14",
+      "order": 5,
+      "H": 32,
+      "N": 100,
+      "permutation": [
+        0,
+        2,
+        1
+      ],
+      "k_stride": [
+        36,
+        1296,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L5-H32-N100-P102-S0-A1-B1.pt",
+      "sha256": "94132eaf573ff8fc58f4eaf928651b6b090675c05ea37d2afcabf685651b52d0",
+      "order": 5,
+      "H": 32,
+      "N": 100,
+      "permutation": [
+        1,
+        0,
+        2
+      ],
+      "k_stride": [
+        1,
+        36,
+        1296
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L5-H32-N100-P120-S0-A1-B1.pt",
+      "sha256": "717c9f7af38d4c3713fb1d2252b110e7a99f94b4ac5e4b95c9d17da7945789fe",
+      "order": 5,
+      "H": 32,
+      "N": 100,
+      "permutation": [
+        1,
+        2,
+        0
+      ],
+      "k_stride": [
+        1,
+        1296,
+        36
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L5-H32-N100-P201-S0-A1-B1.pt",
+      "sha256": "525fbe9b4636b6701f38c6dce0dc26cbbe62f160a63d74b604807cbfe8e4e1c9",
+      "order": 5,
+      "H": 32,
+      "N": 100,
+      "permutation": [
+        2,
+        0,
+        1
+      ],
+      "k_stride": [
+        1296,
+        36,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L5-H32-N100-P210-S0-A1-B1.pt",
+      "sha256": "2774e18c2e80d8fdc3f0dd9850c461cdf3c27e524f51b986af3d790e72cbeb5f",
+      "order": 5,
+      "H": 32,
+      "N": 100,
+      "permutation": [
+        2,
+        1,
+        0
+      ],
+      "k_stride": [
+        1296,
+        1,
+        36
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L5-H32-N137-P012-S0-A1-B1.pt",
+      "sha256": "1c22cf2257e7779b7434d755feaf6a500d17a5090a22941f083789f09656d216",
+      "order": 5,
+      "H": 32,
+      "N": 137,
+      "permutation": [
+        0,
+        1,
+        2
+      ],
+      "k_stride": [
+        36,
+        1,
+        1296
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 1.868138070904024e-07,
+      "roles": 6,
+      "maximum_ULP": 3194880
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L5-H32-N137-P021-S0-A1-B1.pt",
+      "sha256": "0b1aeff17a53ae1c8ac662e1b7a4e736f230e6d8869c422e6d75f16ea49d1268",
+      "order": 5,
+      "H": 32,
+      "N": 137,
+      "permutation": [
+        0,
+        2,
+        1
+      ],
+      "k_stride": [
+        36,
+        1296,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 2.1350149381760275e-07,
+      "roles": 6,
+      "maximum_ULP": 2129920
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L5-H32-N137-P102-S0-A1-B1.pt",
+      "sha256": "15e4259cdd5677730c524644dbc124d20c918fa6148943604edf4d1e801012c6",
+      "order": 5,
+      "H": 32,
+      "N": 137,
+      "permutation": [
+        1,
+        0,
+        2
+      ],
+      "k_stride": [
+        1,
+        36,
+        1296
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 1.6050086060204194e-07,
+      "roles": 6,
+      "maximum_ULP": 32768
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L5-H32-N137-P120-S0-A1-B1.pt",
+      "sha256": "9bd8556e597737b294bf4a16c744f8bce076c9064f509b36a29ee8a18c75ef6b",
+      "order": 5,
+      "H": 32,
+      "N": 137,
+      "permutation": [
+        1,
+        2,
+        0
+      ],
+      "k_stride": [
+        1,
+        1296,
+        36
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 1.4340353970965225e-07,
+      "roles": 6,
+      "maximum_ULP": 131072
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L5-H32-N137-P201-S0-A1-B1.pt",
+      "sha256": "d08c8bff556c120600607dd2021abad51b0fd116ffb3ae1760933eb947d754f9",
+      "order": 5,
+      "H": 32,
+      "N": 137,
+      "permutation": [
+        2,
+        0,
+        1
+      ],
+      "k_stride": [
+        1296,
+        36,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 1.6050084639118722e-07,
+      "roles": 6,
+      "maximum_ULP": 36736
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L5-H32-N137-P210-S0-A1-B1.pt",
+      "sha256": "d2c64fb712d10c7cc334a1f074bf3b5a7d1c7f5d1fca51df7a78391b31a740d2",
+      "order": 5,
+      "H": 32,
+      "N": 137,
+      "permutation": [
+        2,
+        1,
+        0
+      ],
+      "k_stride": [
+        1296,
+        1,
+        36
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 1.7052472855993983e-07,
+      "roles": 6,
+      "maximum_ULP": 126976
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L5-H512-N100-P012-S0-A1-B1.pt",
+      "sha256": "14ca5ce5a3767cf2effc6652a70c415e5bc1525fa926198e34798e43be2f70a5",
+      "order": 5,
+      "H": 512,
+      "N": 100,
+      "permutation": [
+        0,
+        1,
+        2
+      ],
+      "k_stride": [
+        36,
+        1,
+        1296
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L5-H512-N100-P021-S0-A1-B1.pt",
+      "sha256": "106e928a1ca68f71b313d7fab82ce7c6c0e22690900ce707ad24335dac9705ff",
+      "order": 5,
+      "H": 512,
+      "N": 100,
+      "permutation": [
+        0,
+        2,
+        1
+      ],
+      "k_stride": [
+        36,
+        1296,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L5-H512-N100-P102-S0-A1-B1.pt",
+      "sha256": "dbd486b1e324cd28dff95bb31caf187d6d66e66cc01096fb7a5981ec4663596e",
+      "order": 5,
+      "H": 512,
+      "N": 100,
+      "permutation": [
+        1,
+        0,
+        2
+      ],
+      "k_stride": [
+        1,
+        36,
+        1296
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L5-H512-N100-P120-S0-A1-B1.pt",
+      "sha256": "4825c1a745f9f9c07095baff49b91e32b2f1e192623719efe37936e4847c1f44",
+      "order": 5,
+      "H": 512,
+      "N": 100,
+      "permutation": [
+        1,
+        2,
+        0
+      ],
+      "k_stride": [
+        1,
+        1296,
+        36
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L5-H512-N100-P201-S0-A1-B1.pt",
+      "sha256": "131c48791b2f5c27f598d69f27e15ec0f69522c43bd1fa5da2909596f6eed341",
+      "order": 5,
+      "H": 512,
+      "N": 100,
+      "permutation": [
+        2,
+        0,
+        1
+      ],
+      "k_stride": [
+        1296,
+        36,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L5-H512-N100-P210-S0-A1-B1.pt",
+      "sha256": "deee5bb486321fdaff19c10ac3eb1223f11049f174099a586d2ca8ea994ecce9",
+      "order": 5,
+      "H": 512,
+      "N": 100,
+      "permutation": [
+        2,
+        1,
+        0
+      ],
+      "k_stride": [
+        1296,
+        1,
+        36
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L6-H32-N16-P012-S0-A1-B1.pt",
+      "sha256": "194afa90a1ebfe1a8eb57883bd45bf3864a341aee8e3cd9674bc56be04209d77",
+      "order": 6,
+      "H": 32,
+      "N": 16,
+      "permutation": [
+        0,
+        1,
+        2
+      ],
+      "k_stride": [
+        49,
+        1,
+        2401
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L6-H32-N16-P021-S0-A1-B1.pt",
+      "sha256": "f16616cfd7323c974d5b6afd2ec42361c90a00cf074fd39fc56c0d7dd205a429",
+      "order": 6,
+      "H": 32,
+      "N": 16,
+      "permutation": [
+        0,
+        2,
+        1
+      ],
+      "k_stride": [
+        49,
+        2401,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L6-H32-N16-P102-S0-A1-B1.pt",
+      "sha256": "2fc651f581bd7677c1eb087c197ebae0f66d0529b7cd156e18f441667d788343",
+      "order": 6,
+      "H": 32,
+      "N": 16,
+      "permutation": [
+        1,
+        0,
+        2
+      ],
+      "k_stride": [
+        1,
+        49,
+        2401
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L6-H32-N16-P120-S0-A1-B1.pt",
+      "sha256": "9b1f48e7ffbd96a5577128b3063ad4ba5248366784de2fc0268bcff968d1dc64",
+      "order": 6,
+      "H": 32,
+      "N": 16,
+      "permutation": [
+        1,
+        2,
+        0
+      ],
+      "k_stride": [
+        1,
+        2401,
+        49
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L6-H32-N16-P201-S0-A1-B1.pt",
+      "sha256": "90703e0439e6d8a3991483d41d8bc707750e5cc6160c64d5ffcc1e95b5989b37",
+      "order": 6,
+      "H": 32,
+      "N": 16,
+      "permutation": [
+        2,
+        0,
+        1
+      ],
+      "k_stride": [
+        2401,
+        49,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L6-H32-N16-P210-S0-A1-B1.pt",
+      "sha256": "cd74a4dc638e9d4df8e64ef395e9982fea27a27e71d87137d1c7d67492f3c3d8",
+      "order": 6,
+      "H": 32,
+      "N": 16,
+      "permutation": [
+        2,
+        1,
+        0
+      ],
+      "k_stride": [
+        2401,
+        1,
+        49
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L6-H32-N68-P012-S0-A1-B1.pt",
+      "sha256": "a08db01c174466e4f3633b59badc2b4775fa41c390d2a7edf698682991b2ce1d",
+      "order": 6,
+      "H": 32,
+      "N": 68,
+      "permutation": [
+        0,
+        1,
+        2
+      ],
+      "k_stride": [
+        49,
+        1,
+        2401
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 7.492072029435803e-08,
+      "roles": 6,
+      "maximum_ULP": 32768
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L6-H32-N68-P021-S0-A1-B1.pt",
+      "sha256": "7589197bccefd894900790fe225b4f532fc1f2415ebc0032df425ca6f4790092",
+      "order": 6,
+      "H": 32,
+      "N": 68,
+      "permutation": [
+        0,
+        2,
+        1
+      ],
+      "k_stride": [
+        49,
+        2401,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 7.406407576127094e-08,
+      "roles": 6,
+      "maximum_ULP": 65536
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L6-H32-N68-P102-S0-A1-B1.pt",
+      "sha256": "d0e4c396fee7bf72f8221124f61ce19cdd34a428afcfa2aefb0de483edad1f73",
+      "order": 6,
+      "H": 32,
+      "N": 68,
+      "permutation": [
+        1,
+        0,
+        2
+      ],
+      "k_stride": [
+        1,
+        49,
+        2401
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 4.186169988429356e-08,
+      "roles": 6,
+      "maximum_ULP": 262144
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L6-H32-N68-P120-S0-A1-B1.pt",
+      "sha256": "7e75a6d8084567fbf22f222405f75dcfa166ef9b982db337040854d23efa251b",
+      "order": 6,
+      "H": 32,
+      "N": 68,
+      "permutation": [
+        1,
+        2,
+        0
+      ],
+      "k_stride": [
+        1,
+        2401,
+        49
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 7.729529016842207e-08,
+      "roles": 6,
+      "maximum_ULP": 65536
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L6-H32-N68-P201-S0-A1-B1.pt",
+      "sha256": "155c237ddb5fbd4b7dca1fe17c65658db85220815b86c780757812ce5ea9cd9e",
+      "order": 6,
+      "H": 32,
+      "N": 68,
+      "permutation": [
+        2,
+        0,
+        1
+      ],
+      "k_stride": [
+        2401,
+        49,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 8.49193213525723e-08,
+      "roles": 6,
+      "maximum_ULP": 98304
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L6-H32-N68-P210-S0-A1-B1.pt",
+      "sha256": "bf3720438aba386453a973b3448f452117e5c76bd3c91b75581e417e6a07cd32",
+      "order": 6,
+      "H": 32,
+      "N": 68,
+      "permutation": [
+        2,
+        1,
+        0
+      ],
+      "k_stride": [
+        2401,
+        1,
+        49
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 8.842717846846426e-08,
+      "roles": 6,
+      "maximum_ULP": 8192
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L6-H32-N100-P012-S0-A1-B1.pt",
+      "sha256": "183fd43b5ea650a67f708def88a4ac999d83f8ec6ce7124f31209c003b9838c0",
+      "order": 6,
+      "H": 32,
+      "N": 100,
+      "permutation": [
+        0,
+        1,
+        2
+      ],
+      "k_stride": [
+        49,
+        1,
+        2401
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 7.492072029435803e-08,
+      "roles": 6,
+      "maximum_ULP": 32768
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L6-H32-N100-P021-S0-A1-B1.pt",
+      "sha256": "2f1e60f4a89898b40239030c9f1c3d568a49a70628681fd30961af0e513ca76e",
+      "order": 6,
+      "H": 32,
+      "N": 100,
+      "permutation": [
+        0,
+        2,
+        1
+      ],
+      "k_stride": [
+        49,
+        2401,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 7.406407576127094e-08,
+      "roles": 6,
+      "maximum_ULP": 65536
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L6-H32-N100-P102-S0-A1-B1.pt",
+      "sha256": "27150da392e8fdac92a1e3b0da7509f7b3129d9df62e77c33d3fb8f2650ecbd6",
+      "order": 6,
+      "H": 32,
+      "N": 100,
+      "permutation": [
+        1,
+        0,
+        2
+      ],
+      "k_stride": [
+        1,
+        49,
+        2401
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 4.186169988429356e-08,
+      "roles": 6,
+      "maximum_ULP": 262144
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L6-H32-N100-P120-S0-A1-B1.pt",
+      "sha256": "b7d081d17477061aed4a5e8a348834337dbbc2fe76fa8f31c325588ee53500a7",
+      "order": 6,
+      "H": 32,
+      "N": 100,
+      "permutation": [
+        1,
+        2,
+        0
+      ],
+      "k_stride": [
+        1,
+        2401,
+        49
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 7.495272313917667e-08,
+      "roles": 6,
+      "maximum_ULP": 65536
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L6-H32-N100-P201-S0-A1-B1.pt",
+      "sha256": "52799b8d3de6c093c0be19db67b87aaba663dbda3c361ad57ace063b88644a4e",
+      "order": 6,
+      "H": 32,
+      "N": 100,
+      "permutation": [
+        2,
+        0,
+        1
+      ],
+      "k_stride": [
+        2401,
+        49,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 8.49193213525723e-08,
+      "roles": 6,
+      "maximum_ULP": 98304
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L6-H32-N100-P210-S0-A1-B1.pt",
+      "sha256": "e9d5427bcb8ab17d8b5c504f4321627930f056414837477b5074875943d64fb3",
+      "order": 6,
+      "H": 32,
+      "N": 100,
+      "permutation": [
+        2,
+        1,
+        0
+      ],
+      "k_stride": [
+        2401,
+        1,
+        49
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 7.907765819936685e-08,
+      "roles": 6,
+      "maximum_ULP": 8192
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L6-H32-N137-P012-S0-A1-B1.pt",
+      "sha256": "102a2bf67d4e5dbb8a55315b3464da3839123eec5d751fe26b3bbc78140bbdeb",
+      "order": 6,
+      "H": 32,
+      "N": 137,
+      "permutation": [
+        0,
+        1,
+        2
+      ],
+      "k_stride": [
+        49,
+        1,
+        2401
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 2.668832621566253e-07,
+      "roles": 6,
+      "maximum_ULP": 122880
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L6-H32-N137-P021-S0-A1-B1.pt",
+      "sha256": "96e482cc2898946635d99e59c6b0790ae23dfa53beb1cb466923b584ecaaa646",
+      "order": 6,
+      "H": 32,
+      "N": 137,
+      "permutation": [
+        0,
+        2,
+        1
+      ],
+      "k_stride": [
+        49,
+        2401,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 2.668832621566253e-07,
+      "roles": 6,
+      "maximum_ULP": 90112
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L6-H32-N137-P102-S0-A1-B1.pt",
+      "sha256": "9e0aa715793603006fb336f0b2ab394e86134bc7e1168cf00a4bc9ea968a29f4",
+      "order": 6,
+      "H": 32,
+      "N": 137,
+      "permutation": [
+        1,
+        0,
+        2
+      ],
+      "k_stride": [
+        1,
+        49,
+        2401
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 2.534844156798499e-07,
+      "roles": 6,
+      "maximum_ULP": 262144
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L6-H32-N137-P120-S0-A1-B1.pt",
+      "sha256": "f88cd1c44bc9e4fbbf16158737b2f07e3a422879247bd6a8c2251da205bacc9b",
+      "order": 6,
+      "H": 32,
+      "N": 137,
+      "permutation": [
+        1,
+        2,
+        0
+      ],
+      "k_stride": [
+        1,
+        2401,
+        49
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 2.4466891090924037e-07,
+      "roles": 6,
+      "maximum_ULP": 65536
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L6-H32-N137-P201-S0-A1-B1.pt",
+      "sha256": "1b7d35258be5b0fbf69dde818e74bb4e645eb6bd9be0c3c4cc60410bdce39d39",
+      "order": 6,
+      "H": 32,
+      "N": 137,
+      "permutation": [
+        2,
+        0,
+        1
+      ],
+      "k_stride": [
+        2401,
+        49,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 2.2179889924700547e-07,
+      "roles": 6,
+      "maximum_ULP": 917504
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L6-H32-N137-P210-S0-A1-B1.pt",
+      "sha256": "f1d43eddd01cb6da6cb344292ae7ce386266a433a82d7225cc033c38b1134537",
+      "order": 6,
+      "H": 32,
+      "N": 137,
+      "permutation": [
+        2,
+        1,
+        0
+      ],
+      "k_stride": [
+        2401,
+        1,
+        49
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 2.742315530213091e-07,
+      "roles": 6,
+      "maximum_ULP": 163840
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L6-H512-N100-P012-S0-A1-B1.pt",
+      "sha256": "5f844638b0bd8453c3cf30a45d0f5a496cb62765212d920f8e1466549cb7b2fa",
+      "order": 6,
+      "H": 512,
+      "N": 100,
+      "permutation": [
+        0,
+        1,
+        2
+      ],
+      "k_stride": [
+        49,
+        1,
+        2401
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L6-H512-N100-P021-S0-A1-B1.pt",
+      "sha256": "913aae447034a97480e6b9a5de340a8e7d5ff77e2a9580b47fa80b68977bfa08",
+      "order": 6,
+      "H": 512,
+      "N": 100,
+      "permutation": [
+        0,
+        2,
+        1
+      ],
+      "k_stride": [
+        49,
+        2401,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L6-H512-N100-P102-S0-A1-B1.pt",
+      "sha256": "e86c50b1cc435e392c6b59e0bf79ee9ce14ab25f29a8b250e15b1e6a9467f3d3",
+      "order": 6,
+      "H": 512,
+      "N": 100,
+      "permutation": [
+        1,
+        0,
+        2
+      ],
+      "k_stride": [
+        1,
+        49,
+        2401
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L6-H512-N100-P120-S0-A1-B1.pt",
+      "sha256": "0ac432ed89b5cd2093dfc5667c3e2e8268185384e6da584bf2648a1d3bd520c9",
+      "order": 6,
+      "H": 512,
+      "N": 100,
+      "permutation": [
+        1,
+        2,
+        0
+      ],
+      "k_stride": [
+        1,
+        2401,
+        49
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L6-H512-N100-P201-S0-A1-B1.pt",
+      "sha256": "1acbe4ea5abcdba6052cccdda7433dc226998b3cc2acbc402dca707fc8287572",
+      "order": 6,
+      "H": 512,
+      "N": 100,
+      "permutation": [
+        2,
+        0,
+        1
+      ],
+      "k_stride": [
+        2401,
+        49,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L6-H512-N100-P210-S0-A1-B1.pt",
+      "sha256": "580d2db4dc2eb8a59e73307fcc923a03e27052e66da0f3e6f5643870c7e7ed46",
+      "order": 6,
+      "H": 512,
+      "N": 100,
+      "permutation": [
+        2,
+        1,
+        0
+      ],
+      "k_stride": [
+        2401,
+        1,
+        49
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L7-H32-N16-P012-S0-A1-B1.pt",
+      "sha256": "4447e1516f69d39e0843ee0ee6628783b186540685e5af0752abf5cfafc40f9a",
+      "order": 7,
+      "H": 32,
+      "N": 16,
+      "permutation": [
+        0,
+        1,
+        2
+      ],
+      "k_stride": [
+        64,
+        1,
+        4096
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L7-H32-N16-P021-S0-A1-B1.pt",
+      "sha256": "bdd8712332c0b0dabc01f83e26c021dff7767501fa3a9474b88d22f19b514959",
+      "order": 7,
+      "H": 32,
+      "N": 16,
+      "permutation": [
+        0,
+        2,
+        1
+      ],
+      "k_stride": [
+        64,
+        4096,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L7-H32-N16-P102-S0-A1-B1.pt",
+      "sha256": "6fb6aadd7d7fb2e098c14c294a0fc4913851ce053dbd984dfefcea0f6e0ea728",
+      "order": 7,
+      "H": 32,
+      "N": 16,
+      "permutation": [
+        1,
+        0,
+        2
+      ],
+      "k_stride": [
+        1,
+        64,
+        4096
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L7-H32-N16-P120-S0-A1-B1.pt",
+      "sha256": "f5b62dc2e3c4995016fbf58947e35b1bbe260d9b198f30ff736dc13c604f4f83",
+      "order": 7,
+      "H": 32,
+      "N": 16,
+      "permutation": [
+        1,
+        2,
+        0
+      ],
+      "k_stride": [
+        1,
+        4096,
+        64
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L7-H32-N16-P201-S0-A1-B1.pt",
+      "sha256": "a4df52bf24150475d36bd2d932c967a0471c270fa2cb9339b86bd13dc4fe9e45",
+      "order": 7,
+      "H": 32,
+      "N": 16,
+      "permutation": [
+        2,
+        0,
+        1
+      ],
+      "k_stride": [
+        4096,
+        64,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L7-H32-N16-P210-S0-A1-B1.pt",
+      "sha256": "5773d3fd846c7fb21c6947b978acfd82d6edd04aaceeefd27eedb7be0975da73",
+      "order": 7,
+      "H": 32,
+      "N": 16,
+      "permutation": [
+        2,
+        1,
+        0
+      ],
+      "k_stride": [
+        4096,
+        1,
+        64
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L7-H32-N68-P012-S0-A1-B1.pt",
+      "sha256": "ea754291ae7a855ebce06cf05361446c3526713c1ea6360e357ffb830b3f83ac",
+      "order": 7,
+      "H": 32,
+      "N": 68,
+      "permutation": [
+        0,
+        1,
+        2
+      ],
+      "k_stride": [
+        64,
+        1,
+        4096
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 1.4216062993455125e-07,
+      "roles": 6,
+      "maximum_ULP": 22016
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L7-H32-N68-P021-S0-A1-B1.pt",
+      "sha256": "9b23e2c55f378ac2bcb5c0602fb48e967c5564f0011aacfeecfac6ade9deb245",
+      "order": 7,
+      "H": 32,
+      "N": 68,
+      "permutation": [
+        0,
+        2,
+        1
+      ],
+      "k_stride": [
+        64,
+        4096,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 2.3586733277625171e-07,
+      "roles": 6,
+      "maximum_ULP": 9216
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L7-H32-N68-P102-S0-A1-B1.pt",
+      "sha256": "4e4dfbc786b67a458b8ce3b17f8facb81dfaba9adab3ff1dd84b763941695e89",
+      "order": 7,
+      "H": 32,
+      "N": 68,
+      "permutation": [
+        1,
+        0,
+        2
+      ],
+      "k_stride": [
+        1,
+        64,
+        4096
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 1.4301680550943274e-07,
+      "roles": 6,
+      "maximum_ULP": 26624
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L7-H32-N68-P120-S0-A1-B1.pt",
+      "sha256": "abac408d3508e6d8cbd42dc445d2e9c868e9a6d6b97044ca93a6a251e3131548",
+      "order": 7,
+      "H": 32,
+      "N": 68,
+      "permutation": [
+        1,
+        2,
+        0
+      ],
+      "k_stride": [
+        1,
+        4096,
+        64
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 1.4982414597852767e-07,
+      "roles": 6,
+      "maximum_ULP": 7168
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L7-H32-N68-P201-S0-A1-B1.pt",
+      "sha256": "94e4268285549b6e5c5ad5965f3845fc5b9ce798ce5498f3c930d500202d9663",
+      "order": 7,
+      "H": 32,
+      "N": 68,
+      "permutation": [
+        2,
+        0,
+        1
+      ],
+      "k_stride": [
+        4096,
+        64,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 1.865369085862767e-07,
+      "roles": 6,
+      "maximum_ULP": 69632
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L7-H32-N68-P210-S0-A1-B1.pt",
+      "sha256": "aec094861ddac06a5e2b3f8f6a291da5bd39a4fb171cabaafd5882ea14d25366",
+      "order": 7,
+      "H": 32,
+      "N": 68,
+      "permutation": [
+        2,
+        1,
+        0
+      ],
+      "k_stride": [
+        4096,
+        1,
+        64
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 2.393258284882904e-07,
+      "roles": 6,
+      "maximum_ULP": 4424
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L7-H32-N100-P012-S0-A1-B1.pt",
+      "sha256": "fe861105b7ebbe29615ea887f0657a7a7f328b6a415082d637ff4b5fe9d33a71",
+      "order": 7,
+      "H": 32,
+      "N": 100,
+      "permutation": [
+        0,
+        1,
+        2
+      ],
+      "k_stride": [
+        64,
+        1,
+        4096
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L7-H32-N100-P021-S0-A1-B1.pt",
+      "sha256": "110ceb2f69f0eb9cc8444b9543280021ab25cdb43ff346de7cab1f0a18557435",
+      "order": 7,
+      "H": 32,
+      "N": 100,
+      "permutation": [
+        0,
+        2,
+        1
+      ],
+      "k_stride": [
+        64,
+        4096,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L7-H32-N100-P102-S0-A1-B1.pt",
+      "sha256": "90d474311ece24b3ceaacb15eb18345d6f600dea8028dec914670a6313a90cc7",
+      "order": 7,
+      "H": 32,
+      "N": 100,
+      "permutation": [
+        1,
+        0,
+        2
+      ],
+      "k_stride": [
+        1,
+        64,
+        4096
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L7-H32-N100-P120-S0-A1-B1.pt",
+      "sha256": "a3d127b957fdd37c16fe7f86214e606610c6d3a14564d6441beb9d385a7667be",
+      "order": 7,
+      "H": 32,
+      "N": 100,
+      "permutation": [
+        1,
+        2,
+        0
+      ],
+      "k_stride": [
+        1,
+        4096,
+        64
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L7-H32-N100-P201-S0-A1-B1.pt",
+      "sha256": "41023698eba59f3f5da0dc3e4dd33e144cabbc94b15938b0a37c627dc7ddd319",
+      "order": 7,
+      "H": 32,
+      "N": 100,
+      "permutation": [
+        2,
+        0,
+        1
+      ],
+      "k_stride": [
+        4096,
+        64,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L7-H32-N100-P210-S0-A1-B1.pt",
+      "sha256": "dd26c2e60850014315a06ae610ef075268ee95b87b94c0b0dc83905fe2a2d3fc",
+      "order": 7,
+      "H": 32,
+      "N": 100,
+      "permutation": [
+        2,
+        1,
+        0
+      ],
+      "k_stride": [
+        4096,
+        1,
+        64
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L7-H32-N137-P012-S0-A1-B1.pt",
+      "sha256": "0fcffeb385d0785b572af1205a00389ca6fc841e25d7862619a371d39d51d7f2",
+      "order": 7,
+      "H": 32,
+      "N": 137,
+      "permutation": [
+        0,
+        1,
+        2
+      ],
+      "k_stride": [
+        64,
+        1,
+        4096
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 2.37276637449213e-07,
+      "roles": 6,
+      "maximum_ULP": 196608
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L7-H32-N137-P021-S0-A1-B1.pt",
+      "sha256": "d567781544ade5ea77a053f6bbfe0a8d3272e6a88ee50e396093053699ab4135",
+      "order": 7,
+      "H": 32,
+      "N": 137,
+      "permutation": [
+        0,
+        2,
+        1
+      ],
+      "k_stride": [
+        64,
+        4096,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 2.5028236905200174e-07,
+      "roles": 6,
+      "maximum_ULP": 139264
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L7-H32-N137-P102-S0-A1-B1.pt",
+      "sha256": "bc6eb9d10ec27ce1e9779d389c8de65689bd36c9e3f0badd1b0c48e67543a3aa",
+      "order": 7,
+      "H": 32,
+      "N": 137,
+      "permutation": [
+        1,
+        0,
+        2
+      ],
+      "k_stride": [
+        1,
+        64,
+        4096
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 2.722656802234269e-07,
+      "roles": 6,
+      "maximum_ULP": 327680
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L7-H32-N137-P120-S0-A1-B1.pt",
+      "sha256": "938e353636c7d1ea5ef0a914e1afc36ff01205c55aa25ad0174f6a75944e5ed2",
+      "order": 7,
+      "H": 32,
+      "N": 137,
+      "permutation": [
+        1,
+        2,
+        0
+      ],
+      "k_stride": [
+        1,
+        4096,
+        64
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 2.2473622607321886e-07,
+      "roles": 6,
+      "maximum_ULP": 4980736
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L7-H32-N137-P201-S0-A1-B1.pt",
+      "sha256": "0c73ef72afa8e15f5fce54dd8c3373ca438e1c08aa361d726b2f3d8968fd7f6d",
+      "order": 7,
+      "H": 32,
+      "N": 137,
+      "permutation": [
+        2,
+        0,
+        1
+      ],
+      "k_stride": [
+        4096,
+        64,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 2.3823244532650278e-07,
+      "roles": 6,
+      "maximum_ULP": 196608
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L7-H32-N137-P210-S0-A1-B1.pt",
+      "sha256": "46f6a8872ef603641ed74763aca60b7584fa2d3677517e557c5cc640610574a2",
+      "order": 7,
+      "H": 32,
+      "N": 137,
+      "permutation": [
+        2,
+        1,
+        0
+      ],
+      "k_stride": [
+        4096,
+        1,
+        64
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 2.9253314437482913e-07,
+      "roles": 6,
+      "maximum_ULP": 5242880
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L7-H512-N100-P012-S0-A1-B1.pt",
+      "sha256": "64fee6c811b08429fb62c4213366281a5d2c9699aa03d18fbd7f84d77da73de0",
+      "order": 7,
+      "H": 512,
+      "N": 100,
+      "permutation": [
+        0,
+        1,
+        2
+      ],
+      "k_stride": [
+        64,
+        1,
+        4096
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L7-H512-N100-P021-S0-A1-B1.pt",
+      "sha256": "94361351755d35b95042724d74ee0c7b9d70e851648140080946ca1210dc5304",
+      "order": 7,
+      "H": 512,
+      "N": 100,
+      "permutation": [
+        0,
+        2,
+        1
+      ],
+      "k_stride": [
+        64,
+        4096,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L7-H512-N100-P102-S0-A1-B1.pt",
+      "sha256": "5d974da073ca79f2db045b3d8883f288ab987b7f8fd234faa321f9b358a96709",
+      "order": 7,
+      "H": 512,
+      "N": 100,
+      "permutation": [
+        1,
+        0,
+        2
+      ],
+      "k_stride": [
+        1,
+        64,
+        4096
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L7-H512-N100-P120-S0-A1-B1.pt",
+      "sha256": "60b9adeb571bce3c126e1bfc7a72fff8f3ea10db6278394e9eadeb15d4fac8eb",
+      "order": 7,
+      "H": 512,
+      "N": 100,
+      "permutation": [
+        1,
+        2,
+        0
+      ],
+      "k_stride": [
+        1,
+        4096,
+        64
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L7-H512-N100-P201-S0-A1-B1.pt",
+      "sha256": "a7cf99e2b68d470230055c889d2430aeacace3bd9951bafc3ca4e2d2717c86ce",
+      "order": 7,
+      "H": 512,
+      "N": 100,
+      "permutation": [
+        2,
+        0,
+        1
+      ],
+      "k_stride": [
+        4096,
+        64,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L7-H512-N100-P210-S0-A1-B1.pt",
+      "sha256": "dd8302cf388947251aa7a9c5e7a7fc27cbb743fe269cdc0c6d946432ca743058",
+      "order": 7,
+      "H": 512,
+      "N": 100,
+      "permutation": [
+        2,
+        1,
+        0
+      ],
+      "k_stride": [
+        4096,
+        1,
+        64
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L8-H32-N16-P012-S0-A1-B1.pt",
+      "sha256": "260140ac6f9769c5da7cd9d4ae9c6993e9858b3823078e68912be02b4e2aa1cc",
+      "order": 8,
+      "H": 32,
+      "N": 16,
+      "permutation": [
+        0,
+        1,
+        2
+      ],
+      "k_stride": [
+        81,
+        1,
+        6561
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L8-H32-N16-P021-S0-A1-B1.pt",
+      "sha256": "856bd78d8bfb2a4941c3161bb6fade5650b3133a6fd97958adac5f8f6ed00caa",
+      "order": 8,
+      "H": 32,
+      "N": 16,
+      "permutation": [
+        0,
+        2,
+        1
+      ],
+      "k_stride": [
+        81,
+        6561,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L8-H32-N16-P102-S0-A1-B1.pt",
+      "sha256": "575074e1107ba448594076e1e93786e5a4b752b1e5d1f489f22aa04af5aef233",
+      "order": 8,
+      "H": 32,
+      "N": 16,
+      "permutation": [
+        1,
+        0,
+        2
+      ],
+      "k_stride": [
+        1,
+        81,
+        6561
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L8-H32-N16-P120-S0-A1-B1.pt",
+      "sha256": "d61af0eb89501bcf1353dedecd9fab5fac51874a6559b5080a5587bfebd8f608",
+      "order": 8,
+      "H": 32,
+      "N": 16,
+      "permutation": [
+        1,
+        2,
+        0
+      ],
+      "k_stride": [
+        1,
+        6561,
+        81
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L8-H32-N16-P201-S0-A1-B1.pt",
+      "sha256": "efaaf2174f491f6727dcc5043c3579500107372ce3385553546c11ee51e25e50",
+      "order": 8,
+      "H": 32,
+      "N": 16,
+      "permutation": [
+        2,
+        0,
+        1
+      ],
+      "k_stride": [
+        6561,
+        81,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L8-H32-N16-P210-S0-A1-B1.pt",
+      "sha256": "6994e18529eb62d3a1bd8c9ee277fbac485890f9641e2345148fff6adf7dda7f",
+      "order": 8,
+      "H": 32,
+      "N": 16,
+      "permutation": [
+        2,
+        1,
+        0
+      ],
+      "k_stride": [
+        6561,
+        1,
+        81
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L8-H32-N68-P012-S0-A1-B1.pt",
+      "sha256": "e582e57b1673c72e214fa029072aab441ebb952348194185e3a5ec7d556be46e",
+      "order": 8,
+      "H": 32,
+      "N": 68,
+      "permutation": [
+        0,
+        1,
+        2
+      ],
+      "k_stride": [
+        81,
+        1,
+        6561
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 1.0145393503080413e-07,
+      "roles": 6,
+      "maximum_ULP": 12800
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L8-H32-N68-P021-S0-A1-B1.pt",
+      "sha256": "02a61d785c03bd29234882de577bdd85bd0aeca4e76e808a1dece239eba2a108",
+      "order": 8,
+      "H": 32,
+      "N": 68,
+      "permutation": [
+        0,
+        2,
+        1
+      ],
+      "k_stride": [
+        81,
+        6561,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 1.3900269379973906e-07,
+      "roles": 6,
+      "maximum_ULP": 8192
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L8-H32-N68-P102-S0-A1-B1.pt",
+      "sha256": "e1dcd474eaa1e48bc94d1a3f68a2a7345f38e7a93be265e605122498e699fdcd",
+      "order": 8,
+      "H": 32,
+      "N": 68,
+      "permutation": [
+        1,
+        0,
+        2
+      ],
+      "k_stride": [
+        1,
+        81,
+        6561
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 9.59947996648225e-08,
+      "roles": 6,
+      "maximum_ULP": 4096
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L8-H32-N68-P120-S0-A1-B1.pt",
+      "sha256": "1aaa88c8bd11a6b83b3ac5c98e0e0fcd07a38dd3d495ad89ddcd1ad02943e170",
+      "order": 8,
+      "H": 32,
+      "N": 68,
+      "permutation": [
+        1,
+        2,
+        0
+      ],
+      "k_stride": [
+        1,
+        6561,
+        81
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 2.646429493324831e-07,
+      "roles": 6,
+      "maximum_ULP": 22528
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L8-H32-N68-P201-S0-A1-B1.pt",
+      "sha256": "d0e65caef81e618e935c8374dfc0d92f25ccdd96c84e540be994b8837ff4acc2",
+      "order": 8,
+      "H": 32,
+      "N": 68,
+      "permutation": [
+        2,
+        0,
+        1
+      ],
+      "k_stride": [
+        6561,
+        81,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 1.8016122282915603e-07,
+      "roles": 6,
+      "maximum_ULP": 20480
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L8-H32-N68-P210-S0-A1-B1.pt",
+      "sha256": "e30037016cfcb5edf9599e53bbeb17243b12b4839a9ff8ad6ffdeb2b71d04323",
+      "order": 8,
+      "H": 32,
+      "N": 68,
+      "permutation": [
+        2,
+        1,
+        0
+      ],
+      "k_stride": [
+        6561,
+        1,
+        81
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 1.3890613104194927e-07,
+      "roles": 6,
+      "maximum_ULP": 1472
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L8-H32-N100-P012-S0-A1-B1.pt",
+      "sha256": "bebcf75a9838726a83c50df8117d8ff14ca030a7c414216f9da861ff21233b9c",
+      "order": 8,
+      "H": 32,
+      "N": 100,
+      "permutation": [
+        0,
+        1,
+        2
+      ],
+      "k_stride": [
+        81,
+        1,
+        6561
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L8-H32-N100-P021-S0-A1-B1.pt",
+      "sha256": "d8fdeedd19386d54b275a04d3970d1539a3f2e2a3e6ed97499cd63a24974223b",
+      "order": 8,
+      "H": 32,
+      "N": 100,
+      "permutation": [
+        0,
+        2,
+        1
+      ],
+      "k_stride": [
+        81,
+        6561,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L8-H32-N100-P102-S0-A1-B1.pt",
+      "sha256": "056d036f38ef3ae0e4b6ecb3f90a028fef3ee6267f856e16a659c6a5fdb8d0f7",
+      "order": 8,
+      "H": 32,
+      "N": 100,
+      "permutation": [
+        1,
+        0,
+        2
+      ],
+      "k_stride": [
+        1,
+        81,
+        6561
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L8-H32-N100-P120-S0-A1-B1.pt",
+      "sha256": "a3bbcc4b213c2a63aa7d636b81534f93385d50740abb60c5dfdec8602a5ebfc6",
+      "order": 8,
+      "H": 32,
+      "N": 100,
+      "permutation": [
+        1,
+        2,
+        0
+      ],
+      "k_stride": [
+        1,
+        6561,
+        81
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L8-H32-N100-P201-S0-A1-B1.pt",
+      "sha256": "02a8a14eb60c1d92d7e2569d7acc45a4261539dd936d08e04fe904a83020c034",
+      "order": 8,
+      "H": 32,
+      "N": 100,
+      "permutation": [
+        2,
+        0,
+        1
+      ],
+      "k_stride": [
+        6561,
+        81,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L8-H32-N100-P210-S0-A1-B1.pt",
+      "sha256": "b99d1b6b0883f025999eeaff6ad700626beda64c77fa5aea31f51f7d2e2774e5",
+      "order": 8,
+      "H": 32,
+      "N": 100,
+      "permutation": [
+        2,
+        1,
+        0
+      ],
+      "k_stride": [
+        6561,
+        1,
+        81
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L8-H32-N137-P012-S0-A1-B1.pt",
+      "sha256": "6cc6f2dfc56191a23b5a9a6ebd1a75d239dc7e35037f99f61c6626e806e54653",
+      "order": 8,
+      "H": 32,
+      "N": 137,
+      "permutation": [
+        0,
+        1,
+        2
+      ],
+      "k_stride": [
+        81,
+        1,
+        6561
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 2.694601732855517e-07,
+      "roles": 6,
+      "maximum_ULP": 131072
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L8-H32-N137-P021-S0-A1-B1.pt",
+      "sha256": "80f6448af8c8866414a1a71ecf9f9f9ef3372dd638f66573940eb38de8b760da",
+      "order": 8,
+      "H": 32,
+      "N": 137,
+      "permutation": [
+        0,
+        2,
+        1
+      ],
+      "k_stride": [
+        81,
+        6561,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 2.5362999167555245e-07,
+      "roles": 6,
+      "maximum_ULP": 147456
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L8-H32-N137-P102-S0-A1-B1.pt",
+      "sha256": "3942dda5195f7bebfd4ccc3b96b212569f69f1d977f6bb79f6ff9a08cea7f6a1",
+      "order": 8,
+      "H": 32,
+      "N": 137,
+      "permutation": [
+        1,
+        0,
+        2
+      ],
+      "k_stride": [
+        1,
+        81,
+        6561
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 3.574289735297498e-07,
+      "roles": 6,
+      "maximum_ULP": 786432
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L8-H32-N137-P120-S0-A1-B1.pt",
+      "sha256": "7567049873ccf4c6f5eb15128d5289d9675ff9323ce7c2db68cf1e21f9935b6a",
+      "order": 8,
+      "H": 32,
+      "N": 137,
+      "permutation": [
+        1,
+        2,
+        0
+      ],
+      "k_stride": [
+        1,
+        6561,
+        81
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 3.6299596217759245e-07,
+      "roles": 6,
+      "maximum_ULP": 2621440
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L8-H32-N137-P201-S0-A1-B1.pt",
+      "sha256": "14e0d506bd3d24d42993938c2cc424ee06ebe41e6bea24fd2fc5326b2462e132",
+      "order": 8,
+      "H": 32,
+      "N": 137,
+      "permutation": [
+        2,
+        0,
+        1
+      ],
+      "k_stride": [
+        6561,
+        81,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 3.2168605912374915e-07,
+      "roles": 6,
+      "maximum_ULP": 589824
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L8-H32-N137-P210-S0-A1-B1.pt",
+      "sha256": "15e68b6c09b1d70e411bfc82d6ceddd2b7523f209b6b28e4e113835a1b5e7c62",
+      "order": 8,
+      "H": 32,
+      "N": 137,
+      "permutation": [
+        2,
+        1,
+        0
+      ],
+      "k_stride": [
+        6561,
+        1,
+        81
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 3.62995933755883e-07,
+      "roles": 6,
+      "maximum_ULP": 425984
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L8-H512-N100-P012-S0-A1-B1.pt",
+      "sha256": "a34fe8c8f8fb32dcd49ad6c73cca822000a0cbb09d47974c6336b4b94f3307d2",
+      "order": 8,
+      "H": 512,
+      "N": 100,
+      "permutation": [
+        0,
+        1,
+        2
+      ],
+      "k_stride": [
+        81,
+        1,
+        6561
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L8-H512-N100-P021-S0-A1-B1.pt",
+      "sha256": "71f44762d3992ea6d594e79626e3d28f5789a74105db5918c1123127c1315b3e",
+      "order": 8,
+      "H": 512,
+      "N": 100,
+      "permutation": [
+        0,
+        2,
+        1
+      ],
+      "k_stride": [
+        81,
+        6561,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L8-H512-N100-P102-S0-A1-B1.pt",
+      "sha256": "0d32305d8b19645e95c26801cf5556cc3b055605734bd79a741b444633e901d7",
+      "order": 8,
+      "H": 512,
+      "N": 100,
+      "permutation": [
+        1,
+        0,
+        2
+      ],
+      "k_stride": [
+        1,
+        81,
+        6561
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L8-H512-N100-P120-S0-A1-B1.pt",
+      "sha256": "eebcfa772241696d41d7f19d9a0a5a22c2d9a09bc7ea29437680947dc5a2c71c",
+      "order": 8,
+      "H": 512,
+      "N": 100,
+      "permutation": [
+        1,
+        2,
+        0
+      ],
+      "k_stride": [
+        1,
+        6561,
+        81
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L8-H512-N100-P201-S0-A1-B1.pt",
+      "sha256": "1c03516ca53dff36eb85f939ebc2408430901a6e6d4d61f124651b63cca34c2f",
+      "order": 8,
+      "H": 512,
+      "N": 100,
+      "permutation": [
+        2,
+        0,
+        1
+      ],
+      "k_stride": [
+        6561,
+        81,
+        1
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    },
+    {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/local-regression/120870/L8-H512-N100-P210-S0-A1-B1.pt",
+      "sha256": "0b91be46d782102595aef3b8ddb0421977af047a6a8766da526e6b82ee742368",
+      "order": 8,
+      "H": 512,
+      "N": 100,
+      "permutation": [
+        2,
+        1,
+        0
+      ],
+      "k_stride": [
+        6561,
+        1,
+        81
+      ],
+      "input_stride_scales": [
+        1,
+        1
+      ],
+      "seed": 0,
+      "status": "PASS",
+      "failures": {},
+      "epsilon_max": 0.0,
+      "roles": 6,
+      "maximum_ULP": 0
+    }
+  ]
+}

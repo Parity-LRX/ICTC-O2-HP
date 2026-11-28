@@ -1,0 +1,208 @@
+{
+  "status": "SOURCE_AND_RECEIPTS_SEALED_WITH_INDEPENDENT_UNPACK_QA",
+  "job": "119498",
+  "candidate_commit": "a80f0dc9c8ed71ddd513ba12a579733ed1580429",
+  "operator_source_sha256": "69bbd465591d77c7ce23697dad7fdecac5a4da24013168dc8fc224334ab5eba0",
+  "snapshot": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-uvw-fp32-repair-a100-20261126-r1/snapshots/delivery-119498",
+  "archive": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-uvw-fp32-repair-a100-20261126-r1/snapshots/delivery-119498/SOURCE-AND-RECEIPTS.tar.gz",
+  "archive_sha256": "cd3b54f3a0ba41acb3fd5578b649c1569161cf608671dbfe7bafa3e41a2667f2",
+  "source_files_verified": 1372,
+  "raw_manifest": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-uvw-fp32-repair-a100-20261126-r1/snapshots/delivery-119498/RAW-RESULT-MANIFEST.json",
+  "raw_manifest_sha256": "ff3099986fe26441c8c659172404b53f5d4a23819da6eaee5b6097bfaa1dff4c",
+  "raw_content_verification": "stage AMD jobs as recorded; small receipts rehashed during final seal; no claim of final reread of all large arrays",
+  "gates": {
+    "REGRESSION-AUDIT.txt": {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-uvw-fp32-repair-a100-20261126-r1/results/regression-audit-amd-119411",
+      "status": "ACTUAL_LOCAL_REGRESSION_PASS",
+      "receipt_sha256": "60c9ec94d1d82712312dd2750d82b2ec9f9163612435e76b4e8f9fa70a33e6bc"
+    },
+    "GENERIC-AUDIT.txt": {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-uvw-fp32-repair-a100-20261126-r1/results/generic-audit-amd-119413",
+      "status": "GENERIC_REGRESSION_PASS",
+      "receipt_sha256": "77558e09c7ad037e9fe50d5f77fcf8aff5f48b420d672158fe2d9e67b4faa770"
+    },
+    "REPLAY-AUDIT.txt": {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-uvw-fp32-repair-a100-20261126-r1/results/replay-audit-amd-119437",
+      "status": "WHOLE_TRAINING_GATE_PASS",
+      "receipt_sha256": "b85e9ca72e5e028b87b56820e4d7a2c704edbafcd95628aed574943c6150a8a4"
+    },
+    "PERFORMANCE-AUDIT.txt": {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-uvw-fp32-repair-a100-20261126-r1/results/performance-audit-amd-119451",
+      "status": "PERFORMANCE_AUDIT_PASS",
+      "receipt_sha256": "efc694a4ef816590dd302cc5b32ae18b7273cd5a9e780e0304404322e67e010a"
+    },
+    "PTX-AUDIT.txt": {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-uvw-fp32-repair-a100-20261126-r1/results/ptx-audit-amd-119454",
+      "status": "ACCEPTED_SOURCE_SM80_PTX_AUDIT_PASS",
+      "receipt_sha256": "cc0055871c2b7a6efc933efec0de272ea614e67dbc817c6690fa148e17b1d084"
+    }
+  },
+  "gpu_accounting": {
+    "allocations": [
+      {
+        "job": "119339",
+        "name": "o2-uvw-real-capture",
+        "state": "COMPLETED",
+        "elapsed_s": 36,
+        "nodes": 1,
+        "gpus": 1,
+        "gpu_h": 0.01
+      },
+      {
+        "job": "119343",
+        "name": "o2-uvw-fp32-screen",
+        "state": "COMPLETED",
+        "elapsed_s": 39,
+        "nodes": 1,
+        "gpus": 1,
+        "gpu_h": 0.010833333333333334
+      },
+      {
+        "job": "119345",
+        "name": "o2-uvw-real-loss-screen",
+        "state": "COMPLETED",
+        "elapsed_s": 130,
+        "nodes": 1,
+        "gpus": 1,
+        "gpu_h": 0.03611111111111111
+      },
+      {
+        "job": "119348",
+        "name": "o2-uvw-real-loss-screen",
+        "state": "COMPLETED",
+        "elapsed_s": 229,
+        "nodes": 1,
+        "gpus": 1,
+        "gpu_h": 0.0636111111111111
+      },
+      {
+        "job": "119351",
+        "name": "o2-uvw-order-signature",
+        "state": "COMPLETED",
+        "elapsed_s": 15,
+        "nodes": 1,
+        "gpus": 1,
+        "gpu_h": 0.004166666666666667
+      },
+      {
+        "job": "119359",
+        "name": "o2-uvw-real-loss-screen",
+        "state": "COMPLETED",
+        "elapsed_s": 73,
+        "nodes": 1,
+        "gpus": 1,
+        "gpu_h": 0.020277777777777777
+      },
+      {
+        "job": "119362",
+        "name": "o2-uvw-fp32-screen",
+        "state": "COMPLETED",
+        "elapsed_s": 26,
+        "nodes": 1,
+        "gpus": 1,
+        "gpu_h": 0.007222222222222222
+      },
+      {
+        "job": "119364",
+        "name": "o2-uvw-fp32-screen",
+        "state": "COMPLETED",
+        "elapsed_s": 209,
+        "nodes": 1,
+        "gpus": 1,
+        "gpu_h": 0.058055555555555555
+      },
+      {
+        "job": "119371",
+        "name": "o2-uvw-real-loss-screen",
+        "state": "COMPLETED",
+        "elapsed_s": 101,
+        "nodes": 1,
+        "gpus": 1,
+        "gpu_h": 0.028055555555555556
+      },
+      {
+        "job": "119381",
+        "name": "o2-uvw-adjoint-reference",
+        "state": "COMPLETED",
+        "elapsed_s": 4,
+        "nodes": 1,
+        "gpus": 1,
+        "gpu_h": 0.0011111111111111111
+      },
+      {
+        "job": "119391",
+        "name": "o2-uvw-infer-reduction",
+        "state": "COMPLETED",
+        "elapsed_s": 3,
+        "nodes": 1,
+        "gpus": 1,
+        "gpu_h": 0.0008333333333333334
+      },
+      {
+        "job": "119406",
+        "name": "o2-uvw-real-regression",
+        "state": "COMPLETED",
+        "elapsed_s": 76,
+        "nodes": 1,
+        "gpus": 1,
+        "gpu_h": 0.021111111111111112
+      },
+      {
+        "job": "119412",
+        "name": "o2-uvw-generic-regression",
+        "state": "COMPLETED",
+        "elapsed_s": 14,
+        "nodes": 1,
+        "gpus": 1,
+        "gpu_h": 0.0038888888888888888
+      },
+      {
+        "job": "119414",
+        "name": "o2-uvw-whole-verify",
+        "state": "COMPLETED",
+        "elapsed_s": 144,
+        "nodes": 1,
+        "gpus": 1,
+        "gpu_h": 0.04
+      },
+      {
+        "job": "119436",
+        "name": "o2-uvw-same-state-replay",
+        "state": "COMPLETED",
+        "elapsed_s": 225,
+        "nodes": 1,
+        "gpus": 1,
+        "gpu_h": 0.0625
+      },
+      {
+        "job": "119444",
+        "name": "o2-uvw-qualified-performance",
+        "state": "CANCELLED by 1035",
+        "elapsed_s": 283,
+        "nodes": 1,
+        "gpus": 1,
+        "gpu_h": 0.07861111111111112
+      },
+      {
+        "job": "119450",
+        "name": "o2-uvw-qualified-performance",
+        "state": "COMPLETED",
+        "elapsed_s": 1708,
+        "nodes": 1,
+        "gpus": 1,
+        "gpu_h": 0.47444444444444445
+      }
+    ],
+    "total_gpu_h": 0.9208333333333334,
+    "maximum_concurrent_nodes": 1,
+    "gpus_per_allocation": 1,
+    "method": "Slurm actual ElapsedRaw, explicit --gres=gpu:1 and actual device_count=1; serial allocations",
+    "includes_failed_numerical_candidates": true,
+    "project_cap_gpu_h": 500,
+    "append_by_unique_job_id": true,
+    "project_total_not_recomputed": true,
+    "earlier_ledger": "runs/o2-hp-approved-20261123-r1/provenance/BUDGET-AUDIT.json"
+  },
+  "independent_trajectory_fail_retained": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-uvw-fp32-repair-a100-20261126-r1/results/verify-audit-amd-119415",
+  "pushed": false
+}

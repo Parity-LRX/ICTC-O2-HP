@@ -1,0 +1,4895 @@
+{
+  "status": "GATES_REVIEWED",
+  "source": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789",
+  "rows": [
+    {
+      "key": "op-uvw-canonical-L1-N16-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-canonical-L1-N16-infer",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 1,
+        "parity": "canonical",
+        "size": 16,
+        "mode": "infer"
+      },
+      "elapsed_s": 3.368715524673462,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 1.729854659515695e-07,
+        "max_ulp": 1408
+      },
+      "epsilon_max": 2.1740719091667415e-07
+    },
+    {
+      "key": "op-uvw-canonical-L1-N16-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-canonical-L1-N16-train",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 1,
+        "parity": "canonical",
+        "size": 16,
+        "mode": "train"
+      },
+      "elapsed_s": 4.270470142364502,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 8,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 8,
+        "max_R": 6.489652264463075e-07,
+        "max_ulp": 114688
+      },
+      "epsilon_max": 9.961013347492553e-07
+    },
+    {
+      "key": "op-uvw-canonical-L1-N256-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-canonical-L1-N256-infer",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 1,
+        "parity": "canonical",
+        "size": 256,
+        "mode": "infer"
+      },
+      "elapsed_s": 3.2687342166900635,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 1.5846414669340447e-07,
+        "max_ulp": 24576
+      },
+      "epsilon_max": 1.8691585523811227e-07
+    },
+    {
+      "key": "op-uvw-canonical-L1-N256-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-canonical-L1-N256-train",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 1,
+        "parity": "canonical",
+        "size": 256,
+        "mode": "train"
+      },
+      "elapsed_s": 4.220236539840698,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 5.896932293580903e-07,
+        "max_ulp": 360448
+      },
+      "epsilon_max": 1.1187431709913653e-06
+    },
+    {
+      "key": "op-uvw-canonical-L1-N4096-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-canonical-L1-N4096-infer",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 1,
+        "parity": "canonical",
+        "size": 4096,
+        "mode": "infer"
+      },
+      "elapsed_s": 3.268998861312866,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 1.7395791473973077e-07,
+        "max_ulp": 1146880
+      },
+      "epsilon_max": 3.223072155833506e-07
+    },
+    {
+      "key": "op-uvw-canonical-L1-N4096-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-canonical-L1-N4096-train",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 1,
+        "parity": "canonical",
+        "size": 4096,
+        "mode": "train"
+      },
+      "elapsed_s": 4.172184705734253,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 1.4231853810997563e-06,
+        "max_ulp": 5865379
+      },
+      "epsilon_max": 3.277732503192965e-06
+    },
+    {
+      "key": "op-uvw-full-L1-N16-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-full-L1-N16-infer",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 1,
+        "parity": "full",
+        "size": 16,
+        "mode": "infer"
+      },
+      "elapsed_s": 2.9690191745758057,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 1.8326521455946931e-07,
+        "max_ulp": 1280
+      },
+      "epsilon_max": 1.9809547779914283e-07
+    },
+    {
+      "key": "op-uvw-full-L1-N16-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-full-L1-N16-train",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 1,
+        "parity": "full",
+        "size": 16,
+        "mode": "train"
+      },
+      "elapsed_s": 3.819880247116089,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 8,
+        "max_R": 6.388447815197651e-08,
+        "max_ulp": 1024
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 8,
+        "max_R": 6.400343863788294e-07,
+        "max_ulp": 5574614
+      },
+      "epsilon_max": 7.798830097272003e-07
+    },
+    {
+      "key": "op-uvw-full-L1-N256-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-full-L1-N256-infer",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 1,
+        "parity": "full",
+        "size": 256,
+        "mode": "infer"
+      },
+      "elapsed_s": 3.1188948154449463,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 1.6557700632802153e-07,
+        "max_ulp": 32768
+      },
+      "epsilon_max": 1.8170935334183014e-07
+    },
+    {
+      "key": "op-uvw-full-L1-N256-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-full-L1-N256-train",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 1,
+        "parity": "full",
+        "size": 256,
+        "mode": "train"
+      },
+      "elapsed_s": 3.769432783126831,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 5.983982305224345e-07,
+        "max_ulp": 1785856
+      },
+      "epsilon_max": 1.0270880466123344e-06
+    },
+    {
+      "key": "op-uvw-full-L1-N4096-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-full-L1-N4096-infer",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 1,
+        "parity": "full",
+        "size": 4096,
+        "mode": "infer"
+      },
+      "elapsed_s": 3.1690971851348877,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 1.7715285594022134e-07,
+        "max_ulp": 1048576
+      },
+      "epsilon_max": 2.1216800405454705e-07
+    },
+    {
+      "key": "op-uvw-full-L1-N4096-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-full-L1-N4096-train",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 1,
+        "parity": "full",
+        "size": 4096,
+        "mode": "train"
+      },
+      "elapsed_s": 3.919849157333374,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 1.437794935554848e-06,
+        "max_ulp": 1717696089
+      },
+      "epsilon_max": 4.3723944145313e-06
+    },
+    {
+      "key": "op-bilinear-canonical-L1-N16-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-bilinear-canonical-L1-N16-infer",
+      "identity": {
+        "level": "operator",
+        "family": "bilinear",
+        "order": 1,
+        "parity": "canonical",
+        "size": 16,
+        "mode": "infer"
+      },
+      "elapsed_s": 2.8683722019195557,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "epsilon_max": 0.0
+    },
+    {
+      "key": "op-bilinear-canonical-L1-N16-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-bilinear-canonical-L1-N16-train",
+      "identity": {
+        "level": "operator",
+        "family": "bilinear",
+        "order": 1,
+        "parity": "canonical",
+        "size": 16,
+        "mode": "train"
+      },
+      "elapsed_s": 3.218863010406494,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 6,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 6,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "epsilon_max": 0.0
+    },
+    {
+      "key": "op-bilinear-canonical-L1-N256-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-bilinear-canonical-L1-N256-infer",
+      "identity": {
+        "level": "operator",
+        "family": "bilinear",
+        "order": 1,
+        "parity": "canonical",
+        "size": 256,
+        "mode": "infer"
+      },
+      "elapsed_s": 2.8181841373443604,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "epsilon_max": 0.0
+    },
+    {
+      "key": "op-bilinear-canonical-L1-N256-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-bilinear-canonical-L1-N256-train",
+      "identity": {
+        "level": "operator",
+        "family": "bilinear",
+        "order": 1,
+        "parity": "canonical",
+        "size": 256,
+        "mode": "train"
+      },
+      "elapsed_s": 3.168739080429077,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 3,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 3,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "epsilon_max": 0.0
+    },
+    {
+      "key": "op-bilinear-canonical-L1-N4096-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-bilinear-canonical-L1-N4096-infer",
+      "identity": {
+        "level": "operator",
+        "family": "bilinear",
+        "order": 1,
+        "parity": "canonical",
+        "size": 4096,
+        "mode": "infer"
+      },
+      "elapsed_s": 2.8182578086853027,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "epsilon_max": 0.0
+    },
+    {
+      "key": "op-bilinear-canonical-L1-N4096-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-bilinear-canonical-L1-N4096-train",
+      "identity": {
+        "level": "operator",
+        "family": "bilinear",
+        "order": 1,
+        "parity": "canonical",
+        "size": 4096,
+        "mode": "train"
+      },
+      "elapsed_s": 3.3688251972198486,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 3,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 3,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "epsilon_max": 0.0
+    },
+    {
+      "key": "op-uvw-canonical-L2-N16-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-canonical-L2-N16-infer",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 2,
+        "parity": "canonical",
+        "size": 16,
+        "mode": "infer"
+      },
+      "elapsed_s": 3.068840742111206,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 1.9269458562121144e-07,
+        "max_ulp": 1024
+      },
+      "epsilon_max": 2.2568852386939398e-07
+    },
+    {
+      "key": "op-uvw-canonical-L2-N16-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-canonical-L2-N16-train",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 2,
+        "parity": "canonical",
+        "size": 16,
+        "mode": "train"
+      },
+      "elapsed_s": 3.619316577911377,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 8,
+        "max_R": 3.131427561697819e-08,
+        "max_ulp": 64
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 8,
+        "max_R": 6.296284027484944e-07,
+        "max_ulp": 200833
+      },
+      "epsilon_max": 1.0304623856427497e-06
+    },
+    {
+      "key": "op-uvw-canonical-L2-N256-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-canonical-L2-N256-infer",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 2,
+        "parity": "canonical",
+        "size": 256,
+        "mode": "infer"
+      },
+      "elapsed_s": 3.0688529014587402,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 1.918648138143908e-07,
+        "max_ulp": 36864
+      },
+      "epsilon_max": 2.4950563215497823e-07
+    },
+    {
+      "key": "op-uvw-canonical-L2-N256-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-canonical-L2-N256-train",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 2,
+        "parity": "canonical",
+        "size": 256,
+        "mode": "train"
+      },
+      "elapsed_s": 3.5691733360290527,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 5.966467711004952e-07,
+        "max_ulp": 6308062
+      },
+      "epsilon_max": 1.0467821311976877e-06
+    },
+    {
+      "key": "op-uvw-canonical-L2-N4096-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-canonical-L2-N4096-infer",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 2,
+        "parity": "canonical",
+        "size": 4096,
+        "mode": "infer"
+      },
+      "elapsed_s": 3.018681526184082,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 1.9844098630983353e-07,
+        "max_ulp": 9961472
+      },
+      "epsilon_max": 2.6666282337828306e-07
+    },
+    {
+      "key": "op-uvw-canonical-L2-N4096-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-canonical-L2-N4096-train",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 2,
+        "parity": "canonical",
+        "size": 4096,
+        "mode": "train"
+      },
+      "elapsed_s": 3.669391393661499,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 1.5124105630093254e-06,
+        "max_ulp": 9961472
+      },
+      "epsilon_max": 3.3792705380619736e-06
+    },
+    {
+      "key": "op-uvw-full-L2-N16-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-full-L2-N16-infer",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 2,
+        "parity": "full",
+        "size": 16,
+        "mode": "infer"
+      },
+      "elapsed_s": 3.218879461288452,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 2.1315422316092736e-07,
+        "max_ulp": 1048576
+      },
+      "epsilon_max": 2.82303858512023e-07
+    },
+    {
+      "key": "op-uvw-full-L2-N16-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-full-L2-N16-train",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 2,
+        "parity": "full",
+        "size": 16,
+        "mode": "train"
+      },
+      "elapsed_s": 4.320148944854736,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 8,
+        "max_R": 8.474643919953451e-08,
+        "max_ulp": 8192
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 8,
+        "max_R": 6.374270924425218e-07,
+        "max_ulp": 5343674
+      },
+      "epsilon_max": 8.746139315007895e-07
+    },
+    {
+      "key": "op-uvw-full-L2-N256-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-full-L2-N256-infer",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 2,
+        "parity": "full",
+        "size": 256,
+        "mode": "infer"
+      },
+      "elapsed_s": 3.1684465408325195,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 2.0678729129031126e-07,
+        "max_ulp": 262144
+      },
+      "epsilon_max": 2.4132231146722916e-07
+    },
+    {
+      "key": "op-uvw-full-L2-N256-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-full-L2-N256-train",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 2,
+        "parity": "full",
+        "size": 256,
+        "mode": "train"
+      },
+      "elapsed_s": 3.9698338508605957,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 6.006565627103555e-07,
+        "max_ulp": 12648448
+      },
+      "epsilon_max": 9.147819923782663e-07
+    },
+    {
+      "key": "op-uvw-full-L2-N4096-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-full-L2-N4096-infer",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 2,
+        "parity": "full",
+        "size": 4096,
+        "mode": "infer"
+      },
+      "elapsed_s": 3.268946647644043,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 2.1091398139105877e-07,
+        "max_ulp": 12058624
+      },
+      "epsilon_max": 3.041307081730338e-07
+    },
+    {
+      "key": "op-uvw-full-L2-N4096-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-full-L2-N4096-train",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 2,
+        "parity": "full",
+        "size": 4096,
+        "mode": "train"
+      },
+      "elapsed_s": 4.420269012451172,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 1.52084908222605e-06,
+        "max_ulp": 1723981953
+      },
+      "epsilon_max": 4.884527243120829e-06
+    },
+    {
+      "key": "op-bilinear-canonical-L2-N16-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-bilinear-canonical-L2-N16-infer",
+      "identity": {
+        "level": "operator",
+        "family": "bilinear",
+        "order": 2,
+        "parity": "canonical",
+        "size": 16,
+        "mode": "infer"
+      },
+      "elapsed_s": 2.8684070110321045,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "epsilon_max": 0.0
+    },
+    {
+      "key": "op-bilinear-canonical-L2-N16-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-bilinear-canonical-L2-N16-train",
+      "identity": {
+        "level": "operator",
+        "family": "bilinear",
+        "order": 2,
+        "parity": "canonical",
+        "size": 16,
+        "mode": "train"
+      },
+      "elapsed_s": 3.218705415725708,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 6,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 6,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "epsilon_max": 0.0
+    },
+    {
+      "key": "op-bilinear-canonical-L2-N256-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-bilinear-canonical-L2-N256-infer",
+      "identity": {
+        "level": "operator",
+        "family": "bilinear",
+        "order": 2,
+        "parity": "canonical",
+        "size": 256,
+        "mode": "infer"
+      },
+      "elapsed_s": 2.7741594314575195,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "epsilon_max": 0.0
+    },
+    {
+      "key": "op-bilinear-canonical-L2-N256-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-bilinear-canonical-L2-N256-train",
+      "identity": {
+        "level": "operator",
+        "family": "bilinear",
+        "order": 2,
+        "parity": "canonical",
+        "size": 256,
+        "mode": "train"
+      },
+      "elapsed_s": 3.168717861175537,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 3,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 3,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "epsilon_max": 0.0
+    },
+    {
+      "key": "op-bilinear-canonical-L2-N4096-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-bilinear-canonical-L2-N4096-infer",
+      "identity": {
+        "level": "operator",
+        "family": "bilinear",
+        "order": 2,
+        "parity": "canonical",
+        "size": 4096,
+        "mode": "infer"
+      },
+      "elapsed_s": 2.8684580326080322,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "epsilon_max": 0.0
+    },
+    {
+      "key": "op-bilinear-canonical-L2-N4096-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-bilinear-canonical-L2-N4096-train",
+      "identity": {
+        "level": "operator",
+        "family": "bilinear",
+        "order": 2,
+        "parity": "canonical",
+        "size": 4096,
+        "mode": "train"
+      },
+      "elapsed_s": 3.3690736293792725,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 3,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 3,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "epsilon_max": 0.0
+    },
+    {
+      "key": "op-uvw-canonical-L3-N16-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-canonical-L3-N16-infer",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 3,
+        "parity": "canonical",
+        "size": 16,
+        "mode": "infer"
+      },
+      "elapsed_s": 3.1186821460723877,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 2.0771818753928528e-07,
+        "max_ulp": 8192
+      },
+      "epsilon_max": 2.973449113596871e-07
+    },
+    {
+      "key": "op-uvw-canonical-L3-N16-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-canonical-L3-N16-train",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 3,
+        "parity": "canonical",
+        "size": 16,
+        "mode": "train"
+      },
+      "elapsed_s": 3.719381093978882,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 8,
+        "max_R": 4.511779039262365e-08,
+        "max_ulp": 1024
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 8,
+        "max_R": 6.132032126515696e-07,
+        "max_ulp": 191622
+      },
+      "epsilon_max": 1.1599015579122351e-06
+    },
+    {
+      "key": "op-uvw-canonical-L3-N256-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-canonical-L3-N256-infer",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 3,
+        "parity": "canonical",
+        "size": 256,
+        "mode": "infer"
+      },
+      "elapsed_s": 2.968500852584839,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 2.0963581448540936e-07,
+        "max_ulp": 262144
+      },
+      "epsilon_max": 3.139354021186591e-07
+    },
+    {
+      "key": "op-uvw-canonical-L3-N256-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-canonical-L3-N256-train",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 3,
+        "parity": "canonical",
+        "size": 256,
+        "mode": "train"
+      },
+      "elapsed_s": 3.66943359375,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 5.9435421917442e-07,
+        "max_ulp": 3145728
+      },
+      "epsilon_max": 8.4643949094243e-07
+    },
+    {
+      "key": "op-uvw-canonical-L3-N4096-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-canonical-L3-N4096-infer",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 3,
+        "parity": "canonical",
+        "size": 4096,
+        "mode": "infer"
+      },
+      "elapsed_s": 3.0685999393463135,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 2.117299970905151e-07,
+        "max_ulp": 2883584
+      },
+      "epsilon_max": 3.0320646260406647e-07
+    },
+    {
+      "key": "op-uvw-canonical-L3-N4096-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-canonical-L3-N4096-train",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 3,
+        "parity": "canonical",
+        "size": 4096,
+        "mode": "train"
+      },
+      "elapsed_s": 3.719604015350342,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 1.5525680510108941e-06,
+        "max_ulp": 4121709
+      },
+      "epsilon_max": 3.414309048821451e-06
+    },
+    {
+      "key": "op-uvw-full-L3-N16-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-full-L3-N16-infer",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 3,
+        "parity": "full",
+        "size": 16,
+        "mode": "infer"
+      },
+      "elapsed_s": 3.3690295219421387,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 2.284757556481054e-07,
+        "max_ulp": 9728
+      },
+      "epsilon_max": 3.0754915769648505e-07
+    },
+    {
+      "key": "op-uvw-full-L3-N16-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-full-L3-N16-train",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 3,
+        "parity": "full",
+        "size": 16,
+        "mode": "train"
+      },
+      "elapsed_s": 5.121395111083984,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 8,
+        "max_R": 1.0245286574672718e-07,
+        "max_ulp": 16384
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 8,
+        "max_R": 6.4149287481996e-07,
+        "max_ulp": 4194304
+      },
+      "epsilon_max": 9.556176792102633e-07
+    },
+    {
+      "key": "op-uvw-full-L3-N256-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-full-L3-N256-infer",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 3,
+        "parity": "full",
+        "size": 256,
+        "mode": "infer"
+      },
+      "elapsed_s": 3.319221019744873,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 2.2711638791861333e-07,
+        "max_ulp": 282624
+      },
+      "epsilon_max": 3.0516540050484764e-07
+    },
+    {
+      "key": "op-uvw-full-L3-N256-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-full-L3-N256-train",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 3,
+        "parity": "full",
+        "size": 256,
+        "mode": "train"
+      },
+      "elapsed_s": 4.470084190368652,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 6.04200295128976e-07,
+        "max_ulp": 9175040
+      },
+      "epsilon_max": 8.473274988318735e-07
+    },
+    {
+      "key": "op-uvw-full-L3-N4096-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-full-L3-N4096-infer",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 3,
+        "parity": "full",
+        "size": 4096,
+        "mode": "infer"
+      },
+      "elapsed_s": 3.7694523334503174,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 2.2988584191807604e-07,
+        "max_ulp": 2621440
+      },
+      "epsilon_max": 2.926876447872928e-07
+    },
+    {
+      "key": "op-uvw-full-L3-N4096-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-full-L3-N4096-train",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 3,
+        "parity": "full",
+        "size": 4096,
+        "mode": "train"
+      },
+      "elapsed_s": 4.82080078125,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 1.5552639069937868e-06,
+        "max_ulp": 1740417415
+      },
+      "epsilon_max": 4.386808086564997e-06
+    },
+    {
+      "key": "op-bilinear-canonical-L3-N16-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-bilinear-canonical-L3-N16-infer",
+      "identity": {
+        "level": "operator",
+        "family": "bilinear",
+        "order": 3,
+        "parity": "canonical",
+        "size": 16,
+        "mode": "infer"
+      },
+      "elapsed_s": 2.868325710296631,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "epsilon_max": 0.0
+    },
+    {
+      "key": "op-bilinear-canonical-L3-N16-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-bilinear-canonical-L3-N16-train",
+      "identity": {
+        "level": "operator",
+        "family": "bilinear",
+        "order": 3,
+        "parity": "canonical",
+        "size": 16,
+        "mode": "train"
+      },
+      "elapsed_s": 3.2188282012939453,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 6,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 6,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "epsilon_max": 0.0
+    },
+    {
+      "key": "op-bilinear-canonical-L3-N256-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-bilinear-canonical-L3-N256-infer",
+      "identity": {
+        "level": "operator",
+        "family": "bilinear",
+        "order": 3,
+        "parity": "canonical",
+        "size": 256,
+        "mode": "infer"
+      },
+      "elapsed_s": 2.8183438777923584,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "epsilon_max": 0.0
+    },
+    {
+      "key": "op-bilinear-canonical-L3-N256-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-bilinear-canonical-L3-N256-train",
+      "identity": {
+        "level": "operator",
+        "family": "bilinear",
+        "order": 3,
+        "parity": "canonical",
+        "size": 256,
+        "mode": "train"
+      },
+      "elapsed_s": 3.2189314365386963,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 3,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 3,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "epsilon_max": 0.0
+    },
+    {
+      "key": "op-bilinear-canonical-L3-N4096-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-bilinear-canonical-L3-N4096-infer",
+      "identity": {
+        "level": "operator",
+        "family": "bilinear",
+        "order": 3,
+        "parity": "canonical",
+        "size": 4096,
+        "mode": "infer"
+      },
+      "elapsed_s": 2.918576240539551,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "epsilon_max": 0.0
+    },
+    {
+      "key": "op-bilinear-canonical-L3-N4096-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-bilinear-canonical-L3-N4096-train",
+      "identity": {
+        "level": "operator",
+        "family": "bilinear",
+        "order": 3,
+        "parity": "canonical",
+        "size": 4096,
+        "mode": "train"
+      },
+      "elapsed_s": 3.51916241645813,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 3,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 3,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "epsilon_max": 0.0
+    },
+    {
+      "key": "op-uvw-canonical-L4-N16-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-canonical-L4-N16-infer",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 4,
+        "parity": "canonical",
+        "size": 16,
+        "mode": "infer"
+      },
+      "elapsed_s": 2.968575954437256,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 2.2395741439140693e-07,
+        "max_ulp": 8192
+      },
+      "epsilon_max": 2.399054892521235e-07
+    },
+    {
+      "key": "op-uvw-canonical-L4-N16-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-canonical-L4-N16-train",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 4,
+        "parity": "canonical",
+        "size": 16,
+        "mode": "train"
+      },
+      "elapsed_s": 3.819627285003662,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 8,
+        "max_R": 5.180784512504033e-08,
+        "max_ulp": 1024
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 8,
+        "max_R": 6.13143015470996e-07,
+        "max_ulp": 1572864
+      },
+      "epsilon_max": 9.01300609257305e-07
+    },
+    {
+      "key": "op-uvw-canonical-L4-N256-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-canonical-L4-N256-infer",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 4,
+        "parity": "canonical",
+        "size": 256,
+        "mode": "infer"
+      },
+      "elapsed_s": 3.0690081119537354,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 2.1878446432310739e-07,
+        "max_ulp": 81920
+      },
+      "epsilon_max": 2.7066926122643054e-07
+    },
+    {
+      "key": "op-uvw-canonical-L4-N256-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-canonical-L4-N256-train",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 4,
+        "parity": "canonical",
+        "size": 256,
+        "mode": "train"
+      },
+      "elapsed_s": 3.819502353668213,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 5.984634867672867e-07,
+        "max_ulp": 4270935
+      },
+      "epsilon_max": 1.040143729369447e-06
+    },
+    {
+      "key": "op-uvw-canonical-L4-N4096-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-canonical-L4-N4096-infer",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 4,
+        "parity": "canonical",
+        "size": 4096,
+        "mode": "infer"
+      },
+      "elapsed_s": 3.0685434341430664,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 2.208666529668335e-07,
+        "max_ulp": 2097152
+      },
+      "epsilon_max": 2.495147839454148e-07
+    },
+    {
+      "key": "op-uvw-canonical-L4-N4096-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-canonical-L4-N4096-train",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 4,
+        "parity": "canonical",
+        "size": 4096,
+        "mode": "train"
+      },
+      "elapsed_s": 3.878877639770508,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 1.5758071185700828e-06,
+        "max_ulp": 1721893450
+      },
+      "epsilon_max": 3.73968009625969e-06
+    },
+    {
+      "key": "op-uvw-full-L4-N16-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-full-L4-N16-infer",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 4,
+        "parity": "full",
+        "size": 16,
+        "mode": "infer"
+      },
+      "elapsed_s": 3.6196224689483643,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 2.3878243382569053e-07,
+        "max_ulp": 393216
+      },
+      "epsilon_max": 3.2327682220056886e-07
+    },
+    {
+      "key": "op-uvw-full-L4-N16-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-full-L4-N16-train",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 4,
+        "parity": "full",
+        "size": 16,
+        "mode": "train"
+      },
+      "elapsed_s": 6.222589492797852,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 8,
+        "max_R": 1.1474606509409568e-07,
+        "max_ulp": 524288
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 8,
+        "max_R": 6.377678687385924e-07,
+        "max_ulp": 8388608
+      },
+      "epsilon_max": 8.068258807725215e-07
+    },
+    {
+      "key": "op-uvw-full-L4-N256-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-full-L4-N256-infer",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 4,
+        "parity": "full",
+        "size": 256,
+        "mode": "infer"
+      },
+      "elapsed_s": 3.6691203117370605,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 2.417402242826938e-07,
+        "max_ulp": 917504
+      },
+      "epsilon_max": 3.776244170694554e-07
+    },
+    {
+      "key": "op-uvw-full-L4-N256-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-full-L4-N256-train",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 4,
+        "parity": "full",
+        "size": 256,
+        "mode": "train"
+      },
+      "elapsed_s": 4.971094131469727,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 6.059752877263236e-07,
+        "max_ulp": 1657545786
+      },
+      "epsilon_max": 9.4388133220491e-07
+    },
+    {
+      "key": "op-uvw-full-L4-N4096-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-full-L4-N4096-infer",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 4,
+        "parity": "full",
+        "size": 4096,
+        "mode": "infer"
+      },
+      "elapsed_s": 3.7194535732269287,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 2.4304682710862835e-07,
+        "max_ulp": 5111808
+      },
+      "epsilon_max": 3.791721780999069e-07
+    },
+    {
+      "key": "op-uvw-full-L4-N4096-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-full-L4-N4096-train",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 4,
+        "parity": "full",
+        "size": 4096,
+        "mode": "train"
+      },
+      "elapsed_s": 5.822070598602295,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 1.5752538047308917e-06,
+        "max_ulp": 1716188135
+      },
+      "epsilon_max": 4.453855126484996e-06
+    },
+    {
+      "key": "op-bilinear-canonical-L4-N16-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-bilinear-canonical-L4-N16-infer",
+      "identity": {
+        "level": "operator",
+        "family": "bilinear",
+        "order": 4,
+        "parity": "canonical",
+        "size": 16,
+        "mode": "infer"
+      },
+      "elapsed_s": 2.8683135509490967,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "epsilon_max": 0.0
+    },
+    {
+      "key": "op-bilinear-canonical-L4-N16-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-bilinear-canonical-L4-N16-train",
+      "identity": {
+        "level": "operator",
+        "family": "bilinear",
+        "order": 4,
+        "parity": "canonical",
+        "size": 16,
+        "mode": "train"
+      },
+      "elapsed_s": 3.318962574005127,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 6,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 6,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "epsilon_max": 0.0
+    },
+    {
+      "key": "op-bilinear-canonical-L4-N256-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-bilinear-canonical-L4-N256-infer",
+      "identity": {
+        "level": "operator",
+        "family": "bilinear",
+        "order": 4,
+        "parity": "canonical",
+        "size": 256,
+        "mode": "infer"
+      },
+      "elapsed_s": 2.768197774887085,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "epsilon_max": 0.0
+    },
+    {
+      "key": "op-bilinear-canonical-L4-N256-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-bilinear-canonical-L4-N256-train",
+      "identity": {
+        "level": "operator",
+        "family": "bilinear",
+        "order": 4,
+        "parity": "canonical",
+        "size": 256,
+        "mode": "train"
+      },
+      "elapsed_s": 3.2687525749206543,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 3,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 3,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "epsilon_max": 0.0
+    },
+    {
+      "key": "op-bilinear-canonical-L4-N4096-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-bilinear-canonical-L4-N4096-infer",
+      "identity": {
+        "level": "operator",
+        "family": "bilinear",
+        "order": 4,
+        "parity": "canonical",
+        "size": 4096,
+        "mode": "infer"
+      },
+      "elapsed_s": 2.9187097549438477,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "epsilon_max": 0.0
+    },
+    {
+      "key": "op-bilinear-canonical-L4-N4096-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-bilinear-canonical-L4-N4096-train",
+      "identity": {
+        "level": "operator",
+        "family": "bilinear",
+        "order": 4,
+        "parity": "canonical",
+        "size": 4096,
+        "mode": "train"
+      },
+      "elapsed_s": 3.671165704727173,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 3,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 3,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "epsilon_max": 0.0
+    },
+    {
+      "key": "op-uvw-canonical-L5-N16-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-canonical-L5-N16-infer",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 5,
+        "parity": "canonical",
+        "size": 16,
+        "mode": "infer"
+      },
+      "elapsed_s": 3.0223283767700195,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 2.233872464785236e-07,
+        "max_ulp": 10240
+      },
+      "epsilon_max": 2.3260180626039073e-07
+    },
+    {
+      "key": "op-uvw-canonical-L5-N16-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-canonical-L5-N16-train",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 5,
+        "parity": "canonical",
+        "size": 16,
+        "mode": "train"
+      },
+      "elapsed_s": 4.070022344589233,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 8,
+        "max_R": 6.463796609068595e-08,
+        "max_ulp": 2048
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 8,
+        "max_R": 6.195980404299917e-07,
+        "max_ulp": 4194304
+      },
+      "epsilon_max": 7.781031854392495e-07
+    },
+    {
+      "key": "op-uvw-canonical-L5-N256-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-canonical-L5-N256-infer",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 5,
+        "parity": "canonical",
+        "size": 256,
+        "mode": "infer"
+      },
+      "elapsed_s": 3.1685922145843506,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 2.2476986316632974e-07,
+        "max_ulp": 557056
+      },
+      "epsilon_max": 2.728637582549709e-07
+    },
+    {
+      "key": "op-uvw-canonical-L5-N256-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-canonical-L5-N256-train",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 5,
+        "parity": "canonical",
+        "size": 256,
+        "mode": "train"
+      },
+      "elapsed_s": 3.7694337368011475,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 5.946239980403334e-07,
+        "max_ulp": 4926132
+      },
+      "epsilon_max": 1.0238909453619272e-06
+    },
+    {
+      "key": "op-uvw-canonical-L5-N4096-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-canonical-L5-N4096-infer",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 5,
+        "parity": "canonical",
+        "size": 4096,
+        "mode": "infer"
+      },
+      "elapsed_s": 3.218919515609741,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 2.2704374202930921e-07,
+        "max_ulp": 2490368
+      },
+      "epsilon_max": 3.0139918294480594e-07
+    },
+    {
+      "key": "op-uvw-canonical-L5-N4096-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-canonical-L5-N4096-train",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 5,
+        "parity": "canonical",
+        "size": 4096,
+        "mode": "train"
+      },
+      "elapsed_s": 3.9697563648223877,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 1.585737663845066e-06,
+        "max_ulp": 8811264
+      },
+      "epsilon_max": 3.7493409763555974e-06
+    },
+    {
+      "key": "op-uvw-full-L5-N16-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-full-L5-N16-infer",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 5,
+        "parity": "full",
+        "size": 16,
+        "mode": "infer"
+      },
+      "elapsed_s": 3.8697569370269775,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 2.4959985012174e-07,
+        "max_ulp": 7008
+      },
+      "epsilon_max": 3.6511627854451945e-07
+    },
+    {
+      "key": "op-uvw-full-L5-N16-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-full-L5-N16-train",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 5,
+        "parity": "full",
+        "size": 16,
+        "mode": "train"
+      },
+      "elapsed_s": 7.374081611633301,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 8,
+        "max_R": 1.2590528797318257e-07,
+        "max_ulp": 26496
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 8,
+        "max_R": 6.345807719299046e-07,
+        "max_ulp": 805306368
+      },
+      "epsilon_max": 6.706399631184468e-07
+    },
+    {
+      "key": "op-uvw-full-L5-N256-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-full-L5-N256-infer",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 5,
+        "parity": "full",
+        "size": 256,
+        "mode": "infer"
+      },
+      "elapsed_s": 3.86987042427063,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 2.522575641705771e-07,
+        "max_ulp": 524288
+      },
+      "epsilon_max": 3.331158211494767e-07
+    },
+    {
+      "key": "op-uvw-full-L5-N256-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-full-L5-N256-train",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 5,
+        "parity": "full",
+        "size": 256,
+        "mode": "train"
+      },
+      "elapsed_s": 6.072288513183594,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 6.121845217421651e-07,
+        "max_ulp": 17820230
+      },
+      "epsilon_max": 1.1734297231669188e-06
+    },
+    {
+      "key": "op-uvw-full-L5-N4096-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-full-L5-N4096-infer",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 5,
+        "parity": "full",
+        "size": 4096,
+        "mode": "infer"
+      },
+      "elapsed_s": 4.0199339389801025,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 2.532806036015245e-07,
+        "max_ulp": 8388608
+      },
+      "epsilon_max": 3.810440603047027e-07
+    },
+    {
+      "key": "op-uvw-full-L5-N4096-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-full-L5-N4096-train",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 5,
+        "parity": "full",
+        "size": 4096,
+        "mode": "train"
+      },
+      "elapsed_s": 6.672903299331665,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 1.586080657034472e-06,
+        "max_ulp": 1733313769
+      },
+      "epsilon_max": 4.3518966776900925e-06
+    },
+    {
+      "key": "op-bilinear-canonical-L5-N16-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-bilinear-canonical-L5-N16-infer",
+      "identity": {
+        "level": "operator",
+        "family": "bilinear",
+        "order": 5,
+        "parity": "canonical",
+        "size": 16,
+        "mode": "infer"
+      },
+      "elapsed_s": 2.8182950019836426,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 1.0735595168398504e-07,
+        "max_ulp": 17664
+      },
+      "epsilon_max": 2.3422924755323038e-07
+    },
+    {
+      "key": "op-bilinear-canonical-L5-N16-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-bilinear-canonical-L5-N16-train",
+      "identity": {
+        "level": "operator",
+        "family": "bilinear",
+        "order": 5,
+        "parity": "canonical",
+        "size": 16,
+        "mode": "train"
+      },
+      "elapsed_s": 3.2187395095825195,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 6,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 6,
+        "max_R": 1.1130328658737199e-07,
+        "max_ulp": 3145728
+      },
+      "epsilon_max": 2.3422924755323038e-07
+    },
+    {
+      "key": "op-bilinear-canonical-L5-N256-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-bilinear-canonical-L5-N256-infer",
+      "identity": {
+        "level": "operator",
+        "family": "bilinear",
+        "order": 5,
+        "parity": "canonical",
+        "size": 256,
+        "mode": "infer"
+      },
+      "elapsed_s": 2.868295192718506,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "epsilon_max": 0.0
+    },
+    {
+      "key": "op-bilinear-canonical-L5-N256-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-bilinear-canonical-L5-N256-train",
+      "identity": {
+        "level": "operator",
+        "family": "bilinear",
+        "order": 5,
+        "parity": "canonical",
+        "size": 256,
+        "mode": "train"
+      },
+      "elapsed_s": 3.268904447555542,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 3,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 3,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "epsilon_max": 0.0
+    },
+    {
+      "key": "op-bilinear-canonical-L5-N4096-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-bilinear-canonical-L5-N4096-infer",
+      "identity": {
+        "level": "operator",
+        "family": "bilinear",
+        "order": 5,
+        "parity": "canonical",
+        "size": 4096,
+        "mode": "infer"
+      },
+      "elapsed_s": 3.0185117721557617,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "epsilon_max": 0.0
+    },
+    {
+      "key": "op-bilinear-canonical-L5-N4096-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-bilinear-canonical-L5-N4096-train",
+      "identity": {
+        "level": "operator",
+        "family": "bilinear",
+        "order": 5,
+        "parity": "canonical",
+        "size": 4096,
+        "mode": "train"
+      },
+      "elapsed_s": 3.7193186283111572,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 3,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 3,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "epsilon_max": 0.0
+    },
+    {
+      "key": "op-uvw-canonical-L6-N16-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-canonical-L6-N16-infer",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 6,
+        "parity": "canonical",
+        "size": 16,
+        "mode": "infer"
+      },
+      "elapsed_s": 3.2689661979675293,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 2.2717118497439515e-07,
+        "max_ulp": 8192
+      },
+      "epsilon_max": 2.399950176368293e-07
+    },
+    {
+      "key": "op-uvw-canonical-L6-N16-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-canonical-L6-N16-train",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 6,
+        "parity": "canonical",
+        "size": 16,
+        "mode": "train"
+      },
+      "elapsed_s": 4.0700414180755615,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 8,
+        "max_R": 7.255021472474255e-08,
+        "max_ulp": 16384
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 8,
+        "max_R": 5.916915029047232e-07,
+        "max_ulp": 1978625
+      },
+      "epsilon_max": 7.485967898901436e-07
+    },
+    {
+      "key": "op-uvw-canonical-L6-N256-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-canonical-L6-N256-infer",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 6,
+        "parity": "canonical",
+        "size": 256,
+        "mode": "infer"
+      },
+      "elapsed_s": 3.169020891189575,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 2.299778714132117e-07,
+        "max_ulp": 294912
+      },
+      "epsilon_max": 3.021968950633891e-07
+    },
+    {
+      "key": "op-uvw-canonical-L6-N256-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-canonical-L6-N256-train",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 6,
+        "parity": "canonical",
+        "size": 256,
+        "mode": "train"
+      },
+      "elapsed_s": 3.96979022026062,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 5.9716796840803e-07,
+        "max_ulp": 891391
+      },
+      "epsilon_max": 1.0252483662043232e-06
+    },
+    {
+      "key": "op-uvw-canonical-L6-N4096-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-canonical-L6-N4096-infer",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 6,
+        "parity": "canonical",
+        "size": 4096,
+        "mode": "infer"
+      },
+      "elapsed_s": 3.369839906692505,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 2.3213254962684005e-07,
+        "max_ulp": 4292608
+      },
+      "epsilon_max": 3.2973059660434956e-07
+    },
+    {
+      "key": "op-uvw-canonical-L6-N4096-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-canonical-L6-N4096-train",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 6,
+        "parity": "canonical",
+        "size": 4096,
+        "mode": "train"
+      },
+      "elapsed_s": 4.2700653076171875,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 1.594781224412145e-06,
+        "max_ulp": 1722834841
+      },
+      "epsilon_max": 4.08725918532582e-06
+    },
+    {
+      "key": "op-uvw-full-L6-N16-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-full-L6-N16-infer",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 6,
+        "parity": "full",
+        "size": 16,
+        "mode": "infer"
+      },
+      "elapsed_s": 4.220992088317871,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 2.53184424536812e-07,
+        "max_ulp": 96256
+      },
+      "epsilon_max": 2.3823557171454013e-07
+    },
+    {
+      "key": "op-uvw-full-L6-N16-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-full-L6-N16-train",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 6,
+        "parity": "full",
+        "size": 16,
+        "mode": "train"
+      },
+      "elapsed_s": 9.125752210617065,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 8,
+        "max_R": 1.367068591662246e-07,
+        "max_ulp": 56576
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 8,
+        "max_R": 6.217919121809246e-07,
+        "max_ulp": 822083584
+      },
+      "epsilon_max": 8.266582085525442e-07
+    },
+    {
+      "key": "op-uvw-full-L6-N256-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-full-L6-N256-infer",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 6,
+        "parity": "full",
+        "size": 256,
+        "mode": "infer"
+      },
+      "elapsed_s": 4.170307397842407,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 2.606713565000973e-07,
+        "max_ulp": 311296
+      },
+      "epsilon_max": 3.1764741947881703e-07
+    },
+    {
+      "key": "op-uvw-full-L6-N256-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-full-L6-N256-train",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 6,
+        "parity": "full",
+        "size": 256,
+        "mode": "train"
+      },
+      "elapsed_s": 6.622767686843872,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 6.132438556960551e-07,
+        "max_ulp": 27442604
+      },
+      "epsilon_max": 1.0324292816221714e-06
+    },
+    {
+      "key": "op-uvw-full-L6-N4096-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-full-L6-N4096-infer",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 6,
+        "parity": "full",
+        "size": 4096,
+        "mode": "infer"
+      },
+      "elapsed_s": 4.420249700546265,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 2.6167731448367704e-07,
+        "max_ulp": 3145728
+      },
+      "epsilon_max": 3.24572567933501e-07
+    },
+    {
+      "key": "op-uvw-full-L6-N4096-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-full-L6-N4096-train",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 6,
+        "parity": "full",
+        "size": 4096,
+        "mode": "train"
+      },
+      "elapsed_s": 8.374835729598999,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 1.596421725480468e-06,
+        "max_ulp": 1737387115
+      },
+      "epsilon_max": 4.396880740387132e-06
+    },
+    {
+      "key": "op-bilinear-canonical-L6-N16-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-bilinear-canonical-L6-N16-infer",
+      "identity": {
+        "level": "operator",
+        "family": "bilinear",
+        "order": 6,
+        "parity": "canonical",
+        "size": 16,
+        "mode": "infer"
+      },
+      "elapsed_s": 2.668034791946411,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "epsilon_max": 0.0
+    },
+    {
+      "key": "op-bilinear-canonical-L6-N16-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-bilinear-canonical-L6-N16-train",
+      "identity": {
+        "level": "operator",
+        "family": "bilinear",
+        "order": 6,
+        "parity": "canonical",
+        "size": 16,
+        "mode": "train"
+      },
+      "elapsed_s": 3.218637466430664,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 6,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 6,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "epsilon_max": 0.0
+    },
+    {
+      "key": "op-bilinear-canonical-L6-N256-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-bilinear-canonical-L6-N256-infer",
+      "identity": {
+        "level": "operator",
+        "family": "bilinear",
+        "order": 6,
+        "parity": "canonical",
+        "size": 256,
+        "mode": "infer"
+      },
+      "elapsed_s": 2.8210811614990234,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "epsilon_max": 0.0
+    },
+    {
+      "key": "op-bilinear-canonical-L6-N256-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-bilinear-canonical-L6-N256-train",
+      "identity": {
+        "level": "operator",
+        "family": "bilinear",
+        "order": 6,
+        "parity": "canonical",
+        "size": 256,
+        "mode": "train"
+      },
+      "elapsed_s": 3.2184932231903076,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 3,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 3,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "epsilon_max": 0.0
+    },
+    {
+      "key": "op-bilinear-canonical-L6-N4096-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-bilinear-canonical-L6-N4096-infer",
+      "identity": {
+        "level": "operator",
+        "family": "bilinear",
+        "order": 6,
+        "parity": "canonical",
+        "size": 4096,
+        "mode": "infer"
+      },
+      "elapsed_s": 3.118659496307373,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "epsilon_max": 0.0
+    },
+    {
+      "key": "op-bilinear-canonical-L6-N4096-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-bilinear-canonical-L6-N4096-train",
+      "identity": {
+        "level": "operator",
+        "family": "bilinear",
+        "order": 6,
+        "parity": "canonical",
+        "size": 4096,
+        "mode": "train"
+      },
+      "elapsed_s": 4.0697925090789795,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 3,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 3,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "epsilon_max": 0.0
+    },
+    {
+      "key": "op-uvw-canonical-L7-N16-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-canonical-L7-N16-infer",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 7,
+        "parity": "canonical",
+        "size": 16,
+        "mode": "infer"
+      },
+      "elapsed_s": 3.2188737392425537,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 2.28706355187569e-07,
+        "max_ulp": 8192
+      },
+      "epsilon_max": 2.3819080752218724e-07
+    },
+    {
+      "key": "op-uvw-canonical-L7-N16-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-canonical-L7-N16-train",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 7,
+        "parity": "canonical",
+        "size": 16,
+        "mode": "train"
+      },
+      "elapsed_s": 4.520635366439819,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 8,
+        "max_R": 7.8884944798574e-08,
+        "max_ulp": 16384
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 8,
+        "max_R": 6.04797776304622e-07,
+        "max_ulp": 6291456
+      },
+      "epsilon_max": 6.906740281920065e-07
+    },
+    {
+      "key": "op-uvw-canonical-L7-N256-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-canonical-L7-N256-infer",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 7,
+        "parity": "canonical",
+        "size": 256,
+        "mode": "infer"
+      },
+      "elapsed_s": 3.3190996646881104,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 2.366473097481503e-07,
+        "max_ulp": 393216
+      },
+      "epsilon_max": 3.271462105658429e-07
+    },
+    {
+      "key": "op-uvw-canonical-L7-N256-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-canonical-L7-N256-train",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 7,
+        "parity": "canonical",
+        "size": 256,
+        "mode": "train"
+      },
+      "elapsed_s": 4.269982099533081,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 5.98202802848391e-07,
+        "max_ulp": 10234373
+      },
+      "epsilon_max": 9.929397037922172e-07
+    },
+    {
+      "key": "op-uvw-canonical-L7-N4096-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-canonical-L7-N4096-infer",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 7,
+        "parity": "canonical",
+        "size": 4096,
+        "mode": "infer"
+      },
+      "elapsed_s": 3.3690850734710693,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 2.361782236448562e-07,
+        "max_ulp": 3145728
+      },
+      "epsilon_max": 2.513602623821498e-07
+    },
+    {
+      "key": "op-uvw-canonical-L7-N4096-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-canonical-L7-N4096-train",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 7,
+        "parity": "canonical",
+        "size": 4096,
+        "mode": "train"
+      },
+      "elapsed_s": 4.470328092575073,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 1.6002660458980245e-06,
+        "max_ulp": 9240320
+      },
+      "epsilon_max": 3.840066256088903e-06
+    },
+    {
+      "key": "op-uvw-full-L7-N16-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-full-L7-N16-infer",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 7,
+        "parity": "full",
+        "size": 16,
+        "mode": "infer"
+      },
+      "elapsed_s": 4.620408058166504,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 2.664908720362291e-07,
+        "max_ulp": 52224
+      },
+      "epsilon_max": 3.8304037275338487e-07
+    },
+    {
+      "key": "op-uvw-full-L7-N16-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-full-L7-N16-train",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 7,
+        "parity": "full",
+        "size": 16,
+        "mode": "train"
+      },
+      "elapsed_s": 11.077930212020874,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 8,
+        "max_R": 1.4392153957487608e-07,
+        "max_ulp": 16384
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 8,
+        "max_R": 6.247018973226659e-07,
+        "max_ulp": 10485760
+      },
+      "epsilon_max": 8.227289072237909e-07
+    },
+    {
+      "key": "op-uvw-full-L7-N256-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-full-L7-N256-infer",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 7,
+        "parity": "full",
+        "size": 256,
+        "mode": "infer"
+      },
+      "elapsed_s": 4.72050929069519,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 2.695459784263221e-07,
+        "max_ulp": 692224
+      },
+      "epsilon_max": 3.343819230394729e-07
+    },
+    {
+      "key": "op-uvw-full-L7-N256-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-full-L7-N256-train",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 7,
+        "parity": "full",
+        "size": 256,
+        "mode": "train"
+      },
+      "elapsed_s": 7.57404088973999,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 6.15033854955982e-07,
+        "max_ulp": 26281586
+      },
+      "epsilon_max": 1.0500452845008112e-06
+    },
+    {
+      "key": "op-uvw-full-L7-N4096-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-full-L7-N4096-infer",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 7,
+        "parity": "full",
+        "size": 4096,
+        "mode": "infer"
+      },
+      "elapsed_s": 4.670542240142822,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 2.693778071716224e-07,
+        "max_ulp": 13631488
+      },
+      "epsilon_max": 3.9595425960214925e-07
+    },
+    {
+      "key": "op-uvw-full-L7-N4096-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-full-L7-N4096-train",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 7,
+        "parity": "full",
+        "size": 4096,
+        "mode": "train"
+      },
+      "elapsed_s": 10.277151346206665,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 1.6016856534406543e-06,
+        "max_ulp": 1745137326
+      },
+      "epsilon_max": 4.44026818513521e-06
+    },
+    {
+      "key": "op-bilinear-canonical-L7-N16-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-bilinear-canonical-L7-N16-infer",
+      "identity": {
+        "level": "operator",
+        "family": "bilinear",
+        "order": 7,
+        "parity": "canonical",
+        "size": 16,
+        "mode": "infer"
+      },
+      "elapsed_s": 2.86848521232605,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "epsilon_max": 0.0
+    },
+    {
+      "key": "op-bilinear-canonical-L7-N16-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-bilinear-canonical-L7-N16-train",
+      "identity": {
+        "level": "operator",
+        "family": "bilinear",
+        "order": 7,
+        "parity": "canonical",
+        "size": 16,
+        "mode": "train"
+      },
+      "elapsed_s": 3.2688605785369873,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 6,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 6,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "epsilon_max": 0.0
+    },
+    {
+      "key": "op-bilinear-canonical-L7-N256-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-bilinear-canonical-L7-N256-infer",
+      "identity": {
+        "level": "operator",
+        "family": "bilinear",
+        "order": 7,
+        "parity": "canonical",
+        "size": 256,
+        "mode": "infer"
+      },
+      "elapsed_s": 2.918503761291504,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "epsilon_max": 0.0
+    },
+    {
+      "key": "op-bilinear-canonical-L7-N256-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-bilinear-canonical-L7-N256-train",
+      "identity": {
+        "level": "operator",
+        "family": "bilinear",
+        "order": 7,
+        "parity": "canonical",
+        "size": 256,
+        "mode": "train"
+      },
+      "elapsed_s": 3.3200340270996094,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 3,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 3,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "epsilon_max": 0.0
+    },
+    {
+      "key": "op-bilinear-canonical-L7-N4096-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-bilinear-canonical-L7-N4096-infer",
+      "identity": {
+        "level": "operator",
+        "family": "bilinear",
+        "order": 7,
+        "parity": "canonical",
+        "size": 4096,
+        "mode": "infer"
+      },
+      "elapsed_s": 3.3189518451690674,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "epsilon_max": 0.0
+    },
+    {
+      "key": "op-bilinear-canonical-L7-N4096-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-bilinear-canonical-L7-N4096-train",
+      "identity": {
+        "level": "operator",
+        "family": "bilinear",
+        "order": 7,
+        "parity": "canonical",
+        "size": 4096,
+        "mode": "train"
+      },
+      "elapsed_s": 4.427825689315796,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 3,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 3,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "epsilon_max": 0.0
+    },
+    {
+      "key": "op-uvw-canonical-L8-N16-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-canonical-L8-N16-infer",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 8,
+        "parity": "canonical",
+        "size": 16,
+        "mode": "infer"
+      },
+      "elapsed_s": 3.2186496257781982,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 2.3353670997039444e-07,
+        "max_ulp": 15872
+      },
+      "epsilon_max": 2.3696387074778613e-07
+    },
+    {
+      "key": "op-uvw-canonical-L8-N16-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-canonical-L8-N16-train",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 8,
+        "parity": "canonical",
+        "size": 16,
+        "mode": "train"
+      },
+      "elapsed_s": 4.670408248901367,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 8,
+        "max_R": 8.292507658325121e-08,
+        "max_ulp": 9216
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 8,
+        "max_R": 6.009725552758027e-07,
+        "max_ulp": 5593232
+      },
+      "epsilon_max": 7.255897003233258e-07
+    },
+    {
+      "key": "op-uvw-canonical-L8-N256-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-canonical-L8-N256-infer",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 8,
+        "parity": "canonical",
+        "size": 256,
+        "mode": "infer"
+      },
+      "elapsed_s": 3.319154977798462,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 2.3913142399578646e-07,
+        "max_ulp": 1310720
+      },
+      "epsilon_max": 2.801877485580917e-07
+    },
+    {
+      "key": "op-uvw-canonical-L8-N256-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-canonical-L8-N256-train",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 8,
+        "parity": "canonical",
+        "size": 256,
+        "mode": "train"
+      },
+      "elapsed_s": 4.120380163192749,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 5.993077820676262e-07,
+        "max_ulp": 13631488
+      },
+      "epsilon_max": 1.1787792573159095e-06
+    },
+    {
+      "key": "op-uvw-canonical-L8-N4096-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-canonical-L8-N4096-infer",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 8,
+        "parity": "canonical",
+        "size": 4096,
+        "mode": "infer"
+      },
+      "elapsed_s": 3.5202438831329346,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 2.3966461526470084e-07,
+        "max_ulp": 8388608
+      },
+      "epsilon_max": 3.0120605742922635e-07
+    },
+    {
+      "key": "op-uvw-canonical-L8-N4096-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-canonical-L8-N4096-train",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 8,
+        "parity": "canonical",
+        "size": 4096,
+        "mode": "train"
+      },
+      "elapsed_s": 4.6714558601379395,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 1.603063651600678e-06,
+        "max_ulp": 1685234169
+      },
+      "epsilon_max": 3.69023564417148e-06
+    },
+    {
+      "key": "op-uvw-full-L8-N16-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-full-L8-N16-infer",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 8,
+        "parity": "full",
+        "size": 16,
+        "mode": "infer"
+      },
+      "elapsed_s": 5.070880174636841,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 2.698485843666276e-07,
+        "max_ulp": 262144
+      },
+      "epsilon_max": 2.8482168090704363e-07
+    },
+    {
+      "key": "op-uvw-full-L8-N16-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-full-L8-N16-train",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 8,
+        "parity": "full",
+        "size": 16,
+        "mode": "train"
+      },
+      "elapsed_s": 13.230670928955078,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 8,
+        "max_R": 1.530785880277108e-07,
+        "max_ulp": 147456
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 8,
+        "max_R": 6.20119806171715e-07,
+        "max_ulp": 807972537
+      },
+      "epsilon_max": 6.770399636479851e-07
+    },
+    {
+      "key": "op-uvw-full-L8-N256-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-full-L8-N256-infer",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 8,
+        "parity": "full",
+        "size": 256,
+        "mode": "infer"
+      },
+      "elapsed_s": 5.1209716796875,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 2.7644924216474465e-07,
+        "max_ulp": 655360
+      },
+      "epsilon_max": 3.8154672665768885e-07
+    },
+    {
+      "key": "op-uvw-full-L8-N256-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-full-L8-N256-train",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 8,
+        "parity": "full",
+        "size": 256,
+        "mode": "train"
+      },
+      "elapsed_s": 8.724993705749512,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 6.211628829078109e-07,
+        "max_ulp": 1664668079
+      },
+      "epsilon_max": 1.2374008520055213e-06
+    },
+    {
+      "key": "op-uvw-full-L8-N4096-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-full-L8-N4096-infer",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 8,
+        "parity": "full",
+        "size": 4096,
+        "mode": "infer"
+      },
+      "elapsed_s": 5.4213385581970215,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 2.7594444418355124e-07,
+        "max_ulp": 1835008
+      },
+      "epsilon_max": 4.07590988515949e-07
+    },
+    {
+      "key": "op-uvw-full-L8-N4096-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-uvw-full-L8-N4096-train",
+      "identity": {
+        "level": "operator",
+        "family": "uvw",
+        "order": 8,
+        "parity": "full",
+        "size": 4096,
+        "mode": "train"
+      },
+      "elapsed_s": 12.329262971878052,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 4,
+        "max_R": 1.6057826996984659e-06,
+        "max_ulp": 1755472579
+      },
+      "epsilon_max": 4.431541583471699e-06
+    },
+    {
+      "key": "op-bilinear-canonical-L8-N16-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-bilinear-canonical-L8-N16-infer",
+      "identity": {
+        "level": "operator",
+        "family": "bilinear",
+        "order": 8,
+        "parity": "canonical",
+        "size": 16,
+        "mode": "infer"
+      },
+      "elapsed_s": 2.768401861190796,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "epsilon_max": 0.0
+    },
+    {
+      "key": "op-bilinear-canonical-L8-N16-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-bilinear-canonical-L8-N16-train",
+      "identity": {
+        "level": "operator",
+        "family": "bilinear",
+        "order": 8,
+        "parity": "canonical",
+        "size": 16,
+        "mode": "train"
+      },
+      "elapsed_s": 3.3188977241516113,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 6,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 6,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "epsilon_max": 0.0
+    },
+    {
+      "key": "op-bilinear-canonical-L8-N256-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-bilinear-canonical-L8-N256-infer",
+      "identity": {
+        "level": "operator",
+        "family": "bilinear",
+        "order": 8,
+        "parity": "canonical",
+        "size": 256,
+        "mode": "infer"
+      },
+      "elapsed_s": 2.868438720703125,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "epsilon_max": 0.0
+    },
+    {
+      "key": "op-bilinear-canonical-L8-N256-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-bilinear-canonical-L8-N256-train",
+      "identity": {
+        "level": "operator",
+        "family": "bilinear",
+        "order": 8,
+        "parity": "canonical",
+        "size": 256,
+        "mode": "train"
+      },
+      "elapsed_s": 3.2688724994659424,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 3,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 3,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "epsilon_max": 0.0
+    },
+    {
+      "key": "op-bilinear-canonical-L8-N4096-infer",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-bilinear-canonical-L8-N4096-infer",
+      "identity": {
+        "level": "operator",
+        "family": "bilinear",
+        "order": 8,
+        "parity": "canonical",
+        "size": 4096,
+        "mode": "infer"
+      },
+      "elapsed_s": 3.469027519226074,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 1,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "epsilon_max": 0.0
+    },
+    {
+      "key": "op-bilinear-canonical-L8-N4096-train",
+      "folder": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-repair-a100-20261127-r1/gate-captures/120789/op-bilinear-canonical-L8-N4096-train",
+      "identity": {
+        "level": "operator",
+        "family": "bilinear",
+        "order": 8,
+        "parity": "canonical",
+        "size": 4096,
+        "mode": "train"
+      },
+      "elapsed_s": 5.020969390869141,
+      "status": "PASS",
+      "repeat": {
+        "passed": true,
+        "failures": {},
+        "roles": 3,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "comparison": {
+        "passed": true,
+        "failures": {},
+        "roles": 3,
+        "max_R": 0,
+        "max_ulp": 0
+      },
+      "epsilon_max": 0.0
+    },
+    {
+      "level": "network",
+      "order": 0,
+      "infer": "PASS",
+      "train": "PASS",
+      "comparisons": {
+        "ef-native-repeat": {
+          "passed": true,
+          "failures": {},
+          "roles": 3,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "ef-candidate": {
+          "passed": true,
+          "failures": {},
+          "roles": 3,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "joint-vjp-native-repeat": {
+          "passed": true,
+          "failures": {},
+          "roles": 299,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "joint-vjp-candidate": {
+          "passed": true,
+          "failures": {},
+          "roles": 299,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "step0-native-repeat": {
+          "passed": true,
+          "failures": {},
+          "roles": 2389,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "step0-candidate": {
+          "passed": true,
+          "failures": {},
+          "roles": 2389,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "step1-native-repeat": {
+          "passed": true,
+          "failures": {},
+          "roles": 2389,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "step1-candidate": {
+          "passed": true,
+          "failures": {},
+          "roles": 2389,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "step2-native-repeat": {
+          "passed": true,
+          "failures": {},
+          "roles": 2389,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "step2-candidate": {
+          "passed": true,
+          "failures": {},
+          "roles": 2389,
+          "max_R": 0,
+          "max_ulp": 0
+        }
+      },
+      "execution_status": {
+        "native": "CAPTURED",
+        "native-repeat": "CAPTURED",
+        "candidate": "CAPTURED"
+      }
+    },
+    {
+      "level": "network",
+      "order": 1,
+      "infer": "PASS",
+      "train": "PASS",
+      "comparisons": {
+        "ef-native-repeat": {
+          "passed": true,
+          "failures": {},
+          "roles": 3,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "ef-candidate": {
+          "passed": true,
+          "failures": {},
+          "roles": 3,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "joint-vjp-native-repeat": {
+          "passed": true,
+          "failures": {},
+          "roles": 285,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "joint-vjp-candidate": {
+          "passed": true,
+          "failures": {},
+          "roles": 285,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "step0-native-repeat": {
+          "passed": true,
+          "failures": {},
+          "roles": 2277,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "step0-candidate": {
+          "passed": true,
+          "failures": {},
+          "roles": 2277,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "step1-native-repeat": {
+          "passed": true,
+          "failures": {},
+          "roles": 2277,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "step1-candidate": {
+          "passed": true,
+          "failures": {},
+          "roles": 2277,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "step2-native-repeat": {
+          "passed": true,
+          "failures": {},
+          "roles": 2277,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "step2-candidate": {
+          "passed": true,
+          "failures": {},
+          "roles": 2277,
+          "max_R": 0,
+          "max_ulp": 0
+        }
+      },
+      "execution_status": {
+        "native": "CAPTURED",
+        "native-repeat": "CAPTURED",
+        "candidate": "CAPTURED"
+      }
+    },
+    {
+      "level": "network",
+      "order": 2,
+      "infer": "PASS",
+      "train": "PASS",
+      "comparisons": {
+        "ef-native-repeat": {
+          "passed": true,
+          "failures": {},
+          "roles": 3,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "ef-candidate": {
+          "passed": true,
+          "failures": {},
+          "roles": 3,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "joint-vjp-native-repeat": {
+          "passed": true,
+          "failures": {},
+          "roles": 299,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "joint-vjp-candidate": {
+          "passed": true,
+          "failures": {},
+          "roles": 299,
+          "max_R": 2.3164876949977042e-07,
+          "max_ulp": 147456
+        },
+        "step0-native-repeat": {
+          "passed": true,
+          "failures": {},
+          "roles": 2389,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "step0-candidate": {
+          "passed": true,
+          "failures": {},
+          "roles": 2389,
+          "max_R": 2.9769839215987304e-07,
+          "max_ulp": 362250
+        },
+        "step1-native-repeat": {
+          "passed": true,
+          "failures": {},
+          "roles": 2389,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "step1-candidate": {
+          "passed": true,
+          "failures": {},
+          "roles": 2389,
+          "max_R": 2.2303494517927902e-07,
+          "max_ulp": 262144
+        },
+        "step2-native-repeat": {
+          "passed": true,
+          "failures": {},
+          "roles": 2389,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "step2-candidate": {
+          "passed": true,
+          "failures": {},
+          "roles": 2389,
+          "max_R": 1.8534603896114277e-07,
+          "max_ulp": 106496
+        }
+      },
+      "execution_status": {
+        "native": "CAPTURED",
+        "native-repeat": "CAPTURED",
+        "candidate": "CAPTURED"
+      }
+    },
+    {
+      "level": "network",
+      "order": 3,
+      "infer": "PASS",
+      "train": "PASS",
+      "comparisons": {
+        "ef-native-repeat": {
+          "passed": true,
+          "failures": {},
+          "roles": 3,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "ef-candidate": {
+          "passed": true,
+          "failures": {},
+          "roles": 3,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "joint-vjp-native-repeat": {
+          "passed": true,
+          "failures": {},
+          "roles": 313,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "joint-vjp-candidate": {
+          "passed": true,
+          "failures": {},
+          "roles": 313,
+          "max_R": 2.0313152049311611e-07,
+          "max_ulp": 32768
+        },
+        "step0-native-repeat": {
+          "passed": true,
+          "failures": {},
+          "roles": 2501,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "step0-candidate": {
+          "passed": true,
+          "failures": {},
+          "roles": 2501,
+          "max_R": 2.619922838675848e-07,
+          "max_ulp": 213743
+        },
+        "step1-native-repeat": {
+          "passed": true,
+          "failures": {},
+          "roles": 2501,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "step1-candidate": {
+          "passed": true,
+          "failures": {},
+          "roles": 2501,
+          "max_R": 1.9180023969056492e-07,
+          "max_ulp": 917504
+        },
+        "step2-native-repeat": {
+          "passed": true,
+          "failures": {},
+          "roles": 2501,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "step2-candidate": {
+          "passed": true,
+          "failures": {},
+          "roles": 2501,
+          "max_R": 1.8467032703028963e-07,
+          "max_ulp": 294912
+        }
+      },
+      "execution_status": {
+        "native": "CAPTURED",
+        "native-repeat": "CAPTURED",
+        "candidate": "CAPTURED"
+      }
+    },
+    {
+      "level": "network",
+      "order": 4,
+      "infer": "PASS",
+      "train": "PASS",
+      "comparisons": {
+        "ef-native-repeat": {
+          "passed": true,
+          "failures": {},
+          "roles": 3,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "ef-candidate": {
+          "passed": true,
+          "failures": {},
+          "roles": 3,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "joint-vjp-native-repeat": {
+          "passed": true,
+          "failures": {},
+          "roles": 327,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "joint-vjp-candidate": {
+          "passed": true,
+          "failures": {},
+          "roles": 327,
+          "max_R": 1.9701614917266852e-07,
+          "max_ulp": 98304
+        },
+        "step0-native-repeat": {
+          "passed": true,
+          "failures": {},
+          "roles": 2613,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "step0-candidate": {
+          "passed": true,
+          "failures": {},
+          "roles": 2613,
+          "max_R": 2.2715737202361197e-07,
+          "max_ulp": 720860
+        },
+        "step1-native-repeat": {
+          "passed": true,
+          "failures": {},
+          "roles": 2613,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "step1-candidate": {
+          "passed": true,
+          "failures": {},
+          "roles": 2613,
+          "max_R": 2.2605141225540137e-07,
+          "max_ulp": 229729
+        },
+        "step2-native-repeat": {
+          "passed": true,
+          "failures": {},
+          "roles": 2613,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "step2-candidate": {
+          "passed": true,
+          "failures": {},
+          "roles": 2613,
+          "max_R": 2.2685924250254175e-07,
+          "max_ulp": 212992
+        }
+      },
+      "execution_status": {
+        "native": "CAPTURED",
+        "native-repeat": "CAPTURED",
+        "candidate": "CAPTURED"
+      }
+    },
+    {
+      "level": "network",
+      "order": 5,
+      "infer": "PASS",
+      "train": "PASS",
+      "comparisons": {
+        "ef-native-repeat": {
+          "passed": true,
+          "failures": {},
+          "roles": 3,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "ef-candidate": {
+          "passed": true,
+          "failures": {},
+          "roles": 3,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "joint-vjp-native-repeat": {
+          "passed": true,
+          "failures": {},
+          "roles": 341,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "joint-vjp-candidate": {
+          "passed": true,
+          "failures": {},
+          "roles": 341,
+          "max_R": 1.9062295564253873e-07,
+          "max_ulp": 20480
+        },
+        "step0-native-repeat": {
+          "passed": true,
+          "failures": {},
+          "roles": 2725,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "step0-candidate": {
+          "passed": true,
+          "failures": {},
+          "roles": 2725,
+          "max_R": 2.01933374910368e-07,
+          "max_ulp": 1179648
+        },
+        "step1-native-repeat": {
+          "passed": true,
+          "failures": {},
+          "roles": 2725,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "step1-candidate": {
+          "passed": true,
+          "failures": {},
+          "roles": 2725,
+          "max_R": 2.0159228597549372e-07,
+          "max_ulp": 1048576
+        },
+        "step2-native-repeat": {
+          "passed": true,
+          "failures": {},
+          "roles": 2725,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "step2-candidate": {
+          "passed": true,
+          "failures": {},
+          "roles": 2725,
+          "max_R": 2.0326281457982986e-07,
+          "max_ulp": 924154
+        }
+      },
+      "execution_status": {
+        "native": "CAPTURED",
+        "native-repeat": "CAPTURED",
+        "candidate": "CAPTURED"
+      }
+    },
+    {
+      "level": "network",
+      "order": 6,
+      "infer": "PASS",
+      "train": "PASS",
+      "comparisons": {
+        "ef-native-repeat": {
+          "passed": true,
+          "failures": {},
+          "roles": 3,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "ef-candidate": {
+          "passed": true,
+          "failures": {},
+          "roles": 3,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "joint-vjp-native-repeat": {
+          "passed": true,
+          "failures": {},
+          "roles": 355,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "joint-vjp-candidate": {
+          "passed": true,
+          "failures": {},
+          "roles": 355,
+          "max_R": 3.9332860524154967e-07,
+          "max_ulp": 650117120
+        },
+        "step0-native-repeat": {
+          "passed": true,
+          "failures": {},
+          "roles": 2837,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "step0-candidate": {
+          "passed": true,
+          "failures": {},
+          "roles": 2837,
+          "max_R": 4.888510716227756e-07,
+          "max_ulp": 1410334720
+        },
+        "step1-native-repeat": {
+          "passed": true,
+          "failures": {},
+          "roles": 2837,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "step1-candidate": {
+          "passed": true,
+          "failures": {},
+          "roles": 2837,
+          "max_R": 5.132561909704236e-06,
+          "max_ulp": 645922816
+        },
+        "step2-native-repeat": {
+          "passed": true,
+          "failures": {},
+          "roles": 2837,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "step2-candidate": {
+          "passed": true,
+          "failures": {},
+          "roles": 2837,
+          "max_R": 2.216056827819557e-06,
+          "max_ulp": 1726218240
+        }
+      },
+      "execution_status": {
+        "native": "CAPTURED",
+        "native-repeat": "CAPTURED",
+        "candidate": "CAPTURED"
+      }
+    },
+    {
+      "level": "network",
+      "order": 7,
+      "infer": "PASS",
+      "train": "NUMERIC_FAIL",
+      "comparisons": {
+        "ef-native-repeat": {
+          "passed": true,
+          "failures": {},
+          "roles": 3,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "ef-candidate": {
+          "passed": true,
+          "failures": {},
+          "roles": 3,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "joint-vjp-native-repeat": {
+          "passed": true,
+          "failures": {},
+          "roles": 369,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "joint-vjp-candidate": {
+          "passed": true,
+          "failures": {},
+          "roles": 369,
+          "max_R": 2.5127326352958335e-07,
+          "max_ulp": 1341128704
+        },
+        "step0-native-repeat": {
+          "passed": true,
+          "failures": {},
+          "roles": 2949,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "step0-candidate": {
+          "passed": true,
+          "failures": {},
+          "roles": 2949,
+          "max_R": 6.527783966703282e-07,
+          "max_ulp": 1429209088
+        },
+        "step1-native-repeat": {
+          "passed": true,
+          "failures": {},
+          "roles": 2949,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "step1-candidate": {
+          "passed": false,
+          "failures": {
+            "/training/updated/blocks.2.ffn.so3_linear_2.bias": {
+              "passed": false,
+              "component_fail_count": 0,
+              "max_abs": 6.327161017338767e-13,
+              "relative_l2": 1.0121822015207727e-05,
+              "statistics_dtype": "float32",
+              "value_dtype": "torch.float32",
+              "reference_norm": 6.251148931823991e-08,
+              "ulp": {
+                "elements": 128,
+                "max_ulp": 5699,
+                "equal_elements": 67,
+                "within_one_ulp_elements": 117,
+                "value_dtype": "float32"
+              }
+            },
+            "/training/ema/shadow_params/159": {
+              "passed": false,
+              "component_fail_count": 0,
+              "max_abs": 6.327403878625404e-16,
+              "relative_l2": 1.012221400742419e-05,
+              "statistics_dtype": "float32",
+              "value_dtype": "torch.float32",
+              "reference_norm": 6.251148904068415e-11,
+              "ulp": {
+                "elements": 128,
+                "max_ulp": 5836,
+                "equal_elements": 67,
+                "within_one_ulp_elements": 115,
+                "value_dtype": "float32"
+              }
+            }
+          },
+          "roles": 2949,
+          "max_R": 1.012221400742419e-05,
+          "max_ulp": 1375731712
+        },
+        "step2-native-repeat": {
+          "passed": true,
+          "failures": {},
+          "roles": 2949,
+          "max_R": 0,
+          "max_ulp": 0
+        },
+        "step2-candidate": {
+          "passed": true,
+          "failures": {},
+          "roles": 2949,
+          "max_R": 5.520670583791798e-06,
+          "max_ulp": 1613758464
+        }
+      },
+      "execution_status": {
+        "native": "CAPTURED",
+        "native-repeat": "CAPTURED",
+        "candidate": "CAPTURED"
+      }
+    },
+    {
+      "level": "network",
+      "order": 8,
+      "infer": "NOT_CAPTURED",
+      "train": "NOT_CAPTURED",
+      "comparisons": {},
+      "execution_status": {
+        "native": "ERROR",
+        "native-repeat": "ERROR",
+        "candidate": "ERROR"
+      }
+    }
+  ],
+  "job": "120792",
+  "original_thresholds": true,
+  "shared_true_loss_cotangents": false,
+  "restored_inside_three_steps": false
+}

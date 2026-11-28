@@ -1,0 +1,329 @@
+{
+  "status": "SEALED_WITH_INDEPENDENT_UNPACK_QA",
+  "candidate_commit": "8324b335244e2b382123a5e89183afa7194ed83b",
+  "operator_source_sha256": "8b2af4ac04906f2ed8ef8e6f040417b4aa93df84f6b897d02b7adea4b28ba585",
+  "package_sha256": "7cf759a5bc62cec6bdac1ba152e287032375dc3898081b035df4ff35083c9c25",
+  "job": "120279",
+  "snapshot": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-uvw-target-gemm-a100-20261126-r1/snapshots/delivery-120279",
+  "archive": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-uvw-target-gemm-a100-20261126-r1/snapshots/delivery-120279/SOURCE-AND-RECEIPTS.tar.gz",
+  "archive_sha256": "c7a86469da5a3f5cd0b133072c532b1bebd4126dc4a669a20d966dcebe63b63e",
+  "source_files": 2533,
+  "RAW_manifest": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-uvw-target-gemm-a100-20261126-r1/snapshots/delivery-120279/RAW-RESULT-MANIFEST.json",
+  "RAW_manifest_sha256": "96605137606060df63b78f603bc73302c60c7086ea655c959f091f9173be4d25",
+  "gates": {
+    "FULL-AUDIT": {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-uvw-target-gemm-a100-20261126-r1/results/full-audit-amd-120266",
+      "status": "FULL_QUALIFICATION_PASS",
+      "sha256": "e968121fadfc05ca4e37eb7755209ea45e275074484dcd9ef914a25c7790f804"
+    },
+    "RNG-AUDIT": {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-uvw-target-gemm-a100-20261126-r1/results/rng-audit-amd-120267",
+      "status": "RNG_PHASE_AND_CONTINUITY_PASS",
+      "sha256": "1e3270744bdcbed6c432850b278e1c4cd563410e1c5f2b06334f3680c73d7f12"
+    },
+    "PTX-AUDIT": {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-uvw-target-gemm-a100-20261126-r1/results/ptx-audit-amd-120267",
+      "status": "FP32_SM80_PTX_AUDIT_PASS",
+      "sha256": "caa445cdd6c8d497929bb451a3525e9fcf604c72ad6a9712a10ae1367b32ea38"
+    },
+    "GEMM-AUDIT": {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-uvw-target-gemm-a100-20261126-r1/results/gemm-audit-amd-120276",
+      "status": "QUALIFIED_GEMM_MEASUREMENT_AUDIT_PASS",
+      "sha256": "e6d837edb5746179f3515264d24f463021f5484399e27b16a6e245bc7fbbb2b6"
+    },
+    "PERFORMANCE-AUDIT": {
+      "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-uvw-target-gemm-a100-20261126-r1/results/performance-audit-amd-120274",
+      "status": "PERFORMANCE_AUDIT_PASS",
+      "sha256": "98a3cc5be6924a9ed57644562859453b90cfdd3e37e262ba9b35d3c2d4ec1ed8"
+    }
+  },
+  "accounting": {
+    "allocations": [
+      {
+        "job": "120158",
+        "name": "o2-target-mask-full",
+        "state": "COMPLETED",
+        "exit_code": "0:0",
+        "elapsed_s": 428,
+        "start": "2026-11-26T11:43:15",
+        "end": "2026-11-26T11:50:23",
+        "nodes": 1,
+        "gpus": 1,
+        "GPUh": 0.11888888888888889
+      },
+      {
+        "job": "120168",
+        "name": "o2-target-fma8-full",
+        "state": "COMPLETED",
+        "exit_code": "0:0",
+        "elapsed_s": 429,
+        "start": "2026-11-26T11:58:02",
+        "end": "2026-11-26T12:05:11",
+        "nodes": 1,
+        "gpus": 1,
+        "GPUh": 0.11916666666666667
+      },
+      {
+        "job": "120188",
+        "name": "o2-target-qualified-gemm",
+        "state": "COMPLETED",
+        "exit_code": "0:0",
+        "elapsed_s": 6,
+        "start": "2026-11-26T12:10:47",
+        "end": "2026-11-26T12:10:53",
+        "nodes": 1,
+        "gpus": 1,
+        "GPUh": 0.0016666666666666668
+      },
+      {
+        "job": "120247",
+        "name": "o2-target-shared-qual",
+        "state": "COMPLETED",
+        "exit_code": "0:0",
+        "elapsed_s": 428,
+        "start": "2026-11-26T12:39:52",
+        "end": "2026-11-26T12:47:00",
+        "nodes": 1,
+        "gpus": 1,
+        "GPUh": 0.11888888888888889
+      },
+      {
+        "job": "120253",
+        "name": "o2-target-sharedmicro",
+        "state": "COMPLETED",
+        "exit_code": "0:0",
+        "elapsed_s": 5,
+        "start": "2026-11-26T12:52:33",
+        "end": "2026-11-26T12:52:38",
+        "nodes": 1,
+        "gpus": 1,
+        "GPUh": 0.001388888888888889
+      },
+      {
+        "job": "120263",
+        "name": "o2-target-shared32-qual",
+        "state": "COMPLETED",
+        "exit_code": "0:0",
+        "elapsed_s": 441,
+        "start": "2026-11-26T12:55:58",
+        "end": "2026-11-26T13:03:19",
+        "nodes": 1,
+        "gpus": 1,
+        "GPUh": 0.1225
+      },
+      {
+        "job": "120270",
+        "name": "o2-target-shared32micro",
+        "state": "COMPLETED",
+        "exit_code": "0:0",
+        "elapsed_s": 6,
+        "start": "2026-11-26T13:08:52",
+        "end": "2026-11-26T13:08:58",
+        "nodes": 1,
+        "gpus": 1,
+        "GPUh": 0.0016666666666666668
+      },
+      {
+        "job": "120273",
+        "name": "o2-target-paired-performance",
+        "state": "COMPLETED",
+        "exit_code": "0:0",
+        "elapsed_s": 2251,
+        "start": "2026-11-26T13:09:03",
+        "end": "2026-11-26T13:46:34",
+        "nodes": 1,
+        "gpus": 1,
+        "GPUh": 0.6252777777777778
+      }
+    ],
+    "total_GPUh": 1.1094444444444445,
+    "actual_scheduler_intervals_serial": true,
+    "maximum_nodes": 1,
+    "gpus_per_allocation": 1,
+    "project_budget_GPUh": 500,
+    "GPU_count_evidence": "explicit --gres=gpu:1 and runtime single-device assertions; site SlurmDB omits GPU TRES",
+    "append_by_unique_job_ID": true,
+    "project_total_not_recomputed": true
+  },
+  "c05_preserved": {
+    "status": "SEALED_WITH_INDEPENDENT_UNPACK_QA",
+    "job": "120149",
+    "candidate_commit": "c05bc7bf6d17086445d6a81c4d29309fc3223540",
+    "operator_source_sha256": "355b26cae3721f6e16c6e2e8d1efd14aa1ff85ede566f2d1bcf76c02873bd944",
+    "snapshot": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-uvw-kgrad-rng-a100-20261126-r1/snapshots/delivery-120149",
+    "archive": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-uvw-kgrad-rng-a100-20261126-r1/snapshots/delivery-120149/SOURCE-AND-RECEIPTS.tar.gz",
+    "archive_sha256": "8fa3a19922f69c0d4eaaa3a724b73a8ae89a7ef925a5de08159a33c74a83ae6a",
+    "source_files": 1777,
+    "RAW_manifest": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-uvw-kgrad-rng-a100-20261126-r1/snapshots/delivery-120149/RAW-RESULT-MANIFEST.json",
+    "RAW_manifest_sha256": "ce96dde50a516b5911c29addb9ffcde879aa079868915f3e48329b77a2e5a03c",
+    "gates": {
+      "PROTOCOL-AUDIT.txt": {
+        "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-uvw-kgrad-rng-a100-20261126-r1/results/protocol-audit-amd-120049",
+        "receipt_sha256": "d2be79127de67cb303806bd4d935bddd2a02227017e8040156d7aff5ec14fd42",
+        "status": "PROTOCOL_ISOLATION_PASS"
+      },
+      "FULL-AUDIT.txt": {
+        "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-uvw-kgrad-rng-a100-20261126-r1/results/full-audit-amd-120093",
+        "receipt_sha256": "179202a65542e472aaa2935d7267f34ca63f1042af367e003ab7dcc826dfdd7d",
+        "status": "FULL_QUALIFICATION_PASS"
+      },
+      "RNG-AUDIT.txt": {
+        "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-uvw-kgrad-rng-a100-20261126-r1/results/rng-audit-amd-120138",
+        "receipt_sha256": "c8fd9ffcae58305cb72602799784e387a5586b772ac0d20fa62505ab022515ca",
+        "status": "RNG_PHASE_AND_CONTINUITY_PASS"
+      },
+      "PTX-AUDIT.txt": {
+        "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-uvw-kgrad-rng-a100-20261126-r1/results/ptx-audit-amd-120092",
+        "receipt_sha256": "631762ff2cf16ca5ed0a2435b5486e2e48e086c7b2dbde22121969aa0f64b117",
+        "status": "FP32_SM80_PTX_AUDIT_PASS"
+      },
+      "PERFORMANCE-AUDIT.txt": {
+        "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-uvw-kgrad-rng-a100-20261126-r1/results/performance-audit-amd-120100",
+        "receipt_sha256": "845a962224d20cb8b633cfcbaab9862cff15f2325a43b5ce0f0f2fed885b42c0",
+        "status": "PERFORMANCE_AUDIT_PASS"
+      }
+    },
+    "accounting": {
+      "allocations": [
+        {
+          "job": "120046",
+          "name": "o2-kgrad-rng-protocol",
+          "state": "COMPLETED",
+          "exit_code": "0:0",
+          "elapsed_s": 206,
+          "start": "2026-11-26T10:16:05",
+          "end": "2026-11-26T10:19:31",
+          "nodes": 1,
+          "gpus": 1,
+          "GPUh": 0.05722222222222222
+        },
+        {
+          "job": "120048",
+          "name": "o2-kgrad-layout-local",
+          "state": "COMPLETED",
+          "exit_code": "0:0",
+          "elapsed_s": 10,
+          "start": "2026-11-26T10:19:31",
+          "end": "2026-11-26T10:19:41",
+          "nodes": 1,
+          "gpus": 1,
+          "GPUh": 0.002777777777777778
+        },
+        {
+          "job": "120056",
+          "name": "o2-kgrad-native-tree",
+          "state": "COMPLETED",
+          "exit_code": "0:0",
+          "elapsed_s": 51,
+          "start": "2026-11-26T10:21:46",
+          "end": "2026-11-26T10:22:37",
+          "nodes": 1,
+          "gpus": 1,
+          "GPUh": 0.014166666666666666
+        },
+        {
+          "job": "120063",
+          "name": "o2-kgrad-split-local",
+          "state": "COMPLETED",
+          "exit_code": "0:0",
+          "elapsed_s": 10,
+          "start": "2026-11-26T10:28:59",
+          "end": "2026-11-26T10:29:09",
+          "nodes": 1,
+          "gpus": 1,
+          "GPUh": 0.002777777777777778
+        },
+        {
+          "job": "120068",
+          "name": "o2-kgrad-full",
+          "state": "FAILED",
+          "exit_code": "1:0",
+          "elapsed_s": 4,
+          "start": "2026-11-26T10:33:42",
+          "end": "2026-11-26T10:33:46",
+          "nodes": 1,
+          "gpus": 1,
+          "GPUh": 0.0011111111111111111
+        },
+        {
+          "job": "120070",
+          "name": "o2-kgrad-full",
+          "state": "FAILED",
+          "exit_code": "1:0",
+          "elapsed_s": 105,
+          "start": "2026-11-26T10:34:01",
+          "end": "2026-11-26T10:35:46",
+          "nodes": 1,
+          "gpus": 1,
+          "GPUh": 0.029166666666666667
+        },
+        {
+          "job": "120073",
+          "name": "o2-kgrad-whole",
+          "state": "COMPLETED",
+          "exit_code": "0:0",
+          "elapsed_s": 351,
+          "start": "2026-11-26T10:36:11",
+          "end": "2026-11-26T10:42:02",
+          "nodes": 1,
+          "gpus": 1,
+          "GPUh": 0.0975
+        },
+        {
+          "job": "120088",
+          "name": "o2-kgrad-recursive-local",
+          "state": "COMPLETED",
+          "exit_code": "0:0",
+          "elapsed_s": 8,
+          "start": "2026-11-26T10:42:03",
+          "end": "2026-11-26T10:42:11",
+          "nodes": 1,
+          "gpus": 1,
+          "GPUh": 0.0022222222222222222
+        },
+        {
+          "job": "120091",
+          "name": "o2-kgrad-v3c-full",
+          "state": "COMPLETED",
+          "exit_code": "0:0",
+          "elapsed_s": 425,
+          "start": "2026-11-26T10:44:35",
+          "end": "2026-11-26T10:51:40",
+          "nodes": 1,
+          "gpus": 1,
+          "GPUh": 0.11805555555555555
+        },
+        {
+          "job": "120099",
+          "name": "o2-kgrad-performance",
+          "state": "COMPLETED",
+          "exit_code": "0:0",
+          "elapsed_s": 1452,
+          "start": "2026-11-26T10:57:35",
+          "end": "2026-11-26T11:21:47",
+          "nodes": 1,
+          "gpus": 1,
+          "GPUh": 0.4033333333333333
+        }
+      ],
+      "total_GPUh": 0.7283333333333333,
+      "maximum_nodes": 1,
+      "gpus_per_allocation": 1,
+      "includes_failed_startups": true,
+      "actual_scheduler_intervals_serial": true,
+      "GPU_count_evidence": "each submitted with --gres=gpu:1; network startup asserts one visible CUDA device; local code uses only current CUDA device; site SlurmDB does not record GPU in ReqTRES/AllocTRES",
+      "scheduler_TRES_record": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-uvw-kgrad-rng-a100-20261126-r1/SCHEDULER-GRES-RECORD.txt",
+      "project_budget_GPUh": 500,
+      "project_total_not_recomputed": true,
+      "append_by_unique_job_ID": true,
+      "prior_ledger": "runs/o2-hp-approved-20261123-r1/provenance/BUDGET-AUDIT.json"
+    },
+    "old_202_FAIL_preserved": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-uvw-fp32-repair-a100-20261126-r1/results/verify-audit-amd-119415",
+    "new_original_independent_three_steps": "PASS",
+    "shared_cotangents": false,
+    "pushed": false
+  },
+  "historical_FAIL_unchanged": true,
+  "shared_cotangents": false,
+  "pushed": false
+}

@@ -1,0 +1,2 @@
+# Preserve original control/receipt bytes in staged snapshots.
+*-v7*/** -text -whitespace

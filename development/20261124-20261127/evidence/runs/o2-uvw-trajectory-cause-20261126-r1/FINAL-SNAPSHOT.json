@@ -1,0 +1,29 @@
+{
+  "status": "DIAGNOSIS_SEALED_WITH_INDEPENDENT_UNPACK_QA",
+  "job": "120040",
+  "source_files_verified": 106,
+  "raw_files_rehashed": 98,
+  "archive": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-uvw-trajectory-cause-20261126-r1/snapshots/delivery-120040/SOURCE-AND-RECEIPTS.tar.gz",
+  "archive_sha256": "1cdbc4bba3815926a56c16493eac41870f2574f832f7510c8900f948e43fd0c2",
+  "snapshot": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-uvw-trajectory-cause-20261126-r1/snapshots/delivery-120040",
+  "raw_manifest": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-uvw-trajectory-cause-20261126-r1/snapshots/delivery-120040/RAW-MANIFEST.json",
+  "raw_manifest_sha256": "6e1a5e2b7e984ce50fa6cfe0d69ce2a9677d506b82c58229d77313a83ac3de27",
+  "candidate_commit_unchanged": "a80f0dc9c8ed71ddd513ba12a579733ed1580429",
+  "candidate_source_sha256": "69bbd465591d77c7ce23697dad7fdecac5a4da24013168dc8fc224334ab5eba0",
+  "diagnosis": "28 K FP32 gradient differences seed independent update divergence; native state-only recovers201; one boundary sum; original phase RNG now matched",
+  "trajectory_status": "202 FAIL retained; repair plan only",
+  "gpu_accounting": {
+    "job": "120028",
+    "nodes": 1,
+    "gpus": 1,
+    "elapsed_s": 274,
+    "gpu_h": 0.07611111111111112,
+    "method": "actual Slurm ElapsedRaw x one requested/visible GPU; all cases serial",
+    "CPU_receipts": "ACCOUNTING.tsv",
+    "project_cap_gpu_h": 500,
+    "project_total_not_recomputed": true,
+    "previous_run_gpu_h": 0.9208333333333334,
+    "append_once_by_job_id": true
+  },
+  "archive_scope": "source and receipts; raw tensors external and fully hashed"
+}

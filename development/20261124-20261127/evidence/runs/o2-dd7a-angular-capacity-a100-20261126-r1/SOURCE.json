@@ -1,0 +1,31 @@
+{
+  "path": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-dd7a-angular-capacity-a100-20261126-r1/snapshots/preparation-120410/src",
+  "package_sha256": "8bdd9db9203ac8cebe28e1fb8848b177dacdea2f345de5d7b1accab80c06dd67",
+  "files": {
+    "inventory.py": "36000413573b848012444bed3be0b250e65e1c57448291123233e9eb41bc462b",
+    "CONTRACT.zh-CN.md": "09c6f0c1cb2766ed8caed9298f7535a3e8b70e8a7e4cf95c7743844db2c841a2",
+    "src/ictc_o2_hp/api.py": "d87ae0f2c5bda30286277ec1beb139ff834fa8eb7e7f8592b44582d3837da002",
+    "src/ictc_o2_hp/__init__.py": "746bf6fad21f2bce56686144be22699131fade36fae4b5b3a07722c9ef4cb9d6",
+    "src/ictc_o2_hp/fast_o2.py": "978c334379575fdd64a318c4b037dbf977b78678c667ab28d4f000cbf3f8ab31",
+    "src/ictc_o2_hp/native_o2.py": "127b963665494e8ef575abe0d628efc33796c29e327f6b2ab36db28f4b93535c",
+    "src/ictc_o2_hp/o2_math.py": "8245c7ec426280d3ddf7039014f85b2d9a686147294677b0b6174737b5431dd2",
+    "src/ictc_o2_hp/radial_streamed.py": "d1e98d9fb653fd35effa9241d3698b7ef62aaa0955204e915405845fab197778",
+    "src/ictc_o2_hp/radial_uvu.py": "fc399b66c1c2823790b502d7f4ae17ab88d7c92362d1e0d3e73b60560d23b77b",
+    "src/ictc_o2_hp/reference.py": "48adf9e974036fd7c0fcf19f5658bae0bfc40f55a97ad51ab267e5e6f9db99f7",
+    "src/ictc_o2_hp/runtime_weight.py": "27264226eedf441a61ebfed8e669d7254f6f083a12ee3e443eaa6382552a1409",
+    "src/ictc_o2_hp/triton_o2.py": "faf3f946005caf2354c67672835e2860bfafc0264ae1bdb70abce2fcb7266435",
+    "src/ictc_o2_hp/uvu_fused.py": "124d1bf5b2aa31d41e3a5cd02e4e7e2317980424fefd7419ab2513b270f16cb8",
+    "src/ictc_o2_hp/uvu_o2.py": "ae7d36d64a0a5c3d750889e09e9e07be7f9d78002a905c373bccf9387517a9be",
+    "src/ictc_o2_hp/uvu_single.py": "fb4ba729ff7dd4a67e50d4e7f482ab59b45841773ed538108da1a55ba9091165",
+    "src/ictc_o2_hp/uvu_triton.py": "17d35ecf415c32dfe0b031fef323771636aec22e3b95efbe200226950b2704d9",
+    "src/ictc_o2_hp/uvw_o2.py": "873aed80ef52c432f538a78791741dec4d285ecdad9a57a22cde90133e606a63",
+    "src/ictc_o2_hp/weight_fma8_cuda.py": "7917b1619dab302c895a13f2885e187d0188fe84911ad4892a9b16620dc988b1",
+    "src/ictc_o2_hp/uvw_triton.py": "8b2af4ac04906f2ed8ef8e6f040417b4aa93df84f6b897d02b7adea4b28ba585",
+    "src/ictc_o2_hp/bilinear_triton.py": "4274d73a1aa7a98aca12fb2b2ac528da43b03d1d46699efab80143b96c74a2ea",
+    "src/ictc_o2_hp/bilinear_plans.json": "6b184be4e955ab388f54aa3e5eac97ff9023d7db8a540d7aae534975af7eef15",
+    "src/ictc_o2_hp/kernels/weight_fma8.cu": "9cf6f53244307d88b4308c6ebbb6e3c77e138a77d8a8ef73b589194754008ebe",
+    "src/ictc_o2_hp/kernels/weight_fma8_sm80.cubin": "1b32b4e227d96432269bf53295c010fa71adcd73035589b922316cb30b5bc3db",
+    "src/ictc_o2_hp/kernels/weight_fma8_sm80.ptx": "5a34493f61adf63683a13ee4ca60b7519f9da4038f2e4a99e8f1ec7cdd3de9b2",
+    "src/ictc_o2_hp/kernels/weight_fma8_sm80.json": "0253bb8e313c1c99e686d7271927122360deda58f0d0add7ef1522ab9a833aeb"
+  }
+}

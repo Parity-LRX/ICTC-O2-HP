@@ -1,0 +1,8 @@
+{
+  "allocations": [],
+  "total_GPUh": 0,
+  "one_GPU_per_allocation": true,
+  "project_budget_GPUh": 500,
+  "prior_ledger": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-bounded-bilinear-a100-20261126-r1/GPU-ACCOUNTING.json",
+  "sacct_error": "sacct: error: slurm_persist_conn_open_without_init: failed to open persistent connection to host:localhost:6819: Connection refused\nsacct: error: Sending PersistInit msg: Connection refused\nsacct: error: Problem talking to the database: Connection refused\n"
+}

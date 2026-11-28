@@ -1,0 +1,13 @@
+{
+  "job": "120028",
+  "nodes": 1,
+  "gpus": 1,
+  "elapsed_s": 274,
+  "gpu_h": 0.07611111111111112,
+  "method": "actual Slurm ElapsedRaw x one requested/visible GPU; all cases serial",
+  "CPU_receipts": "ACCOUNTING.tsv",
+  "project_cap_gpu_h": 500,
+  "project_total_not_recomputed": true,
+  "previous_run_gpu_h": 0.9208333333333334,
+  "append_once_by_job_id": true
+}

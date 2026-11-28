@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "snapshot": "/public/home/sps-xia/bjxiao/o2-benchmark/ICTC-O2-HP/development/20261127-stability/stability-v7d",
+  "manifest_sha256": "b3010cae99c9614c331700950ac4560a148f5d449c39c35cedee497b474898e5",
+  "counts": {
+    "files": 53,
+    "python": 30,
+    "json": 16
+  },
+  "staged_blob_bytes_identical": true,
+  "original_receipts_unchanged": true,
+  "CPU_AMD_job": "120948",
+  "index_tree": "41c96e034c3f2292fae867b189a7ffa7f99e1868",
+  "index_archive_sha256": "7d21b0fd5ecd05ffb121e89a3ab6b8c74a8ad8ee3d08d9734ed7f9a93269f4f1"
+}

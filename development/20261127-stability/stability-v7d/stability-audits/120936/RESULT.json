@@ -1,0 +1,1471 @@
+{
+  "order": 6,
+  "manifest": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-captures/120889/L6-MANIFEST.json",
+  "summaries": [
+    {
+      "label": "initial-state-native-repeat",
+      "roles": 1374,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/initial-state-native-repeat.json",
+      "sha256": "2c0018dc9201c3a42deaca32e6c00461974983cd2bcfcf487b96c5b17abc887e"
+    },
+    {
+      "label": "initial-state-candidate",
+      "roles": 1374,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/initial-state-candidate.json",
+      "sha256": "2c0018dc9201c3a42deaca32e6c00461974983cd2bcfcf487b96c5b17abc887e"
+    },
+    {
+      "label": "train-step0-native-repeat",
+      "roles": 2483,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/train-step0-native-repeat.json",
+      "sha256": "40459669830270e39c8534fdac81588f097f5ed7db60caafd2c2bcbd03bdb513"
+    },
+    {
+      "label": "train-step0-candidate",
+      "roles": 2483,
+      "failures": {},
+      "max_relative_l2": 4.098219221759791e-07,
+      "max_ULP": 696254464,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/train-step0-candidate.json",
+      "sha256": "c9881b97c289536bae39a2221fd60625ca8ca187a37c5efffc5ff2a7dd5b7b51"
+    },
+    {
+      "label": "train-step1-native-repeat",
+      "roles": 2483,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/train-step1-native-repeat.json",
+      "sha256": "373b3d20d6c9c517d844348bcc3d0c72a2af85fe29e2c1c77e189478c482f461"
+    },
+    {
+      "label": "train-step1-candidate",
+      "roles": 2483,
+      "failures": {},
+      "max_relative_l2": 5.2261134442233015e-06,
+      "max_ULP": 1428160512,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/train-step1-candidate.json",
+      "sha256": "ad3b1d71d8a3cf722e15eef45e2bae1ee6cb484d0c65493a00720023f5d40b72"
+    },
+    {
+      "label": "train-step2-native-repeat",
+      "roles": 2483,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/train-step2-native-repeat.json",
+      "sha256": "f916138f66bd0edd4596a3aba14e7991e09f259319c9a52b9007ba5b5a7cb94f"
+    },
+    {
+      "label": "train-step2-candidate",
+      "roles": 2483,
+      "failures": {},
+      "max_relative_l2": 9.0345256467117e-06,
+      "max_ULP": 1596981248,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/train-step2-candidate.json",
+      "sha256": "76073e7e8afae8efdd4317bfb830768262c4949a36733e4369ec9ebc174f9209"
+    },
+    {
+      "label": "train-step3-native-repeat",
+      "roles": 2483,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/train-step3-native-repeat.json",
+      "sha256": "3b5aee9117ed968083a0e26577ae8ae1e04a0540974e95a4a7c1b25419b0ec6a"
+    },
+    {
+      "label": "train-step3-candidate",
+      "roles": 2483,
+      "failures": {},
+      "max_relative_l2": 7.782297871017363e-06,
+      "max_ULP": 1820327936,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/train-step3-candidate.json",
+      "sha256": "f0b7bf1e48932c655e46dc47cdc2fb4d398acd68b018c72ead2cc9527e3e941d"
+    },
+    {
+      "label": "train-step4-native-repeat",
+      "roles": 2483,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/train-step4-native-repeat.json",
+      "sha256": "3d7607550fb3dc0fe066869098eab6daed358544c6ec26ab79daaec216fa22b3"
+    },
+    {
+      "label": "train-step4-candidate",
+      "roles": 2483,
+      "failures": {},
+      "max_relative_l2": 6.8743097472179215e-06,
+      "max_ULP": 1530396672,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/train-step4-candidate.json",
+      "sha256": "a07b74c21464be3eb778ae58c26f90824bdbcea2d4bc921472ea386690415152"
+    },
+    {
+      "label": "train-step5-native-repeat",
+      "roles": 2483,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/train-step5-native-repeat.json",
+      "sha256": "edfc87824ba45cc7e72a322580d0ca2cbd9a3f88e4b7b929d0dea7c251f6d791"
+    },
+    {
+      "label": "train-step5-candidate",
+      "roles": 2483,
+      "failures": {},
+      "max_relative_l2": 5.875028818991268e-06,
+      "max_ULP": 1501560832,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/train-step5-candidate.json",
+      "sha256": "ced12f2439fb7965cd987107cf9134e594b1495811a8f0390a362bdac8e096cb"
+    },
+    {
+      "label": "train-step6-native-repeat",
+      "roles": 2483,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/train-step6-native-repeat.json",
+      "sha256": "74c2086e71b579c71c864cc54fc20aa1deec8a1fee54b8d162dcb07de2670729"
+    },
+    {
+      "label": "train-step6-candidate",
+      "roles": 2483,
+      "failures": {},
+      "max_relative_l2": 4.981472102372209e-06,
+      "max_ULP": 1992294400,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/train-step6-candidate.json",
+      "sha256": "7a04cca57bd1dc56a54467310fa51fe4d43c4631e600fd652430e70d309d887f"
+    },
+    {
+      "label": "train-step7-native-repeat",
+      "roles": 2483,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/train-step7-native-repeat.json",
+      "sha256": "fdc715075eb3dea03ec7871ee1fa432c06368c4eb2f1e301e0c6566e11d584f4"
+    },
+    {
+      "label": "train-step7-candidate",
+      "roles": 2483,
+      "failures": {},
+      "max_relative_l2": 4.254852228768868e-06,
+      "max_ULP": 1648361472,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/train-step7-candidate.json",
+      "sha256": "ad89cffcbb1440c1fac5b74c23c6b5c2e409f61af44c2fc0895196950b1f2f7a"
+    },
+    {
+      "label": "train-step8-native-repeat",
+      "roles": 2483,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/train-step8-native-repeat.json",
+      "sha256": "9e0096ae0bafa28c25b7d8946c57b346a5ac3c30ec4fed6252c4e09ac514bf38"
+    },
+    {
+      "label": "train-step8-candidate",
+      "roles": 2483,
+      "failures": {},
+      "max_relative_l2": 3.6661397189163836e-06,
+      "max_ULP": 1621098496,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/train-step8-candidate.json",
+      "sha256": "7b65b5791a9a5bb3ed9b0413d3152afdab4ba155ae45489bb695ea13b131db64"
+    },
+    {
+      "label": "train-step9-native-repeat",
+      "roles": 2483,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/train-step9-native-repeat.json",
+      "sha256": "86d3ebde78127f9599e97dc2b6ed1e696dfbe47b1b3fa7863f0b7e0aca3ff45f"
+    },
+    {
+      "label": "train-step9-candidate",
+      "roles": 2483,
+      "failures": {},
+      "max_relative_l2": 3.193072188878432e-06,
+      "max_ULP": 1895825408,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/train-step9-candidate.json",
+      "sha256": "0ebc0cc768622efd031719498bfc5517f1c99cb7eea21baa24debdb8e039a46e"
+    },
+    {
+      "label": "train-step10-native-repeat",
+      "roles": 2483,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/train-step10-native-repeat.json",
+      "sha256": "371ea47f278c4ee5a82f1968245ea86971bc430e3252550fe7706e3fc6f9922b"
+    },
+    {
+      "label": "train-step10-candidate",
+      "roles": 2483,
+      "failures": {},
+      "max_relative_l2": 2.821267344188527e-06,
+      "max_ULP": 1482555392,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/train-step10-candidate.json",
+      "sha256": "1f8fb97b40f20a8c9581e3fe0fdfa868904b493f441495d624398abc9ee1d463"
+    },
+    {
+      "label": "train-step11-native-repeat",
+      "roles": 2483,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/train-step11-native-repeat.json",
+      "sha256": "b7e60cb9004cf37af042cc7c846fbe2f6648f236942dbf0457675fa300613e95"
+    },
+    {
+      "label": "train-step11-candidate",
+      "roles": 2483,
+      "failures": {},
+      "max_relative_l2": 2.5183405796269653e-06,
+      "max_ULP": 1577058304,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/train-step11-candidate.json",
+      "sha256": "bc2f57b5c5fd70507b0cca63a47db932363ce040b0a724ddf8f3ef57b9a6093d"
+    },
+    {
+      "label": "train-step12-native-repeat",
+      "roles": 2483,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/train-step12-native-repeat.json",
+      "sha256": "332a08a4fdb9f1746174089a527f9b1be9f37bee2320f2e0cd926e5ec128d81a"
+    },
+    {
+      "label": "train-step12-candidate",
+      "roles": 2483,
+      "failures": {},
+      "max_relative_l2": 2.5973333777074004e-06,
+      "max_ULP": 1558183936,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/train-step12-candidate.json",
+      "sha256": "ef83fb5f450677c88f9887eb8a5cdc41d8d89b87aca34eb3e25933b0c72b5b8e"
+    },
+    {
+      "label": "train-step13-native-repeat",
+      "roles": 2483,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/train-step13-native-repeat.json",
+      "sha256": "0933c04f82dd84bac71e56ca58a217df903244b51ae7daee76b673cac65362d7"
+    },
+    {
+      "label": "train-step13-candidate",
+      "roles": 2483,
+      "failures": {},
+      "max_relative_l2": 2.6270115540683037e-06,
+      "max_ULP": 1346690295,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/train-step13-candidate.json",
+      "sha256": "5d56843b0a47981448561714e4a9465fb5637270cd9e16f72f921b77a633395a"
+    },
+    {
+      "label": "train-step14-native-repeat",
+      "roles": 2483,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/train-step14-native-repeat.json",
+      "sha256": "a9a4e14163a02a58355ee7d35f95dd24e0cc9cecebdd886f5a83a7b414fa322b"
+    },
+    {
+      "label": "train-step14-candidate",
+      "roles": 2483,
+      "failures": {},
+      "max_relative_l2": 2.6618906758812955e-06,
+      "max_ULP": 2722103296,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/train-step14-candidate.json",
+      "sha256": "7edaf90e053bc0e1c5b14dd3ebda4ce9f02870308bf52a27d4f91928a92c165c"
+    },
+    {
+      "label": "train-step15-native-repeat",
+      "roles": 2483,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/train-step15-native-repeat.json",
+      "sha256": "7468296f7eb3438171e6d0814f362c14e30c3a8040a73bff779db45f9554ba50"
+    },
+    {
+      "label": "train-step15-candidate",
+      "roles": 2483,
+      "failures": {},
+      "max_relative_l2": 2.5898277726810193e-06,
+      "max_ULP": 1632940032,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/train-step15-candidate.json",
+      "sha256": "e70bc691cdbda1f210b8056aab3d08d21f1d50873de54216f25d2aa18d813786"
+    },
+    {
+      "label": "train-step16-native-repeat",
+      "roles": 2483,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/train-step16-native-repeat.json",
+      "sha256": "c751595ecc0df91b8d44f3f31b281873f3abab40c4e252862e76962ae1597512"
+    },
+    {
+      "label": "train-step16-candidate",
+      "roles": 2483,
+      "failures": {},
+      "max_relative_l2": 2.46469448939024e-06,
+      "max_ULP": 2445279232,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/train-step16-candidate.json",
+      "sha256": "9afd32f4706aae15f7ffe7727e5b8aeb93fc3d540e0a2a5f077a51f19b117112"
+    },
+    {
+      "label": "train-step17-native-repeat",
+      "roles": 2483,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/train-step17-native-repeat.json",
+      "sha256": "c8d8975f5e2a75d9a6b4885c519a7aa4a4776f2e18bb485bdef255a703d71873"
+    },
+    {
+      "label": "train-step17-candidate",
+      "roles": 2483,
+      "failures": {},
+      "max_relative_l2": 2.327399215573678e-06,
+      "max_ULP": 1536688128,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/train-step17-candidate.json",
+      "sha256": "5df8ee3484732ec582d0136760088d89be9605f5eb5c2df437a3be83d4a4c286"
+    },
+    {
+      "label": "train-step18-native-repeat",
+      "roles": 2483,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/train-step18-native-repeat.json",
+      "sha256": "94392186e35a7a9114d0d5e3f4ab97535dd9f60c42b8ea3a0ef755171f640488"
+    },
+    {
+      "label": "train-step18-candidate",
+      "roles": 2483,
+      "failures": {},
+      "max_relative_l2": 2.2908450318936957e-06,
+      "max_ULP": 1528430592,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/train-step18-candidate.json",
+      "sha256": "9d99e11ba54e621fecacd062e9b7150415b16557ff22754134e6e688b813caeb"
+    },
+    {
+      "label": "train-step19-native-repeat",
+      "roles": 2483,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/train-step19-native-repeat.json",
+      "sha256": "54761724bfbe5839c1417e391224cbc18d137756d2f0e3d99e262e79cfdb17aa"
+    },
+    {
+      "label": "train-step19-candidate",
+      "roles": 2483,
+      "failures": {},
+      "max_relative_l2": 2.2581493794859853e-06,
+      "max_ULP": 1654652928,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/train-step19-candidate.json",
+      "sha256": "ad595d69a7de2a960f55de614e82925099d76daf0ec43c61b1c4b57256ad0c59"
+    },
+    {
+      "label": "infer-R0-call0-native-repeat",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R0-call0-native-repeat.json",
+      "sha256": "b8df7d1cc1ad0bc7d4969d608179a18a910c4d9e9fecab8aa5fd88c97cc3f6ea"
+    },
+    {
+      "label": "infer-R0-call0-candidate",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 2.913624484790489e-06,
+      "max_ULP": 53455523,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R0-call0-candidate.json",
+      "sha256": "0078268ac562a75ecd77e2cf8c3f2717607c4575e831319b3ee07ac9540a0f58"
+    },
+    {
+      "label": "infer-R0-call1-native-repeat",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R0-call1-native-repeat.json",
+      "sha256": "af15e1325e17d99d8bde4358ebda6689236eed1b6938fd0424cbff1beabe6751"
+    },
+    {
+      "label": "infer-R0-call1-candidate",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 1.2439785450624186e-06,
+      "max_ULP": 24342823,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R0-call1-candidate.json",
+      "sha256": "622fccce4b3e2c0a409aea7975d4344faff2c98c46728d1353679d5e92d8e0f8"
+    },
+    {
+      "label": "infer-R0-call2-native-repeat",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R0-call2-native-repeat.json",
+      "sha256": "1deea5b4a1578c262fbc32c62c954c577ea330ee9c7c6d12611472c6a2bfd050"
+    },
+    {
+      "label": "infer-R0-call2-candidate",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 1.4396233609659248e-06,
+      "max_ULP": 28948222,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R0-call2-candidate.json",
+      "sha256": "ce64a97be9c95f95c05112c63d4d2fcdaffe879107c534cef8ca27deade52fe4"
+    },
+    {
+      "label": "infer-R0-call3-native-repeat",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R0-call3-native-repeat.json",
+      "sha256": "123862dce9f1bb6ffaf6d381e1db6bfd65c33725ec1a61cb985bbcecd6649bed"
+    },
+    {
+      "label": "infer-R0-call3-candidate",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 1.3246375374365016e-06,
+      "max_ULP": 74097578,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R0-call3-candidate.json",
+      "sha256": "a99bc6fd777b8c4fbe25cb306227934cbf42e39eb91c3386d2209d3e5ff72eb2"
+    },
+    {
+      "label": "infer-R0-call4-native-repeat",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R0-call4-native-repeat.json",
+      "sha256": "847c2e3f81ea1e23243be667600d18c90ad996c3d8e5215fb8facbd945801a2c"
+    },
+    {
+      "label": "infer-R0-call4-candidate",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 1.3376105698625906e-06,
+      "max_ULP": 35280645,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R0-call4-candidate.json",
+      "sha256": "fe7f368f4be668c6c3b702ca183b5ce32f756b725ee6f0a3d692484379b555d7"
+    },
+    {
+      "label": "infer-R0-call5-native-repeat",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R0-call5-native-repeat.json",
+      "sha256": "50ea6b5c484f1115f22708dd2d3541907aa19a1a0bd71a1af2a6d74d066d108e"
+    },
+    {
+      "label": "infer-R0-call5-candidate",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 2.6338670977565926e-06,
+      "max_ULP": 44244725,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R0-call5-candidate.json",
+      "sha256": "f7fd88686afe14c37095c30f7bf781163a19d18fb4d6bc3c4c7880ee391a0235"
+    },
+    {
+      "label": "infer-R0-call6-native-repeat",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R0-call6-native-repeat.json",
+      "sha256": "1deea5b4a1578c262fbc32c62c954c577ea330ee9c7c6d12611472c6a2bfd050"
+    },
+    {
+      "label": "infer-R0-call6-candidate",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 1.4377607158166938e-06,
+      "max_ULP": 493435,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R0-call6-candidate.json",
+      "sha256": "f8ffafe38292b0e70429df8876d31c733ab5d293f5cb1cffd0b524126539ad96"
+    },
+    {
+      "label": "infer-R0-call7-native-repeat",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R0-call7-native-repeat.json",
+      "sha256": "adf0f2fd4599d51cbdc26854b2e48ca4434e80a0b893f9ec54cd62f911e3b354"
+    },
+    {
+      "label": "infer-R0-call7-candidate",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 1.5747051520520472e-06,
+      "max_ULP": 42764418,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R0-call7-candidate.json",
+      "sha256": "291cf8a1abeab4d67b732097fb2da3af831cb8aa4b116cce16f085398a66caad"
+    },
+    {
+      "label": "infer-R0-call8-native-repeat",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R0-call8-native-repeat.json",
+      "sha256": "fadee734ae4da09e93111d183ce7d505174dfecaf72db4ce7fafbb1625af7ce6"
+    },
+    {
+      "label": "infer-R0-call8-candidate",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 1.710704395918583e-06,
+      "max_ULP": 4852117,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R0-call8-candidate.json",
+      "sha256": "588b88a0ba1fef932cf72432841790bd20aad5c94244cc105b49db22d75ae671"
+    },
+    {
+      "label": "infer-R0-call9-native-repeat",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R0-call9-native-repeat.json",
+      "sha256": "22a4107e32ae347125087a06a5ceabf3e89f594cb9548c892836cce4c7ee7c0c"
+    },
+    {
+      "label": "infer-R0-call9-candidate",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 1.5100146129043424e-06,
+      "max_ULP": 986871,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R0-call9-candidate.json",
+      "sha256": "544d6716b5282b40f873922e8e4703fc1f98fcbabab5914f1bb96f7b167aeef9"
+    },
+    {
+      "label": "infer-R1-call0-native-repeat",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R1-call0-native-repeat.json",
+      "sha256": "b8df7d1cc1ad0bc7d4969d608179a18a910c4d9e9fecab8aa5fd88c97cc3f6ea"
+    },
+    {
+      "label": "infer-R1-call0-candidate",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 2.913624484790489e-06,
+      "max_ULP": 53455523,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R1-call0-candidate.json",
+      "sha256": "0078268ac562a75ecd77e2cf8c3f2717607c4575e831319b3ee07ac9540a0f58"
+    },
+    {
+      "label": "fresh-R1-call0-native",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R1-call0-native.json",
+      "sha256": "b8df7d1cc1ad0bc7d4969d608179a18a910c4d9e9fecab8aa5fd88c97cc3f6ea"
+    },
+    {
+      "label": "fresh-R1-call0-native-repeat",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R1-call0-native-repeat.json",
+      "sha256": "b8df7d1cc1ad0bc7d4969d608179a18a910c4d9e9fecab8aa5fd88c97cc3f6ea"
+    },
+    {
+      "label": "fresh-R1-call0-candidate",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R1-call0-candidate.json",
+      "sha256": "f503e892954e8fee45611b677667ab27ea90d5e712fa8f677a81bb4b946a21b9"
+    },
+    {
+      "label": "infer-R1-call1-native-repeat",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R1-call1-native-repeat.json",
+      "sha256": "af15e1325e17d99d8bde4358ebda6689236eed1b6938fd0424cbff1beabe6751"
+    },
+    {
+      "label": "infer-R1-call1-candidate",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 1.2439785450624186e-06,
+      "max_ULP": 24342823,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R1-call1-candidate.json",
+      "sha256": "622fccce4b3e2c0a409aea7975d4344faff2c98c46728d1353679d5e92d8e0f8"
+    },
+    {
+      "label": "fresh-R1-call1-native",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R1-call1-native.json",
+      "sha256": "af15e1325e17d99d8bde4358ebda6689236eed1b6938fd0424cbff1beabe6751"
+    },
+    {
+      "label": "fresh-R1-call1-native-repeat",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R1-call1-native-repeat.json",
+      "sha256": "af15e1325e17d99d8bde4358ebda6689236eed1b6938fd0424cbff1beabe6751"
+    },
+    {
+      "label": "fresh-R1-call1-candidate",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R1-call1-candidate.json",
+      "sha256": "9efba9c7870f1dd3c358c4bdc9bcfebe5a63b1250fb081a1c27e8a8de6ced413"
+    },
+    {
+      "label": "infer-R1-call2-native-repeat",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R1-call2-native-repeat.json",
+      "sha256": "1deea5b4a1578c262fbc32c62c954c577ea330ee9c7c6d12611472c6a2bfd050"
+    },
+    {
+      "label": "infer-R1-call2-candidate",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 1.4396233609659248e-06,
+      "max_ULP": 28948222,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R1-call2-candidate.json",
+      "sha256": "ce64a97be9c95f95c05112c63d4d2fcdaffe879107c534cef8ca27deade52fe4"
+    },
+    {
+      "label": "fresh-R1-call2-native",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R1-call2-native.json",
+      "sha256": "1deea5b4a1578c262fbc32c62c954c577ea330ee9c7c6d12611472c6a2bfd050"
+    },
+    {
+      "label": "fresh-R1-call2-native-repeat",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R1-call2-native-repeat.json",
+      "sha256": "1deea5b4a1578c262fbc32c62c954c577ea330ee9c7c6d12611472c6a2bfd050"
+    },
+    {
+      "label": "fresh-R1-call2-candidate",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R1-call2-candidate.json",
+      "sha256": "8877ab612e71e5e6fdc145882c19ae81b65c6c4d1de110c6557208caee005325"
+    },
+    {
+      "label": "infer-R1-call3-native-repeat",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R1-call3-native-repeat.json",
+      "sha256": "123862dce9f1bb6ffaf6d381e1db6bfd65c33725ec1a61cb985bbcecd6649bed"
+    },
+    {
+      "label": "infer-R1-call3-candidate",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 1.3246375374365016e-06,
+      "max_ULP": 74097578,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R1-call3-candidate.json",
+      "sha256": "a99bc6fd777b8c4fbe25cb306227934cbf42e39eb91c3386d2209d3e5ff72eb2"
+    },
+    {
+      "label": "fresh-R1-call3-native",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R1-call3-native.json",
+      "sha256": "123862dce9f1bb6ffaf6d381e1db6bfd65c33725ec1a61cb985bbcecd6649bed"
+    },
+    {
+      "label": "fresh-R1-call3-native-repeat",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R1-call3-native-repeat.json",
+      "sha256": "123862dce9f1bb6ffaf6d381e1db6bfd65c33725ec1a61cb985bbcecd6649bed"
+    },
+    {
+      "label": "fresh-R1-call3-candidate",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R1-call3-candidate.json",
+      "sha256": "195a3ffa3511303f66a756ca06d517d2381e96353ea03cfb9c48fb2a854a348f"
+    },
+    {
+      "label": "infer-R1-call4-native-repeat",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R1-call4-native-repeat.json",
+      "sha256": "847c2e3f81ea1e23243be667600d18c90ad996c3d8e5215fb8facbd945801a2c"
+    },
+    {
+      "label": "infer-R1-call4-candidate",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 1.3376105698625906e-06,
+      "max_ULP": 35280645,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R1-call4-candidate.json",
+      "sha256": "fe7f368f4be668c6c3b702ca183b5ce32f756b725ee6f0a3d692484379b555d7"
+    },
+    {
+      "label": "fresh-R1-call4-native",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R1-call4-native.json",
+      "sha256": "847c2e3f81ea1e23243be667600d18c90ad996c3d8e5215fb8facbd945801a2c"
+    },
+    {
+      "label": "fresh-R1-call4-native-repeat",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R1-call4-native-repeat.json",
+      "sha256": "847c2e3f81ea1e23243be667600d18c90ad996c3d8e5215fb8facbd945801a2c"
+    },
+    {
+      "label": "fresh-R1-call4-candidate",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R1-call4-candidate.json",
+      "sha256": "45b6f6afe8ab84f0300739f4412676d1ab90d586e49171b03229a98c0430d228"
+    },
+    {
+      "label": "infer-R1-call5-native-repeat",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R1-call5-native-repeat.json",
+      "sha256": "50ea6b5c484f1115f22708dd2d3541907aa19a1a0bd71a1af2a6d74d066d108e"
+    },
+    {
+      "label": "infer-R1-call5-candidate",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 2.6338670977565926e-06,
+      "max_ULP": 44244725,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R1-call5-candidate.json",
+      "sha256": "f7fd88686afe14c37095c30f7bf781163a19d18fb4d6bc3c4c7880ee391a0235"
+    },
+    {
+      "label": "fresh-R1-call5-native",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R1-call5-native.json",
+      "sha256": "50ea6b5c484f1115f22708dd2d3541907aa19a1a0bd71a1af2a6d74d066d108e"
+    },
+    {
+      "label": "fresh-R1-call5-native-repeat",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R1-call5-native-repeat.json",
+      "sha256": "50ea6b5c484f1115f22708dd2d3541907aa19a1a0bd71a1af2a6d74d066d108e"
+    },
+    {
+      "label": "fresh-R1-call5-candidate",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R1-call5-candidate.json",
+      "sha256": "2d6dc7a7f4bae19cc664ba7bbc1f6434cb52dd6784f6c4f6fdaedb0b4b569154"
+    },
+    {
+      "label": "infer-R1-call6-native-repeat",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R1-call6-native-repeat.json",
+      "sha256": "1deea5b4a1578c262fbc32c62c954c577ea330ee9c7c6d12611472c6a2bfd050"
+    },
+    {
+      "label": "infer-R1-call6-candidate",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 1.4377607158166938e-06,
+      "max_ULP": 493435,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R1-call6-candidate.json",
+      "sha256": "f8ffafe38292b0e70429df8876d31c733ab5d293f5cb1cffd0b524126539ad96"
+    },
+    {
+      "label": "fresh-R1-call6-native",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R1-call6-native.json",
+      "sha256": "1deea5b4a1578c262fbc32c62c954c577ea330ee9c7c6d12611472c6a2bfd050"
+    },
+    {
+      "label": "fresh-R1-call6-native-repeat",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R1-call6-native-repeat.json",
+      "sha256": "1deea5b4a1578c262fbc32c62c954c577ea330ee9c7c6d12611472c6a2bfd050"
+    },
+    {
+      "label": "fresh-R1-call6-candidate",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R1-call6-candidate.json",
+      "sha256": "e6fc9bd6833a02b84898a2002e76767afc8cb25e23aac5273bffa2b225911d3e"
+    },
+    {
+      "label": "infer-R1-call7-native-repeat",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R1-call7-native-repeat.json",
+      "sha256": "adf0f2fd4599d51cbdc26854b2e48ca4434e80a0b893f9ec54cd62f911e3b354"
+    },
+    {
+      "label": "infer-R1-call7-candidate",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 1.5747051520520472e-06,
+      "max_ULP": 42764418,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R1-call7-candidate.json",
+      "sha256": "291cf8a1abeab4d67b732097fb2da3af831cb8aa4b116cce16f085398a66caad"
+    },
+    {
+      "label": "fresh-R1-call7-native",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R1-call7-native.json",
+      "sha256": "adf0f2fd4599d51cbdc26854b2e48ca4434e80a0b893f9ec54cd62f911e3b354"
+    },
+    {
+      "label": "fresh-R1-call7-native-repeat",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R1-call7-native-repeat.json",
+      "sha256": "adf0f2fd4599d51cbdc26854b2e48ca4434e80a0b893f9ec54cd62f911e3b354"
+    },
+    {
+      "label": "fresh-R1-call7-candidate",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R1-call7-candidate.json",
+      "sha256": "258f8658b939d9d351ca7de6cad6a8246b6f38e5dc4b8b263624844fe7e36f02"
+    },
+    {
+      "label": "infer-R1-call8-native-repeat",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R1-call8-native-repeat.json",
+      "sha256": "fadee734ae4da09e93111d183ce7d505174dfecaf72db4ce7fafbb1625af7ce6"
+    },
+    {
+      "label": "infer-R1-call8-candidate",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 1.710704395918583e-06,
+      "max_ULP": 4852117,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R1-call8-candidate.json",
+      "sha256": "588b88a0ba1fef932cf72432841790bd20aad5c94244cc105b49db22d75ae671"
+    },
+    {
+      "label": "fresh-R1-call8-native",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R1-call8-native.json",
+      "sha256": "fadee734ae4da09e93111d183ce7d505174dfecaf72db4ce7fafbb1625af7ce6"
+    },
+    {
+      "label": "fresh-R1-call8-native-repeat",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R1-call8-native-repeat.json",
+      "sha256": "fadee734ae4da09e93111d183ce7d505174dfecaf72db4ce7fafbb1625af7ce6"
+    },
+    {
+      "label": "fresh-R1-call8-candidate",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R1-call8-candidate.json",
+      "sha256": "313392bf3b139847e2f7f3f2254f9c31f3637c2c1f60cddeed3d541c18609098"
+    },
+    {
+      "label": "infer-R1-call9-native-repeat",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R1-call9-native-repeat.json",
+      "sha256": "22a4107e32ae347125087a06a5ceabf3e89f594cb9548c892836cce4c7ee7c0c"
+    },
+    {
+      "label": "infer-R1-call9-candidate",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 1.5100146129043424e-06,
+      "max_ULP": 986871,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R1-call9-candidate.json",
+      "sha256": "544d6716b5282b40f873922e8e4703fc1f98fcbabab5914f1bb96f7b167aeef9"
+    },
+    {
+      "label": "fresh-R1-call9-native",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R1-call9-native.json",
+      "sha256": "22a4107e32ae347125087a06a5ceabf3e89f594cb9548c892836cce4c7ee7c0c"
+    },
+    {
+      "label": "fresh-R1-call9-native-repeat",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R1-call9-native-repeat.json",
+      "sha256": "22a4107e32ae347125087a06a5ceabf3e89f594cb9548c892836cce4c7ee7c0c"
+    },
+    {
+      "label": "fresh-R1-call9-candidate",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R1-call9-candidate.json",
+      "sha256": "57303966fc19d8afed90a26c85f0ea50667dd187cc873f2ac30acdfc35dd28cf"
+    },
+    {
+      "label": "infer-R2-call0-native-repeat",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R2-call0-native-repeat.json",
+      "sha256": "b8df7d1cc1ad0bc7d4969d608179a18a910c4d9e9fecab8aa5fd88c97cc3f6ea"
+    },
+    {
+      "label": "infer-R2-call0-candidate",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 2.913624484790489e-06,
+      "max_ULP": 53455523,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R2-call0-candidate.json",
+      "sha256": "0078268ac562a75ecd77e2cf8c3f2717607c4575e831319b3ee07ac9540a0f58"
+    },
+    {
+      "label": "fresh-R2-call0-native",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R2-call0-native.json",
+      "sha256": "b8df7d1cc1ad0bc7d4969d608179a18a910c4d9e9fecab8aa5fd88c97cc3f6ea"
+    },
+    {
+      "label": "fresh-R2-call0-native-repeat",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R2-call0-native-repeat.json",
+      "sha256": "b8df7d1cc1ad0bc7d4969d608179a18a910c4d9e9fecab8aa5fd88c97cc3f6ea"
+    },
+    {
+      "label": "fresh-R2-call0-candidate",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R2-call0-candidate.json",
+      "sha256": "f503e892954e8fee45611b677667ab27ea90d5e712fa8f677a81bb4b946a21b9"
+    },
+    {
+      "label": "infer-R2-call1-native-repeat",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R2-call1-native-repeat.json",
+      "sha256": "af15e1325e17d99d8bde4358ebda6689236eed1b6938fd0424cbff1beabe6751"
+    },
+    {
+      "label": "infer-R2-call1-candidate",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 1.2439785450624186e-06,
+      "max_ULP": 24342823,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R2-call1-candidate.json",
+      "sha256": "622fccce4b3e2c0a409aea7975d4344faff2c98c46728d1353679d5e92d8e0f8"
+    },
+    {
+      "label": "fresh-R2-call1-native",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R2-call1-native.json",
+      "sha256": "af15e1325e17d99d8bde4358ebda6689236eed1b6938fd0424cbff1beabe6751"
+    },
+    {
+      "label": "fresh-R2-call1-native-repeat",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R2-call1-native-repeat.json",
+      "sha256": "af15e1325e17d99d8bde4358ebda6689236eed1b6938fd0424cbff1beabe6751"
+    },
+    {
+      "label": "fresh-R2-call1-candidate",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R2-call1-candidate.json",
+      "sha256": "9efba9c7870f1dd3c358c4bdc9bcfebe5a63b1250fb081a1c27e8a8de6ced413"
+    },
+    {
+      "label": "infer-R2-call2-native-repeat",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R2-call2-native-repeat.json",
+      "sha256": "1deea5b4a1578c262fbc32c62c954c577ea330ee9c7c6d12611472c6a2bfd050"
+    },
+    {
+      "label": "infer-R2-call2-candidate",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 1.4396233609659248e-06,
+      "max_ULP": 28948222,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R2-call2-candidate.json",
+      "sha256": "ce64a97be9c95f95c05112c63d4d2fcdaffe879107c534cef8ca27deade52fe4"
+    },
+    {
+      "label": "fresh-R2-call2-native",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R2-call2-native.json",
+      "sha256": "1deea5b4a1578c262fbc32c62c954c577ea330ee9c7c6d12611472c6a2bfd050"
+    },
+    {
+      "label": "fresh-R2-call2-native-repeat",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R2-call2-native-repeat.json",
+      "sha256": "1deea5b4a1578c262fbc32c62c954c577ea330ee9c7c6d12611472c6a2bfd050"
+    },
+    {
+      "label": "fresh-R2-call2-candidate",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R2-call2-candidate.json",
+      "sha256": "8877ab612e71e5e6fdc145882c19ae81b65c6c4d1de110c6557208caee005325"
+    },
+    {
+      "label": "infer-R2-call3-native-repeat",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R2-call3-native-repeat.json",
+      "sha256": "123862dce9f1bb6ffaf6d381e1db6bfd65c33725ec1a61cb985bbcecd6649bed"
+    },
+    {
+      "label": "infer-R2-call3-candidate",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 1.3246375374365016e-06,
+      "max_ULP": 74097578,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R2-call3-candidate.json",
+      "sha256": "a99bc6fd777b8c4fbe25cb306227934cbf42e39eb91c3386d2209d3e5ff72eb2"
+    },
+    {
+      "label": "fresh-R2-call3-native",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R2-call3-native.json",
+      "sha256": "123862dce9f1bb6ffaf6d381e1db6bfd65c33725ec1a61cb985bbcecd6649bed"
+    },
+    {
+      "label": "fresh-R2-call3-native-repeat",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R2-call3-native-repeat.json",
+      "sha256": "123862dce9f1bb6ffaf6d381e1db6bfd65c33725ec1a61cb985bbcecd6649bed"
+    },
+    {
+      "label": "fresh-R2-call3-candidate",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R2-call3-candidate.json",
+      "sha256": "195a3ffa3511303f66a756ca06d517d2381e96353ea03cfb9c48fb2a854a348f"
+    },
+    {
+      "label": "infer-R2-call4-native-repeat",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R2-call4-native-repeat.json",
+      "sha256": "847c2e3f81ea1e23243be667600d18c90ad996c3d8e5215fb8facbd945801a2c"
+    },
+    {
+      "label": "infer-R2-call4-candidate",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 1.3376105698625906e-06,
+      "max_ULP": 35280645,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R2-call4-candidate.json",
+      "sha256": "fe7f368f4be668c6c3b702ca183b5ce32f756b725ee6f0a3d692484379b555d7"
+    },
+    {
+      "label": "fresh-R2-call4-native",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R2-call4-native.json",
+      "sha256": "847c2e3f81ea1e23243be667600d18c90ad996c3d8e5215fb8facbd945801a2c"
+    },
+    {
+      "label": "fresh-R2-call4-native-repeat",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R2-call4-native-repeat.json",
+      "sha256": "847c2e3f81ea1e23243be667600d18c90ad996c3d8e5215fb8facbd945801a2c"
+    },
+    {
+      "label": "fresh-R2-call4-candidate",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R2-call4-candidate.json",
+      "sha256": "45b6f6afe8ab84f0300739f4412676d1ab90d586e49171b03229a98c0430d228"
+    },
+    {
+      "label": "infer-R2-call5-native-repeat",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R2-call5-native-repeat.json",
+      "sha256": "50ea6b5c484f1115f22708dd2d3541907aa19a1a0bd71a1af2a6d74d066d108e"
+    },
+    {
+      "label": "infer-R2-call5-candidate",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 2.6338670977565926e-06,
+      "max_ULP": 44244725,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R2-call5-candidate.json",
+      "sha256": "f7fd88686afe14c37095c30f7bf781163a19d18fb4d6bc3c4c7880ee391a0235"
+    },
+    {
+      "label": "fresh-R2-call5-native",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R2-call5-native.json",
+      "sha256": "50ea6b5c484f1115f22708dd2d3541907aa19a1a0bd71a1af2a6d74d066d108e"
+    },
+    {
+      "label": "fresh-R2-call5-native-repeat",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R2-call5-native-repeat.json",
+      "sha256": "50ea6b5c484f1115f22708dd2d3541907aa19a1a0bd71a1af2a6d74d066d108e"
+    },
+    {
+      "label": "fresh-R2-call5-candidate",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R2-call5-candidate.json",
+      "sha256": "2d6dc7a7f4bae19cc664ba7bbc1f6434cb52dd6784f6c4f6fdaedb0b4b569154"
+    },
+    {
+      "label": "infer-R2-call6-native-repeat",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R2-call6-native-repeat.json",
+      "sha256": "1deea5b4a1578c262fbc32c62c954c577ea330ee9c7c6d12611472c6a2bfd050"
+    },
+    {
+      "label": "infer-R2-call6-candidate",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 1.4377607158166938e-06,
+      "max_ULP": 493435,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R2-call6-candidate.json",
+      "sha256": "f8ffafe38292b0e70429df8876d31c733ab5d293f5cb1cffd0b524126539ad96"
+    },
+    {
+      "label": "fresh-R2-call6-native",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R2-call6-native.json",
+      "sha256": "1deea5b4a1578c262fbc32c62c954c577ea330ee9c7c6d12611472c6a2bfd050"
+    },
+    {
+      "label": "fresh-R2-call6-native-repeat",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R2-call6-native-repeat.json",
+      "sha256": "1deea5b4a1578c262fbc32c62c954c577ea330ee9c7c6d12611472c6a2bfd050"
+    },
+    {
+      "label": "fresh-R2-call6-candidate",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R2-call6-candidate.json",
+      "sha256": "e6fc9bd6833a02b84898a2002e76767afc8cb25e23aac5273bffa2b225911d3e"
+    },
+    {
+      "label": "infer-R2-call7-native-repeat",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R2-call7-native-repeat.json",
+      "sha256": "adf0f2fd4599d51cbdc26854b2e48ca4434e80a0b893f9ec54cd62f911e3b354"
+    },
+    {
+      "label": "infer-R2-call7-candidate",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 1.5747051520520472e-06,
+      "max_ULP": 42764418,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R2-call7-candidate.json",
+      "sha256": "291cf8a1abeab4d67b732097fb2da3af831cb8aa4b116cce16f085398a66caad"
+    },
+    {
+      "label": "fresh-R2-call7-native",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R2-call7-native.json",
+      "sha256": "adf0f2fd4599d51cbdc26854b2e48ca4434e80a0b893f9ec54cd62f911e3b354"
+    },
+    {
+      "label": "fresh-R2-call7-native-repeat",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R2-call7-native-repeat.json",
+      "sha256": "adf0f2fd4599d51cbdc26854b2e48ca4434e80a0b893f9ec54cd62f911e3b354"
+    },
+    {
+      "label": "fresh-R2-call7-candidate",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R2-call7-candidate.json",
+      "sha256": "258f8658b939d9d351ca7de6cad6a8246b6f38e5dc4b8b263624844fe7e36f02"
+    },
+    {
+      "label": "infer-R2-call8-native-repeat",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R2-call8-native-repeat.json",
+      "sha256": "fadee734ae4da09e93111d183ce7d505174dfecaf72db4ce7fafbb1625af7ce6"
+    },
+    {
+      "label": "infer-R2-call8-candidate",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 1.710704395918583e-06,
+      "max_ULP": 4852117,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R2-call8-candidate.json",
+      "sha256": "588b88a0ba1fef932cf72432841790bd20aad5c94244cc105b49db22d75ae671"
+    },
+    {
+      "label": "fresh-R2-call8-native",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R2-call8-native.json",
+      "sha256": "fadee734ae4da09e93111d183ce7d505174dfecaf72db4ce7fafbb1625af7ce6"
+    },
+    {
+      "label": "fresh-R2-call8-native-repeat",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R2-call8-native-repeat.json",
+      "sha256": "fadee734ae4da09e93111d183ce7d505174dfecaf72db4ce7fafbb1625af7ce6"
+    },
+    {
+      "label": "fresh-R2-call8-candidate",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R2-call8-candidate.json",
+      "sha256": "313392bf3b139847e2f7f3f2254f9c31f3637c2c1f60cddeed3d541c18609098"
+    },
+    {
+      "label": "infer-R2-call9-native-repeat",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R2-call9-native-repeat.json",
+      "sha256": "22a4107e32ae347125087a06a5ceabf3e89f594cb9548c892836cce4c7ee7c0c"
+    },
+    {
+      "label": "infer-R2-call9-candidate",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 1.5100146129043424e-06,
+      "max_ULP": 986871,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/infer-R2-call9-candidate.json",
+      "sha256": "544d6716b5282b40f873922e8e4703fc1f98fcbabab5914f1bb96f7b167aeef9"
+    },
+    {
+      "label": "fresh-R2-call9-native",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R2-call9-native.json",
+      "sha256": "22a4107e32ae347125087a06a5ceabf3e89f594cb9548c892836cce4c7ee7c0c"
+    },
+    {
+      "label": "fresh-R2-call9-native-repeat",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R2-call9-native-repeat.json",
+      "sha256": "22a4107e32ae347125087a06a5ceabf3e89f594cb9548c892836cce4c7ee7c0c"
+    },
+    {
+      "label": "fresh-R2-call9-candidate",
+      "roles": 3,
+      "failures": {},
+      "max_relative_l2": 0,
+      "max_ULP": 0,
+      "full_metrics": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-angular-stability-a100-20261127-r1/stability-audits/120936/fresh-R2-call9-candidate.json",
+      "sha256": "57303966fc19d8afed90a26c85f0ea50667dd187cc873f2ac30acdfc35dd28cf"
+    }
+  ],
+  "original_thresholds": true,
+  "shared_true_loss_cotangents": false,
+  "restored_inside_trajectory": false,
+  "steps": 20,
+  "inference_calls_per_process": 10,
+  "fresh_inference_processes": 3,
+  "status": "PASS"
+}

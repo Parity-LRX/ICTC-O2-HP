@@ -1,0 +1,138 @@
+{
+  "status": "ALL_NATIVE_PLAN_LEAVES_AND_MERGES_MATCH",
+  "rows": [
+    {
+      "L": 25,
+      "Q": 32768,
+      "coefficient_column_major": false,
+      "parts": 1,
+      "four_chains_of_eight": false,
+      "span": 625,
+      "probe_receipt": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-bounded-bilinear-a100-20261126-r1/results/bmm-tree-a100-120322/00-M25-N32768-K625.json",
+      "probe_sha256": "4eb73ae1ff861a703a84230b8fb8d978b1f4ce9d0cc25924263797a92a43c519",
+      "complete_leaf_order_and_add_tree_match": true
+    },
+    {
+      "L": 25,
+      "Q": 18432,
+      "coefficient_column_major": false,
+      "parts": 3,
+      "four_chains_of_eight": false,
+      "span": 209,
+      "probe_receipt": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-bounded-bilinear-a100-20261126-r1/results/bmm-tree-a100-120322/01-M25-N18432-K625.json",
+      "probe_sha256": "7e9681cf67e7132f08635fde5d5a1c552d32ca01b94f287ce94582fb50f79fdf",
+      "complete_leaf_order_and_add_tree_match": true
+    },
+    {
+      "L": 19,
+      "Q": 2048,
+      "coefficient_column_major": false,
+      "parts": 1,
+      "four_chains_of_eight": true,
+      "span": 361,
+      "probe_receipt": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-bounded-bilinear-a100-20261126-r1/results/bmm-tree-a100-120322/02-M19-N2048-K361.json",
+      "probe_sha256": "2aaa159c295f5d7d3d5f19f1058821e429632a26a550eda6f8e0a8555231c964",
+      "complete_leaf_order_and_add_tree_match": true
+    },
+    {
+      "L": 19,
+      "Q": 128,
+      "coefficient_column_major": false,
+      "parts": 3,
+      "four_chains_of_eight": true,
+      "span": 121,
+      "probe_receipt": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-bounded-bilinear-a100-20261126-r1/results/bmm-tree-a100-120322/03-M19-N128-K361.json",
+      "probe_sha256": "120e6cda6d2152651917d1f32a02cc61e40f4d48f500230b56fa1f82a411d1a4",
+      "complete_leaf_order_and_add_tree_match": true
+    },
+    {
+      "L": 19,
+      "Q": 2048,
+      "coefficient_column_major": true,
+      "parts": 4,
+      "four_chains_of_eight": true,
+      "span": 91,
+      "probe_receipt": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-bounded-bilinear-a100-20261126-r1/results/bmm-tree-a100-120322/04-M19-N2048-K361.json",
+      "probe_sha256": "aa24433e2beb0c5cc32dfa409af44c6b27d5d427645ba6b0096737ff0774979d",
+      "complete_leaf_order_and_add_tree_match": true
+    },
+    {
+      "L": 19,
+      "Q": 128,
+      "coefficient_column_major": true,
+      "parts": 1,
+      "four_chains_of_eight": true,
+      "span": 361,
+      "probe_receipt": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-bounded-bilinear-a100-20261126-r1/results/bmm-tree-a100-120322/05-M19-N128-K361.json",
+      "probe_sha256": "6c75d29654a8a6002a994c05b0e694d1d3b9f9bbcfd0605e7e318b756c81e9d0",
+      "complete_leaf_order_and_add_tree_match": true
+    },
+    {
+      "L": 25,
+      "Q": 32768,
+      "coefficient_column_major": true,
+      "parts": 1,
+      "four_chains_of_eight": true,
+      "span": 625,
+      "probe_receipt": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-bounded-bilinear-a100-20261126-r1/results/bmm-tree-a100-120322/06-M25-N32768-K625.json",
+      "probe_sha256": "9e699956ec20c948242d89179bde4573eb904f2efc27d12cb09ca6475b4e9a55",
+      "complete_leaf_order_and_add_tree_match": true
+    },
+    {
+      "L": 25,
+      "Q": 18432,
+      "coefficient_column_major": true,
+      "parts": 1,
+      "four_chains_of_eight": false,
+      "span": 625,
+      "probe_receipt": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-bounded-bilinear-a100-20261126-r1/results/bmm-tree-a100-120322/07-M25-N18432-K625.json",
+      "probe_sha256": "51a79e9e5a882ced58df284331575bfa4d2637dcf5209483c52dcb4266d70de3",
+      "complete_leaf_order_and_add_tree_match": true
+    },
+    {
+      "L": 25,
+      "Q": 12288,
+      "coefficient_column_major": false,
+      "parts": 2,
+      "four_chains_of_eight": false,
+      "span": 313,
+      "probe_receipt": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-bounded-bilinear-a100-20261126-r1/results/bmm-tree-a100-120322/08-M25-N12288-K625.json",
+      "probe_sha256": "92db4a2fdc9c22561fbb388e7c5af560f96a59dcb54fc822751e655a3fe402ce",
+      "complete_leaf_order_and_add_tree_match": true
+    },
+    {
+      "L": 19,
+      "Q": 768,
+      "coefficient_column_major": false,
+      "parts": 4,
+      "four_chains_of_eight": true,
+      "span": 91,
+      "probe_receipt": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-bounded-bilinear-a100-20261126-r1/results/bmm-tree-a100-120322/09-M19-N768-K361.json",
+      "probe_sha256": "f7e75b83effa952de5ed8dd5b30d6c520572655b9b1056a49a658d3cd5856155",
+      "complete_leaf_order_and_add_tree_match": true
+    },
+    {
+      "L": 19,
+      "Q": 768,
+      "coefficient_column_major": true,
+      "parts": 5,
+      "four_chains_of_eight": true,
+      "span": 73,
+      "probe_receipt": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-bounded-bilinear-a100-20261126-r1/results/bmm-tree-a100-120322/10-M19-N768-K361.json",
+      "probe_sha256": "ad552985aadca30621a3c2a15242c77eb0e200daf5cf202cbc6190efb6fd3468",
+      "complete_leaf_order_and_add_tree_match": true
+    },
+    {
+      "L": 25,
+      "Q": 12288,
+      "coefficient_column_major": true,
+      "parts": 1,
+      "four_chains_of_eight": false,
+      "span": 625,
+      "probe_receipt": "/public/home/sps-xia/bjxiao/o2-benchmark/runs/o2-bounded-bilinear-a100-20261126-r1/results/bmm-tree-a100-120322/11-M25-N12288-K625.json",
+      "probe_sha256": "97dc568444fe93cca59b1d6ccc040e96771ffc991d55c677d7983515b7be60cb",
+      "complete_leaf_order_and_add_tree_match": true
+    }
+  ],
+  "precision": "FP32 outer mul.rn, FP32 FMA and explicit add.rn; no reassociation"
+}
